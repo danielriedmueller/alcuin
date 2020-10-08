@@ -1,0 +1,54 @@
+{
+	"name": "Alcuin",
+	"author": [
+		"Daniel Riedmüller"
+	],
+	"url": "https://www.soital.de",
+	"descriptionmsg": "alcuin-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Alcuin\\": "src/"
+	},
+	"config": {
+		"BoilerPlateEnableFoo": {
+			"description": "Enable the Foo feature.",
+			"value": true
+		},
+		"BoilerPlateVandalizeEachPage": {
+			"description": "Write 'BoilerPlate was here' on each page",
+			"value": false
+		}
+	},
+	"HookHandlers": {
+		"AlcuinHooks": {
+			"class": "MediaWiki\\Extension\\Alcuin\\Hooks"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "AlcuinHooks"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Alcuin/modules"
+	},
+	"ResourceModules": {
+		"ext.alcuin.styles": {
+			"class": "SCSS\\ResourceLoaderSCSSModule",
+			"localBasePath": "modules",
+			"remoteExtPath": "Alcuin/modules",
+			"position": "top",
+			"styles": [
+				"scss/style.scss"
+			],
+			"cacheTriggers": [
+				"LocalSettings.php",
+				"composer.lock"
+			]
+		}
+	},
+	"manifest_version": 2
+}

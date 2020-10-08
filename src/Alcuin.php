@@ -1,8 +1,8 @@
 <?php
 
-namespace Alcuin;
+namespace MediaWiki\Extension\Alcuin;
 
-class Init
+class Alcuin
 {
     public static function world()
     {
