@@ -34,4 +34,7 @@ class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
         }
     }
 
+    public function onExtensionLoad(): void {
+        // TODO
+    }
 }

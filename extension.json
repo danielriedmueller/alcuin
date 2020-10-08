@@ -10,19 +10,21 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
+	"AutoloadClasses": {
+		"Alcuin": "includes/Alcuin.php",
+		"AlcuinHooks": "includes/Hooks.php",
+		"SpecialHelloWorld": "includes/SpecialHelloWorld.php"
+	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\Alcuin\\": "src/"
+		"MediaWiki\\Extension\\Alcuin\\": "includes/"
 	},
 	"config": {
-		"BoilerPlateEnableFoo": {
-			"description": "Enable the Foo feature.",
+		"AlcuinVandalizeEachPage": {
+			"description": "Write 'Alcuin was here' on each page",
 			"value": true
-		},
-		"BoilerPlateVandalizeEachPage": {
-			"description": "Write 'BoilerPlate was here' on each page",
-			"value": false
 		}
 	},
+	"callback": "AlcuinHooks::onExtensionLoad",
 	"HookHandlers": {
 		"AlcuinHooks": {
 			"class": "MediaWiki\\Extension\\Alcuin\\Hooks"
@@ -36,19 +38,17 @@
 		"remoteExtPath": "Alcuin/modules"
 	},
 	"ResourceModules": {
-		"ext.alcuin.styles": {
-			"class": "SCSS\\ResourceLoaderSCSSModule",
-			"localBasePath": "modules",
-			"remoteExtPath": "Alcuin/modules",
-			"position": "top",
-			"styles": [
-				"scss/style.scss"
+		"ext.alcuin": {
+			"scripts": [
+				"resources/script.js"
 			],
-			"cacheTriggers": [
-				"LocalSettings.php",
-				"composer.lock"
+			"styles": [
+				"resources/style.css"
 			]
 		}
+	},
+	"SpecialPages": {
+		"HelloWorld": "SpecialHelloWorld"
 	},
 	"manifest_version": 2
 }
