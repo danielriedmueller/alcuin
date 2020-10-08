@@ -1,5 +1,5 @@
 {
-    "name": "mediawiki/alcuin",
+    "name": "soital/alcuin",
     "description": "Mediawiki extension",
     "type": "mediawiki-extension",
     "require": {
