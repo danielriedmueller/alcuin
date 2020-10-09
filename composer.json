@@ -5,9 +5,9 @@
     "license": "GPL-3.0-or-later",
     "version": "0.0.1",
     "require": {
-        "mediawiki/scss": "^2.0@dev",
         "mediawiki/chameleon-skin": "^3.0@dev",
         "mediawiki/semantic-media-wiki": "^3.0@dev",
+        "mediawiki/page-forms": "^4.9.5",
         "php": ">=7.1.0"
     },
     "authors": [

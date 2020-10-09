@@ -10,13 +10,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
-	"AutoloadClasses": {
-		"Alcuin": "includes/Alcuin.php",
-		"AlcuinHooks": "includes/Hooks.php",
-		"SpecialHelloWorld": "includes/SpecialHelloWorld.php"
-	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\Alcuin\\": "includes/"
+		"MediaWiki\\Extensions\\Alcuin\\": "includes/"
 	},
 	"config": {
 		"AlcuinVandalizeEachPage": {
@@ -24,31 +19,23 @@
 			"value": true
 		}
 	},
-	"callback": "AlcuinHooks::onExtensionLoad",
-	"HookHandlers": {
-		"AlcuinHooks": {
-			"class": "MediaWiki\\Extension\\Alcuin\\Hooks"
-		}
-	},
 	"Hooks": {
-		"BeforePageDisplay": "AlcuinHooks"
+		"BeforePageDisplay": "main"
 	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "modules",
-		"remoteExtPath": "Alcuin/modules"
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\Alcuin\\HookHandler"
+		}
 	},
 	"ResourceModules": {
 		"ext.alcuin": {
-			"scripts": [
-				"resources/script.js"
-			],
-			"styles": [
-				"resources/style.css"
-			]
+			"scripts": "script.js",
+			"styles": "style.less"
 		}
 	},
-	"SpecialPages": {
-		"HelloWorld": "SpecialHelloWorld"
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Alcuin/resources"
 	},
 	"manifest_version": 2
 }
