@@ -1,9 +1,3 @@
-# Datenbank
-- Server: mariadb
-- Datenbank: mediawiki
-- Nutzer: root
-- Passwort: root
-
 # LocalSettings.php
 - enableSemantics(); (lokal)
 - $wgMainCacheType = CACHE_NONE;
