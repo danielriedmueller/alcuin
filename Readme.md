@@ -4,10 +4,6 @@
 - Nutzer: root
 - Passwort: root
 
-# Mediawiki
-- Benutzer: dan
-- Passwort: hSVVWcPwdZ6y
-
 # LocalSettings.php
 - enableSemantics(); (lokal)
 - $wgMainCacheType = CACHE_NONE;
