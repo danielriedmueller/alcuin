@@ -3,6 +3,7 @@
 	"author": [
 		"Daniel Riedmüller"
 	],
+	"version": "1.0.0",
 	"url": "https://www.soital.de",
 	"descriptionmsg": "alcuin-desc",
 	"license-name": "GPL-3.0-or-later",
