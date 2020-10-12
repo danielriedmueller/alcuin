@@ -2,6 +2,10 @@
 
 namespace MediaWiki\Extension\Alcuin;
 
+use DatabaseUpdater;
+use OutputPage;
+use Skin;
+
 class HookHandler implements \MediaWiki\Hook\BeforePageDisplayHook {
 
     /**
@@ -9,12 +13,7 @@ class HookHandler implements \MediaWiki\Hook\BeforePageDisplayHook {
      * @param \OutputPage $out
      * @param \Skin $skin
      */
-    public function onBeforePageDisplay( $out, $skin ) : void {
-        $config = $out->getConfig();
-        if ( $config->get( 'AlcuinVandalizeEachPage' ) ) {
-            $out->addHTML( '<p>Alcuin was here</p>' );
-            $out->addModules( 'oojs-ui-core' );
-            $out->addModules( 'ext.alcuin' );
-        }
+    public function onBeforePageDisplay( $out, $skin ): void {
+        $out->addModules( 'ext.alcuin' );
     }
 }
