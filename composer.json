@@ -7,7 +7,7 @@
     "require": {
         "mediawiki/chameleon-skin": "^3.0@dev",
         "mediawiki/semantic-media-wiki": "^3.0@dev",
-        "mediawiki/page-forms": "^4.9.5",
+        "mediawiki/page-forms": "dev-master",
         "php": ">=7.1.0"
     },
     "authors": [
