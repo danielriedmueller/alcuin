@@ -1,0 +1,534 @@
+<mediawiki>
+
+	<page>
+		<title>Lat  Übersetzung: Simplicius  In Praedicamenra</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Incipit=In dubium verti video
+|AlternateTitle=Lat. Übersetzung: Simplicius, In Categorias
+|Type=Lateinische Übersetzung: Simplicius, Praedicamenta (Categoriae)
+|Created=&lt;p&gt;In März 1266 in Viterbo entstanden (Glorieux (1933), I, 120).&lt;/p&gt;
+&lt;p&gt;« Traduction achevée en mars 1266 » (Vanhamel (1989), 353).&lt;/p&gt;
+|Creator=Guillelmus de Moerbeka
+|Identifier=4146
+|IsReferencedBy=80653
+,80654
+|Issued=März 1266
+|Availability=ke
+|Title=Lat. Übersetzung: Simplicius, In Praedicamenra
+|PartOf=Lat  Übersetzung: Aristoteles  Categoriae
+|Language=Lat
+|Equivalent_URI=http://data.alcuin.de/work/4146
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Lat  Übersetzung: Aristoteles  Categoriae</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Type=Lateinische Übersetzung: Aristoteles, Praedicamenta (Categoriae)
+|Created=&lt;p&gt;Beendet in März 1266 (Vanhamel (1989), 321).&lt;/p&gt;
+|Creator=Guillelmus de Moerbeka
+|Description=&lt;p&gt;Neue lateinische Übersetzung.&lt;/p&gt;
+|Identifier=26010
+|IsReferencedBy=33096
+|Issued=März 1266
+|Availability=ke
+|Title=Lat. Übersetzung: Aristoteles, Categoriae
+|AdaptionOf=Praedicamenta (Categoriae)
+|Language=Lat
+|Equivalent_URI=http://data.alcuin.de/work/26010
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Anonymus (2619)</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Person
+|Identifier=6801
+|Name=Anonymus (2619)
+|Equivalent_URI=http://data.alcuin.de/philosopher/6801
+|Categories=Person
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Aristoteles latinus</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Person
+|Identifier=263
+|IsReferencedBy=76858
+,76859
+,76860
+,76861
+|VariantNameForThePerson=„Philosophus“
+|Name=Aristoteles latinus
+|SameAs=118650130
+|Equivalent_URI=http://data.alcuin.de/philosopher/263
+|Categories=Person
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>A9600-20-5</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Adaption=Aristoteles: Categoriae (Praedicamenta)
+|Equivalent_URI=http://alcuin.de/resource/A9600-20-5
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>118650130</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{DifferentiatedPerson
+|GndIdentifier=118650130
+|PreferredNameForThePerson=Aristoteles
+|VariantNameForThePerson=Aristoteles, Stagirites
+|Page=Aristoteles
+|DateOfBirth=-0384
+|DateOfDeath=-0322
+|Equivalent_URI=http://d-nb.info/gnd/118650130
+|Categories=DifferentiatedPerson
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>4244154-7</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|GndIdentifier=4244154-7
+|PreferredNameForTheWork=Categoriae
+|VariantNameForTheWork=Kategorien
+,Kategorien oder Lehre von den Grundbegriffen
+|FirstAuthor=118650130
+|Equivalent_URI=http://d-nb.info/gnd/4244154-7
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>58743</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Document
+|BibliographicCitation=Lohr, Charles: Medieval Latin Aristotle Commentaries, 
+in: Traditio 23 (1967), 313-413.
+|Identifier=58743
+|References=Boethius
+|Equivalent_URI=http://data.alcuin.de/reference/58743
+|Categories=Document
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Lat  Übersetzung: Aristoteles  Praedicamenta</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Type=Lateinische Übersetzung Aristoteles Praedicamenta (Categoriae)
+|Creator=Iohannes Argyropulus
+|Description=&lt;p&gt;Vgl. dazu die Angaben bei Cammelli (1941), 184.&lt;/p&gt;
+|Identifier=37048
+|IsReferencedBy=53946
+|Availability=ka
+|Title=Lat. Übersetzung: Aristoteles, Praedicamenta
+|AdaptionOf=Praedicamenta (Categoriae)
+|Language=Lat
+|Equivalent_URI=http://data.alcuin.de/work/37048
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Less thanLat  Übersetzung: Aristoteles  Categoriaegreater than</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Incipit=Isaias omnium nobilissimus primo ponitur loco
+|Created=&lt;p&gt;Vielleicht noch vor dem 510 verfaßten Kategorienkommentar übersetzt (vgl. Guillaumin (1995), S. XVIII).&lt;/p&gt;
+|Creator=Boethius
+|Description=&lt;p&gt;Ed.: Minio-Paluello, L. In: Aristoteles Latinus.&lt;p&gt;
+&lt;p&gt;Erste lateinische Übersetzung der Kategorien (vlg. Guillaumin (1995), S. XVIII).&lt;/p&gt;
+|Identifier=4743
+|IsReferencedBy=37078
+|Issued=ca. 510-522
+|Availability=ed
+|Title=&lt;Lat. Übersetzung: Aristoteles, Categoriae&gt;
+|AdaptionOf=Praedicamenta (Categoriae)
+|Language=Lat
+|SameAs=Aristoteles: Categoriae (Praedicamenta)
+|Equivalent_URI=http://data.alcuin.de/work/4743
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Boethius</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Person
+|Identifier=433
+|IsReferencedBy=58742
+,58743
+|VariantNameForThePerson=Anicius Manilius Torquatus Severinus Boethius
+,Anicius Manlius Severinus Boethius
+|Name=Boethius
+|SameAs=Boethius
+|Equivalent_URI=http://data.alcuin.de/philosopher/433
+|Categories=Person
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Categoriae decem ex Aristotele decerptae</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|AlternateTitle=De decem categoriis
+|Creator=Anonymus (2619)
+|Description=&lt;p&gt;Ed.: PL 32.&lt;p&gt;
+&lt;p&gt;Das Werk wurde fälschlicherweise Augustinus zugeschrieben.&lt;p&gt;
+&lt;p&gt;Wurde von Alcuin in seiner 'De dialectica' benutzt (vgl. Jullien/Perelman (1999), S. 130f.).&lt;/p&gt;
+|Identifier=31668
+|IsReferencedBy=28380
+|Availability=ed
+|Title=Categoriae decem ex Aristotele decerptae
+|AdaptionOf=Praedicamenta (Categoriae)
+|Equivalent_URI=http://data.alcuin.de/work/31668
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Boethius</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Person
+|Name=Boethius
+|VariantNameForThePerson=Anicio Manlio Torquato Severino Boezio
+,Anicius Boethius
+,Anicius Manlius Boethius
+,Anicius Manlius Severinus Boethius
+|Olb=Magister officiorum am Hof Theoderichs des Großen, 
+der ihn dann nach kurzer Gefangenschaft in Pavia 
+(dort entstand die Consolatio philosophiae) 524 hinrichten ließ.
+ – * ca. 480 in Rom, † 524 in Pavia.
+|Equivalent_URI=http://alcuin.de/resource/Boethius
+|Categories=Person
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Guillelmus de Moerbeka</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Person
+|Identifier=797
+|IsReferencedBy=58381
+|VariantNameForThePerson=Guillaume de Moerbeke
+,Wilhelm von Moerbeke
+,Wilhelmus Brabantinus
+|Name=Guillelmus de Moerbeka
+|Equivalent_URI=http://data.alcuin.de/philosopher/797
+|Categories=Person
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Aristoteles: Categoriae (Praedicamenta)</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Expression
+|Title=Aristoteles: Categoriae (Praedicamenta)
+|Creator=Minio-Paluello, Lorenzo
+|Language=Lat
+|Embodiment=Categoriae vel Praedicamenta
+|Equivalent_URI=http://alcuin.de/resource/B2100-140-5_E
+|Categories=Expression
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Praedicamenta (Categoriae)</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Created=&lt;p&gt;Es sind drei mittelalterliche Übersetzungen überliefert: 
+(i) die von Boethius (Anfang des 6. Jahrhunderts); 
+(ii) eine anonyme Übersetzung, die im 9. Jahrhundert entstanden ist und früher fälschlich Boethius zugeschrieben wurde; 
+(iii) die 1266 entstandene Übersetzung des Guillelmus de Moerbecke. Marius Victorinus.&lt;/p&gt;
+|Creator=Aristoteles latinus
+|Identifier=191
+|Issued=Anfang des 6. Jh bzw. 9. Jh. bzw. 1266 (3 lateinische Übersetzungen)
+|Availability=ke
+|Title=Praedicamenta (Categoriae)
+|Adaption=Less thanLat  Übersetzung: Aristoteles  Categoriaegreater than
+,Lat  Übersetzung: Aristoteles  Categoriae
+,Lat  Übersetzung: Aristoteles  Praedicamenta
+|Language=Grc
+|SameAs=4244154-7
+,Q1735826
+,A9600-20-5
+|Equivalent_URI=http://data.alcuin.de/work/191
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Categoriae vel Praedicamenta</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Manifestation
+|Identifier=Aristoteles Latinus I/1-2
+|Title=Categoriae vel Praedicamenta
+|HasPlaceOfPublication=Brüssel
+,Paris
+|HasPublicationYear=1961
+|Equivalent_URI=http://alcuin.de/resource/B2100-140-5_M
+|Categories=Manifestation
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>58742</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Document
+|BibliographicCitation=Guillaumin, J.-Y. (Einl., Hrsg., Übers.): Boèce, 
+Institution arithmétique, Paris 1995.
+|Identifier=58742
+|References=Boethius
+|Equivalent_URI=http://data.alcuin.de/reference/58742
+|Categories=Document
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Iohannes Argyropulus</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Person
+|Description=&lt;p&gt;Byzantinischer Humanist und Übersetzer des Aristoteles.&lt;/p&gt;
+&lt;p&gt;„Kann als einer der Begründer der griechischen Philologie in Italien gelten“ (Böhme (1980)).&lt;/p&gt;
+|Identifier=2850
+|IsReferencedBy=81742
+,81743
+,81744
+,81745
+,81746
+|VariantNameForThePerson=Argyropulus
+,Argyropylus Byzantius
+,Giovanni Argiropulo
+|Name=Iohannes Argyropulus
+|Equivalent_URI=http://data.alcuin.de/philosopher/2850
+|Categories=Person
+}}</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Aristoteles: Categoriae (Praedicamenta)</title>
+		<ns>0</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+{{Work
+|Identifier=B2100-140/5
+|Creator=Boethius
+|Title=Aristoteles: Categoriae (Praedicamenta)
+|Realization=Aristoteles: Categoriae (Praedicamenta)
+|Language=Lat
+|AdaptionOf=A9600-20-5
+|Equivalent_URI=http://alcuin.de/resource/B2100-140-5
+|Categories=Work
+}}</text>
+		</revision>
+	</page>
+</mediawiki>

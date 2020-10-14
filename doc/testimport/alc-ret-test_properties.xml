@@ -1,0 +1,562 @@
+<mediawiki>
+
+	<page>
+		<title>Property:Title</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Adaption</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Identifier</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:AdaptionOf</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:DateOfDeath</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:FirstAuthor</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:BibliographicCitation</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Description</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Olb</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:HasPlaceOfPublication</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Realization</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Name</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:VariantNameForThePerson</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:VariantNameForTheWork</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:AlternateTitle</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Created</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:SameAs</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Page</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:References</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:GndIdentifier</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:PreferredNameForTheWork</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Incipit</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Creator</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:IsReferencedBy</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Availability</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:PartOf</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Language</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Type</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:DateOfBirth</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:HasPublicationYear</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Issued</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:PreferredNameForThePerson</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Text]]
+</text>
+		</revision>
+	</page>
+
+	<page>
+		<title>Property:Embodiment</title>
+		<ns>102</ns>
+		<revision>
+			<timestamp>2020-10-13T14:41:24Z</timestamp>
+			<contributor>
+				<ip>127.0.0.1</ip>
+			</contributor>
+			<comment>Page created by RDF2SMW commandline tool</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve">
+[[Has type::Page]]
+</text>
+		</revision>
+	</page>
+</mediawiki>
