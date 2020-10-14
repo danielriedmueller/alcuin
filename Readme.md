@@ -14,3 +14,6 @@
 
 # Update DB
 - docker-compose exec mediawiki maintenance/update.php --quick
+
+# Mediawiki Snippets
+- MediaWikiServices::getInstance()->getParser()->getFreshParser()

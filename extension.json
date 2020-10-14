@@ -16,7 +16,7 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "main",
-		"onLoadExtensionSchemaUpdates": "main"
+		"SkinBuildSidebar": "main"
 	},
 	"HookHandlers": {
 		"main": {
@@ -33,5 +33,6 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "Alcuin/resources"
 	},
+	"SpecialPages": {},
 	"manifest_version": 2
 }
