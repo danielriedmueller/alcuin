@@ -1,3 +1,6 @@
+# TODO
+- $wgNamespacesToBeSearchedDefault in Extension onExtensionLoad
+
 # LocalSettings.php
 - enableSemantics(); (lokal)
 - $wgMainCacheType = CACHE_NONE;

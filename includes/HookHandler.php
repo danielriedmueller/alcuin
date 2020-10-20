@@ -6,6 +6,14 @@ use MediaWiki\Hook\BeforePageDisplayHook;
 
 class HookHandler implements BeforePageDisplayHook {
 
+    public static function onExtensionLoad(): void {
+        global $wgNamespacesToBeSearchedDefault;
+        $wgNamespacesToBeSearchedDefault = [
+            NS_BAR => true,
+            NS_FOO => true
+        ];
+    }
+
     /**
      * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
      * @param \OutputPage $out

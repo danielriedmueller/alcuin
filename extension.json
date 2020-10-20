@@ -23,6 +23,7 @@
 			"class": "MediaWiki\\Extension\\Alcuin\\HookHandler"
 		}
 	},
+	"callback": "MediaWiki\\Extension\\Alcuin\\HookHandler::onExtensionLoad",
 	"ResourceModules": {
 		"ext.alcuin": {
 			"scripts": "script.js",
@@ -33,6 +34,18 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "Alcuin/resources"
 	},
+	"namespaces": [
+		{
+			"id": 3000,
+			"constant": "NS_FOO",
+			"name": "Gemuese"
+		},
+		{
+			"id": 3001,
+			"constant": "NS_BAR",
+			"name": "Obst"
+		}
+	],
 	"SpecialPages": {},
 	"manifest_version": 2
 }
