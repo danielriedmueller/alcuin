@@ -31,5 +31,21 @@ class Navigation
             'id'     => 'n-forms',
             'active' => ''
         ]];
+        $bar['create'] = [[
+            'text'   => 'Vorlage',
+            'href'   => '/index.php/Spezial:Vorlage_erstellen',
+            'id'     => 'n-create-template',
+            'active' => ''
+        ], [
+            'text'   => 'Formular',
+            'href'   => '/index.php/Spezial:Formular_erstellen',
+            'id'     => 'n-create-form',
+            'active' => ''
+        ], [
+            'text'   => 'Attribut',
+            'href'   => '/index.php/Spezial:Attribut_erstellen',
+            'id'     => 'n-create-attribute',
+            'active' => ''
+        ]];
     }
 }

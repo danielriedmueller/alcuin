@@ -8,6 +8,7 @@
         "mediawiki/chameleon-skin": "^3.0@dev",
         "mediawiki/semantic-media-wiki": "^3.0@dev",
         "mediawiki/page-forms": "dev-master",
+        "mediawiki/semantic-cite": "~2.1",
         "php": ">=7.1.0"
     },
     "authors": [
