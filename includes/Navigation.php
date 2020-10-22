@@ -7,48 +7,48 @@ class Navigation
     public static function enrichSidebarNavigation(&$bar) {
         $bar['navigation'] = [[
             'text'   => 'Alle Seiten',
-            'href'   => '/index.php/Special:AllPages',
+            'href'   => '/index.php/Spezial:Alle_Seiten',
             'id'     => 'n-pages',
             'active' => ''
         ], [
             'text'   => 'Alle Kategorien',
-            'href'   => '/index.php/Special:Categories',
+            'href'   => '/index.php/Spezial:Kategorien',
             'id'     => 'n-categories',
             'active' => ''
         ], [
             'text'   => 'Alle Attribute',
-            'href'   => '/index.php/Special:Properties',
+            'href'   => '/index.php/Spezial:Attribute',
             'id'     => 'n-attributes',
             'active' => ''
         ], [
             'text'   => 'Alle Vorlagen',
-            'href'   => '/index.php/Special:Templates',
+            'href'   => '/index.php/Spezial:Vorlagen',
             'id'     => 'n-templates',
             'active' => ''
         ], [
             'text'   => 'Alle Formulare',
-            'href'   => '/index.php/Special:Forms',
+            'href'   => '/index.php/Spezial:Formulare',
             'id'     => 'n-forms',
             'active' => ''
         ]];
         $bar['erstellen'] = [[
             'text'   => 'Vorlage',
-            'href'   => '/index.php/Special:CreateTemplate',
+            'href'   => '/index.php/Spezial:Vorlage_erstellen',
             'id'     => 'n-create-template',
             'active' => ''
         ], [
             'text'   => 'Formular',
-            'href'   => '/index.php/Special:CreateForm',
+            'href'   => '/index.php/Spezial:Formular_erstellen',
             'id'     => 'n-create-form',
             'active' => ''
         ], [
             'text'   => 'Klasse',
-            'href'   => '/index.php/Special:CreateClass',
+            'href'   => '/index.php/Special:Klasse_erstellen',
             'id'     => 'n-create-class',
             'active' => ''
         ], [
             'text'   => 'Attribut',
-            'href'   => '/index.php/Special:CreateProperty',
+            'href'   => '/index.php/Spezial:Attribut_erstellen',
             'id'     => 'n-create-attribute',
             'active' => ''
         ]];
