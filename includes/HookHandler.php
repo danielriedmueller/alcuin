@@ -8,10 +8,30 @@ class HookHandler implements BeforePageDisplayHook {
 
     public static function onExtensionLoad(): void {
         global $wgNamespacesToBeSearchedDefault;
+        global $wgHiddenPrefs;
+        global $egChameleonLayoutFile;
+        global $wgShowExceptionDetails;
+        global $wgCacheDirectory;
+        global $wgMainCacheType;
+        global $wgEnableParserCache;
+        global $wgCachePages;
+        global $wgResourceLoaderMaxage;
+
         $wgNamespacesToBeSearchedDefault = [
             NS_BAR => true,
             NS_FOO => true
         ];
+
+        $wgHiddenPrefs[] = 'skin';
+        $egChameleonLayoutFile= dirname(__DIR__, 1) . '/layouts/standard.xml';
+        $wgShowExceptionDetails = true;
+        $wgCacheDirectory = false;
+        $wgMainCacheType = CACHE_NONE;
+        $wgEnableParserCache = false;
+        $wgCachePages = false;
+        $wgResourceLoaderMaxage = 0;
+
+        enableSemantics();
     }
 
     /**
