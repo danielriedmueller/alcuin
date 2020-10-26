@@ -27,7 +27,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<grid class="flex-fill">
 		<row>
 			<cell class="flex-grow-1 headline">
-				<component type="Html"><div class="title"><a href="/index.php/Hauptseite">Alcuin</a></div></component>
+				<component type="Html"><div class="title"><a href="/index.php/Main_Page">Alcuin</a></div></component>
 				<component type="Html"><div class="alcuin-logo"></div></component>
 				<component type="Html"><div class="subtitle">Infothek der Scholastik</div></component>
 				<component type="Logo" addLink="yes"/>

@@ -1,3 +1,9 @@
+# 4 Hauptinstanzen
+- Orginalwerk
+- Orginalautor (mehrere) 
+- Edition (mehrere)
+- Editor (mehrere)
+
 # Datentyp: Verbund
 Beispiel Event
 <pre>

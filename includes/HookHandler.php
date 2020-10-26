@@ -16,6 +16,7 @@ class HookHandler implements BeforePageDisplayHook {
         global $wgEnableParserCache;
         global $wgCachePages;
         global $wgResourceLoaderMaxage;
+        global $wgRestrictDisplayTitle;
 
         $wgNamespacesToBeSearchedDefault = [
             NS_BAR => true,
@@ -30,6 +31,7 @@ class HookHandler implements BeforePageDisplayHook {
         $wgEnableParserCache = false;
         $wgCachePages = false;
         $wgResourceLoaderMaxage = 0;
+        $wgRestrictDisplayTitle = false;
 
         enableSemantics();
     }
@@ -40,7 +42,7 @@ class HookHandler implements BeforePageDisplayHook {
      * @param \Skin $skin
      */
     public function onBeforePageDisplay( $out, $skin ): void {
-        if ($out->getPageTitle() === "Hauptseite") {
+        if ($out->getPageTitle() === "Main Page") {
             $out->addWikiTextAsInterface(
                 '{{#forminput:form=|size=|default value=|button text=|query string=|autocomplete on category=|autocomplete on namespace=|placeholder=|namespace}}'
             );
