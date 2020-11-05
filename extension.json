@@ -16,7 +16,8 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "main",
-		"SkinBuildSidebar": "main"
+		"SkinBuildSidebar": "main",
+		"PageContentSaveComplete": "main"
 	},
 	"HookHandlers": {
 		"main": {
