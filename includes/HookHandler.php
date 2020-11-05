@@ -58,7 +58,7 @@ class HookHandler implements BeforePageDisplayHook {
         $movePageFactory = MediaWikiServices::getInstance()->getMovePageFactory();
         $newPage = Title::makeTitle($title->getNamespace(), "Q" . $id);
         $movePage = $movePageFactory->newMovePage( $title, $newPage );
-        $movePage->move($user);
+        $movePage->move($user, null, false);
 
         return true;
     }
