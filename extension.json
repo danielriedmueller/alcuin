@@ -17,7 +17,9 @@
 	"Hooks": {
 		"BeforePageDisplay": "main",
 		"SkinBuildSidebar": "main",
-		"PageContentSaveComplete": "main"
+		"PageSaveComplete": "main",
+		"EditFormPreloadText": "main",
+		"PageForms::WritePageData": "main"
 	},
 	"HookHandlers": {
 		"main": {
