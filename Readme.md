@@ -5,10 +5,14 @@
 - enableSemantics();
 - $wgAllowDisplayTitle = true; // defaults to true
 - $wgRestrictDisplayTitle = false; // defaults to true
-- $wgDisplayTitleHideSubtitle = true;
+- $wgPageFormsUseDisplayTitle = true;
+- $wgPageFormsAutocompleteOnAllChars = true;
+- $wgDisplayTitleHideSubtitle = false;
 - $wgShowExceptionDetails = true;
 - $wgHiddenPrefs[] = 'skin';
 - $egChameleonLayoutFile= __DIR__ . '/extensions/Alcuin/layouts/standard.xml';
+- $wgPageFormsRenameMainEditTab = true;
+- $wgPageFormsRenameEditTabs = true;
 
 # Skin
 - wfLoadSkin( 'chameleon' );
