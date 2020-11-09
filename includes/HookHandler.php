@@ -55,7 +55,8 @@ class HookHandler implements BeforePageDisplayHook {
         RevisionRecord $revisionRecord,
         EditResult $editResult
     ): bool {
-        $alcuinNs = 3000;
+        //$alcuinNs = 3000;
+        $alcuinNs = 0;
         if ($wikiPage->getTitle()->getNamespace() !== $alcuinNs) return true;
 
         ArticleSave::movePage($wikiPage, $user);
