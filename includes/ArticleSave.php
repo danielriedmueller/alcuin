@@ -25,7 +25,7 @@ class ArticleSave
 
         $id = $wikiPage->getId();
         $movePageFactory = MediaWikiServices::getInstance()->getMovePageFactory();
-        $newTitle = Title::makeTitle($title->getNamespace(), "AL" . $id);
+        $newTitle = Title::makeTitle($title->getNamespace(), $title . "_AL" . $id);
 
         $movePage = $movePageFactory->newMovePage($title, $newTitle);
         $movePage->move($user->getInstanceForUpdate(), null, false);

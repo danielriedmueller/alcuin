@@ -74,6 +74,8 @@ class HookHandler implements BeforePageDisplayHook {
 
     public static function onPageForms__WritePageData($form, Title $title, &$content): void
     {
-        ArticleSave::prependDisplayTitleInForm($content, $title);
+        if ($title->getArticleID() === 0) {
+            ArticleSave::prependDisplayTitleInForm($content, $title);
+        }
     }
 }
