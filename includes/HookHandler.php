@@ -42,6 +42,8 @@ class HookHandler implements BeforePageDisplayHook {
      *
      * Change page title to db id with prefix.
      *
+     * Applies only if page is in Alcuin namespace (3000).
+     *
      * @return boolean
      * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageContentSaveComplete
      */
@@ -53,6 +55,9 @@ class HookHandler implements BeforePageDisplayHook {
         RevisionRecord $revisionRecord,
         EditResult $editResult
     ): bool {
+        $alcuinNs = 3000;
+        if ($wikiPage->getTitle()->getNamespace() !== $alcuinNs) return true;
+
         ArticleSave::movePage($wikiPage, $user);
 
         // Necessary for redirect to moved page.

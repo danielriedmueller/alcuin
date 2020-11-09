@@ -27,6 +27,13 @@
 		}
 	},
 	"callback": "MediaWiki\\Extension\\Alcuin\\HookHandler::onExtensionLoad",
+	"namespaces": [
+		{
+			"id": 3000,
+			"constant": "NS_ALC",
+			"name": "Alcuin"
+		}
+	],
 	"ResourceModules": {
 		"ext.alcuin": {
 			"scripts": "script.js",

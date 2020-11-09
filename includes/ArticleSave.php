@@ -18,10 +18,11 @@ class ArticleSave
 
     /**
      * Moves created page with id as title.
-     * Redirects to new page
+     * Redirects to new page.
      */
     public static function movePage(WikiPage $wikiPage, UserIdentity $user): void {
         $title = $wikiPage->getTitle();
+
         $id = $wikiPage->getId();
         $movePageFactory = MediaWikiServices::getInstance()->getMovePageFactory();
         $newTitle = Title::makeTitle($title->getNamespace(), "AL" . $id);
