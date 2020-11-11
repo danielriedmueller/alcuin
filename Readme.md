@@ -26,3 +26,7 @@
 
 # Mediawiki Snippets
 - MediaWikiServices::getInstance()->getParser()->getFreshParser()
+
+# Elastic search vm memory
+- pactl load-module module-detect
+- sysctl -w vm.max_map_count=262144
