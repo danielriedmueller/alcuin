@@ -36,8 +36,7 @@
 	],
 	"ResourceModules": {
 		"ext.alcuin": {
-			"scripts": "script.js",
-			"styles": "style.less"
+			"scripts": "script.js"
 		}
 	},
 	"ResourceFileModulePaths": {

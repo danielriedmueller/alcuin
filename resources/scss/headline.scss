@@ -1,0 +1,41 @@
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: transparent url($imgDir + "/logo_history_of_philosophy.png") left top no-repeat;
+  background-size: $logo-size;
+  padding-left: $logo-size + $spacing;
+  height: $logo-size;
+
+  border-bottom: 1px solid $alcuin-grey;
+
+  > *:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  #p-logo img {
+    height: $logo-size;
+  }
+
+  .title {
+    font-family: var(--font-family-sans-serif);
+    color: var(--blue);
+    padding-right: 10px;
+    font-size: 60px;
+
+    a:hover, a:active, a:focus {
+      text-decoration: none;
+    }
+  }
+
+  .subtitle {
+    color: var(--gray);
+    margin-left: 10px;
+    font-size: 20px;
+    border-left: 50px solid var(--gray);
+    padding-top: $spacing;
+    padding-left: 10px;
+  }
+}
+

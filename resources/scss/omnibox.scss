@@ -1,0 +1,18 @@
+.omnibox {
+
+  #searchform {
+    padding: 50px 0;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  input[name="search"] {
+    border-radius: 50px;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+  }
+
+  .input-group-append {
+    display: none;
+  }
+}

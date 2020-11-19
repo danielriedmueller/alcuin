@@ -1,0 +1,12 @@
+.main > .row:first-child > .col:first-child {
+  background-color: transparent;
+  border-right: 1px solid $alcuin-grey;
+}
+.p-navbar {
+  background-color: transparent;
+}
+
+.p-navbar.collapsible[role='navigation'] .navbar-nav {
+  flex-direction: column;
+  text-align: right;
+}

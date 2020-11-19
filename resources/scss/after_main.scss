@@ -1,0 +1,26 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import "headline";
+@import "content";
+@import "navbar";
+@import "omnibox";
+
+/**
+@ur-color: #9d9d9c;
+@alcuin-orange: #ec6200;
+@alcuin-blue: #314874;
+@alcuin-grey: #999;
+@spacing: 12px;
+ */
+
+body {
+  font-family: georgia;
+}
+
+.flex {
+  display: flex;
+}
+
+.main > .row:nth-child(2) > .col:first-child {
+  padding-left: 75px;
+}

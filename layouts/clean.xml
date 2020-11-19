@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-<?xml-model href="https://cmln.github.io/chameleon/schema/2.0/layout.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://ProfessionalWiki.github.io/chameleon/schema/1.0/layout.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 This file is part of the MediaWiki skin Chameleon.
 
 @copyright 2013 - 2019, Stephan Gambke
@@ -18,74 +18,44 @@ details.
 
 You should have received a copy of the GNU General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
-
+M
 @author Stephan Gambke
-@since 1.0
+@since 1.1
 @ingroup Skins
 -->
 <structure xmlns="https://ProfessionalWiki.github.io/chameleon/schema/3.0/layout.rng">
-	<grid class="flex-fill">
-		<row>
-			<cell class="flex-grow-1 headline">
-				<component type="Html"><div class="title"><a href="/index.php/Main_Page">Alcuin</a></div></component>
-				<component type="Html"><div class="alcuin-logo"></div></component>
-				<component type="Html"><div class="subtitle">Infothek der Scholastik</div></component>
-				<component type="Logo" addLink="yes"/>
-			</cell>
-		</row>
 
-		<row>
-			<cell class="ml-auto col-12 col-cmln">
+	<component type="Container" class="headline">
+		<component type="Html"><div class="title"><a href="/index.php/Main_Page">Alcuin</a></div></component>
+		<component type="Html"><div class="subtitle">Infothek der Scholastik</div></component>
+		<component type="NavbarHorizontal" >
+			<component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
+			<component type="PersonalTools" position="right"/>
+		</component>
+	</component>
 
-				<row>
-					<cell>
-						<component type="PersonalTools" hideNewtalkNotifier="yes" class="pull-right"/>
-					</cell>
-				</row>
-
-			</cell>
-		</row>
-
+	<grid class="flex-fill flex-row flex main">
 		<row>
 			<cell>
-				<component type="NavbarHorizontal" class="mb-3 mt-2 mt-cmln-0">
-					<component type="NavMenu"/>
+				<component type="NavbarHorizontal" >
+					<modification type="ShowOnlyFor" permission="edit"/>
+					<modification type="Sticky"/>
+					<component type="NavMenu" flatten="navigation"/>
 					<component type="Menu" message="secondary-menu"/>
 				</component>
 			</cell>
 		</row>
-
 		<row>
 			<cell>
-				<component type="PageTools" class="mb-3"/>
-			</cell>
-		</row>
-
-		<row>
-			<cell class="col-auto mx-auto">
+				<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Edition und Autoren." position="center" />
+				<component type="MainContent" class="main-content"/>
 				<component type="SiteNotice"/>
-			</cell>
-		</row>
-
-		<row>
-			<cell class="col-auto mx-auto">
-				<!--FIXME: Is this a good place to put the notifier? Vector et al. put it inside the MainContent under siteSub and contentSub -->
-				<component type="NewtalkNotifier" class="mb-3"/>
-			</cell>
-		</row>
-		<row>
-			<cell>
-				<component type="SearchBar" buttons="go" class="pull-right"/>
-			</cell>
-		</row>
-		<row>
-			<cell>
-				<component type="MainContent"/>
 			</cell>
 		</row>
 	</grid>
 
-	<grid class="mb-2 mt-4">
+	<grid class="mb-2 mt-4" mode="fluid">
+		<modification type="ShowOnlyFor" permission="edit"/>
 		<row>
 			<cell>
 				<component type="NavbarHorizontal" collapsible="no" class="small mb-2" >
