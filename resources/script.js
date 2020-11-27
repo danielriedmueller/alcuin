@@ -8,17 +8,19 @@ $(document).ready(function(){
         .append(jobsCount)
     ;
 
-    mw.loader.using( 'mediawiki.api', function () {
-        (new mw.Api()).get( {
-            action: 'query',
-            meta: 'siteinfo',
-            siprop: 'statistics'
-        }).done( function ( data ) {
-            const stats = data.query.statistics;
-            pagesCount.text('Seiten: ' + stats.pages);
-            jobsCount.text('Jobs: ' + stats.jobs);
+    setInterval(function () {
+        mw.loader.using( 'mediawiki.api', function () {
+            (new mw.Api()).get( {
+                action: 'query',
+                meta: 'siteinfo',
+                siprop: 'statistics'
+            }).done( function ( data ) {
+                const stats = data.query.statistics;
+                pagesCount.text('Seiten: ' + stats.pages);
+                jobsCount.text('Jobs: ' + stats.jobs);
 
-            $('#p-navigation').before(infoEl)
-        });
-    });
+                $('#p-navigation').before(infoEl)
+            });
+        })
+    }, 1000);
 });
