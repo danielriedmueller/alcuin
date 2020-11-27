@@ -30,6 +30,11 @@ class Navigation
             'href'   => '/index.php/Special:Forms',
             'id'     => 'n-forms',
             'active' => ''
+        ], [
+            'text'   => 'Visualisierung / Pagegraph',
+            'href'   => '/index.php/Network',
+            'id'     => 'n-network',
+            'active' => ''
         ]];
         $bar['erstellen'] = [[
             'text'   => 'Vorlage',
