@@ -7,6 +7,7 @@
     "require": {
         "mediawiki/chameleon-skin": "^3.0@dev",
         "mediawiki/semantic-media-wiki": "^3.0@dev",
+        "professional-wiki/network": "~1.3",
         "php": ">=7.1.0"
     },
     "authors": [
