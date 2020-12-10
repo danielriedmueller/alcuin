@@ -37,7 +37,7 @@ M
 	<grid class="flex-fill flex-row flex main">
 		<row>
 			<cell>
-				<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Edition und Autoren." position="center" />
+				<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Editionen und Autoren." position="center" />
 				<component type="AlcuinMainContent" class="main-content"/>
 			</cell>
 		</row>
