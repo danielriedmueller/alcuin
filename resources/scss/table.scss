@@ -16,5 +16,13 @@ table.wikitable {
     td {
       border-left: 1px solid $alcuin-anthrazit;
     }
+
+    a {
+      color: $alcuin-orange !important;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
   }
 }
