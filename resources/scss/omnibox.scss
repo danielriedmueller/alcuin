@@ -14,7 +14,7 @@
     text-align: center;
 
     &:focus, &:hover {
-      box-shadow: 0 0 10px 0 $alcuin-orange;
+      box-shadow: 0 0 30px 10px $alcuin-orange;
     }
 
     padding: $spacing;
@@ -26,6 +26,7 @@
 }
 
 .suggestions {
+  font-size: 1rem !important;
   background-color: transparent;
   color: $font-color-dark;
   display: block !important;
@@ -51,4 +52,9 @@
       color: $font-color-bright;
     }
   }
+}
+
+*::placeholder {
+  /* modern browser */
+  color: $font-color-dark !important;
 }

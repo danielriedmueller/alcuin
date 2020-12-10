@@ -1,6 +1,6 @@
 table.wikitable {
   border: 0;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-radius: $border-radius;
   background-color: $alcuin-creme;
 
@@ -15,7 +15,6 @@ table.wikitable {
 
     td {
       border-left: 1px solid $alcuin-anthrazit;
-      padding-left: $spacing-s;
     }
   }
 }
