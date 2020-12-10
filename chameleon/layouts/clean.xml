@@ -37,41 +37,19 @@ M
 	<grid class="flex-fill flex-row flex main">
 		<row>
 			<cell>
+				<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Edition und Autoren." position="center" />
+				<component type="AlcuinMainContent" class="main-content"/>
+			</cell>
+		</row>
+		<row>
+			<modification type="ShowOnlyFor" permission="edit"/>
+			<cell>
 				<component type="NavbarHorizontal" >
-					<modification type="ShowOnlyFor" permission="edit"/>
 					<modification type="Sticky"/>
 					<component type="NavMenu" flatten="navigation"/>
 					<component type="Menu" message="secondary-menu"/>
-				</component>
-			</cell>
-		</row>
-		<row>
-			<cell>
-				<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Edition und Autoren." position="center" />
-				<component type="MainContent" class="main-content"/>
-				<component type="SiteNotice"/>
-			</cell>
-		</row>
-	</grid>
-
-	<grid class="mb-2 mt-4" mode="fluid">
-		<modification type="ShowOnlyFor" permission="edit"/>
-		<row>
-			<cell>
-				<component type="NavbarHorizontal" collapsible="no" class="small mb-2" >
 					<component type="Toolbox" flatten="no" class="dropup"/>
-					<component type="LangLinks" flatten="no" class="dropup"/>
 				</component>
-			</cell>
-		</row>
-
-		<row>
-			<cell>
-				<component type="FooterInfo"/>
-				<component type="FooterPlaces"/>
-			</cell>
-			<cell>
-				<component type="FooterIcons" class="justify-content-end"/>
 			</cell>
 		</row>
 	</grid>

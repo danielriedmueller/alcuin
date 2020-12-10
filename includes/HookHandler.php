@@ -12,8 +12,9 @@ use MediaWiki\Storage\EditResult;
 class HookHandler implements BeforePageDisplayHook {
 
     public static function onExtensionLoad(): void {
-      $alcuin = new Alcuin();
-      $alcuin->init();
+        // Wird auch jedes mal bei einem API request ausgeführt
+        //$alcuin = new Alcuin();
+        //$alcuin->init();
     }
 
     /**
@@ -24,11 +25,6 @@ class HookHandler implements BeforePageDisplayHook {
      */
     public function onBeforePageDisplay( $out, $skin ): void
     {
-        if ($out->getPageTitle() === "Main Page") {
-            $out->addWikiTextAsInterface(
-                '{{#forminput:form=|size=|default value=|button text=|query string=|autocomplete on category=|autocomplete on namespace=|placeholder=|namespace}}'
-            );
-        }
         $out->addModules( 'ext.alcuin' );
     }
 

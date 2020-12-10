@@ -6,6 +6,11 @@ class Navigation
 {
     public static function enrichSidebarNavigation(&$bar) {
         $bar['navigation'] = [[
+            'text'   => 'Bearbeiten',
+            'href'   => '/index.php/Alcuin:Bearbeiten',
+            'id'     => 'n-edit-form-chooser',
+            'active' => ''
+        ],[
             'text'   => 'Alle Seiten',
             'href'   => '/index.php/Special:AllPages',
             'id'     => 'n-pages',

@@ -2,12 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background: transparent url($imgDir + "/logo_history_of_philosophy.png") left top no-repeat;
-  background-size: $logo-size;
-  padding-left: $logo-size + $spacing;
+  background: transparent url($imgDir + "/Carafa_Kapelle;_Triumph_des_Hl_Thomas-190px.jpeg") left top repeat-x;
+  padding-left: $logo-size + $spacing-l;
   height: $logo-size;
-
-  border-bottom: 1px solid $alcuin-grey;
+  box-shadow: 0 0 20px 5px #000;
 
   > *:last-child {
     flex-grow: 1;
@@ -19,23 +17,25 @@
   }
 
   .title {
-    font-family: var(--font-family-sans-serif);
-    color: var(--blue);
+    font-family: $font-family-serif;
+    color: $font-color-bright;
     padding-right: 10px;
-    font-size: 60px;
+    font-size: 90px;
+    border-right: 50px solid $alcuin-orange;
+    text-shadow: 2px 2px $font-color-dark;
 
     a:hover, a:active, a:focus {
-      text-decoration: none;
+      text-decoration: none !important;
     }
   }
 
   .subtitle {
-    color: var(--gray);
-    margin-left: 10px;
+    color: $font-color-bright;
+    margin-left: $spacing-s;
     font-size: 20px;
-    border-left: 50px solid var(--gray);
-    padding-top: $spacing;
-    padding-left: 10px;
+    border-left: 50px solid $alcuin-anthrazit;
+    padding: $spacing $spacing-s;
+    text-shadow: 2px 2px $font-color-dark;
   }
 }
 

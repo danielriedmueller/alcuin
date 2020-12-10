@@ -8,6 +8,7 @@ $(document).ready(function(){
         .append(jobsCount)
     ;
 
+    /*
     setInterval(function () {
         mw.loader.using( 'mediawiki.api', function () {
             (new mw.Api()).get( {
@@ -23,4 +24,5 @@ $(document).ready(function(){
             });
         })
     }, 1000);
+     */
 });

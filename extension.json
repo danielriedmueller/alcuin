@@ -12,7 +12,8 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\Alcuin\\": "includes/"
+		"MediaWiki\\Extension\\Alcuin\\": "includes/",
+		"Skins\\Chameleon\\Components\\": "chameleon/Components"
 	},
 	"Hooks": {
 		"BeforePageDisplay": "main",

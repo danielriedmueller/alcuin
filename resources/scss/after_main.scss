@@ -1,26 +1,59 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import "layout";
 @import "headline";
 @import "content";
 @import "navbar";
 @import "omnibox";
+@import "main";
+@import "table";
+@import "dropdown";
 
-/**
-@ur-color: #9d9d9c;
-@alcuin-orange: #ec6200;
-@alcuin-blue: #314874;
-@alcuin-grey: #999;
-@spacing: 12px;
- */
+@font-face {
+  font-family: "Augusta";
+  src: url("extensions/Alcuin/resources/fonts/augusta/Augusta.woff2") format("woff2");
+}
 
-body {
-  font-family: georgia;
+@font-face {
+  font-family: "DeutschGothic";
+  src: url("extensions/Alcuin/resources/fonts/deutsch_gothic/Deutsch.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ruritania";
+  src: url("extensions/Alcuin/resources/fonts/ruritania/Ruritania.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("extensions/Alcuin/resources/fonts/notosans/NotoSans-Regular.woff2") format("woff2");
 }
 
 .flex {
   display: flex;
+  justify-content: space-between;
 }
 
-.main > .row:nth-child(2) > .col:first-child {
-  padding-left: 75px;
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $alcuin-anthrazit;
+  color: #e0fbfc;
+}
+
+a {
+  color: $font-color-bright !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1#firstHeading {
+  font-family: $font-family-serif;
+  border: none;
+  color: $font-color-bright;
+}
+
+.container {
+  padding-left: $spacing-s;
+  padding-right: $spacing-s;
 }

@@ -1,0 +1,11 @@
+table.wikitable {
+  border: 0;
+
+  > tr, > * > tr {
+    th, td {
+      border: 0;
+      background-color: $alcuin-creme;
+      color: $font-color-dark;
+    }
+  }
+}

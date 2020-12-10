@@ -1,0 +1,7 @@
+.main.container.flex {
+  padding-top: $spacing-l;
+
+  .row:first-child {
+    flex-grow: 1;
+  }
+}

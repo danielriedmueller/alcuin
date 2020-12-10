@@ -1,18 +1,51 @@
 .omnibox {
-
   #searchform {
-    padding: 50px 0;
     width: 500px;
     margin: 0 auto;
   }
 
   input[name="search"] {
-    border-radius: 50px;
-    border-top-right-radius: 50px !important;
-    border-bottom-right-radius: 50px !important;
+    background-color: $alcuin-creme;
+    color: $font-color-dark;
+    border-radius: $spacing-s !important;
+    border: none;
+
+    &:focus, &:hover {
+      box-shadow: 0 0 10px 0 $alcuin-orange;
+    }
+
+    padding: $spacing;
   }
 
   .input-group-append {
     display: none;
+  }
+}
+
+.suggestions {
+  background-color: transparent;
+  color: $font-color-dark;
+  display: block !important;
+  margin-top: -13px !important;
+  border: 1px solid $alcuin-orange !important;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border-top: 0 !important;
+
+  .suggestions-results, .suggestions-special {
+    padding: 0.375em $spacing;
+    color: $font-color-dark;
+    border: none !important;
+    background-color: $alcuin-creme;
+  }
+
+  .suggestions-special {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    &.suggestions-result-current {
+      background-color: #3d5a80;
+      color: $font-color-bright;
+    }
   }
 }

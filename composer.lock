@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cb3743dfbd4e5284e5ae897a12745e5",
+    "content-hash": "2743ffc8abdee8cac9ed797b328c07de",
     "packages": [
         {
             "name": "composer/installers",
@@ -687,12 +687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ProfessionalWiki/chameleon.git",
-                "reference": "e9a588f4cae19015106c590cdccfb42c1254e7cd"
+                "reference": "b6bc2a06e2d0c80e1e28e81b78b2ace26c946832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProfessionalWiki/chameleon/zipball/e9a588f4cae19015106c590cdccfb42c1254e7cd",
-                "reference": "e9a588f4cae19015106c590cdccfb42c1254e7cd",
+                "url": "https://api.github.com/repos/ProfessionalWiki/chameleon/zipball/b6bc2a06e2d0c80e1e28e81b78b2ace26c946832",
+                "reference": "b6bc2a06e2d0c80e1e28e81b78b2ace26c946832",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-11-09T11:43:01+00:00"
+            "time": "2020-11-26T16:59:40+00:00"
         },
         {
             "name": "mediawiki/parser-hooks",
@@ -884,12 +884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SemanticMediaWiki/SemanticMediaWiki.git",
-                "reference": "a42af7a2073e3489412d7e597a273f9897a515df"
+                "reference": "a588d7efedbc575dac9dbfa08cde96f07f687e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SemanticMediaWiki/SemanticMediaWiki/zipball/a42af7a2073e3489412d7e597a273f9897a515df",
-                "reference": "a42af7a2073e3489412d7e597a273f9897a515df",
+                "url": "https://api.github.com/repos/SemanticMediaWiki/SemanticMediaWiki/zipball/a588d7efedbc575dac9dbfa08cde96f07f687e6e",
+                "reference": "a588d7efedbc575dac9dbfa08cde96f07f687e6e",
                 "shasum": ""
             },
             "require": {
@@ -981,7 +981,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-16T14:21:47+00:00"
+            "time": "2020-11-30T16:08:55+00:00"
         },
         {
             "name": "onoi/blob-store",
@@ -1435,6 +1435,73 @@
                 }
             ],
             "time": "2020-06-22T06:29:36+00:00"
+        },
+        {
+            "name": "professional-wiki/network",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ProfessionalWiki/Network.git",
+                "reference": "3d92b0723b6967ab85e0593e4b443fde329d4484"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProfessionalWiki/Network/zipball/3d92b0723b6967ab85e0593e4b443fde329d4484",
+                "reference": "3d92b0723b6967ab85e0593e4b443fde329d4484",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0.1",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.29",
+                "vimeo/psalm": "dev-master"
+            },
+            "type": "mediawiki-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Professional.Wiki",
+                    "email": "info@professional.wiki",
+                    "homepage": "https://professional.wiki",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Jeroen De Dauw",
+                    "email": "jeroendedauw@gmail.com",
+                    "homepage": "https://www.entropywins.wtf",
+                    "role": "Creator and lead developer"
+                }
+            ],
+            "description": "MediaWiki extension for adding interactive network visualizations to your wiki pages",
+            "homepage": "https://github.com/ProfessionalWiki/Network",
+            "keywords": [
+                "VISJS",
+                "chart",
+                "dynamic",
+                "force-directed graph",
+                "graph",
+                "incoming links",
+                "interactive",
+                "links",
+                "mediawiki",
+                "network",
+                "outgoing links",
+                "pages",
+                "visualization",
+                "what links here"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/JeroenDeDauw",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-08T14:39:44+00:00"
         },
         {
             "name": "psr/log",
