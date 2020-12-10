@@ -1,7 +1,7 @@
 table.wikitable {
   border: 0;
   border-collapse: separate;
-  border-radius: $spacing-s;
+  border-radius: $border-radius;
   background-color: $alcuin-creme;
 
   > tr, > * > tr {
@@ -9,18 +9,12 @@ table.wikitable {
       border: 0;
       background-color: transparent;
       color: $font-color-dark;
-      padding: $spacing-s / 2 0 0 0;
+      padding: $spacing-xs;
       text-align: left;
     }
 
-    th {
-      border-radius: $spacing-s;
-      background-color: $alcuin-anthrazit;
-      color: $font-color-bright;
-    }
-
     td {
-      border-right: 1px solid $alcuin-anthrazit;
+      border-left: 1px solid $alcuin-anthrazit;
       padding-left: $spacing-s;
     }
   }

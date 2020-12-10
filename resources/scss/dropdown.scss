@@ -1,7 +1,8 @@
 .dropdown-menu {
   background-color: $alcuin-creme;
-  border-radius: $spacing-s;
+  border-radius: $border-radius;
+
   a {
-    color: $font-color-dark;
+    color: $font-color-dark !important;
   }
 }

@@ -7,8 +7,11 @@
   input[name="search"] {
     background-color: $alcuin-creme;
     color: $font-color-dark;
-    border-radius: $spacing-s !important;
+    border-radius: $border-radius !important;
     border: none;
+    font-family: $font-family-serif;
+    font-size: 20px;
+    text-align: center;
 
     &:focus, &:hover {
       box-shadow: 0 0 10px 0 $alcuin-orange;
