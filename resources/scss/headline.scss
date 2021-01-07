@@ -37,5 +37,13 @@
     padding: $spacing $spacing-s;
     text-shadow: 2px 2px $font-color-dark;
   }
+
+  a {
+    color: $alcuin-creme !important;
+
+    &:hover {
+      color: $alcuin-orange !important;
+    }
+  }
 }
 

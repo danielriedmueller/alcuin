@@ -3,6 +3,7 @@ table.wikitable {
   border-collapse: collapse;
   border-radius: $border-radius;
   background-color: $alcuin-creme;
+  font-size: $font-size-body;
 
   > tr, > * > tr {
     th, td {
@@ -13,8 +14,16 @@ table.wikitable {
       text-align: left;
     }
 
+    th {
+      background-color: $alcuin-anthrazit;
+      color: $font-color-bright;
+    }
+
     td {
-      border-left: 1px solid $alcuin-anthrazit;
+      display: flex;
+      flex-direction: column;
+      max-height: 20px;
+      overflow: hidden;
     }
 
     a {

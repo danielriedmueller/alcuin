@@ -1,3 +1,19 @@
+.mw-parser-output > table.wikitable {
+  > tbody > tr > td {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: -2px;
+    margin-top: 1px;
+
+    > table:nth-child(n+4) {
+      display: none;
+    }
+  }
+}
+
+/*
 @import "variables";
 @import "layout";
 @import "headline";
@@ -42,15 +58,15 @@ body {
 }
 
 a {
-  color: $font-color-bright !important;
+  color: $alcuin-orange !important;
 
   &:hover {
-    color: $alcuin-orange !important;
+    color: $alcuin-orange-dark !important;
   }
 }
 
 h1#firstHeading {
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
   border: none;
   color: $font-color-bright;
   margin: 0;
@@ -60,3 +76,5 @@ h1#firstHeading {
   padding-left: $spacing-s;
   padding-right: $spacing-s;
 }
+
+ */
