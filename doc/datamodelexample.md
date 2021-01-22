@@ -14,7 +14,7 @@ Beispiel Event
 </pre>
 
 # Vorlage
-Beispiel Person
+### Beispiel Person
 <pre>
 <code>
 <noinclude>
@@ -41,6 +41,33 @@ Edit the page to see the template text.
 </includeonly>
 </code>
 </pre>
+
+### WorkListQuery
+<code>
+{{#ask:
+ [[Maker::{{{1}}}]] | ?AlternateTitle | ?Date | ?Status | ?Availability | ?PartOf
+}}
+</code>
+
+### TranscludedPageView
+<code>
+{{:{{{1}}}}}
+</code>
+
+### TranscludedWorkView
+<code>
+<ul>
+{{#if:{{{Title}}}|<li>Titel: [[{{{Title}}}]]</li>|}} {{#if:{{{Date}}}|<li>Datum: {{{Date}}}</li>|}}
+    {{#if:{{{Created}}}|<li>Erstellt am: {{{Created}}}</li>|}} {{#if:{{{Status}}}|<li>Status: {{{Status}}}</li>|}}
+    {{#if:{{{Description}}}|<li>Beschreibung: {{{Description}}}</li>|}} {{#if:{{{Type}}}|<li>Typ: {{{Type}}}</li>|foo}}
+    {{#if:{{{Availability}}}|<li>Verfügbarkeit: {{{Availability}}}</li>|}}
+    {{#if:{{{IsReferencedBy}}}|<li>Referenziert durch: {{{IsReferencedBy}}}</li>|}}
+    {{#if:{{{PartOf}}}|<li>Teil von: {{{PartOf}}}</li>|}}
+    {{#if:{{{Incipit}}}|<li>Incipit: {{{Incipit}}}</li>|}}
+</ul>
+
+</code>
+
 
 # Formular
 Beispiel Person

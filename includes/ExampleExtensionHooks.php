@@ -14,8 +14,7 @@ class ExampleExtensionHooks
     }
 
     // Darstellung der Ausgabe von {{#example:}}.
-    public static function renderExample( Parser $parser, $param1 = '', $param2 = '', $param3 = '' ) {
-
+    public static function renderExample( Parser $parser, $param1 = '' ) {
         // Die Eingabeparameter sind Wikitext erweitert mit Vorlagen.
         // Die Ausgabe sollte ebenfalls Wikitext sein.
         $output = "param1 is $param1 and param2 is $param2 and param3 is $param3";
