@@ -9,6 +9,7 @@
         "mediawiki/semantic-media-wiki": "^3.0@dev",
         "mediawiki/semantic-cite": "~2.1",
         "mediawiki/maps": "~8.0",
+        "mediawiki/semantic-result-formats": "~3.1",
         "php": ">=7.1.0"
     },
     "authors": [
