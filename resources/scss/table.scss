@@ -1,13 +1,12 @@
 table.wikitable {
   border: 0;
   border-collapse: collapse;
-  border-radius: $border-radius;
+  border-radius: 0;
   background-color: $alcuin-creme;
   font-size: $font-size-body;
 
   > tr, > * > tr {
     th, td {
-      border: 0;
       background-color: transparent;
       color: $font-color-dark;
       padding: $spacing-xs;
@@ -17,13 +16,6 @@ table.wikitable {
     th {
       background-color: $alcuin-anthrazit;
       color: $font-color-bright;
-    }
-
-    td {
-      display: flex;
-      flex-direction: column;
-      max-height: 20px;
-      overflow: hidden;
     }
 
     a {

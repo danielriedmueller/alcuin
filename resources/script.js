@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     const pagesCount = $('<div></div>').css({"font-size": "0.75em"});
     const jobsCount = $('<div></div>').css({"font-size": "0.75em"});
@@ -9,12 +9,12 @@ $(document).ready(function(){
     ;
 
     setInterval(function () {
-        mw.loader.using( 'mediawiki.api', function () {
-            (new mw.Api()).get( {
+        mw.loader.using('mediawiki.api', function () {
+            (new mw.Api()).get({
                 action: 'query',
                 meta: 'siteinfo',
                 siprop: 'statistics'
-            }).done( function ( data ) {
+            }).done(function (data) {
                 const stats = data.query.statistics;
                 pagesCount.text('Seiten: ' + stats.pages);
                 jobsCount.text('Jobs: ' + stats.jobs);
@@ -23,5 +23,4 @@ $(document).ready(function(){
             });
         })
     }, 1000);
-
 });
