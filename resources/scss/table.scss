@@ -4,13 +4,30 @@ table.wikitable {
   border-radius: 0;
   background-color: $alcuin-creme;
   font-size: $font-size-body;
+  margin: $spacing 0 $spacing 0;
+
+  table.wikitable {
+    width: calc(100% + #{$spacing-xs} + #{$spacing-xs});
+    margin: 0 -$spacing-xs;
+
+
+    th, td {
+      border-top: none;
+      border-left: none;
+
+      &:last-child {
+        border-right: none;
+        border-bottom: none;
+      }
+    }
+  }
 
   > tr, > * > tr {
     th, td {
       background-color: transparent;
       color: $font-color-dark;
-      padding: $spacing-xs;
       text-align: left;
+      padding: $spacing-xs;
     }
 
     th {
@@ -20,6 +37,10 @@ table.wikitable {
 
     a {
       color: $alcuin-orange !important;
+
+      &.new {
+        color: $alcuin-red !important;
+      }
 
       &:hover {
         text-decoration: underline !important;
