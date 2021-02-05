@@ -9,6 +9,7 @@ table.wikitable {
   table.wikitable {
     width: calc(100% + #{$spacing-xs} + #{$spacing-xs});
     margin: 0 -$spacing-xs;
+    table-layout:fixed;
 
     th, td {
       border-top: none;
