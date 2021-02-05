@@ -10,14 +10,17 @@ table.wikitable {
     width: calc(100% + #{$spacing-xs} + #{$spacing-xs});
     margin: 0 -$spacing-xs;
 
-
     th, td {
       border-top: none;
       border-left: none;
+    }
 
-      &:last-child {
-        border-right: none;
-        border-bottom: none;
+    tr:last-child {
+      th, td {
+        &:last-child {
+          border-right: none;
+          border-bottom: none;
+        }
       }
     }
   }
