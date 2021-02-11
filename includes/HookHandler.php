@@ -38,7 +38,7 @@ class HookHandler implements BeforePageDisplayHook {
      *
      * Change page title to db id with prefix.
      *
-     * Applies only if page is in Alcuin namespace (3000).
+     * Applies only if page does not exist yet and is in Alcuin namespace (3000).
      *
      * @return boolean
      * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageContentSaveComplete
@@ -51,10 +51,14 @@ class HookHandler implements BeforePageDisplayHook {
         RevisionRecord $revisionRecord,
         EditResult $editResult
     ): bool {
+        // Feature temporarily disabled
+        return true;
+
         //$alcuinNs = 3000;
         $alcuinNs = 0;
         if ($wikiPage->getTitle()->getNamespace() !== $alcuinNs
             || !$editResult->isNew()) {
+
             return true;
         }
 

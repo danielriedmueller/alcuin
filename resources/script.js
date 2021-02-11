@@ -23,4 +23,37 @@ $(document).ready(function () {
             });
         })
     }, 1000);
+
+    /*
+    var params = {
+            action: "compare",
+            format: "json",
+            fromtitle: "263",
+            totitle: "1926"
+        },
+        api = new mw.Api();
+
+    api.get(params).done(function (data) {
+        console.log(data);
+        const compareRes = data.compare;
+        const foo = $('<div>');
+        foo.html(compareRes['*']);
+        //$('#firstHeading').before(foo);
+
+        const text = compareRes['*'];
+
+        params = {
+            action: 'parse',
+            text: text,
+            format: 'json'
+        };
+        api = new mw.Api();
+
+        api.get(params).done(data => {
+            const foo = $('<div>');
+            foo.html(data.parse.text['*']);
+            //$('#firstHeading').before(foo);
+        });
+    });
+    */
 });
