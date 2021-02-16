@@ -44,7 +44,7 @@
 	],
 	"ResourceModules": {
 		"ext.alcuin": {
-			"scripts": "script.js"
+			"scripts": ["script.js", "js/page_forms_create_new_option.js"]
 		}
 	},
 	"ResourceFileModulePaths": {

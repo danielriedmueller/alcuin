@@ -51,9 +51,6 @@ class HookHandler implements BeforePageDisplayHook {
         RevisionRecord $revisionRecord,
         EditResult $editResult
     ): bool {
-        // Feature temporarily disabled
-        return true;
-
         //$alcuinNs = 3000;
         $alcuinNs = 0;
         if ($wikiPage->getTitle()->getNamespace() !== $alcuinNs

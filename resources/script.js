@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     const pagesCount = $('<div></div>').css({"font-size": "0.75em"});
     const jobsCount = $('<div></div>').css({"font-size": "0.75em"});
     const infoEl = $('<div></div>')
