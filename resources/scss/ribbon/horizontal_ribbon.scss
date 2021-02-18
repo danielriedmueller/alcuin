@@ -1,0 +1,34 @@
+.ribbon-4 {
+  $bgColor: $alcuin-orange;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+
+  &:before {
+    @include triangle(20px, transparent darken($bgColor, 5%), inset-right);
+    top: 20px;
+    left: -30px;
+  }
+  &:after {
+    @include triangle(20px, transparent darken($bgColor, 5%), inset-left);
+    top: 20px;
+    right: -30px;
+  }
+
+  .ribbon-content {
+    background-color: $bgColor;
+    &:before {
+      @include triangle(10px, darken($bgColor, 15%), up-right);
+      bottom: -10px;
+    }
+    &:after {
+      @include triangle(10px, darken($bgColor, 15%), up-left);
+      right: 0;
+      bottom: -10px;
+    }
+  }
+
+  * {
+    height: 100%;
+  }
+}

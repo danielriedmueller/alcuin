@@ -1,3 +1,4 @@
+$grid-gutter-width: 100px;
 $spacing-l: 50px;
 $spacing: 30px;
 $spacing-s: 18px;
@@ -5,6 +6,7 @@ $spacing-xs: 10px;
 $border-radius: 8px;
 $imgDir: 'extensions/Alcuin/resources/images';
 $logo-size: 190px;
+$logo-size-mainpage: 703px;
 $alcuin-brown: #A97C73;
 $alcuin-grey: #999;
 $alcuin-red: #AF3E4D;
@@ -19,4 +21,4 @@ $font-color-dark: #333;
 $font-color-bright: $alcuin-creme;
 $font-family-serif: "Augusta", serif;
 $font-family-sans-serif: "NotoSans";
-$font-size-body: 13px;
+$font-size-body: 1rem;

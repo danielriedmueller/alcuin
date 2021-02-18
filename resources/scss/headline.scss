@@ -4,8 +4,10 @@
   align-items: flex-end;
   background: transparent url($imgDir + "/Carafa_Kapelle;_Triumph_des_Hl_Thomas-190px.jpeg") left top repeat-x;
   padding-left: $logo-size + $spacing-l;
+  padding-right: $grid-gutter-width / 2;
   height: $logo-size;
   box-shadow: 0 0 20px 5px #000;
+  z-index: 100;
 
   > *:last-child {
     flex-grow: 1;
@@ -20,7 +22,7 @@
     font-family: $font-family-serif;
     color: $font-color-bright;
     padding-right: 10px;
-    font-size: 90px;
+    font-size: 6.5rem;
     border-right: 50px solid $alcuin-orange;
     text-shadow: 2px 2px $font-color-dark;
 
@@ -32,7 +34,7 @@
   .subtitle {
     color: $font-color-bright;
     margin-left: $spacing-s;
-    font-size: 20px;
+    font-size: 2rem;
     border-left: 50px solid $alcuin-anthrazit;
     padding: $spacing $spacing-s;
     text-shadow: 2px 2px $font-color-dark;

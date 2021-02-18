@@ -1,5 +1,6 @@
 @import "variables";
 @import "layout";
+@import "footer";
 @import "headline";
 @import "content";
 @import "navbar";
@@ -8,6 +9,9 @@
 @import "table";
 @import "dropdown";
 @import "network";
+@import "ribbon/ribbon";
+@import "ribbon/horizontal_ribbon";
+@import "ribbon/vertical_ribbon";
 
 @font-face {
   font-family: "Augusta";
@@ -34,11 +38,18 @@
   justify-content: space-between;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: $font-family-sans-serif;
-  //background-color: $alcuin-anthrazit;
-  //color: #e0fbfc;
   font-size: 1rem;
+
+  &.page-Main_Page {
+    color: #e0fbfc;
+    background: $alcuin-anthrazit url($imgDir + "/Carafa_Kapelle;_Triumph_des_Hl_Thomas-703px.jpeg") left top repeat-x;
+  }
 }
 
 a {
@@ -57,9 +68,4 @@ h1#firstHeading {
   font-family: $font-family-sans-serif;
   border: none;
   margin: 0;
-}
-
-.container {
-  padding-left: $spacing-s;
-  padding-right: $spacing-s;
 }

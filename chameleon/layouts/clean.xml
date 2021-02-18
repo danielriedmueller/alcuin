@@ -24,7 +24,6 @@ M
 @ingroup Skins
 -->
 <structure xmlns="https://ProfessionalWiki.github.io/chameleon/schema/3.0/layout.rng">
-
 	<component type="Container" class="headline">
 		<component type="Html"><div class="title"><a href="/index.php/Main_Page">Alcuin</a></div></component>
 		<component type="Html"><div class="subtitle">Infothek der Scholastik</div></component>
@@ -33,24 +32,49 @@ M
 			<component type="PersonalTools" position="right"/>
 		</component>
 	</component>
-
 	<grid class="flex-fill flex-row flex main">
 		<row>
 			<cell>
-				<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Editionen und Autoren." position="center" />
-				<component type="AlcuinMainContent" class="main-content"/>
+				<component type="MainPageContainer">
+					<component type="HorizontalRibbon">
+						<component type="SearchBar" class="omnibox" placeholder="Suche nach Werken, Editionen und Autoren" position="center" />
+					</component>
+				</component>
+				<component type="NotMainPageContainer">
+					<component type="MainContent" class="main-content"/>
+				</component>
 			</cell>
 		</row>
 		<row>
 			<modification type="ShowOnlyFor" permission="edit"/>
 			<cell>
-				<component type="NavbarHorizontal" >
-					<modification type="Sticky"/>
-					<component type="NavMenu" flatten="navigation"/>
-					<component type="Menu" message="secondary-menu"/>
-					<component type="Toolbox" flatten="no" class="dropup"/>
+				<component type="VerticalRibbon">
+					<component type="NotMainPageContainer">
+						<component type="SearchBar" class="omnibox" placeholder="Suche" position="center" />
+					</component>
+					<component type="NavbarHorizontal" >
+						<modification type="Sticky"/>
+						<component type="NavMenu" flatten="navigation"/>
+						<component type="Menu" message="secondary-menu"/>
+						<component type="Toolbox" flatten="no" class="dropup"/>
+					</component>
 				</component>
 			</cell>
+		</row>
+	</grid>
+	<grid>
+		<row>
+			<component type="Container" class="footer">
+				<component type="Html">
+					<div class="links">
+						<a href="#">Impressum</a>
+						<a href="#">Kontakt</a>
+						<a href="#">Datenschutz</a>
+					</div>
+					<a class="ur-logo" href="https://www.uni-regensburg.de/"></a>
+					<a class="dfg-logo" href="https://www.dfg.de/"></a>
+				</component>
+			</component>
 		</row>
 	</grid>
 </structure>

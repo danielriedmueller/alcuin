@@ -6,3 +6,8 @@
   flex-direction: column;
   text-align: right;
 }
+
+.p-navbar .navbar-nav .nav-link {
+  color: $font-color-bright;
+  font-size: 1rem;
+}
