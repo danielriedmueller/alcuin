@@ -33,14 +33,12 @@ M
         <component type="Html">
             <div class="subtitle">Infothek der Scholastik</div>
         </component>
-
-            <component type="Container" class="page-tools-bar">
-                <component type="NavbarHorizontal">
-                <component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
-                <component type="PersonalTools" position="right"/>
-                </component>
+        <component type="Container" class="page-tools-bar">
+            <component type="NavbarHorizontal">
+            <component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
+            <component type="PersonalTools" position="right"/>
             </component>
-
+        </component>
     </component>
     <grid class="flex-fill flex-row flex main">
         <row>
@@ -83,13 +81,13 @@ M
             </cell>
         </row>
         <row>
-            <modification type="ShowOnlyFor" permission="edit"/>
             <cell>
                 <component type="VerticalRibbon">
                     <component type="NotMainPageContainer">
                         <component type="SearchBar" class="omnibox" placeholder="Suche" position="center"/>
                     </component>
                     <component type="NavbarHorizontal">
+                        <modification type="ShowOnlyFor" permission="edit"/>
                         <modification type="Sticky"/>
                         <component type="NavMenu" flatten="navigation"/>
                         <component type="Menu" message="secondary-menu"/>
