@@ -1,0 +1,31 @@
+body.page-Main_Page {
+  color: #e0fbfc;
+  background: $alcuin-anthrazit url($imgDir + "/Carafa_Kapelle;_Triumph_des_Hl_Thomas-703px.jpeg") center top no-repeat;
+
+  .row.centered-links {
+    justify-content: center;
+    margin-top: 195px;
+
+    > .col {
+      flex: 0 0 180px;
+    }
+
+    a {
+      padding: $spacing-s;
+      background-color: $alcuin-anthrazit;
+      outline: $outline-width solid $alcuin-anthrazit;
+      border: 1px solid $alcuin-creme;
+      color: $font-color-bright;
+      display: block;
+      text-align: center;
+
+      width: $navbar-width - $outline-width - 1px;
+
+      &:hover {
+        color: $alcuin-grey;
+        border-color: $alcuin-grey;
+        text-decoration: none;
+      }
+    }
+  }
+}

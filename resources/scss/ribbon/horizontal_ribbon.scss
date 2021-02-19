@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
+  opacity: 0.9;
 
   &:before {
     @include triangle(20px, transparent darken($bgColor, 5%), inset-right);

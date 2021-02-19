@@ -1,6 +1,7 @@
 @import "variables";
 @import "layout";
 @import "footer";
+@import "main_page";
 @import "headline";
 @import "content";
 @import "navbar";
@@ -45,11 +46,8 @@ html {
 body {
   font-family: $font-family-sans-serif;
   font-size: 1rem;
-
-  &.page-Main_Page {
-    color: #e0fbfc;
-    background: $alcuin-anthrazit url($imgDir + "/Carafa_Kapelle;_Triumph_des_Hl_Thomas-703px.jpeg") left top repeat-x;
-  }
+  max-width: $page-max-width;
+  margin: auto;
 }
 
 a {

@@ -1,3 +1,4 @@
+$page-max-width: 1920px;
 $grid-gutter-width: 100px;
 $spacing-l: 50px;
 $spacing: 30px;
@@ -22,3 +23,8 @@ $font-color-bright: $alcuin-creme;
 $font-family-serif: "Augusta", serif;
 $font-family-sans-serif: "NotoSans";
 $font-size-body: 1rem;
+
+$text-shadow: 2px 2px $font-color-dark;
+
+$navbar-width: 180px;
+$outline-width: 9px;

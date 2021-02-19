@@ -9,11 +9,6 @@
   box-shadow: 0 0 20px 5px #000;
   z-index: 100;
 
-  > *:last-child {
-    flex-grow: 1;
-    text-align: right;
-  }
-
   #p-logo img {
     height: $logo-size;
   }
@@ -24,7 +19,7 @@
     padding-right: 10px;
     font-size: 6.5rem;
     border-right: 50px solid $alcuin-orange;
-    text-shadow: 2px 2px $font-color-dark;
+    text-shadow: $text-shadow;
 
     a:hover, a:active, a:focus {
       text-decoration: none !important;
@@ -37,7 +32,22 @@
     font-size: 2rem;
     border-left: 50px solid $alcuin-anthrazit;
     padding: $spacing $spacing-s;
-    text-shadow: 2px 2px $font-color-dark;
+    text-shadow: $text-shadow;
+    flex-grow: 1;
+  }
+
+  .page-tools-bar {
+    background-color: $alcuin-orange;
+    padding: $outline-width $outline-width 0 $outline-width;
+    opacity: 0.9;
+    width: $navbar-width;
+
+    nav.p-navbar {
+      border-left: 1px solid $alcuin-creme;
+      border-right: 1px solid $alcuin-creme;
+      border-top: 1px solid $alcuin-creme;
+      color: $font-color-bright;
+    }
   }
 
   a {

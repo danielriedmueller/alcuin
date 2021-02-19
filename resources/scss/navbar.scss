@@ -1,5 +1,6 @@
-.p-navbar {
+.navbar, .p-navbar {
   background-color: transparent;
+  padding: 0;
 }
 
 .p-navbar.collapsible[role='navigation'] .navbar-nav {

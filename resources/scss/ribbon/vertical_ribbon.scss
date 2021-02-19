@@ -1,6 +1,6 @@
-$ribbon-tri-width: 180px;
+$ribbon-tri-width: $navbar-width;
 $ribbon-tri-height: 45px;
-$ribbon-tri-padding: 9px;
+$ribbon-tri-padding: $outline-width;
 $ribbon-background-color: $alcuin-orange;
 $ribbon-stroke-color: $font-color-bright;
 
@@ -13,6 +13,7 @@ $ribbon-stroke-color: $font-color-bright;
   text-decoration: none;
   padding: 0 #{$ribbon-tri-padding} #{$ribbon-tri-padding / 2};
   text-align: center;
+  opacity: 0.9;
 
   &:after {
     content: '';
@@ -26,7 +27,6 @@ $ribbon-stroke-color: $font-color-bright;
     position: absolute;
     top: 100%;
     left: 0;
-
   }
 }
 
