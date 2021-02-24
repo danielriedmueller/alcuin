@@ -26,10 +26,19 @@
 
 ### Display all languages dropdown
 <pre><code>
+{{#tag:html|
+<select class="query-dropdown">
+{{#arraymap:
 {{#ask:
  [[{{{Place}}}]]
- |?Has monolingual text=Text|+lang=de
+ |?Has monolingual text
  |mainlabel=-
  |headers=hide
+}}
+|,
+|x
+|<option>x</option>
+|}}
+</select>
 }}
 </code></pre>
