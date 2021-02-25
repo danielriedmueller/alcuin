@@ -3,6 +3,8 @@
 <code>
 {{#scite:Byrne 2008
  |template=WorkCitation
+ |author=Aristoteles
+ |pages=1 - 100
 }}
 </code>
 </pre>
@@ -22,3 +24,9 @@
 </pre>
 
 ### Create Template for citations e.g. WorkCitation
+<pre>
+<code>
+Autor: {{{author}}}
+Seiten: {{{pages}}}
+</code>
+</pre>
