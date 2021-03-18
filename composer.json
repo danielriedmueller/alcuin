@@ -11,6 +11,7 @@
         "mediawiki/maps": "~8.0",
         "mediawiki/semantic-result-formats": "~3.1",
         "mediawiki/semantic-forms-select": "~3.0",
+        "mediawiki/semantic-compound-queries": "~2.1",
         "php": ">=7.1.0"
     },
     "authors": [

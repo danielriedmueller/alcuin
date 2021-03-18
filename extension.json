@@ -12,7 +12,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"ExtensionMessagesFiles": {
-		"ExampleParserFunction": "i18n/_MagicWords.php"
+		"SparqlPagenameMagic": "i18n/Alcuin.i18n.magic.php"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Alcuin\\": "includes/",
@@ -24,14 +24,15 @@
 		"PageSaveComplete": "main",
 		"EditFormPreloadText": "main",
 		"PageForms::WritePageData": "main",
-		"ParserFirstCallInit": "example"
+		"GetMagicVariableIDs": "magic",
+		"ParserGetVariableValueSwitch": "magic"
 	},
 	"HookHandlers": {
 		"main": {
 			"class": "MediaWiki\\Extension\\Alcuin\\HookHandler"
 		},
-		"example": {
-			"class": "MediaWiki\\Extension\\Alcuin\\ExampleExtensionHooks"
+		"magic": {
+			"class": "MediaWiki\\Extension\\Alcuin\\MagicWordsExtensionHooks"
 		}
 	},
 	"callback": "MediaWiki\\Extension\\Alcuin\\HookHandler::onExtensionLoad",
