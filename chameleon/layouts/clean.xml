@@ -55,17 +55,22 @@ M
                     <row class="centered-links">
                         <cell>
                             <component type="Html">
-                                <a href="/index.php/Autorenliste">Autoren</a>
+                                <a href="/index.php/Autoren">Autoren</a>
                             </component>
                         </cell>
                         <cell>
                             <component type="Html">
-                                <a href="/index.php/Werkverzeichnis">Werkverzeichnis</a>
+                                <a href="/index.php/Editoren">Editoren</a>
                             </component>
                         </cell>
                         <cell>
                             <component type="Html">
-                                <a href="/index.php/Editionsverzeichnis">Editionsverzeichnis</a>
+                                <a href="/index.php/Werke">Werke</a>
+                            </component>
+                        </cell>
+                        <cell>
+                            <component type="Html">
+                                <a href="/index.php/Editionen">Editionen</a>
                             </component>
                         </cell>
                     </row>
