@@ -1,0 +1,955 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Main_Page</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Template:Author</title>
+    <ns>10</ns>
+    <id>306</id>
+    <revision>
+      <id>1321</id>
+      <parentid>1096</parentid>
+      <timestamp>2021-03-19T08:04:58Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1321</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="429" sha1="mva7eo917wei97cf7ov61a8t08wlcoo" xml:space="preserve">&lt;tabs&gt;
+&lt;tab name="Autor"&gt;
+{|class="wikitable smwtable"
+|-
+!Datierung des Autors
+|FEHLT NOCH
+|-
+!Wirkungsstätte
+|{{{PlaceOfWork}}}
+|-
+!Herausragende Leistungen der Person
+|{{{OutstandingPerformances}}}
+|-
+!Wichtige Beziehungen zu anderen Personen
+|{{{ImportantRelationships}}}
+|-
+!Kurzkommentar
+|{{{AuthorShortComment}}}
+|}
+&lt;/tab&gt;
+&lt;tab name="Werke"&gt;
+{{AuthorWorks}}
+&lt;/tab&gt;
+&lt;tab name="Editionen"&gt;
+{{AuthorEditions}}
+&lt;/tab&gt;
+&lt;/tabs&gt;</text>
+      <sha1>mva7eo917wei97cf7ov61a8t08wlcoo</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:AuthorEditions</title>
+    <ns>10</ns>
+    <id>326</id>
+    <revision>
+      <id>1345</id>
+      <parentid>1344</parentid>
+      <timestamp>2021-03-19T08:54:08Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1345</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1553" sha1="6o7yblhi06qaufcdnrbpw5mgezi5o6r" xml:space="preserve">{{#ask:
+[[IsEditionOf.Author.WorkCreator::104]]
+|?=
+|?IsEditionOf=Edition von
+|?IsEditionOf.Author.WorkAuthorshipAttribution=Authentizität der Autorenschaft
+|?HasPrint=Druck
+|?Editor
+|format=broadtable
+}}
+
+{{#ask:
+[[IsEditionOf.Author.WorkCreator::Albertus_Magnus]]
+|?=
+|?IsEditionOf=Edition von
+|?IsEditionOf.Author.WorkAuthorshipAttribution=Authentizität der Autorenschaft
+|?HasPrint=Druck
+|?Editor
+|format=broadtable
+}}
+
+
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?label (count(?label) as ?count)
+{
+  ?authorship retmop:WorkAuthorshipReference/retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
+  ?authorship retmop:WorkAuthorshipReference/retmop:AuthoredWork/rdfs:label ?work . 
+  ?edition retmop:IsEditionOf/rdfs:label ?work . 
+  ?authorship retmop:WorkAuthorshipReference/retmop:WorkAuthorshipAttribution ?attribution .
+  ?authorship retmop:WorkAuthorshipReference/retmop:AuthoredWork/retmop:Availability ?avail .
+  { ?attribution rdfs:label ?label . } UNION { ?avail rdfs:label ?label . }
+}
+GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=1000px!height=500px!pieSliceText=value-and-percentage
+|log=2
+}}
+{{#ask:
+[[IsEditionOf.Author.WorkCreator::{{PAGENAME}}]]
+|?=
+|?IsEditionOf=Edition von
+|?IsEditionOf.Author.WorkAuthorshipAttribution=Authentizität der Autorenschaft
+|?HasPrint=Druck
+|?Editor
+|format=broadtable
+}}</text>
+      <sha1>6o7yblhi06qaufcdnrbpw5mgezi5o6r</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:AuthorWorks</title>
+    <ns>10</ns>
+    <id>325</id>
+    <revision>
+      <id>1343</id>
+      <parentid>1342</parentid>
+      <timestamp>2021-03-19T08:44:21Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1343</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2160" sha1="h0u2a0efwo0dn7xczfdx6x4bh20qib9" xml:space="preserve">{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?label (count(?label) as ?count)
+{
+  ?authorship retmop:WorkAuthorshipReference/retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
+  ?authorship retmop:WorkAuthorshipReference/retmop:WorkAuthorshipAttribution ?attribution .
+  ?authorship retmop:WorkAuthorshipReference/retmop:AuthoredWork/retmop:Availability ?avail .
+  { ?attribution rdfs:label ?label . } UNION { ?avail rdfs:label ?label . }
+}
+GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=1000px!height=500px!pieSliceText=value-and-percentage
+|log=2
+}}
+Anzahl:
+&lt;ul&gt;
+&lt;li&gt;
+alle Werke: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+echte Werke: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[WorkAuthorshipAttribution::Or]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+zweifelhafte Werke: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[WorkAuthorshipAttribution::Zw]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+unechte Werke: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[WorkAuthorshipAttribution::No]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+kritisch ediert: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[AuthoredWork.Availability::Ke]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+ediert: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[AuthoredWork.Availability::Ed]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+bezeugt, aber nicht überliefert: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[AuthoredWork.Availability::Be]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+im Manuskript: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[AuthoredWork.Availability::Ma]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;li&gt;
+keine Angaben: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+[[AuthoredWork.Availability::Ka]]
+|format=count
+}}
+&lt;/li&gt;
+&lt;/ul&gt;
+{{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+|mainlabel=-
+|?AuthoredWork=Werk
+|?WorkAuthorshipAttribution=Authentizität der Autorenschaft
+|?AuthoredWork.Availability=Verfügbarkeit
+|?AuthoredWork.WorkTextgenre=Textgattung
+|?AuthoredWork.Type
+|?AuthoredWork.Created
+|?AuthoredWork.Note
+|?AuthoredWork.Provenance
+|format=broadtable
+}}
+{{{WorkShortComment}}}</text>
+      <sha1>h0u2a0efwo0dn7xczfdx6x4bh20qib9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Authorship</title>
+    <ns>10</ns>
+    <id>334</id>
+    <revision>
+      <id>705</id>
+      <parentid>704</parentid>
+      <timestamp>2021-03-11T10:56:11Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>705</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="164" sha1="gxehjldraw315cblxnqiwrax4d06132" xml:space="preserve">{{#set: Author={{{1|}}} }}
+{{#ask:
+[[-WorkAuthorshipReference::{{{1|}}}]]
+|?WorkCreator=Autor
+|?WorkAuthorshipAttribution=Zuschreibung
+|mainlabel=-
+|format=table
+}}</text>
+      <sha1>gxehjldraw315cblxnqiwrax4d06132</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:BioEvent</title>
+    <ns>10</ns>
+    <id>308</id>
+    <revision>
+      <id>1065</id>
+      <parentid>1052</parentid>
+      <timestamp>2021-03-17T09:14:53Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1065</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="96" sha1="g5pafd313dt7whdltsm41k1zqz3fd9p" xml:space="preserve">{{#set: Event={{{Type}}};{{{Content}}};{{{Date}}};{{{Place}}};{{{Source|}}};{{{Provenance|}}} }}</text>
+      <sha1>g5pafd313dt7whdltsm41k1zqz3fd9p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Comment</title>
+    <ns>10</ns>
+    <id>307</id>
+    <revision>
+      <id>1113</id>
+      <parentid>1099</parentid>
+      <timestamp>2021-03-18T10:57:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1113</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="573" sha1="dhcnaoxy5hvi8sbmmybgfd4brn8bwea" xml:space="preserve">&lt;noinclude&gt;{{DISPLAYTITLE:Comment}}&lt;/noinclude&gt;
+&lt;includeonly&gt;Ist Kommentar von: [[{{{IsCommentOf}}}]]
+{{Work
+|Author={{{Author}}}
+|HasEdition={{{HasEdition}}}
+|Availability={{{Availability}}}
+|Incipit={{{Incipit}}}
+|Created={{{Created}}}
+|Note={{{Note}}}
+|Provenance={{{Provenance}}}
+|Source={{{Source}}}
+|Title={{{Title}}}
+|Type={{{Type}}}
+|Date={{{Date}}}
+|SameAs={{{SameAs}}}
+|AlternateTitle={{{AlternateTitle}}}
+|WorkTextgenre=Comment
+|Categories={{{Categories}}}
+|IsReferencedBy={{{IsReferencedBy}}}
+}}
+{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
+&lt;/includeonly&gt;</text>
+      <sha1>dhcnaoxy5hvi8sbmmybgfd4brn8bwea</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Edition</title>
+    <ns>10</ns>
+    <id>309</id>
+    <revision>
+      <id>402</id>
+      <parentid>401</parentid>
+      <timestamp>2021-03-09T09:57:57Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>401</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1463" sha1="49e2ca2i5e1se9858wfb8d67dyq2zkt" xml:space="preserve">
+{|class="wikitable smwtable"
+!colspan="2"| Edition: {{PAGENAMEE}}
+|-
+!IsEditionOf
+|{{#arraymap:{{{IsEditionOf|}}}|,|x|[[IsEditionOf::x]]|,}}
+|-
+!Retm2Identifier
+|{{#arraymap:{{{Retm2Identifier|}}}|,|x|[[Retm2Identifier::x]]|,}}
+|-
+!BibliographicCitation
+|{{#arraymap:{{{BibliographicCitation|}}}|,|x|[[BibliographicCitation::x]]|,}}
+|-
+!HadManuscriptSource
+|{{#arraymap:{{{HadManuscriptSource|}}}|,|x|[[HadManuscriptSource::x]]|,}}
+|-
+!Incipit
+|{{#arraymap:{{{Incipit|}}}|,|x|[[Incipit::x]]|,}}
+|-
+!Note
+|{{#arraymap:{{{Note|}}}|,|x|[[Note::x]]|,}}
+|-
+!Equivalent URI
+|{{#arraymap:{{{Equivalent_URI|}}}|,|x|[[Equivalent URI::x]]|,}}
+|-
+!HasTranslation
+|{{#arraymap:{{{HasTranslation|}}}|,|x|[[HasTranslation::x]]|,}}
+|-
+!Editor
+|{{#arraymap:{{{Editor|}}}|,|x|[[Editor::x]]|,}}
+|-
+!Language
+|{{#arraymap:{{{Language|}}}|,|x|[[Language::x]]|,}}
+|-
+!Translator
+|{{#arraymap:{{{Translator|}}}|,|x|[[Translator::x]]|,}}
+|-
+!OtherText
+|{{#arraymap:{{{OtherText|}}}|,|x|[[OtherText::x]]|,}}
+|-
+!HasPrint
+|{{#arraymap:{{{HasPrint|}}}|,|x|[[HasPrint::x]]|,}}
+|-
+!IsEditionOfWorkPart
+|{{#arraymap:{{{IsEditionOfWorkPart|}}}|,|x|[[IsEditionOfWorkPart::x]]|,}}
+|-
+!Provenance
+|{{#arraymap:{{{Provenance|}}}|,|x|[[Provenance::x]]|,}}
+|-
+!Source
+|{{#arraymap:{{{Source|}}}|,|x|[[Source::x]]|,}}
+|-
+!Title
+|{{#arraymap:{{{Title|}}}|,|x|[[Title::x]]|,}}
+|-
+!Incunable
+|{{#arraymap:{{{Incunable|}}}|,|x|[[Incunable::x]]|,}}
+|}
+
+{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
+</text>
+      <sha1>49e2ca2i5e1se9858wfb8d67dyq2zkt</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Events</title>
+    <ns>10</ns>
+    <id>348</id>
+    <revision>
+      <id>1067</id>
+      <parentid>1066</parentid>
+      <timestamp>2021-03-17T09:15:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1067</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="187" sha1="qfr3ixw2vztz5bwn3ydb8wy3gpb1z0y" xml:space="preserve">{{{1}}}
+{{#ask:
+[[-Event::{{PAGENAME}}]]
+|?Type=Lebensereignis
+|?EventContent=Inhalt
+|?Date=Datum
+|?Place=Ort
+|?Source=Quelle
+|?Provenance=Datenherkunft
+|mainlabel=-
+|format=broadtable
+}}</text>
+      <sha1>qfr3ixw2vztz5bwn3ydb8wy3gpb1z0y</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:HasWorkPart</title>
+    <ns>10</ns>
+    <id>342</id>
+    <revision>
+      <id>815</id>
+      <parentid>814</parentid>
+      <timestamp>2021-03-12T08:49:14Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>815</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="435" sha1="6p7b079m6c383cx2k09mk1oagb7gci8" xml:space="preserve">{{#arraymap:{{{1|}}}|,|x|{{#set: HasWorkPart=x}}|}}
+{{#ask: 
+[[AuthoredWork::&lt;q&gt;[[-HasWorkPart::{{PAGENAME}}]]&lt;/q&gt;]]
+|mainlabel=-
+|?AuthoredWork=Titel
+|?AuthoredWork.Availability=Verfügbarkeit
+|?AuthoredWork.IsWorkPartOf=Ist Werkteil von
+|?AuthoredWork.Provenance=Herkunft
+|?WorkCreator
+|?WorkAuthorshipAttribution=Zuweisung
+|?WorkAuthorshipAttributionEvidence=Beleg
+|?WorkAuthorshipAttributionNote=Notiz
+|?WorkAuthorshipRole=Rolle
+}}</text>
+      <sha1>6p7b079m6c383cx2k09mk1oagb7gci8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Manuscript</title>
+    <ns>10</ns>
+    <id>337</id>
+    <revision>
+      <id>707</id>
+      <timestamp>2021-03-11T11:08:58Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with "{|class="wikitable smwtable" |- !Bibliografische Zitation |{{#arraymap:{{{BibliographicCitation|}}}|,|x|[[BibliographicCitation::x]]|}} |- !HeldBy |{{#arraymap:{{{HeldBy|}}}|,..."</comment>
+      <origin>707</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="owfaaytjr0ebwdtj6j167ag09hdig46" xml:space="preserve">{|class="wikitable smwtable"
+|-
+!Bibliografische Zitation
+|{{#arraymap:{{{BibliographicCitation|}}}|,|x|[[BibliographicCitation::x]]|}}
+|-
+!HeldBy
+|{{#arraymap:{{{HeldBy|}}}|,|x|[[HeldBy::x]]|}}
+|-
+!Shelfmark
+|{{#arraymap:{{{Shelfmark|}}}|,|x|[[Shelfmark::x]]|}}
+|-
+!Part
+|{{#arraymap:{{{Part|}}}|,|x|[[Part::x]]|}}
+|}
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>owfaaytjr0ebwdtj6j167ag09hdig46</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Monograph</title>
+    <ns>10</ns>
+    <id>343</id>
+    <revision>
+      <id>822</id>
+      <parentid>820</parentid>
+      <timestamp>2021-03-12T09:15:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>822</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="544" sha1="qxdzj077myginlew4puekhatie3u94z" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{Title}}}}}&lt;/includeonly&gt;
+{|class="wikitable smwtable"
+!BibliographicCitation
+|{{#arraymap:{{{BibliographicCitation|}}}|,|x|[[BibliographicCitation::x]]|}}
+|-
+!MonographAuthor
+|{{#arraymap:{{{MonographAuthor|}}}|,|x|[[MonographAuthor::x]]|}}
+|-
+!Title
+|{{#arraymap:{{{Title|}}}|,|x|[[Title::x]]|}}
+|-
+!Printed
+|{{#arraymap:{{{Printed|}}}|,|x|[[Printed::x]]|}}
+|-
+!References
+|{{#arraymap:{{{References|}}}|,|x|[[References::x]]|}}
+|-
+|}
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>qxdzj077myginlew4puekhatie3u94z</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Person</title>
+    <ns>10</ns>
+    <id>312</id>
+    <revision>
+      <id>1075</id>
+      <parentid>1074</parentid>
+      <timestamp>2021-03-17T11:07:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1075</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="582" sha1="7quscxogfjxkh3xs63b10x0eow6j689" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{Name}}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}&lt;/includeonly&gt;
+{{#vardefine:synonyms|&lt;ul&gt;{{#arraymap:{{{VariantName|}}}|,|x|&lt;li&gt;[[VariantName::x]]&lt;li&gt;|}}&lt;/ul&gt;}}
+
+{{#set: NameAddition={{{NameAddition}}}}}
+
+&lt;tab name="Synonyme"&gt;{{#var:synonyms}}&lt;/tab&gt;
+{{Author
+|VariantName={{{VariantName}}}
+}}
+{{Events|{{{Events|}}}}}
+{{ReferencedBy|{{{IsReferencedBy}}}}}
+{|class="wikitable smwtable"
+|-
+!Datenherkunft
+|{{#arraymap:{{{Provenance|}}}|,|x|[[Provenance::x]]|,}}
+|}
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>7quscxogfjxkh3xs63b10x0eow6j689</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Place</title>
+    <ns>10</ns>
+    <id>313</id>
+    <revision>
+      <id>845</id>
+      <parentid>843</parentid>
+      <timestamp>2021-03-12T11:48:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>845</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="265" sha1="a3hyqhsqeqsjagvs4faev73hlmuxj4u" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{PlaceName}}}}}&lt;/includeonly&gt;
+{{#arraymap:{{{PlaceName|}}}|,|x1|[[PlaceName::x1]]}}
+
+GND: [[GND ID::{{{GndIdentifier}}}]]
+
+CT: [[CT ID::{{{CtIdentifier}}}]]
+
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>a3hyqhsqeqsjagvs4faev73hlmuxj4u</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Print</title>
+    <ns>10</ns>
+    <id>344</id>
+    <revision>
+      <id>823</id>
+      <timestamp>2021-03-12T09:15:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with "{|class="wikitable smwtable" !Publikationsort |{{#arraymap:{{{PublicationPlace|}}}|,|x|[[PublicationPlace::x]]|}} |- !Publikationsjahr |{{#arraymap:{{{PublicationYear|}}}|,|x|..."</comment>
+      <origin>823</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="284" sha1="me92g4kr0htuyqtyw8ctq1wfbgf0c0s" xml:space="preserve">{|class="wikitable smwtable"
+!Publikationsort
+|{{#arraymap:{{{PublicationPlace|}}}|,|x|[[PublicationPlace::x]]|}}
+|-
+!Publikationsjahr
+|{{#arraymap:{{{PublicationYear|}}}|,|x|[[PublicationYear::x]]|}}
+|-
+|}
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>me92g4kr0htuyqtyw8ctq1wfbgf0c0s</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:PrintQueryOutput</title>
+    <ns>10</ns>
+    <id>314</id>
+    <revision>
+      <id>412</id>
+      <parentid>411</parentid>
+      <timestamp>2021-03-09T09:57:57Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>411</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="80" sha1="rhj54mabivgdkuysfoljigyang8qkcw" xml:space="preserve">{{#ifexist: {{{1}}} | [[{{{1}}}|{{{2}}}]] | [[{{{1}}}|Seite existiert nicht]] }}</text>
+      <sha1>rhj54mabivgdkuysfoljigyang8qkcw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Quaestio</title>
+    <ns>10</ns>
+    <id>321</id>
+    <revision>
+      <id>1102</id>
+      <parentid>1098</parentid>
+      <timestamp>2021-03-18T10:50:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1102</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="534" sha1="2gc4dj4m6q9ovbpcniln90xhqhgd2jb" xml:space="preserve">&lt;noinclude&gt;{{DISPLAYTITLE:Quaestio}}&lt;/noinclude&gt;
+&lt;includeonly&gt;
+{{Work
+|Author={{{Author}}}
+|HasEdition={{{HasEdition}}}
+|Availability={{{Availability}}}
+|Incipit={{{Incipit}}}
+|Created={{{Created}}}
+|Note={{{Note}}}
+|Provenance={{{Provenance}}}
+|Source={{{Source}}}
+|Title={{{Title}}}
+|Type={{{Type}}}
+|Date={{{Date}}}
+|SameAs={{{SameAs}}}
+|AlternateTitle={{{AlternateTitle}}}
+|WorkTextgenre=Comment
+|Categories={{{Categories}}}
+|IsReferencedBy={{{IsReferencedBy}}}
+}}
+{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
+&lt;/includeonly&gt;</text>
+      <sha1>2gc4dj4m6q9ovbpcniln90xhqhgd2jb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ReferencedBy</title>
+    <ns>10</ns>
+    <id>346</id>
+    <revision>
+      <id>1047</id>
+      <parentid>1044</parentid>
+      <timestamp>2021-03-17T08:39:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1047</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="292" sha1="dh7xq0pirjslv16jib5nfeyvll5d3yu" xml:space="preserve">{{#arraymap:{{{1|}}}|,|x1|{{#set: IsReferencedBy=x1 }}|}}
+{{#ask:
+[[-IsReferencedBy::{{PAGENAME}}]]
+|?=Referenziert durch
+|?BibliographicCitation=Bibliografische Zitation
+|?MonographAuthor=Monograf Autor
+|?Printed.PublicationPlace=Publikationsort
+|?Printed.PublicationYear=Publikationsjahr
+}}</text>
+      <sha1>dh7xq0pirjslv16jib5nfeyvll5d3yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Work</title>
+    <ns>10</ns>
+    <id>315</id>
+    <revision>
+      <id>1319</id>
+      <parentid>1318</parentid>
+      <timestamp>2021-03-19T08:01:26Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1319</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1354" sha1="tay0q11amrp1gvpd0qwsr4n5q0z2o3b" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{Title}}} }}&lt;/includeonly&gt;
+Equivalent zu: [[{{{SameAs|}}}]]
+{{#vardefine:editions|{{{HasEdition}}}}}
+{{#vardefine:alternateTitles|&lt;ul&gt;{{#arraymap:{{{AlternateTitle|}}}|,|x|&lt;li&gt;[[AlternateTitle::x]]&lt;li&gt;|}}&lt;/ul&gt;}}&lt;tab name="Titelvarianten"&gt;{{#var:alternateTitles}}&lt;/tab&gt;
+{|class="wikitable smwtable"
+!Textgattung
+|[[WorkTextgenre::{{#if: {{{WorkTextgenre|}}}|{{{WorkTextgenre}}}|Work}}]]
+|-
+!Incipit
+|{{{Incipit}}}
+|-
+!Verfügbarkeit
+|[[Availability::{{{Availability}}}]]
+|-
+!Autor(en?)
+|{{#arraymaptemplate:{{{Author|}}}|Authorship|,}}
+|-
+!Datierung (direkt)
+|{{{Date}}}
+|-
+!Datierung (über Referenz)
+|{{#ask:
+[[DatedWork::{{PAGENAME}}]]
+|?Creation date=Datum
+|?CreationDateNote=Notiz
+|?CreationDateDescription=Beschreibung
+|mainlabel=-
+|format=table
+}}
+|-
+!Werkteile
+|{{HasWorkPart|{{{HasWorkPart}}} }}
+|-
+!Werknummerierung
+|FEHLT NOCH
+|-
+!Manuskript
+|FEHLT NOCH
+|-
+!Notiz
+|{{{Note}}}
+|-
+|}
+{{ReferencedBy|{{{IsReferencedBy}}}}}
+Kurzkommentar: {{{WorkShortComment}}}
+&lt;tabs&gt;
+&lt;tab name="Werk"&gt;
+{|class="wikitable smwtable"
+!Aufbau
+|FEHLT NOCH
+|-
+!Inhalt
+|FEHLT NOCH
+|-
+!Bedeutung / Rezeption
+|FEHLT NOCH
+|}
+&lt;/tab&gt;
+&lt;tab name="Edition"&gt;{{WorkEditions|{{#var:editions}}}}&lt;/tab&gt;
+&lt;/tabs&gt;
+Herkunft: {{#arraymap:{{{Provenance|}}}|,|x|[[Provenance::x]]|}}
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>tay0q11amrp1gvpd0qwsr4n5q0z2o3b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:WorkAuthorshipReference</title>
+    <ns>10</ns>
+    <id>316</id>
+    <revision>
+      <id>1350</id>
+      <parentid>1331</parentid>
+      <timestamp>2021-03-19T10:25:39Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1350</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="496" sha1="60ckmww8wk6t793xus7fc88431drwx1" xml:space="preserve">{{#set: WorkCreator={{{WorkCreator}}} }}
+{{#set: WorkAuthorshipAttribution={{{WorkAuthorshipAttribution}}} }}
+{{#set: AuthoredWork={{{AuthoredWork}}} }}
+&lt;li&gt;
+[[WorkAuthorshipReference::{{{WorkCreator}}};{{{AuthoredWork}}};{{{WorkAuthorshipAttribution}}};{{{WorkAuthorshipAttributionEvidence|}}};{{{WorkAuthorshipAttributionNote|}}};{{{WorkAuthorshipRole|}}}]]
+{{#if:{{{Citation|}}}|[[CiteRef::{{{Citation}}}]]|}}
+&lt;/li&gt;
+&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+      <sha1>60ckmww8wk6t793xus7fc88431drwx1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:WorkCitation</title>
+    <ns>10</ns>
+    <id>317</id>
+    <revision>
+      <id>418</id>
+      <parentid>417</parentid>
+      <timestamp>2021-03-09T09:57:57Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>417</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="60" sha1="78x0gnx3n4adund6unuf1srtt42fczv" xml:space="preserve">Volume: {{{volume}}}
+Number: {{{number}}}
+Pages: {{{pages}}}</text>
+      <sha1>78x0gnx3n4adund6unuf1srtt42fczv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:WorkDatingReference</title>
+    <ns>10</ns>
+    <id>336</id>
+    <revision>
+      <id>687</id>
+      <parentid>686</parentid>
+      <timestamp>2021-03-11T10:36:04Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>687</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="114" sha1="f4qywdetifkhxrfxuklkoii7vgz3y26" xml:space="preserve">[[WorkDatingReference::{{{CreationDate}}};{{{DatedWork}}};{{{CreationDateNote|}}};{{{CreationDateDescription|}}}]]</text>
+      <sha1>f4qywdetifkhxrfxuklkoii7vgz3y26</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:WorkEditions</title>
+    <ns>10</ns>
+    <id>340</id>
+    <revision>
+      <id>1110</id>
+      <parentid>1109</parentid>
+      <timestamp>2021-03-18T10:55:32Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1110</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="47" sha1="ddxh13clv5xa8q3mx8qbq7lnufzovpy" xml:space="preserve">{{#arraymap:{{{1|}}}|,|x0|[[HasEdition::x0]]|}}</text>
+      <sha1>ddxh13clv5xa8q3mx8qbq7lnufzovpy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:WorkPart</title>
+    <ns>10</ns>
+    <id>341</id>
+    <revision>
+      <id>1316</id>
+      <parentid>817</parentid>
+      <timestamp>2021-03-19T07:58:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1316</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="575" sha1="bcljyu0vfp394q53vg7cyq7mjqm5jzk" xml:space="preserve">&lt;noinclude&gt;{{DISPLAYTITLE:WorkPart}}&lt;/noinclude&gt;
+&lt;includeonly&gt;Ist Werkteil von: [[{{{IsWorkPartOf}}}]]
+{{Work
+|Author={{{Author}}}
+|HasEdition={{{HasEdition}}}
+|Availability={{{Availability}}}
+|Incipit={{{Incipit}}}
+|Created={{{Created}}}
+|Note={{{Note}}}
+|Provenance={{{Provenance}}}
+|Source={{{Source}}}
+|Title={{{Title}}}
+|Type={{{Type}}}
+|Date={{{Date}}}
+|SameAs={{{SameAs}}}
+|AlternateTitle={{{AlternateTitle}}}
+|WorkTextgenre=WorkPart
+|Categories={{{Categories}}}
+|IsReferencedBy={{{IsReferencedBy}}}
+}}
+{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
+&lt;/includeonly&gt;</text>
+      <sha1>bcljyu0vfp394q53vg7cyq7mjqm5jzk</sha1>
+    </revision>
+  </page>
+</mediawiki>

@@ -1,0 +1,242 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Main_Page</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Autoren</title>
+    <ns>0</ns>
+    <id>330</id>
+    <revision>
+      <id>1314</id>
+      <parentid>1312</parentid>
+      <timestamp>2021-03-19T07:55:30Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1314</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="98" sha1="hv7hd82ho9rhttxw3ex6hcpxhu6yk0t" xml:space="preserve">{{DISPLAYTITLE:Autoren}}
+
+{{#ask:
+[[-WorkCreator::+]]
+|?VariantName=Synonyme
+|format=broadtable
+}}</text>
+      <sha1>hv7hd82ho9rhttxw3ex6hcpxhu6yk0t</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Editoren</title>
+    <ns>0</ns>
+    <id>357</id>
+    <revision>
+      <id>1315</id>
+      <parentid>1302</parentid>
+      <timestamp>2021-03-19T07:56:17Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1315</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="94" sha1="bblxzwnhz1z3q49phwsczuxvblbjnu8" xml:space="preserve">{{DISPLAYTITLE:Editoren}}
+
+{{#ask:
+[[-Editor::+]]
+|?VariantName=Synonyme
+|format=broadtable
+}}</text>
+      <sha1>bblxzwnhz1z3q49phwsczuxvblbjnu8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Werke</title>
+    <ns>0</ns>
+    <id>331</id>
+    <revision>
+      <id>1309</id>
+      <parentid>1308</parentid>
+      <timestamp>2021-03-19T07:53:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1309</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="126" sha1="3wijxdlq0e4f9tuaups5od3xdraymh2" xml:space="preserve">{{DISPLAYTITLE:Werke}}
+
+{{#ask:
+[[Category:Work]]
+|?Author.WorkCreator=Autor
+|?WorkTextgenre=Textgattung
+|format=broadtable
+}}</text>
+      <sha1>3wijxdlq0e4f9tuaups5od3xdraymh2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Editionen</title>
+    <ns>0</ns>
+    <id>333</id>
+    <revision>
+      <id>1310</id>
+      <parentid>1300</parentid>
+      <timestamp>2021-03-19T07:53:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1310</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="106" sha1="ebenwzcpp1w9dmksb1js2uzascagst1" xml:space="preserve">{{DISPLAYTITLE:Editionen}}
+
+{{#ask:
+[[Category:Edition]]
+|?Editor
+|?IsEditionOf=Werk
+|format=broadtable
+}}</text>
+      <sha1>ebenwzcpp1w9dmksb1js2uzascagst1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Datenbankabfragen</title>
+    <ns>0</ns>
+    <id>305</id>
+    <revision>
+      <id>1351</id>
+      <parentid>394</parentid>
+      <timestamp>2021-03-19T10:40:59Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>Admin moved page [[Datenbankabfragen AL283]] to [[Datenbankabfragen]]</comment>
+      <origin>393</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1597" sha1="aev7yiaa66jnjqse4p5q6j7f1v7q8hn" xml:space="preserve">{{DISPLAYTITLE:Datenbankabfragen}}
+
+== Einfache Abfragen ==
+
+Datenbankabfragen die sich nahe an der Struktur der Einträge zu Werken und Editionen bewegen. 
+
+{{#ask:
+ [[Category:Work]]
+ |?Title
+}}
+
+
+=== Werkteile und deren Edition ===
+
+Welche Auschnitte des Werks werden in einer Edition ediert?
+
+Was sind bei einem Werk die Voll- und Teileditionen?
+
+
+=== Autorenschaftszuschreibung ===
+
+Zeig mir alle Werke, die fälschlicherweise unter Alberts Namen ediert wurden!
+
+
+=== Manuskripte ===
+
+Welche Handschriften wurden zur Erstellung einer Edition benutzt?
+
+Nach welchen Manuskripten wurde der Text einer Edition ediert?
+
+
+Was sind denn eigentlich alles für Texte in diesem Manuskript vorhanden?
+
+In welchen Manuskripten liegt der Text eines Werks vollständig oder teilweise vor?
+
+{{#ask:
+ [[Category:Manuscript]]
+ [[Is Manuscript Of::4711]] 
+ |?Shelfmark 
+ |?Incipit
+}}
+
+=== Nachdrucke ===
+
+Welche Nachdrucke gibt es von einer Edition?
+
+
+=== Andere Texte ===
+
+Welche anderen edierten Texte befinden sich in einer Edition?
+
+
+
+== Komplexe Abfragen ==
+
+Datenbankabfragen die als Grundlage für quantitative Auswertungen oder visuelle Darstellungen dienen können.
+
+Welche Editionen wurden irrtümlich als Text eines unechten Autors ediert? Zeige mir dazu die Werke, die dadurch als unechte Werke gelistet werden!
+
+{{#ask:
+ [[Category:Edition]]
+ |?IsEditionOf=Works
+}}
+
+Gib mir alle Werke, die vor Gründung der Universität Paris geschaffen wurden!
+
+
+Welche Werke wurden in kollektiver Autorenschaft verfasst?
+
+Welche Werke wurden von einer Gruppe verfasst?
+
+Wie wandern Texte in der Autorenschaft?</text>
+      <sha1>aev7yiaa66jnjqse4p5q6j7f1v7q8hn</sha1>
+    </revision>
+  </page>
+</mediawiki>

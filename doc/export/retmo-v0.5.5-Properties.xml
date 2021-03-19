@@ -1,0 +1,832 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Main_Page</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Property:Author</title>
+    <ns>102</ns>
+    <id>86</id>
+    <revision>
+      <id>113</id>
+      <parentid>112</parentid>
+      <timestamp>2021-03-09T08:43:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:43:38.143324</comment>
+      <origin>113</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="248" sha1="tqyz9cy5ommod5o2yuslss18ycd84v5" xml:space="preserve">
+Imported from [[Imported from::retmo:author]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/author]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::creator]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>tqyz9cy5ommod5o2yuslss18ycd84v5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Availability</title>
+    <ns>102</ns>
+    <id>89</id>
+    <revision>
+      <id>305</id>
+      <parentid>116</parentid>
+      <timestamp>2021-03-09T08:45:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:45:04.871174</comment>
+      <origin>305</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="207" sha1="mxa2iq28q7qy4z32sthajjhr41l78mn" xml:space="preserve">
+Imported from [[Imported from::schema:availability]]
+
+Equivalent URI [[Equivalent URI::http://schema.org/availability]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:SCHEMA]]</text>
+      <sha1>mxa2iq28q7qy4z32sthajjhr41l78mn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:BibliographicCitation</title>
+    <ns>102</ns>
+    <id>322</id>
+    <revision>
+      <id>481</id>
+      <timestamp>2021-03-10T08:31:39Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with "{{DISPLAYTITLE:BibliographicCitation}}"</comment>
+      <origin>481</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="38" sha1="8i1ldra1024ha0615oujttyycy7zjwl" xml:space="preserve">{{DISPLAYTITLE:BibliographicCitation}}</text>
+      <sha1>8i1ldra1024ha0615oujttyycy7zjwl</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CreationDateDescription</title>
+    <ns>102</ns>
+    <id>96</id>
+    <revision>
+      <id>690</id>
+      <parentid>689</parentid>
+      <timestamp>2021-03-11T10:38:17Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>690</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="325" sha1="2zys8t5f5a1qyku8bm1qss03h02wyb9" xml:space="preserve">{{DISPLAYTITLE:Werkdatierung Beschreibung}}
+Imported from [[Imported from::retmo:creationDateDescription]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/creationDateDescription]]
+
+Has type [[Has type::Text]]
+
+
+
+Subproperty of [[Subproperty of::created]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>2zys8t5f5a1qyku8bm1qss03h02wyb9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CreationDateNote</title>
+    <ns>102</ns>
+    <id>97</id>
+    <revision>
+      <id>691</id>
+      <parentid>685</parentid>
+      <timestamp>2021-03-11T10:38:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>691</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="304" sha1="i58vjkik64uq75tgjlz8w9jyv17qia8" xml:space="preserve">{{DISPLAYTITLE:Werkdatierung Notiz}}
+Imported from [[Imported from::retmo:creationDateNote]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/creationDateNote]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::created]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>i58vjkik64uq75tgjlz8w9jyv17qia8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:DatedWork</title>
+    <ns>102</ns>
+    <id>100</id>
+    <revision>
+      <id>675</id>
+      <parentid>674</parentid>
+      <timestamp>2021-03-11T10:26:08Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>675</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="242" sha1="kugec7sil9rh1jpinsi849oyqxnmmzc" xml:space="preserve">{{DISPLAYTITLE:Datiertes Werk}}
+
+Imported from [[Imported from::retmo:datedWork]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/datedWork]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>kugec7sil9rh1jpinsi849oyqxnmmzc</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Editor</title>
+    <ns>102</ns>
+    <id>102</id>
+    <revision>
+      <id>134</id>
+      <parentid>133</parentid>
+      <timestamp>2021-03-09T08:43:45Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:43:45.720388</comment>
+      <origin>134</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="248" sha1="eyo9s6x82yfqrlj0i91qa84ok4hluvz" xml:space="preserve">
+Imported from [[Imported from::retmo:editor]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/editor]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::creator]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>eyo9s6x82yfqrlj0i91qa84ok4hluvz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Event</title>
+    <ns>102</ns>
+    <id>107</id>
+    <revision>
+      <id>1055</id>
+      <parentid>1053</parentid>
+      <timestamp>2021-03-17T08:59:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1055</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="208" sha1="92oa2x3qskdnmx31t6twk7ws6c39p7h" xml:space="preserve">
+
+Equivalent URI [[Equivalent URI::http://purl.org/vocab/bio/0.1/event]]
+
+[[Has type::Record]]
+[[Has fields::Type;EventContent;Date;Place;Source;Provenance]]
+
+[[Category:Imported vocabulary]] [[Category:BIO]]</text>
+      <sha1>92oa2x3qskdnmx31t6twk7ws6c39p7h</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:EventContent</title>
+    <ns>102</ns>
+    <id>347</id>
+    <revision>
+      <id>1054</id>
+      <timestamp>2021-03-17T08:57:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with "Has type [[Has type::Text]]"</comment>
+      <origin>1054</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="27" sha1="lyxmhoos86vvbiamxqogybtjubeeu97" xml:space="preserve">Has type [[Has type::Text]]</text>
+      <sha1>lyxmhoos86vvbiamxqogybtjubeeu97</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:EventDate</title>
+    <ns>102</ns>
+    <id>108</id>
+    <revision>
+      <id>141</id>
+      <timestamp>2021-03-09T08:43:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:43:48.028161</comment>
+      <origin>141</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="251" sha1="1uizlhyel13kz8b1ib6wksn00vrhhf4" xml:space="preserve">
+Imported from [[Imported from::retmo:eventDate]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/eventDate]]
+
+Has type [[Has type::Date]]
+
+
+
+Subproperty of [[Subproperty of::date]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>1uizlhyel13kz8b1ib6wksn00vrhhf4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:EventDateDescription</title>
+    <ns>102</ns>
+    <id>109</id>
+    <revision>
+      <id>142</id>
+      <timestamp>2021-03-09T08:43:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:43:49.036067</comment>
+      <origin>142</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="273" sha1="9btryykmibbwhce6du762aq5312s592" xml:space="preserve">
+Imported from [[Imported from::retmo:eventDateDescription]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/eventDateDescription]]
+
+Has type [[Has type::Text]]
+
+
+
+Subproperty of [[Subproperty of::date]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>9btryykmibbwhce6du762aq5312s592</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:HasEdition</title>
+    <ns>102</ns>
+    <id>116</id>
+    <revision>
+      <id>150</id>
+      <parentid>149</parentid>
+      <timestamp>2021-03-09T08:43:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:43:51.696367</comment>
+      <origin>150</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="263" sha1="klc9izrhrda0nuzrxjqg3nsag6h4hsa" xml:space="preserve">
+Imported from [[Imported from::retmo:hasEdition]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/hasEdition]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::R10_has_member]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>klc9izrhrda0nuzrxjqg3nsag6h4hsa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:HasPlaceOfPublication</title>
+    <ns>102</ns>
+    <id>201</id>
+    <revision>
+      <id>273</id>
+      <timestamp>2021-03-09T08:44:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:47.132078</comment>
+      <origin>273</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="232" sha1="dl38d5furtcoilrxnu2fw2vue02bboa" xml:space="preserve">
+Imported from [[Imported from::fabio:hasPlaceOfPublication]]
+
+Equivalent URI [[Equivalent URI::http://purl.org/spar/fabio/hasPlaceOfPublication]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:FABIO]]</text>
+      <sha1>dl38d5furtcoilrxnu2fw2vue02bboa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:HasPrint</title>
+    <ns>102</ns>
+    <id>119</id>
+    <revision>
+      <id>153</id>
+      <timestamp>2021-03-09T08:43:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:43:52.735370</comment>
+      <origin>153</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="261" sha1="li6ce6f1dsqahofkjnapbx6lx1eekjk" xml:space="preserve">
+Imported from [[Imported from::retmo:hasPrint]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/hasPrint]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::hasManifestation]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>li6ce6f1dsqahofkjnapbx6lx1eekjk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:IsReferencedBy</title>
+    <ns>102</ns>
+    <id>136</id>
+    <revision>
+      <id>251</id>
+      <parentid>176</parentid>
+      <timestamp>2021-03-09T08:44:33Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:33.639123</comment>
+      <origin>251</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="220" sha1="6593yzc74evffwefytaaa6ymw8d7kud" xml:space="preserve">
+Imported from [[Imported from::dcterms:isReferencedBy]]
+
+Equivalent URI [[Equivalent URI::http://purl.org/dc/terms/isReferencedBy]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:DCTERMS]]</text>
+      <sha1>6593yzc74evffwefytaaa6ymw8d7kud</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:NameAddition</title>
+    <ns>102</ns>
+    <id>11</id>
+    <revision>
+      <id>196</id>
+      <parentid>11</parentid>
+      <timestamp>2021-03-09T08:44:08Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:07.970427</comment>
+      <origin>196</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="265" sha1="1wre6d4wjoj7kbhdprpivmtvh1e4i03" xml:space="preserve">
+Imported from [[Imported from::retmo:nameAddition]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/nameAddition]]
+
+Has type [[Has type::Text]]
+
+
+
+Subproperty of [[Subproperty of::nameAddition]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>1wre6d4wjoj7kbhdprpivmtvh1e4i03</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:PlaceName</title>
+    <ns>102</ns>
+    <id>160</id>
+    <revision>
+      <id>839</id>
+      <parentid>832</parentid>
+      <timestamp>2021-03-12T09:33:13Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>839</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="263" sha1="jy1jm9rpn870amg7toof62rww6xgdym" xml:space="preserve">
+Imported from [[Imported from::retmo:placeName]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/placeName]]
+
+Has type [[Has type::Monolingual text]]
+
+
+
+Subproperty of [[Subproperty of::name]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>jy1jm9rpn870amg7toof62rww6xgdym</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkAuthorshipAttribution</title>
+    <ns>102</ns>
+    <id>184</id>
+    <revision>
+      <id>232</id>
+      <timestamp>2021-03-09T08:44:21Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:21.366984</comment>
+      <origin>232</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="242" sha1="ludr759u0c8jw3afzaw2uug7213z0d2" xml:space="preserve">
+Imported from [[Imported from::retmo:workAuthorshipAttribution]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workAuthorshipAttribution]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>ludr759u0c8jw3afzaw2uug7213z0d2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkAuthorshipAttributionEvidence</title>
+    <ns>102</ns>
+    <id>185</id>
+    <revision>
+      <id>233</id>
+      <timestamp>2021-03-09T08:44:21Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:21.706127</comment>
+      <origin>233</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="258" sha1="kpx7h1wycrycxk1vakbbr0hfu9thxv2" xml:space="preserve">
+Imported from [[Imported from::retmo:workAuthorshipAttributionEvidence]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workAuthorshipAttributionEvidence]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>kpx7h1wycrycxk1vakbbr0hfu9thxv2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkAuthorshipAttributionNote</title>
+    <ns>102</ns>
+    <id>186</id>
+    <revision>
+      <id>234</id>
+      <timestamp>2021-03-09T08:44:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:22.073880</comment>
+      <origin>234</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="250" sha1="qicl719teklw81tsyeb44u6xbrpun9o" xml:space="preserve">
+Imported from [[Imported from::retmo:workAuthorshipAttributionNote]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workAuthorshipAttributionNote]]
+
+Has type [[Has type::Text]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>qicl719teklw81tsyeb44u6xbrpun9o</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkAuthorshipAttributionRef</title>
+    <ns>102</ns>
+    <id>362</id>
+    <revision>
+      <id>1348</id>
+      <timestamp>2021-03-19T10:24:10Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with " Imported from [[Imported from::retmo:workAuthorshipAttribution]]  Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workAuthorshipAttribution]]  Has type Has ty..."</comment>
+      <origin>1348</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="242" sha1="ludr759u0c8jw3afzaw2uug7213z0d2" xml:space="preserve">
+Imported from [[Imported from::retmo:workAuthorshipAttribution]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workAuthorshipAttribution]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>ludr759u0c8jw3afzaw2uug7213z0d2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkAuthorshipReference</title>
+    <ns>102</ns>
+    <id>319</id>
+    <revision>
+      <id>1346</id>
+      <parentid>422</parentid>
+      <timestamp>2021-03-19T10:23:14Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1346</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="210" sha1="od2tadl3p2k2s1c8uclhge3km1xd4x1" xml:space="preserve">This is a property of type [[Has type::Reference]].
+[[Has fields::WorkCreatorRef;AuthoredWorkRef;WorkAuthorshipAttributionRef;WorkAuthorshipAttributionEvidence;WorkAuthorshipAttributionNote;WorkAuthorshipRole]]</text>
+      <sha1>od2tadl3p2k2s1c8uclhge3km1xd4x1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkAuthorshipRole</title>
+    <ns>102</ns>
+    <id>187</id>
+    <revision>
+      <id>235</id>
+      <timestamp>2021-03-09T08:44:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:22.407946</comment>
+      <origin>235</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="228" sha1="iqeeh0ixulimegqhu70j1h09cndzk91" xml:space="preserve">
+Imported from [[Imported from::retmo:workAuthorshipRole]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workAuthorshipRole]]
+
+Has type [[Has type::Page]]
+
+
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>iqeeh0ixulimegqhu70j1h09cndzk91</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkCreator</title>
+    <ns>102</ns>
+    <id>188</id>
+    <revision>
+      <id>236</id>
+      <timestamp>2021-03-09T08:44:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Edited by Bot at 2021-03-09T09:44:22.748647</comment>
+      <origin>236</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="258" sha1="mai2945swx7aazrnb5twthj9xomqx63" xml:space="preserve">
+Imported from [[Imported from::retmo:workCreator]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workCreator]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::creator]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>mai2945swx7aazrnb5twthj9xomqx63</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkCreatorRef</title>
+    <ns>102</ns>
+    <id>361</id>
+    <revision>
+      <id>1347</id>
+      <timestamp>2021-03-19T10:23:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with " Imported from [[Imported from::retmo:workCreator]]  Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workCreator]]  Has type [[Has type::Page]]    Subproperty of..."</comment>
+      <origin>1347</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="258" sha1="mai2945swx7aazrnb5twthj9xomqx63" xml:space="preserve">
+Imported from [[Imported from::retmo:workCreator]]
+
+Equivalent URI [[Equivalent URI::http://neoalcuin.de/ontology/workCreator]]
+
+Has type [[Has type::Page]]
+
+
+
+Subproperty of [[Subproperty of::creator]]
+
+
+
+[[Category:Imported vocabulary]] [[Category:RETMO]]</text>
+      <sha1>mai2945swx7aazrnb5twthj9xomqx63</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkDatingReference</title>
+    <ns>102</ns>
+    <id>335</id>
+    <revision>
+      <id>688</id>
+      <parentid>683</parentid>
+      <timestamp>2021-03-11T10:36:10Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>688</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="105" sha1="izgrlqajvde3zb5p0f1jv6sat6187oj" xml:space="preserve">[[Has type::Reference]].
+[[Has fields::Creation date;DatedWork;CreationDateNote;CreationDateDescription]]</text>
+      <sha1>izgrlqajvde3zb5p0f1jv6sat6187oj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:WorkTextgenre</title>
+    <ns>102</ns>
+    <id>338</id>
+    <revision>
+      <id>723</id>
+      <parentid>720</parentid>
+      <timestamp>2021-03-11T11:40:37Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>723</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="27" sha1="kchj23j936o8cqmb9jl7fbxdfg41jvq" xml:space="preserve">Has type [[Has type::Page]]</text>
+      <sha1>kchj23j936o8cqmb9jl7fbxdfg41jvq</sha1>
+    </revision>
+  </page>
+</mediawiki>
