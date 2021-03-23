@@ -95,54 +95,37 @@
     <ns>10</ns>
     <id>326</id>
     <revision>
-      <id>1345</id>
-      <parentid>1344</parentid>
-      <timestamp>2021-03-19T08:54:08Z</timestamp>
+      <id>185110</id>
+      <parentid>119336</parentid>
+      <timestamp>2021-03-19T13:12:48Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>1345</origin>
+      <origin>185110</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1553" sha1="6o7yblhi06qaufcdnrbpw5mgezi5o6r" xml:space="preserve">{{#ask:
-[[IsEditionOf.Author.WorkCreator::104]]
-|?=
-|?IsEditionOf=Edition von
-|?IsEditionOf.Author.WorkAuthorshipAttribution=Authentizität der Autorenschaft
-|?HasPrint=Druck
-|?Editor
-|format=broadtable
+      <text bytes="1085" sha1="jocsyrgp1a7e1q32r0sgk4d7z2qfqdg" xml:space="preserve">Anzahl aller Editionen: {{#ask:
+[[IsEditionOf.Author.WorkCreator::{{PAGENAME}}]]
+|format=count
 }}
-
-{{#ask:
-[[IsEditionOf.Author.WorkCreator::Albertus_Magnus]]
-|?=
-|?IsEditionOf=Edition von
-|?IsEditionOf.Author.WorkAuthorshipAttribution=Authentizität der Autorenschaft
-|?HasPrint=Druck
-|?Editor
-|format=broadtable
-}}
-
-
 {{#sparql:
 PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
 PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 SELECT ?label (count(?label) as ?count)
 {
-  ?authorship retmop:WorkAuthorshipReference/retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
-  ?authorship retmop:WorkAuthorshipReference/retmop:AuthoredWork/rdfs:label ?work . 
+  ?authorship retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
+  ?authorship retmop:AuthoredWork/rdfs:label ?work . 
   ?edition retmop:IsEditionOf/rdfs:label ?work . 
-  ?authorship retmop:WorkAuthorshipReference/retmop:WorkAuthorshipAttribution ?attribution .
-  ?authorship retmop:WorkAuthorshipReference/retmop:AuthoredWork/retmop:Availability ?avail .
+  ?authorship retmop:WorkAuthorshipAttribution ?attribution .
+  ?authorship retmop:AuthoredWork/retmop:Availability ?avail .
   { ?attribution rdfs:label ?label . } UNION { ?avail rdfs:label ?label . }
 }
 GROUP by ?label
 |config=fuseki
 |chart=google.visualization.Pie
-|options=width=1000px!height=500px!pieSliceText=value-and-percentage
+|options=width=1000px!height=500px!pieSliceText=value
 |log=2
 }}
 {{#ask:
@@ -154,7 +137,7 @@ GROUP by ?label
 |?Editor
 |format=broadtable
 }}</text>
-      <sha1>6o7yblhi06qaufcdnrbpw5mgezi5o6r</sha1>
+      <sha1>jocsyrgp1a7e1q32r0sgk4d7z2qfqdg</sha1>
     </revision>
   </page>
   <page>
@@ -162,98 +145,37 @@ GROUP by ?label
     <ns>10</ns>
     <id>325</id>
     <revision>
-      <id>1343</id>
-      <parentid>1342</parentid>
-      <timestamp>2021-03-19T08:44:21Z</timestamp>
+      <id>185117</id>
+      <parentid>185116</parentid>
+      <timestamp>2021-03-19T14:39:05Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>1343</origin>
+      <origin>185117</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="2160" sha1="h0u2a0efwo0dn7xczfdx6x4bh20qib9" xml:space="preserve">{{#sparql:
+      <text bytes="1093" sha1="he7798lwjn1kyh1or7pinzkp79yc2l3" xml:space="preserve">Anzahl aller Werke: {{#ask:
+[[WorkCreator::{{PAGENAME}}]]
+|format=count
+}}
+{{#sparql:
 PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
 PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 SELECT ?label (count(?label) as ?count)
 {
-  ?authorship retmop:WorkAuthorshipReference/retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
-  ?authorship retmop:WorkAuthorshipReference/retmop:WorkAuthorshipAttribution ?attribution .
-  ?authorship retmop:WorkAuthorshipReference/retmop:AuthoredWork/retmop:Availability ?avail .
+  ?authorship retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
+  ?authorship retmop:WorkAuthorshipAttribution ?attribution .
+  ?authorship retmop:AuthoredWork/retmop:Availability ?avail .
   { ?attribution rdfs:label ?label . } UNION { ?avail rdfs:label ?label . }
 }
 GROUP by ?label
 |config=fuseki
 |chart=google.visualization.Pie
-|options=width=1000px!height=500px!pieSliceText=value-and-percentage
+|options=width=1000px!height=500px!pieSliceText=value
 |log=2
 }}
-Anzahl:
-&lt;ul&gt;
-&lt;li&gt;
-alle Werke: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-echte Werke: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[WorkAuthorshipAttribution::Or]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-zweifelhafte Werke: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[WorkAuthorshipAttribution::Zw]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-unechte Werke: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[WorkAuthorshipAttribution::No]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-kritisch ediert: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[AuthoredWork.Availability::Ke]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-ediert: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[AuthoredWork.Availability::Ed]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-bezeugt, aber nicht überliefert: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[AuthoredWork.Availability::Be]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-im Manuskript: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[AuthoredWork.Availability::Ma]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;li&gt;
-keine Angaben: {{#ask:
-[[WorkCreator::{{PAGENAME}}]]
-[[AuthoredWork.Availability::Ka]]
-|format=count
-}}
-&lt;/li&gt;
-&lt;/ul&gt;
 {{#ask:
 [[WorkCreator::{{PAGENAME}}]]
 |mainlabel=-
@@ -265,10 +187,10 @@ keine Angaben: {{#ask:
 |?AuthoredWork.Created
 |?AuthoredWork.Note
 |?AuthoredWork.Provenance
-|format=broadtable
+|format=datatables
 }}
 {{{WorkShortComment}}}</text>
-      <sha1>h0u2a0efwo0dn7xczfdx6x4bh20qib9</sha1>
+      <sha1>he7798lwjn1kyh1or7pinzkp79yc2l3</sha1>
     </revision>
   </page>
   <page>
