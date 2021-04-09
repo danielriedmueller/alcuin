@@ -60,8 +60,8 @@
       <origin>1321</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="429" sha1="mva7eo917wei97cf7ov61a8t08wlcoo" xml:space="preserve">&lt;tabs&gt;
-&lt;tab name="Autor"&gt;
+      <text bytes="429" sha1="mva7eo917wei97cf7ov61a8t08wlcoo" xml:space="preserve"><tabs>
+<tab name="Autor">
 {|class="wikitable smwtable"
 |-
 !Datierung des Autors
@@ -79,14 +79,14 @@
 !Kurzkommentar
 |{{{AuthorShortComment}}}
 |}
-&lt;/tab&gt;
-&lt;tab name="Werke"&gt;
+</tab>
+<tab name="Werke">
 {{AuthorWorks}}
-&lt;/tab&gt;
-&lt;tab name="Editionen"&gt;
+</tab>
+<tab name="Editionen">
 {{AuthorEditions}}
-&lt;/tab&gt;
-&lt;/tabs&gt;</text>
+</tab>
+</tabs></text>
       <sha1>mva7eo917wei97cf7ov61a8t08wlcoo</sha1>
     </revision>
   </page>
@@ -110,9 +110,9 @@
 |format=count
 }}
 {{#sparql:
-PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
-PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX retmop: <http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A>
+PREFIX page: <http://alcuin.soital.de/index.php/Special:URIResolver/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?label (count(?label) as ?count)
 {
   ?authorship retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
@@ -160,9 +160,9 @@ GROUP by ?label
 |format=count
 }}
 {{#sparql:
-PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
-PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX retmop: <http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A>
+PREFIX page: <http://alcuin.soital.de/index.php/Special:URIResolver/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?label (count(?label) as ?count)
 {
   ?authorship retmop:WorkCreator page:{{urlencode:{{SPARQLPAGENAME}}|WIKI}} .  
@@ -253,8 +253,8 @@ GROUP by ?label
       <origin>1113</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="573" sha1="dhcnaoxy5hvi8sbmmybgfd4brn8bwea" xml:space="preserve">&lt;noinclude&gt;{{DISPLAYTITLE:Comment}}&lt;/noinclude&gt;
-&lt;includeonly&gt;Ist Kommentar von: [[{{{IsCommentOf}}}]]
+      <text bytes="573" sha1="dhcnaoxy5hvi8sbmmybgfd4brn8bwea" xml:space="preserve"><noinclude>{{DISPLAYTITLE:Comment}}</noinclude>
+<includeonly>Ist Kommentar von: [[{{{IsCommentOf}}}]]
 {{Work
 |Author={{{Author}}}
 |HasEdition={{{HasEdition}}}
@@ -274,7 +274,7 @@ GROUP by ?label
 |IsReferencedBy={{{IsReferencedBy}}}
 }}
 {{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
-&lt;/includeonly&gt;</text>
+</includeonly></text>
       <sha1>dhcnaoxy5hvi8sbmmybgfd4brn8bwea</sha1>
     </revision>
   </page>
@@ -406,7 +406,7 @@ GROUP by ?label
       <format>text/x-wiki</format>
       <text bytes="435" sha1="6p7b079m6c383cx2k09mk1oagb7gci8" xml:space="preserve">{{#arraymap:{{{1|}}}|,|x|{{#set: HasWorkPart=x}}|}}
 {{#ask: 
-[[AuthoredWork::&lt;q&gt;[[-HasWorkPart::{{PAGENAME}}]]&lt;/q&gt;]]
+[[AuthoredWork::<q>[[-HasWorkPart::{{PAGENAME}}]]</q>]]
 |mainlabel=-
 |?AuthoredWork=Titel
 |?AuthoredWork.Availability=Verfügbarkeit
@@ -450,7 +450,7 @@ GROUP by ?label
 !Part
 |{{#arraymap:{{{Part|}}}|,|x|[[Part::x]]|}}
 |}
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>owfaaytjr0ebwdtj6j167ag09hdig46</sha1>
     </revision>
   </page>
@@ -469,7 +469,7 @@ GROUP by ?label
       <origin>822</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="544" sha1="qxdzj077myginlew4puekhatie3u94z" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{Title}}}}}&lt;/includeonly&gt;
+      <text bytes="544" sha1="qxdzj077myginlew4puekhatie3u94z" xml:space="preserve"><includeonly>{{DISPLAYTITLE:{{{Title}}}}}</includeonly>
 {|class="wikitable smwtable"
 !BibliographicCitation
 |{{#arraymap:{{{BibliographicCitation|}}}|,|x|[[BibliographicCitation::x]]|}}
@@ -487,7 +487,7 @@ GROUP by ?label
 |{{#arraymap:{{{References|}}}|,|x|[[References::x]]|}}
 |-
 |}
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>qxdzj077myginlew4puekhatie3u94z</sha1>
     </revision>
   </page>
@@ -506,12 +506,13 @@ GROUP by ?label
       <origin>1075</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="582" sha1="7quscxogfjxkh3xs63b10x0eow6j689" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{Name}}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}&lt;/includeonly&gt;
-{{#vardefine:synonyms|&lt;ul&gt;{{#arraymap:{{{VariantName|}}}|,|x|&lt;li&gt;[[VariantName::x]]&lt;li&gt;|}}&lt;/ul&gt;}}
+      <text bytes="582" sha1="7quscxogfjxkh3xs63b10x0eow6j689" xml:space="preserve">
+        <includeonly>{{DISPLAYTITLE:{{{Name}}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}</includeonly>
+{{#vardefine:synonyms|<ul>{{#arraymap:{{{VariantName|}}}|,|x|<li>[[VariantName::x]]<li>|}}</ul>}}
 
 {{#set: NameAddition={{{NameAddition}}}}}
 
-&lt;tab name="Synonyme"&gt;{{#var:synonyms}}&lt;/tab&gt;
+<tab name="Synonyme">{{#var:synonyms}}</tab>
 {{Author
 |VariantName={{{VariantName}}}
 }}
@@ -522,7 +523,7 @@ GROUP by ?label
 !Datenherkunft
 |{{#arraymap:{{{Provenance|}}}|,|x|[[Provenance::x]]|,}}
 |}
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>7quscxogfjxkh3xs63b10x0eow6j689</sha1>
     </revision>
   </page>
@@ -541,14 +542,14 @@ GROUP by ?label
       <origin>845</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="265" sha1="a3hyqhsqeqsjagvs4faev73hlmuxj4u" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{PlaceName}}}}}&lt;/includeonly&gt;
+      <text bytes="265" sha1="a3hyqhsqeqsjagvs4faev73hlmuxj4u" xml:space="preserve"><includeonly>{{DISPLAYTITLE:{{{PlaceName}}}}}</includeonly>
 {{#arraymap:{{{PlaceName|}}}|,|x1|[[PlaceName::x1]]}}
 
 GND: [[GND ID::{{{GndIdentifier}}}]]
 
 CT: [[CT ID::{{{CtIdentifier}}}]]
 
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>a3hyqhsqeqsjagvs4faev73hlmuxj4u</sha1>
     </revision>
   </page>
@@ -575,7 +576,7 @@ CT: [[CT ID::{{{CtIdentifier}}}]]
 |{{#arraymap:{{{PublicationYear|}}}|,|x|[[PublicationYear::x]]|}}
 |-
 |}
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>me92g4kr0htuyqtyw8ctq1wfbgf0c0s</sha1>
     </revision>
   </page>
@@ -615,8 +616,8 @@ CT: [[CT ID::{{{CtIdentifier}}}]]
       <origin>1102</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="534" sha1="2gc4dj4m6q9ovbpcniln90xhqhgd2jb" xml:space="preserve">&lt;noinclude&gt;{{DISPLAYTITLE:Quaestio}}&lt;/noinclude&gt;
-&lt;includeonly&gt;
+      <text bytes="534" sha1="2gc4dj4m6q9ovbpcniln90xhqhgd2jb" xml:space="preserve"><noinclude>{{DISPLAYTITLE:Quaestio}}</noinclude>
+<includeonly>
 {{Work
 |Author={{{Author}}}
 |HasEdition={{{HasEdition}}}
@@ -636,7 +637,7 @@ CT: [[CT ID::{{{CtIdentifier}}}]]
 |IsReferencedBy={{{IsReferencedBy}}}
 }}
 {{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
-&lt;/includeonly&gt;</text>
+</includeonly></text>
       <sha1>2gc4dj4m6q9ovbpcniln90xhqhgd2jb</sha1>
     </revision>
   </page>
@@ -682,10 +683,10 @@ CT: [[CT ID::{{{CtIdentifier}}}]]
       <origin>1319</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1354" sha1="tay0q11amrp1gvpd0qwsr4n5q0z2o3b" xml:space="preserve">&lt;includeonly&gt;{{DISPLAYTITLE:{{{Title}}} }}&lt;/includeonly&gt;
+      <text bytes="1354" sha1="tay0q11amrp1gvpd0qwsr4n5q0z2o3b" xml:space="preserve"><includeonly>{{DISPLAYTITLE:{{{Title}}} }}</includeonly>
 Equivalent zu: [[{{{SameAs|}}}]]
 {{#vardefine:editions|{{{HasEdition}}}}}
-{{#vardefine:alternateTitles|&lt;ul&gt;{{#arraymap:{{{AlternateTitle|}}}|,|x|&lt;li&gt;[[AlternateTitle::x]]&lt;li&gt;|}}&lt;/ul&gt;}}&lt;tab name="Titelvarianten"&gt;{{#var:alternateTitles}}&lt;/tab&gt;
+{{#vardefine:alternateTitles|<ul>{{#arraymap:{{{AlternateTitle|}}}|,|x|<li>[[AlternateTitle::x]]<li>|}}</ul>}}<tab name="Titelvarianten">{{#var:alternateTitles}}</tab>
 {|class="wikitable smwtable"
 !Textgattung
 |[[WorkTextgenre::{{#if: {{{WorkTextgenre|}}}|{{{WorkTextgenre}}}|Work}}]]
@@ -727,8 +728,8 @@ Equivalent zu: [[{{{SameAs|}}}]]
 |}
 {{ReferencedBy|{{{IsReferencedBy}}}}}
 Kurzkommentar: {{{WorkShortComment}}}
-&lt;tabs&gt;
-&lt;tab name="Werk"&gt;
+<tabs>
+<tab name="Werk">
 {|class="wikitable smwtable"
 !Aufbau
 |FEHLT NOCH
@@ -739,11 +740,11 @@ Kurzkommentar: {{{WorkShortComment}}}
 !Bedeutung / Rezeption
 |FEHLT NOCH
 |}
-&lt;/tab&gt;
-&lt;tab name="Edition"&gt;{{WorkEditions|{{#var:editions}}}}&lt;/tab&gt;
-&lt;/tabs&gt;
+</tab>
+<tab name="Edition">{{WorkEditions|{{#var:editions}}}}</tab>
+</tabs>
 Herkunft: {{#arraymap:{{{Provenance|}}}|,|x|[[Provenance::x]]|}}
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>tay0q11amrp1gvpd0qwsr4n5q0z2o3b</sha1>
     </revision>
   </page>
@@ -765,11 +766,11 @@ Herkunft: {{#arraymap:{{{Provenance|}}}|,|x|[[Provenance::x]]|}}
       <text bytes="496" sha1="60ckmww8wk6t793xus7fc88431drwx1" xml:space="preserve">{{#set: WorkCreator={{{WorkCreator}}} }}
 {{#set: WorkAuthorshipAttribution={{{WorkAuthorshipAttribution}}} }}
 {{#set: AuthoredWork={{{AuthoredWork}}} }}
-&lt;li&gt;
+<li>
 [[WorkAuthorshipReference::{{{WorkCreator}}};{{{AuthoredWork}}};{{{WorkAuthorshipAttribution}}};{{{WorkAuthorshipAttributionEvidence|}}};{{{WorkAuthorshipAttributionNote|}}};{{{WorkAuthorshipRole|}}}]]
 {{#if:{{{Citation|}}}|[[CiteRef::{{{Citation}}}]]|}}
-&lt;/li&gt;
-&lt;includeonly&gt;{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}&lt;/includeonly&gt;</text>
+</li>
+<includeonly>{{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}</includeonly></text>
       <sha1>60ckmww8wk6t793xus7fc88431drwx1</sha1>
     </revision>
   </page>
@@ -849,8 +850,8 @@ Pages: {{{pages}}}</text>
       <origin>1316</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="575" sha1="bcljyu0vfp394q53vg7cyq7mjqm5jzk" xml:space="preserve">&lt;noinclude&gt;{{DISPLAYTITLE:WorkPart}}&lt;/noinclude&gt;
-&lt;includeonly&gt;Ist Werkteil von: [[{{{IsWorkPartOf}}}]]
+      <text bytes="575" sha1="bcljyu0vfp394q53vg7cyq7mjqm5jzk" xml:space="preserve"><noinclude>{{DISPLAYTITLE:WorkPart}}</noinclude>
+<includeonly>Ist Werkteil von: [[{{{IsWorkPartOf}}}]]
 {{Work
 |Author={{{Author}}}
 |HasEdition={{{HasEdition}}}
@@ -870,7 +871,7 @@ Pages: {{{pages}}}</text>
 |IsReferencedBy={{{IsReferencedBy}}}
 }}
 {{#arraymap:{{{Categories}}}|,|x|[[Category:x]]|}}
-&lt;/includeonly&gt;</text>
+</includeonly></text>
       <sha1>bcljyu0vfp394q53vg7cyq7mjqm5jzk</sha1>
     </revision>
   </page>

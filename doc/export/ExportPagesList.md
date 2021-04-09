@@ -41,10 +41,11 @@
 - Property:DatedWork
 - Property:Editor
 - Property:Event
+- Property:EventType
+- Property:EventPlace
 - Property:EventContent
 - Property:EventDate
 - Property:EventDateDescription
-- Property:EventDaetNote
 - Property:HasEdition
 - Property:HasPlaceOfPublication
 - Property:HasPrint
@@ -61,4 +62,11 @@
 - Property:WorkCreator
 - Property:WorkCreatorRef
 - Property:WorkDatingReference
-- Property:WorkTextgenre
+- Property:BirthDate
+- Property:DeathDate
+- Property:Type
+
+## Forms
+- Form:Person
+- Form:Work
+- Form:Edition

@@ -62,8 +62,17 @@ h1, h2, h3, h4 {
   //color: $font-color-bright;
 }
 
+p {
+  margin: 0;
+}
+
+p:empty, p br:first-child:last-child {
+  display: none;
+}
+
 h1#firstHeading {
   font-family: $font-family-sans-serif;
   border: none;
   margin: 0;
+  padding: 0 0 $spacing 0;
 }

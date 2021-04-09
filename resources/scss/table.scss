@@ -1,57 +1,16 @@
-/*
-table.wikitable {
-  border: 0;
-  border-collapse: collapse;
-  border-radius: 0;
-  background-color: $alcuin-creme;
-  font-size: $font-size-body;
-  margin: $spacing 0 $spacing 0;
+table:not(.wikitable) {
+  border: none;
 
-  table.wikitable {
-    width: calc(100% + #{$spacing-xs} + #{$spacing-xs});
-    margin: 0 -$spacing-xs;
-    table-layout:fixed;
+  tbody tr td {
+    padding: 0 $spacing;
+    border: none;
 
-    th, td {
-      border-top: none;
-      border-left: none;
-
-      &:last-child {
-        border-right: none;
-      }
+    &:first-child {
+      padding-left: 0;
     }
 
-    tr:last-child {
-      th, td {
-        border-bottom: none;
-      }
-    }
-  }
-
-  > tr, > * > tr {
-    th, td {
-      background-color: transparent;
-      color: $font-color-dark;
-      text-align: left;
-      padding: $spacing-xs;
-    }
-
-    th {
-      background-color: $alcuin-anthrazit;
-      color: $font-color-bright;
-    }
-
-    a {
-      color: $alcuin-orange !important;
-
-      &.new {
-        color: $alcuin-red !important;
-      }
-
-      &:hover {
-        text-decoration: underline !important;
-      }
+    &:last-child {
+      padding-right: 0;
     }
   }
 }
-*/

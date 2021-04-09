@@ -1,3 +1,9 @@
 #content {
-  padding: $spacing-l $spacing-l $spacing-l $logo-size + $spacing-l - $spacing-s;
+  padding: $spacing-l $spacing-l $spacing-l 0;
+
+  .mw-parser-output {
+    img {
+      max-width: 300px;
+    }
+  }
 }
