@@ -19,6 +19,7 @@
 		"Skins\\Chameleon\\Components\\": "chameleon/Components"
 	},
 	"Hooks": {
+		"ParserFirstCallInit": "parser",
 		"BeforePageDisplay": "main",
 		"SkinBuildSidebar": "main",
 		"PageSaveComplete": "main",
@@ -33,6 +34,9 @@
 		},
 		"magic": {
 			"class": "MediaWiki\\Extension\\Alcuin\\MagicWordsExtensionHooks"
+		},
+		"parser": {
+			"class": "MediaWiki\\Extension\\Alcuin\\ParserFunctionHooks"
 		}
 	},
 	"callback": "MediaWiki\\Extension\\Alcuin\\HookHandler::onExtensionLoad",
