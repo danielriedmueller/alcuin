@@ -13,6 +13,7 @@
 @import "ribbon/ribbon";
 @import "ribbon/horizontal_ribbon";
 @import "ribbon/vertical_ribbon";
+@import "approved_revs";
 
 @font-face {
   font-family: "Augusta";
@@ -51,7 +52,7 @@ body {
 }
 
 a {
-  //color: $alcuin-orange !important;
+  color: $alcuin-orange-dark !important;
 
   &:hover {
     //color: $alcuin-orange-dark !important;

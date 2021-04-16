@@ -1,3 +1,49 @@
+table.wikitable.broadtable {
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  border-collapse: collapse;
+  margin-bottom: $spacing;
+
+  tr {
+    td, th {
+      border: none;
+      padding: $spacing-xs;
+      background-color: transparent;
+
+      a {
+        color: $alcuin-orange-dark;
+      }
+    }
+
+    &:not(:last-child) {
+      td, th {
+        border-bottom: 1px solid $alcuin-anthrazit;
+      }
+    }
+  }
+
+  thead th {
+    background-color: $alcuin-anthrazit;
+    color: #fff;
+    text-align: left;
+    font-weight: normal;
+
+    a {
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover td {
+        background-color: $alcuin-creme;
+      }
+    }
+  }
+}
+
 table:not(.wikitable) {
   border: none;
 
