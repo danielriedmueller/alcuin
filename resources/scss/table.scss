@@ -3,12 +3,12 @@ table.wikitable {
   margin: 0;
   border: none;
   border-collapse: collapse;
-  margin-bottom: $spacing;
+  margin-bottom: $spacing 0;
 
   tr {
     td, th {
       border: none;
-      padding: $spacing-xs;
+      padding: 8px;
       background-color: transparent;
 
       a {
