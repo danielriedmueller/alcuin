@@ -14,6 +14,7 @@
 @import "ribbon/horizontal_ribbon";
 @import "ribbon/vertical_ribbon";
 @import "approved_revs";
+@import "tabs";
 
 @font-face {
   font-family: "Augusta";
@@ -51,16 +52,10 @@ body {
   margin: auto;
 }
 
-a {
-  color: $alcuin-orange !important;
-
-  &:hover {
-    //color: $alcuin-orange-dark !important;
-  }
-}
-
 h1, h2, h3, h4 {
-  //color: $font-color-bright;
+  font-family: $font-family-sans-serif;
+  color: $font-color-dark;
+  letter-spacing: -2px;
 }
 
 p {

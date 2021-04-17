@@ -9,10 +9,6 @@ table.wikitable {
       border: none;
       padding: 8px;
       background-color: transparent;
-
-      a {
-        color: $alcuin-orange;
-      }
     }
 
     &:not(:last-child) {
@@ -23,14 +19,14 @@ table.wikitable {
   }
 
   thead th {
-    background-color: $alcuin-anthrazit;
-    color: #fff;
+    background-color: $headline-color;
+    color: $headline-font-color;
     text-align: left;
     font-weight: normal;
 
     a {
       font-weight: normal;
-      color: #fff !important;
+      color: $headline-font-color !important;
     }
   }
 
@@ -47,6 +43,8 @@ table:not(.wikitable) {
   border: none;
 
   tbody tr td {
+    background-color: $content-color;
+    color: $content-font-color;
     padding: 0 $spacing;
     border: none;
 
