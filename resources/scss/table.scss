@@ -1,3 +1,22 @@
+table:not(.wikitable) {
+  border: none;
+
+  tbody tr td {
+    background-color: $content-color;
+    color: $content-font-color;
+    padding: 0 $spacing;
+    border: none;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
 table.wikitable {
   background-color: transparent;
   border: none;
@@ -35,25 +54,6 @@ table.wikitable {
       &:hover td {
         background-color: $alcuin-creme;
       }
-    }
-  }
-}
-
-table:not(.wikitable) {
-  border: none;
-
-  tbody tr td {
-    background-color: $content-color;
-    color: $content-font-color;
-    padding: 0 $spacing;
-    border: none;
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
     }
   }
 }
