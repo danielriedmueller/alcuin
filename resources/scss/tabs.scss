@@ -1,7 +1,7 @@
 .tabs, .tabs.tabs-togglebox {
   label.tabs-label {
-    background-color: $headline-color;
-    color: $headline-font-color;
+    background-color: $alcuin-anthrazit;
+    color: #fff;
     border-radius: 0 !important;
     padding: $spacing-xs;
     text-align: left;
@@ -24,12 +24,12 @@
 
 .tabs.tabs-tabbox {
   .tabs-input + label.tabs-label {
-    border: 1px solid $headline-color !important;
+    border: 1px solid #fff !important;
   }
 
   .tabs-input:checked + .tabs-label,
   .tabs-input-0:checked + .tabs-input-1 + .tabs-label {
-    border: 1px solid $headline-color !important;
+    border: 1px solid #fff !important;
     color: $content-font-color;
   }
 }
