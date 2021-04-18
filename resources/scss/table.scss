@@ -1,6 +1,6 @@
 table.wikitable {
   background-color: transparent;
-  border: none;
+  border: 1px solid $alcuin-anthrazit;
   border-collapse: collapse;
   margin: $spacing 0;
 
@@ -23,6 +23,7 @@ table.wikitable {
     color: $headline-font-color;
     text-align: left;
     font-weight: normal;
+    border-bottom: 1px solid $alcuin-anthrazit;
 
     a {
       font-weight: normal;
