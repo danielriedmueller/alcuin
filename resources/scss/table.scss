@@ -1,14 +1,25 @@
+table {
+  margin: $spacing 0;
+
+  td, th {
+    padding: $spacing-xxs;
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
 table.wikitable {
   background-color: transparent;
-  border: 1px solid $alcuin-anthrazit;
+  border: none;
   border-collapse: collapse;
-  margin: $spacing 0;
 
   tr {
     td, th {
       border: none;
-      padding: 8px;
+      padding: $spacing-xxs;
       background-color: transparent;
+      vertical-align: top;
+      text-align: left;
     }
 
     &:not(:last-child) {
@@ -33,6 +44,10 @@ table.wikitable {
 
   tbody {
     tr {
+      th {
+        text-align: left;
+      }
+
       &:hover td {
         background-color: $alcuin-creme;
       }
