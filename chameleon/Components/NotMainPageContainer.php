@@ -14,7 +14,7 @@ class NotMainPageContainer extends Structure
     public function getHtml()
     {
         /** Hide content for Main_Page */
-        if ($this->getSkinTemplate()->get('thispage') === 'Main_Page') {
+        if ($this->getSkinTemplate()->get('thispage') === 'Hauptseite') {
             return "";
         }
 

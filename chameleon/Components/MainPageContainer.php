@@ -14,7 +14,7 @@ class MainPageContainer extends Structure
     public function getHtml()
     {
         /** Show content for Main_Page */
-        if ($this->getSkinTemplate()->get('thispage') !== 'Main_Page') {
+        if ($this->getSkinTemplate()->get('thispage') !== 'Hauptseite') {
             return "";
         }
 

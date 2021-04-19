@@ -1,4 +1,4 @@
-body.page-Main_Page {
+body.page-Hauptseite {
   .omnibox {
     input[name="search"] {
       background-color: transparent;
@@ -43,7 +43,7 @@ body.page-Main_Page {
   }
 }
 
-body:not(.page-Main_Page) {
+body:not(.page-Hauptseite) {
   .omnibox {
     margin: 0;
 
