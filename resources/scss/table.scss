@@ -8,6 +8,10 @@ table {
   }
 }
 
+table table {
+  margin: 0 !important;
+}
+
 table.wikitable {
   background-color: transparent;
   border: none;
