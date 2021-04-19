@@ -75,7 +75,8 @@ h1#firstHeading {
 
 caption {
   caption-side: top;
-  padding: 0 0 $spacing-xs 0;
+  padding: 0 0 $spacing-xxs 0;
+  margin: $spacing-s 0 0 0;
   font-weight: bold;
   text-decoration: underline;
   color: $font-color-dark;
