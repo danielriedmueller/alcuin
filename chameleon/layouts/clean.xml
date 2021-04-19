@@ -27,7 +27,7 @@ M
     <component type="Container" class="headline">
         <component type="Html">
             <div class="title">
-                <a href="/index.php/Hauptseit">Alcuin</a>
+                <a href="/index.php/Hauptseite">Alcuin</a>
             </div>
         </component>
         <component type="Html">
