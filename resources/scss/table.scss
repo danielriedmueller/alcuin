@@ -1,10 +1,12 @@
 table {
   margin: $spacing 0;
+  table-layout: fixed;
 
   td, th {
-    padding: $spacing-xxs;
+    padding: $spacing-xxs 0;
     vertical-align: top;
     text-align: left !important;
+    word-break: break-word;
   }
 }
 

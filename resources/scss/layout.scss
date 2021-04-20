@@ -1,3 +1,11 @@
 .main > .row:first-child > .col:first-child {
   border: none;
 }
+
+.row {
+  max-width: 100%;
+}
+
+#content {
+  max-width: 1640px;
+}

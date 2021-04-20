@@ -1,4 +1,6 @@
 .srf-datatables {
+  margin: $spacing 0 0 0;
+
   table .headerSortUp, table .headerSortDown {
     background-color: transparent !important;
   }
@@ -8,7 +10,7 @@
     padding: 0;
   }
 
-  .srf-datatables .row>[class*="span"] {
+  .row>[class*="span"] {
     margin-left: 0;
   }
 }
