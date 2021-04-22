@@ -56,7 +56,12 @@ body {
 h1, h2, h3, h4 {
   font-family: $font-family-sans-serif;
   color: $font-color-dark;
+  font-size: 2rem;
   letter-spacing: -2px;
+}
+
+h1#firstHeading {
+  display: none;
 }
 
 p {
