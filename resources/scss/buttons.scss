@@ -1,10 +1,16 @@
 input[type=button],
 input#wpSave,
+button#wpSave,
+input#wpPreview,
+button#wpPreview,
+.pfSendBack,
 .editHelp,
 .create-btn,
 .delete-btn {
+  display: inline-block;
   padding: $spacing-xs $spacing-s;
   margin-right: $spacing-s;
+  margin-top: $spacing-xs;
   border: 1px solid $alcuin-anthrazit;
   background-color: $alcuin-anthrazit-light;
   border-radius: 3px;
