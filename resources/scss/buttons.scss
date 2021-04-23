@@ -1,8 +1,8 @@
 input[type=button],
 input#wpSave,
-button#wpSave,
+button[name='wpSave'],
 input#wpPreview,
-button#wpPreview,
+button[name='wpPreview'],
 .pfSendBack,
 .editHelp,
 .create-btn,
@@ -15,6 +15,11 @@ button#wpPreview,
   background-color: $alcuin-anthrazit-light;
   border-radius: 3px;
   color: $font-color-dark;
+
+  * {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
   &:hover {
     border: 1px solid $alcuin-orange-dark;
