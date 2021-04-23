@@ -1,12 +1,28 @@
-table {
+table, table.wikitable  {
   margin: $spacing 0;
-  table-layout: fixed;
 
-  td, th {
-    padding: $spacing-xxs 0;
-    vertical-align: top;
-    text-align: left !important;
-    word-break: break-word;
+  tr {
+    td, th {
+      padding: $spacing-xxs $spacing-xxs $spacing-xxs 0;
+      vertical-align: top;
+      text-align: left !important;
+      border: none;
+      background-color: transparent;
+    }
+
+    td {
+      word-break: break-word;
+    }
+
+    th {
+      word-break: keep-all;
+    }
+
+    &:not(:last-child) {
+      td, th {
+        border-bottom: 1px solid $alcuin-anthrazit-light;
+      }
+    }
   }
 }
 
@@ -19,28 +35,12 @@ table.wikitable {
   border: none;
   border-collapse: collapse;
 
-  tr {
-    td, th {
-      border: none;
-      padding: $spacing-xxs;
-      background-color: transparent;
-      vertical-align: top;
-      text-align: left;
-    }
-
-    &:not(:last-child) {
-      td, th {
-        border-bottom: 1px solid $alcuin-anthrazit;
-      }
-    }
-  }
-
   thead th {
     background-color: $headline-color;
     color: $headline-font-color;
     text-align: left;
     font-weight: bold;
-    border-bottom: 1px solid $alcuin-anthrazit;
+    border-bottom: 1px solid $alcuin-anthrazit-light;
 
     a {
       font-weight: bold;
@@ -50,12 +50,10 @@ table.wikitable {
 
   tbody {
     tr {
-      th {
-        text-align: left;
-      }
-
-      &:hover td {
-        background-color: $alcuin-creme;
+      &:hover {
+        th, td {
+          background-color: $alcuin-creme;
+        }
       }
     }
   }

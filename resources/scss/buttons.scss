@@ -1,0 +1,28 @@
+input[type=button],
+input#wpSave,
+.editHelp,
+.create-btn,
+.delete-btn {
+  padding: $spacing-xs $spacing-s;
+  margin-right: $spacing-s;
+  border: 1px solid $alcuin-anthrazit;
+  background-color: $alcuin-anthrazit-light;
+  border-radius: 3px;
+  color: $font-color-dark;
+
+  &:hover {
+    border: 1px solid $alcuin-orange-dark;
+    background-color: $alcuin-orange;
+    color: $font-color-bright;
+    text-decoration: none;
+
+    a {
+      color: $font-color-bright !important;
+      text-decoration: none !important;
+    }
+  }
+
+  a {
+    color: $font-color-dark !important;
+  }
+}

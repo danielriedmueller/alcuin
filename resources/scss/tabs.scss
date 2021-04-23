@@ -1,8 +1,8 @@
 .tabs, .tabs.tabs-togglebox {
   label.tabs-label {
     background-color: $alcuin-anthrazit;
+    border-radius: 3px !important;
     color: #fff;
-    border-radius: 0 !important;
     padding: $spacing-xs;
     text-align: left;
     border: none !important;
@@ -10,6 +10,13 @@
 
     &:not(:first-of-type) {
       margin-left: $spacing-xs !important;
+    }
+
+    &:hover {
+      border: 1px solid $alcuin-orange-dark;
+      background-color: $alcuin-orange;
+      color: $font-color-bright;
+      text-decoration: none;
     }
   }
 
@@ -23,7 +30,7 @@
 }
 
 .tabs.tabs-tabbox {
-  border: 1px solid $alcuin-anthrazit;
+  border: 1px solid $alcuin-anthrazit-light;
   padding: $spacing-xxs;
 
   .tabs-input + label.tabs-label {
@@ -33,9 +40,10 @@
 
   .tabs-input:checked + .tabs-label,
   .tabs-input-0:checked + .tabs-input-1 + .tabs-label {
-    border: 1px solid $alcuin-anthrazit !important;
-    font-weight: bold;
-    color: $content-font-color;
+    border: 1px solid $alcuin-orange-dark;
+    background-color: $alcuin-orange;
+    color: $font-color-bright;
+    text-decoration: none;
   }
 }
 
