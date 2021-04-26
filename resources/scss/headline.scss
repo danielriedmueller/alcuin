@@ -2,20 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background: transparent url($imgDir + "/Carafa_Kapelle;_Triumph_des_Hl_Thomas-190px.jpeg") left top repeat-x;
-
-/*
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  background: transparent url(https://4.bp.blogspot.com/--zp8zDXjvhQ/V-RZvxjZk3I/AAAAAAAFWvs/HgVCI20HuWI3_qVQ4Nr5pWAgB5MHdj4FwCLcB/s1600/ratisbona-in-schedelsche-weltchronik-gefunden-auf-zvab-15108948392.jpg) left -144px repeat-x;
-  padding-left: 240px;
-  padding-right: 50px;
-  height: 272px;
-  box-shadow: 0 0 20px 5px #000;
-  z-index: 100;
-  background-size: cover;
-  */
+  background: transparent url($imgDir + "/bg_header.jpg") left top repeat-x;
 
   padding-left: $logo-size + $spacing-l;
   padding-right: $grid-gutter-width / 2;
