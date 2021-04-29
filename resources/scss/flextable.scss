@@ -1,15 +1,16 @@
 table.flextable {
   display: flex;
   justify-content: space-between;
-  tbody {
+
+  > tbody {
     flex-grow: 1;
 
-    tr {
+    > tr {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
 
-      td {
+      > td {
         display: block;
       }
     }
