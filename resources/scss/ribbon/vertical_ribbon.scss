@@ -38,6 +38,14 @@ $ribbon-stroke-color: $font-color-bright;
   height: 100%;
   padding: $spacing 0 0 0;
 
+  @media screen and (max-width: $al-breakpoint) {
+    button.navbar-toggler {
+      margin-right: auto;
+      color: $alcuin-creme;
+      border-color: $alcuin-creme;
+    }
+  }
+
   &:before,
   &:after {
     content: '';

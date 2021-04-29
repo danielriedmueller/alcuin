@@ -2,10 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background: transparent url($imgDir + "/bg_header.jpg") left top repeat-x;
+  background: transparent url($imgDir + "/bg_header.jpg") left top no-repeat;
 
   padding-left: $logo-size + $spacing-l;
   padding-right: $grid-gutter-width / 2;
+
+  @media screen and (max-width: $al-breakpoint) {
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
+
   height: $logo-size;
   box-shadow: 0 0 20px 5px #000;
   z-index: 100;
@@ -39,24 +45,33 @@
   }
 
   .page-tools-bar {
-    background-color: $alcuin-orange;
-    padding: $outline-width $outline-width 0 $outline-width;
-    opacity: 0.9;
-    width: $navbar-width;
+    @media screen and (min-width: $al-breakpoint + 1) {
+      background-color: $alcuin-orange;
+      padding: $outline-width $outline-width 0 $outline-width;
+      opacity: 0.9;
+      width: $navbar-width;
+      nav.p-navbar {
+        border-left: 1px solid $alcuin-creme;
+        border-right: 1px solid $alcuin-creme;
+        border-top: 1px solid $alcuin-creme;
+        color: $font-color-bright;
+      }
 
-    nav.p-navbar {
-      border-left: 1px solid $alcuin-creme;
-      border-right: 1px solid $alcuin-creme;
-      border-top: 1px solid $alcuin-creme;
-      color: $font-color-bright;
+      a {
+        color: $alcuin-creme !important;
+
+        &:hover {
+          color: $alcuin-orange !important;
+        }
+      }
     }
-  }
 
-  a {
-    color: $alcuin-creme !important;
-
-    &:hover {
-      color: $alcuin-orange !important;
+    @media screen and (max-width: $al-breakpoint) {
+      button.navbar-toggler {
+        color: $alcuin-creme;
+        border-color: $alcuin-creme;
+        margin-bottom: $spacing;
+      }
     }
   }
 }
