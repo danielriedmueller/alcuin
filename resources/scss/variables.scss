@@ -26,7 +26,6 @@ $font-color-dark: #333;
 $font-color-bright: #fff;
 $font-family-serif: "Augusta", serif;
 $font-family-sans-serif: "NotoSans";
-$font-size-body: 1rem;
 
 $text-shadow: 2px 2px $font-color-dark;
 
@@ -46,3 +45,4 @@ $navbar-light-hover-color: $alcuin-anthrazit-light;
 $navbar-light-toggler-border-color: $alcuin-anthrazit;
 $theme-colors: ("primary": $alcuin-orange, "secondary": $alcuin-brown, "success": #28a745, "info": #17a2b8, "warning": #ffc107, "danger": #dc3545, "light": $alcuin-anthrazit-light, "dark": $alcuin-anthrazit, "error": #dc3545, "darker": #ced4da);
 $font-family-base: $font-family-sans-serif;
+$font-size-base: 13px
