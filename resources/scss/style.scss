@@ -78,6 +78,10 @@ p:empty, p br:first-child:last-child {
   display: none;
 }
 
+.tl-timeline, table, .datatable {
+  margin: $spacing 0 !important;
+}
+
 h1#firstHeading {
   font-family: $font-family-sans-serif;
   border: none;
