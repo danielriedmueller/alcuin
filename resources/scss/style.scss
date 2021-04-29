@@ -17,6 +17,10 @@
   src: url("extensions/Alcuin/resources/fonts/notosans/NotoSans-Regular.woff2") format("woff2");
 }
 
+body {
+  font-size: $font-size-body;
+}
+
 h1, h2, h3, h4 {
   font-family: $font-family-sans-serif;
   color: $font-color-dark;
