@@ -1,4 +1,5 @@
 table, table.wikitable  {
+  max-width: unset;
   tr {
     td, th {
       padding: $spacing-xxs $spacing-xxs $spacing-xxs 0;

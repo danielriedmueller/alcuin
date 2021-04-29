@@ -4,7 +4,6 @@ body.page-Hauptseite {
 
   .row.centered-links {
     justify-content: center;
-    margin-top: 195px;
 
     > .col {
       flex: 0 0 180px;
@@ -18,6 +17,7 @@ body.page-Hauptseite {
       color: $font-color-bright;
       display: block;
       text-align: center;
+      margin-bottom: $spacing-s;
 
       width: $navbar-width - $outline-width - 1px;
 

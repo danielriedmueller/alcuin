@@ -1,26 +1,11 @@
-@import "variables";
-@import "layout";
-@import "footer";
-@import "main_page";
 @import "headline";
-@import "content";
-@import "navbar";
-@import "omnibox";
-@import "main";
+@import "layout";
+@import "main_page";
+@import "footer";
 @import "table";
-@import "dropdown";
-@import "network";
-@import "ribbon/ribbon";
-@import "ribbon/horizontal_ribbon";
-@import "ribbon/vertical_ribbon";
-@import "approved_revs";
-@import "tabs";
-@import "datatables";
-@import "filter";
-@import "buttons";
-@import "popup";
-@import "moderntimeline";
 @import "flextable";
+@import "tabs";
+@import "network";
 
 @font-face {
   font-family: "Augusta";
@@ -28,33 +13,8 @@
 }
 
 @font-face {
-  font-family: "DeutschGothic";
-  src: url("extensions/Alcuin/resources/fonts/deutsch_gothic/Deutsch.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Ruritania";
-  src: url("extensions/Alcuin/resources/fonts/ruritania/Ruritania.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "NotoSans";
   src: url("extensions/Alcuin/resources/fonts/notosans/NotoSans-Regular.woff2") format("woff2");
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-html {
-  font-size: 13px;
-}
-
-body {
-  font-family: $font-family-sans-serif;
-  font-size: 1rem;
-  margin: auto;
 }
 
 h1, h2, h3, h4 {
@@ -81,13 +41,6 @@ p:empty, p br:first-child:last-child {
   margin: $spacing 0 !important;
 }
 
-h1#firstHeading {
-  font-family: $font-family-sans-serif;
-  border: none;
-  margin: 0;
-  padding: 0 0 $spacing 0;
-}
-
 caption {
   caption-side: top;
   padding: 0 0 $spacing-xxs 0;
@@ -95,4 +48,12 @@ caption {
   font-weight: bold;
   text-decoration: underline;
   color: $font-color-dark;
+}
+
+div.mw-parser-output {
+  overflow-x: scroll;
+
+  img {
+    max-width: 250px;
+  }
 }

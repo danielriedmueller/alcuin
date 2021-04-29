@@ -1,6 +1,6 @@
 $page-max-width: 1920px;
 $grid-gutter-width: 100px;
-$al-breakpoint: 1230px;
+$al-breakpoint: 1105px;
 $spacing-l: 50px;
 $spacing-xl: 100px;
 $spacing: 30px;
@@ -10,6 +10,7 @@ $spacing-xxs: 8px;
 $border-radius: 8px;
 $imgDir: 'extensions/Alcuin/resources/images';
 $logo-size: 290px;
+$logo-size-small: 160px;
 $logo-size-mainpage: 703px;
 $alcuin-brown: #A97C73;
 $alcuin-grey: #999;
@@ -37,4 +38,11 @@ $headline-font-color: $font-color-dark;
 $content-color: #fff;
 $content-font-color: $font-color-dark;
 
-$link-color: #ec6200;
+//overwritten
+$link-color: $alcuin-anthrazit;
+$navbar-light-color: $alcuin-anthrazit;
+$navbar-light-disabled-color: $alcuin-anthrazit;
+$navbar-light-hover-color: $alcuin-anthrazit-light;
+$navbar-light-toggler-border-color: $alcuin-anthrazit;
+$theme-colors: ("primary": $alcuin-orange, "secondary": $alcuin-brown, "success": #28a745, "info": #17a2b8, "warning": #ffc107, "danger": #dc3545, "light": $alcuin-anthrazit-light, "dark": $alcuin-anthrazit, "error": #dc3545, "darker": #ced4da);
+$font-family-base: $font-family-sans-serif;

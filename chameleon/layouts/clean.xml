@@ -43,6 +43,22 @@ M
     <grid class="flex-fill flex-row flex main">
         <row>
             <cell>
+                <component type="VerticalRibbon">
+                    <component type="NotMainPageContainer">
+                        <component type="SearchBar" class="omnibox" placeholder="Suche" position="center"/>
+                    </component>
+                    <component type="NavbarHorizontal">
+                        <modification type="ShowOnlyFor" permission="edit"/>
+                        <modification type="Sticky"/>
+                        <component type="NavMenu" flatten="navigation"/>
+                        <component type="Menu" message="secondary-menu"/>
+                        <component type="Toolbox" flatten="no" class="dropup"/>
+                    </component>
+                </component>
+            </cell>
+        </row>
+        <row>
+            <cell>
                 <component type="MainPageContainer">
                     <row>
                         <cell>
@@ -80,36 +96,16 @@ M
                 </component>
             </cell>
         </row>
-        <row>
-            <cell>
-                <component type="VerticalRibbon">
-                    <component type="NotMainPageContainer">
-                        <component type="SearchBar" class="omnibox" placeholder="Suche" position="center"/>
-                    </component>
-                    <component type="NavbarHorizontal">
-                        <modification type="ShowOnlyFor" permission="edit"/>
-                        <modification type="Sticky"/>
-                        <component type="NavMenu" flatten="navigation"/>
-                        <component type="Menu" message="secondary-menu"/>
-                        <component type="Toolbox" flatten="no" class="dropup"/>
-                    </component>
-                </component>
-            </cell>
-        </row>
     </grid>
-    <grid>
-        <row>
-            <component type="Container" class="footer">
-                <component type="Html">
-                    <div class="links">
-                        <a href="#">Impressum</a>
-                        <a href="#">Kontakt</a>
-                        <a href="#">Datenschutz</a>
-                    </div>
-                    <a class="ur-logo" href="https://www.uni-regensburg.de/"></a>
-                    <a class="dfg-logo" href="https://www.dfg.de/"></a>
-                </component>
-            </component>
-        </row>
-    </grid>
+    <component type="Container" class="footer">
+        <component type="Html">
+            <div class="links">
+                <a href="#">Impressum</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Datenschutz</a>
+            </div>
+            <a class="ur-logo" href="https://www.uni-regensburg.de/"></a>
+            <a class="dfg-logo" href="https://www.dfg.de/"></a>
+        </component>
+    </component>
 </structure>
