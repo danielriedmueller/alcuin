@@ -1,0 +1,17 @@
+table.flextable {
+  display: flex;
+  justify-content: space-between;
+  tbody {
+    flex-grow: 1;
+
+    tr {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      td {
+        display: block;
+      }
+    }
+  }
+}
