@@ -7,7 +7,6 @@ $spacing: 30px;
 $spacing-s: 18px;
 $spacing-xs: 10px;
 $spacing-xxs: 8px;
-$border-radius: 8px;
 $imgDir: 'extensions/Alcuin/resources/images';
 $logo-size: 290px;
 $logo-size-small: 160px;
@@ -21,6 +20,7 @@ $alcuin-anthrazit: #293241;
 $alcuin-anthrazit-light: rgba(41, 50, 65, 0.25);
 $alcuin-creme: #ECECEC;
 $ur-color: #9d9d9c;
+$alcuin-green: #4F9C37;
 $border-color: $alcuin-orange;
 $font-color-dark: #333;
 $font-color-bright: #fff;
@@ -29,7 +29,7 @@ $font-family-sans-serif: "NotoSans";
 $font-size-body: 13px;
 
 $text-shadow: 2px 2px $font-color-dark;
-
+$img-max-width: 400px;
 $navbar-width: 180px;
 $outline-width: 9px;
 
@@ -39,10 +39,10 @@ $content-color: #fff;
 $content-font-color: $font-color-dark;
 
 //overwritten
-$link-color: $alcuin-anthrazit;
-$navbar-light-color: $alcuin-anthrazit;
+$link-color: $alcuin-orange;
+$navbar-light-color: $font-color-bright;
 $navbar-light-disabled-color: $alcuin-anthrazit;
-$navbar-light-hover-color: $alcuin-anthrazit-light;
+$navbar-light-hover-color: $alcuin-orange;
 $navbar-light-toggler-border-color: $alcuin-anthrazit;
-$theme-colors: ("primary": $alcuin-orange, "secondary": $alcuin-brown, "success": #28a745, "info": #17a2b8, "warning": #ffc107, "danger": #dc3545, "light": $alcuin-anthrazit-light, "dark": $alcuin-anthrazit, "error": #dc3545, "darker": #ced4da);
+$theme-colors: ("primary": $alcuin-orange, "secondary": $alcuin-brown, "success": $alcuin-green, "info": $alcuin-orange, "warning": $alcuin-red, "danger": $alcuin-red, "light": $alcuin-anthrazit, "dark": $alcuin-anthrazit, "error": $alcuin-red, "darker": #ced4da);
 $font-family-base: $font-family-sans-serif;

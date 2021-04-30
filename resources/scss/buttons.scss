@@ -6,9 +6,9 @@ input#wpPreview,
 .pfSendBack,
 .editHelp,
 .create-btn,
+.info-btn,
 .delete-btn {
   display: inline-block;
-  padding: $spacing-xs $spacing-s;
   margin-right: $spacing-s;
   margin-top: $spacing-xs;
   border: 1px solid $alcuin-anthrazit;
@@ -17,7 +17,6 @@ input#wpPreview,
   color: $font-color-dark;
 
   * {
-    padding: 0 !important;
     margin: 0 !important;
     background-color: transparent !important;
     border: none !important;
@@ -39,5 +38,24 @@ input#wpPreview,
 
   a {
     color: $font-color-dark !important;
+    padding: $spacing-xs $spacing-s;
+    display: block;
   }
+}
+
+input[type=button],
+input#wpSave,
+input#wpPreview {
+  color: $font-color-dark !important;
+  padding: $spacing-xs $spacing-s;
+}
+
+.create-btn:hover {
+  border: 1px solid $alcuin-anthrazit;
+  background-color: $alcuin-green;
+}
+
+.delete-btn:hover {
+  border: 1px solid $alcuin-anthrazit;
+  background-color: $alcuin-red;
 }

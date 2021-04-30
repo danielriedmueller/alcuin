@@ -6,6 +6,9 @@
 @import "flextable";
 @import "tabs";
 @import "network";
+@import "moderntimeline";
+@import "buttons";
+@import "navbar";
 
 @font-face {
   font-family: "Augusta";
@@ -60,4 +63,8 @@ div.mw-parser-output {
   img {
     max-width: 300px;
   }
+}
+
+a:visited {
+  color: $alcuin-orange-dark;
 }

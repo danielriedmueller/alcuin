@@ -1,14 +1,10 @@
 .navbar, .p-navbar {
-  background-color: transparent;
-  padding: 0;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
 }
 
-.p-navbar.collapsible[role='navigation'] .navbar-nav {
-  flex-direction: column;
-  text-align: right;
-}
-
-.p-navbar .navbar-nav .nav-link {
-  color: $font-color-bright;
-  font-size: 1rem;
+.p-search {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-color: $alcuin-anthrazit-light;
 }

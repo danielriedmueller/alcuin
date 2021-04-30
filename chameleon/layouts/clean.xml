@@ -43,32 +43,20 @@ M
     <grid class="flex-fill flex-row flex main">
         <row>
             <cell>
-                <component type="VerticalRibbon">
-                    <component type="NotMainPageContainer">
-                        <component type="SearchBar" class="omnibox" placeholder="Suche" position="center"/>
-                    </component>
-                    <component type="NavbarHorizontal">
-                        <modification type="ShowOnlyFor" permission="edit"/>
-                        <modification type="Sticky"/>
-                        <component type="NavMenu" flatten="navigation"/>
-                        <component type="Menu" message="secondary-menu"/>
-                        <component type="Toolbox" flatten="no" class="dropup"/>
-                    </component>
+                <component type="NavbarHorizontal">
+                    <modification type="ShowOnlyFor" permission="edit"/>
+                    <modification type="Sticky"/>
+                    <component type="NavMenu" flatten="navigation"/>
+                    <component type="Menu" message="secondary-menu"/>
+                    <component type="Toolbox" flatten="no" class="dropup"/>
                 </component>
+                <component type="SearchBar" class="omnibox" placeholder="Suche" position="center"/>
             </cell>
         </row>
         <row>
             <cell>
                 <component type="MainPageContainer">
-                    <row>
-                        <cell>
-                            <component type="HorizontalRibbon">
-                                <component type="SearchBar" class="omnibox"
-                                           placeholder="Suche nach Werken, Editionen und Autoren" position="center"/>
-                            </component>
-                        </cell>
-                    </row>
-                    <row class="centered-links">
+                    <row class="mainpage-table-links">
                         <cell>
                             <component type="Html">
                                 <a href="/index.php/Autoren">Autoren</a>

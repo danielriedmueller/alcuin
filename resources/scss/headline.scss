@@ -7,8 +7,8 @@
   margin: auto;
   max-width: $page-max-width;
 
-  padding-left: $logo-size + $spacing-l;
-  padding-right: $grid-gutter-width / 2;
+  padding-left: $spacing-l;
+  padding-right: $spacing-l;
 
   height: $logo-size;
   box-shadow: 0 0 20px 5px #000;
@@ -36,6 +36,7 @@
     font-size: 6.5rem;
     border-right: 50px solid $alcuin-orange;
     text-shadow: $text-shadow;
+    border-top-right-radius: $border-radius;
 
     @media screen and (max-width: $al-breakpoint) {
       font-size: 50px;
@@ -60,6 +61,7 @@
     text-shadow: $text-shadow;
     flex-grow: 1;
     letter-spacing: -1px;
+    border-top-left-radius: $border-radius;
 
     @media screen and (max-width: $al-breakpoint) {
       display: none;

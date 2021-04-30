@@ -1,5 +1,16 @@
 table, table.wikitable  {
   max-width: unset;
+
+  tbody {
+    tr {
+      &:hover {
+        th, td {
+          background-color: $alcuin-creme;
+        }
+      }
+    }
+  }
+
   tr {
     td, th {
       padding: $spacing-xxs $spacing-xxs $spacing-xxs 0;
@@ -44,16 +55,6 @@ table.wikitable {
     a {
       font-weight: bold;
       color: $headline-font-color !important;
-    }
-  }
-
-  tbody {
-    tr {
-      &:hover {
-        th, td {
-          background-color: $alcuin-creme;
-        }
-      }
     }
   }
 }
