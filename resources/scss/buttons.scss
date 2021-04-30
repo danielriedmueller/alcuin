@@ -13,8 +13,8 @@ input#wpPreview,
   margin-top: $spacing-xs;
   border: 1px solid $alcuin-anthrazit;
   background-color: $alcuin-anthrazit-light;
-  border-radius: 3px;
   color: $font-color-dark;
+  border-radius: $border-radius;
 
   * {
     margin: 0 !important;

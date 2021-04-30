@@ -1,7 +1,7 @@
 .tabs, .tabs.tabs-togglebox {
   label.tabs-label {
     background-color: $alcuin-anthrazit;
-    border-radius: 3px !important;
+    border-radius: $border-radius !important;
     color: #fff;
     padding: $spacing-xs;
     text-align: left;
