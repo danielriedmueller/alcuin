@@ -2,12 +2,10 @@
   border: 1px solid $alcuin-orange-dark !important;
 }
 
-.popupform-innerdocument {
-  body {
-    padding: $spacing-s !important;
+body.mw-special-FormEdit {
+  padding: $spacing-s !important;
 
-    .navbar-row {
-      display: none;
-    }
+  .navbar-row {
+    display: none;
   }
 }

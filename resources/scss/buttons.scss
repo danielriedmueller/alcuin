@@ -11,10 +11,11 @@ input#wpPreview,
   display: inline-block;
   margin-right: $spacing-s;
   margin-top: $spacing-xs;
-  border: 1px solid $alcuin-anthrazit;
-  background-color: $alcuin-anthrazit-light;
+  border: 1px solid $alcuin-anthrazit !important;
+  background-color: $alcuin-anthrazit-light !important;
   color: $font-color-dark !important;
   border-radius: $border-radius;
+  vertical-align: middle !important;
 
   * {
     margin: 0 !important;
