@@ -70,7 +70,7 @@ class HookHandler implements BeforePageDisplayHook {
 
     public static function onEditFormPreloadText( &$text, Title $title): bool
     {
-        ArticleSave::prependDisplayTitleInForm($text, $title);
+        //ArticleSave::prependDisplayTitleInForm($text, $title);
 
         return true;
     }
@@ -78,7 +78,7 @@ class HookHandler implements BeforePageDisplayHook {
     public static function onPageForms__WritePageData($form, Title $title, &$content): void
     {
         if ($title->getArticleID() === 0) {
-            ArticleSave::prependDisplayTitleInForm($content, $title);
+            //ArticleSave::prependDisplayTitleInForm($content, $title);
         }
     }
 }
