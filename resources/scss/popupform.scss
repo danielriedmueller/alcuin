@@ -1,0 +1,11 @@
+.popupform-container {
+  border: 1px solid $alcuin-orange-dark !important;
+
+  body {
+    padding: $spacing-s !important;
+
+    .navbar-row {
+      display: none;
+    }
+  }
+}

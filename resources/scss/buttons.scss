@@ -13,7 +13,7 @@ input#wpPreview,
   margin-top: $spacing-xs;
   border: 1px solid $alcuin-anthrazit;
   background-color: $alcuin-anthrazit-light;
-  color: $font-color-dark;
+  color: $font-color-dark !important;
   border-radius: $border-radius;
 
   * {
@@ -38,7 +38,7 @@ input#wpPreview,
 
   a {
     color: $font-color-dark !important;
-    padding: $spacing-xs $spacing-s;
+    padding: 6px 12px;
     display: block;
   }
 }
@@ -47,7 +47,7 @@ input[type=button],
 input#wpSave,
 input#wpPreview {
   color: $font-color-dark !important;
-  padding: $spacing-xs $spacing-s;
+  padding: 6px 12px;
 }
 
 .create-btn:hover {

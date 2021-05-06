@@ -41,7 +41,7 @@ M
         </component>
     </component>
     <grid class="flex-fill flex-row flex main">
-        <row>
+        <row class="navbar-row">
             <cell>
                 <component type="NavbarHorizontal">
                     <modification type="ShowOnlyFor" permission="edit"/>
