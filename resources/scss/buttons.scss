@@ -8,13 +8,13 @@ input#wpPreview,
 .create-btn,
 .info-btn,
 .delete-btn {
-  display: inline-block;
-  margin-right: $spacing-s;
-  margin-top: $spacing-xs;
+  display: inline-block  !important;
+  margin-right: $spacing-s  !important;
+  margin-top: $spacing-xs  !important;
   border: 1px solid $alcuin-anthrazit !important;
   background-color: $alcuin-anthrazit-light !important;
   color: $font-color-dark !important;
-  border-radius: $border-radius;
+  border-radius: $border-radius  !important;
   vertical-align: middle !important;
 
   * {
@@ -26,10 +26,10 @@ input#wpPreview,
   }
 
   &:hover {
-    border: 1px solid $alcuin-orange-dark;
-    background-color: $alcuin-orange;
-    color: $font-color-bright;
-    text-decoration: none;
+    border: 1px solid $alcuin-orange-dark  !important;
+    background-color: $alcuin-orange  !important;
+    color: $font-color-bright  !important;
+    text-decoration: none  !important;
 
     a {
       color: $font-color-bright !important;
@@ -52,11 +52,11 @@ input#wpPreview {
 }
 
 .create-btn:hover {
-  border: 1px solid $alcuin-anthrazit;
-  background-color: $alcuin-green;
+  border: 1px solid $alcuin-anthrazit  !important;
+  background-color: $alcuin-green  !important;
 }
 
 .delete-btn:hover {
-  border: 1px solid $alcuin-anthrazit;
-  background-color: $alcuin-red;
+  border: 1px solid $alcuin-anthrazit  !important;
+  background-color: $alcuin-red  !important;
 }
