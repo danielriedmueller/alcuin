@@ -56,25 +56,19 @@ M
         <row>
             <cell>
                 <component type="MainPageContainer">
-                    <row class="mainpage-table-links">
+                    <row>
                         <cell>
                             <component type="Html">
-                                <a href="/index.php/Autoren">Autoren</a>
-                            </component>
-                        </cell>
-                        <cell>
-                            <component type="Html">
-                                <a href="/index.php/Editoren">Editoren</a>
-                            </component>
-                        </cell>
-                        <cell>
-                            <component type="Html">
-                                <a href="/index.php/Werke">Werke</a>
-                            </component>
-                        </cell>
-                        <cell>
-                            <component type="Html">
-                                <a href="/index.php/Editionen">Editionen</a>
+                                <div class="mainpage-table-links">
+                                    <a href="/index.php/Autoren">Autoren</a>
+                                    <a href="/index.php/Editoren">Editoren</a>
+                                    <a href="/index.php/Werke">Werke</a>
+                                    <a href="/index.php/Editionen">Editionen</a>
+                                    <a href="/index.php/Zeitschriften">Zeitschriften</a>
+                                    <a href="/index.php/Manuskripte">Manuskripte</a>
+                                    <a href="/index.php/Drucke">Drucke</a>
+                                    <a href="/index.php/Werkteile">Werkteile</a>
+                                </div>
                             </component>
                         </cell>
                     </row>

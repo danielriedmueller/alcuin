@@ -1,69 +1,23 @@
 body.page-Hauptseite {
   .mainpage-table-links {
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    > .col {
-      margin: 0 0 $spacing 0;
-
-      a {
-        background-color: $alcuin-orange;
-        height: 60px;
-        display: inline-block;
-        vertical-align: top;
-        color: $font-color-bright;
-        margin-left: -3px;
-        text-align: center;
-        font-size: 1.3rem;
-        padding: 13px $spacing;
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-      }
-
-      &::before {
-        content: "";
-        background-color: $alcuin-anthrazit;
-        width: 100px;
-        height: 60px;
-        display: inline-block;
-        vertical-align: top;
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-      }
-
-      @for $i from 1 through 4 {
-        &:nth-child(#{$i}) {
-          &::before {
-            width: 125px + $i * 100;
-          }
-        }
-      }
-    }
-  }
-
-  .row.centered-links {
-    justify-content: center;
-
-    > .col {
-      flex: 0 0 180px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: $spacing;
+    row-gap: $spacing;
 
     a {
-      padding: $spacing-s;
       background-color: $alcuin-anthrazit;
-      outline: $outline-width solid $alcuin-anthrazit;
-      border: 1px solid $alcuin-creme;
+      display: inline-block;
+      vertical-align: top;
       color: $font-color-bright;
-      display: block;
       text-align: center;
-      margin-bottom: $spacing-s;
-
-      width: $navbar-width - $outline-width - 1px;
+      font-size: 1.1rem;
+      padding: 16px $spacing;
+      border-radius: $border-radius;
 
       &:hover {
-        color: $alcuin-grey;
-        border-color: $alcuin-grey;
         text-decoration: none;
+        background-color: $alcuin-orange;
       }
     }
   }
