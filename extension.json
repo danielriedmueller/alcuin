@@ -22,9 +22,6 @@
 		"ParserFirstCallInit": "parser",
 		"BeforePageDisplay": "main",
 		"SkinBuildSidebar": "main",
-		"PageSaveComplete": "main",
-		"EditFormPreloadText": "main",
-		"PageForms::WritePageData": "main",
 		"GetMagicVariableIDs": "magic",
 		"ParserGetVariableValueSwitch": "magic"
 	},
