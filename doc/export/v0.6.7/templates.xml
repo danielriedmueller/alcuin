@@ -1,0 +1,1581 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Vorlage:Author</title>
+    <ns>10</ns>
+    <id>4299</id>
+    <revision>
+      <id>6238</id>
+      <parentid>6128</parentid>
+      <timestamp>2021-05-12T12:31:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6238</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3547" sha1="26ob1nj92lzizo1er2zoij23uzyrvqp" xml:space="preserve">&lt;includeonly&gt;
+{|class="flextable"
+    |&lt;h1&gt;[[Name::{{{Name}}}]]{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}}&lt;/h1&gt;
+    {|
+        | &lt;span class="info-btn"&gt;[[URL::http://alcuin.soital.de/index.php/Autor/werke?author={{PAGENAMEE}}|Werke]]&lt;/span&gt; 
+        | &lt;span class="info-btn"&gt;[[URL::http://alcuin.soital.de/index.php/Autor/editionen?author={{PAGENAMEE}}|Editionen]]&lt;/span&gt;
+    |}
+    {|class="wikitable"
+        !Synonyme
+        |{{#arraymap:{{{VariantName|}}}|,|x|[[VariantName::x]]|,\s|}}
+        |-
+        !Biografie
+        |{{#if:{{{Biography|}}}|[[Biography::{{{Biography}}}]]|keine Biografie eingetragen}}
+        |-
+        !Geburtsdatum
+        |{{#if:{{{BirthDate|}}}|[[BirthDate::{{{BirthDate}}}]]|kein Geburtsdatum eingetragen}}
+        |-
+        !Geburtsort
+        |{{#if:{{{BirthPlace|}}}|[[BirthPlace::{{{BirthPlace}}}]]|kein Geburtsort eingetragen}}
+        |-
+        !Todesdatum
+        |{{#if:{{{DeathDate|}}}|[[DeathDate::{{{DeathDate}}}]]|kein Todesdatum eingetragen}}
+        |-
+        !Todesort
+        |{{#if:{{{DeathPlace|}}}|[[DeathPlace::{{{DeathPlace}}}]]|kein Todesort eingetragen}}        
+        |-
+        !Referenziert
+        |{{#if:{{{References|}}}|[[References::{{{References}}}]]|kein Dokument eingetragen}}
+    |}
+    |
+    {{#sparql:
+        SELECT ?img WHERE {
+        ?item wdt:P31 wd:Q5.
+        ?item ?label "{{{Name}}}"@de .
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+        ?item wdt:P18 ?img
+        } LIMIT 1
+        |templates=WikidataImage
+        |footer=NO
+        |config=http://www.wikidata.org        
+    }}
+    {{#if: {{{BirthPlace|}}}|
+        {{#if: {{{DeathPlace|}}}|
+            {{#display_map:
+                {{{BirthPlace}}}~Geboren in {{{BirthPlace}}};
+                {{{DeathPlace}}}~Gestorben in {{{DeathPlace}}}
+                |width=400
+            }}
+        |}}
+    |}}
+|}
+{{#ask: 
+    [[-Has subobject::{{FULLPAGENAME}}]]
+    [[EventDate::+]]
+    |mainlabel=-
+    |?EventDate=Datum
+    |?EventType=Typ
+    |?EventDateNote=Beschreibung
+    |?Place=Ort
+    |?EventDateDescription=Datumsbeschreibung
+    |format=moderntimeline
+}}
+{{#ask:
+    [[-Has subobject::{{FULLPAGENAME}}]] 
+    |+Lebensereignisse
+    |mainlabel=-
+    |?EventType=Typ
+    |?EventDateNote=Beschreibung
+    |?EventDate=Datum
+    |?Place=Ort
+    |?EventDateDescription=Datumsbeschreibung
+    |?Provenance=Herkunft
+    |?Source=Quelle
+    |format=broadtable
+    |class=datatable
+    |limit=5000
+}}
+{{#ask: [[References::{{PAGENAMEE}}]]
+|mainlabel=-
+|?BibliographicCitation
+|?PartOf
+|format=broadtable
+}}
+{{#set:WorkShortComment={{{WorkShortComment|}}}}}
+{{#set:EditionShortComment={{{EditionShortComment|}}}}}
+{{DISPLAYTITLE:{{{Name}}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}
+[[Category:Author]]
+{{#vardefine: Source|{{{Source|}}}}}
+{{#vardefine: GndIdentifier|{{{GndIdentifier|}}}}}
+{{#vardefine: Provenance|{{{Provenance|}}}}}
+{{#vardefine: CtIdentifier|{{{CtIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Quelle
+    !Herkunft
+    !GND
+    !CT
+    |-
+    |Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei.
+    |Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3'.
+    |ID des Eintrags in der GND (Gemeinsame Normdatei).
+    |ID des Eintrags im CERL Thesaurus (CT).
+    |-
+    |[[Source::{{#var:Source}}]]
+    |[[Provenance::{{#var:Provenance}}]]
+    |[[GndIdentifier::{{#var:GndIdentifier}}]]
+    |[[CtIdentifier::{{#var:CtIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>26ob1nj92lzizo1er2zoij23uzyrvqp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:AuthorshipSubobject</title>
+    <ns>10</ns>
+    <id>4350</id>
+    <revision>
+      <id>6095</id>
+      <parentid>6085</parentid>
+      <timestamp>2021-05-11T07:52:55Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6095</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="222" sha1="4bdv4rsir7bfzsrgrl9v8hb4lfb5ebm" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |WorkCreator={{{WorkCreator}}}
+    |WorkAuthorshipAttribution={{{WorkAuthorshipAttribution}}}
+    |WorkAuthorshipAttributionEvidence={{{WorkAuthorshipAttributionEvidence}}}
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>4bdv4rsir7bfzsrgrl9v8hb4lfb5ebm</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Collection</title>
+    <ns>10</ns>
+    <id>3798</id>
+    <revision>
+      <id>6395</id>
+      <parentid>4086</parentid>
+      <timestamp>2021-05-17T11:30:50Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6395</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="565" sha1="jp4ul84uxcs9bb5gtdr5ze3bkhlrsza" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Sammelband {{#info: Sammelband mit mehreren edierten Texten }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Hat Teil {{#info: Teil-Ganzes-Verhältnis zwischen Textteil und Text }}
+    |{{#ask: 
+        [[PartOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=kein Teil angegeben
+    }}
+    |-
+    !Herausgeber {{#info: Angabe des Herausgebers des Sammelbandbeitrags }}
+    |{{#if:{{{CollectionEditor|}}}|[[CollectionEditor::{{{CollectionEditor}}}]]|kein Herausgeber angegeben}}    
+|}
+[[Category:Collection]]
+&lt;/includeonly&gt;</text>
+      <sha1>jp4ul84uxcs9bb5gtdr5ze3bkhlrsza</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:CreatedSubobject</title>
+    <ns>10</ns>
+    <id>4360</id>
+    <revision>
+      <id>6149</id>
+      <timestamp>2021-05-11T10:27:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{#subobject:     |CreationDate={{{CreationDate}}}     |CreationDateNote={{{CreationDateNote}}}     |CreationDateDescription={{{CreationDateDescr…“</comment>
+      <origin>6149</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="186" sha1="gqg4jhglmy162yr3xt2skph0gmjg32x" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |CreationDate={{{CreationDate}}}
+    |CreationDateNote={{{CreationDateNote}}}
+    |CreationDateDescription={{{CreationDateDescription}}}
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>gqg4jhglmy162yr3xt2skph0gmjg32x</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Edition</title>
+    <ns>10</ns>
+    <id>63</id>
+    <revision>
+      <id>6244</id>
+      <parentid>6240</parentid>
+      <timestamp>2021-05-12T12:41:11Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6244</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="5229" sha1="tn083tukm494pxzjraqywpgikkdbut6" xml:space="preserve">&lt;includeonly&gt;
+{|class="flextable"
+    |
+    &lt;h1&gt;{{#if:{{{EditionTitle|}}}|[[EditionTitle::{{{EditionTitle}}}]]|kein Titel}}&lt;/h1&gt;
+    {|
+        |+Alternative Titel
+        |{{#arraymap:{{{AlternateEditionTitle|}}}|,|x1|[[AlternateEditionTitle::x1]]|}}
+    |}
+    {|
+        |+Editor
+        |{{#if:{{{Editor|}}}|[[Editor::{{{Editor}}}]]|kein Editor angegeben}}    
+    |}
+    {|
+        |+Ist Edition von
+        |{{#if:{{{IsEditionOf|}}}|[[IsEditionOf::{{{IsEditionOf}}}|{{#getdisplaytitle:{{{IsEditionOf}}}}}]]|kein Werk angegeben}}    
+    |}
+    {|
+        |+Ist Edition des Werkteils
+        |{{#if:{{{IsEditionOfWorkPart|}}}|[[IsEditionOfWorkPart::{{{IsEditionOfWorkPart}}}]]|kein Werkteil angegeben}}    
+    |}
+    {|
+        |+Editionsform
+        |{{#if: {{{EditionType|}}}|[[EditionType::{{{EditionType}}}]]|keine Editionsform angegeben}}
+        |{{#if: {{{ContainsText|}}}| enthält Text von [[ContainsText::{{{ContainsText}}}|{{#getdisplaytitle:{{{ContainsText}}}}}]]|}}
+    |}
+    {|
+        |+Bibliografische Zitation
+        |Bibliographische Angaben zur Zitation eines Texts.
+        |-
+        |{{#if:{{{BibliographicCitation|}}}|[[BibliographicCitation::{{{BibliographicCitation}}}]]|keine Zitation angegeben}}
+    |}
+    {|
+        |+Kurzkommentar
+        |{{#if:{{{Note|}}}|[[Note::{{{Note}}}]]|kein Kurzkommentar angegeben}}    
+    |}
+    {|
+        |+Sprache
+        |{{#if:{{{Language|}}}|[[Language::{{{Language}}}]]|keine Sprache angegeben}}    
+    |}
+    {|
+        |+Incipit
+        |{{#if:{{{Incipit|}}}|[[Incipit::{{{Incipit}}}]]|kein Incipit angegeben}}
+    |}
+    {|
+        |+Übersetzer der Edition im Mittelalter
+        |{{#if:{{{Translator|}}}|[[Translator::{{{Translator}}}]]|kein Übersetzer angegeben}}
+    |}
+    {|
+        |+Manuskriptgrundlagen
+        |{{#ask: 
+            [[WasManuscriptSourceOf::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Manuskriptgrundlagen angegeben
+        }}
+    |}
+    {|
+        |+Ausdrücke
+        |{{#ask: 
+            [[IsEditionExpressionOf::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Ausdrücke angegeben
+        }}
+    |}
+    {|
+        |+Drucke
+        |{{#ask: 
+            [[IsPrintOf::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Drucke angegeben
+        }}
+    |}
+    {|
+        |+Hat Übersetzungen
+        |{{#ask: 
+            [[IsTranslationOf::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine übersetzten Editionen angegeben
+        }}
+    |}
+    {|
+        |+Ist Übersetzung von
+        |{{#arraymap:{{{IsTranslationOf|}}}|,|x1|[[IsTranslationOf::x1]]|}}
+    |}
+    {|
+        |+Anmerkung zur Sprache
+        |{{#if:{{{LanguageNote|}}}|[[LanguageNote::{{{LanguageNote}}}]]|keine Anmerkung angegeben}}    
+    |}
+    |+Referenzen
+    |{{#ask: 
+        [[IsReferencedBy::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |
+    {{#network:
+        {{#ask:
+            [[{{PAGENAMEE}}]]
+            |format=array
+            |link=none
+        }}
+        |class=network
+    }}
+|}
+{{#ask:
+[[WorkAuthorshipAttributionEvidence::{{PAGENAMEE}}]]
+|mainlabel=-
+|?WorkCreator=Autor
+|?AuthoredWork=Werk
+|?WorkAuthorshipAttribution.Label=Authentizität
+|format=broadtable
+}}
+{{#ask:
+[[WasManuscriptSourceOf::{{PAGENAMEE}}]]
+|mainlabel=-
+|?BibliographicCitation=Manuskripte
+|sort=BibliographicCitation
+|format=broadtable
+}}
+{{#ask:
+[[IsEditionExpressionOf::{{PAGENAMEE}}]]
+|mainlabel=Artikel / Monograph
+|?PartOf=Werksammlung
+|Printed.PublicationPlace=Ort
+|Printed.PublicationDate=Datum
+|Printed.Publisher=Herausgeber
+|?-IsEditionManifestationOf
+|?-IsEditionManifestationOf.PageRange
+|?-IsEditionManifestationOf.PageRangeOfEditedText
+|?-IsEditionManifestationOf.PublicationDate
+|?-IsEditionManifestationOf.PublicationPlace
+|?-IsEditionManifestationOf.Publisher
+|?-IsEditionManifestationOf.BibliographicCitation
+|?Volume
+|?Series
+|format=datatables
+}}
+{|
+    |+Referenzen
+    |Verknüpfung einer Entität mit einem Dokument (z.B. der Sekundärliteratur) das weiterführende Information darüber enthält.
+    |-
+    |{{#ask: 
+        [[References::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |-
+    |{{#arraymap:{{{References|}}}|,|x1|[[References::x1]]|}}
+|}
+{{DISPLAYTITLE:{{#if:{{{EditionTitle|}}}|{{{EditionTitle}}}|kein Titel}}}}
+[[Category:Edition]]
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum
+    !Quelle
+    !Herkunft
+    !Retm2Identifier
+    |-
+    |Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29').
+    |Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei.
+    |Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3'.
+    |Signatur einer Edition (oder eines Werkes) im RETM2 (Repertorium edierter Texte des Mittelalters).    
+    |-
+    |[[SiglumIdentifier::{{#var:siglum}}]]
+    |[[Source::{{#var:source}}]]
+    |[[Provenance::{{#var:provenance}}]]
+    |[[Retm2Identifier::{{#var:retm2Identifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>tn083tukm494pxzjraqywpgikkdbut6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Editor</title>
+    <ns>10</ns>
+    <id>4300</id>
+    <revision>
+      <id>5706</id>
+      <parentid>5691</parentid>
+      <timestamp>2021-05-06T08:08:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5706</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1684" sha1="l05hysz97rlqvz3fsw15i1mskfkqcen" xml:space="preserve">&lt;includeonly&gt;
+{|class="flextable"
+    |&lt;h1&gt;[[Name::{{{Name}}}]]{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}}&lt;/h1&gt;
+    {|class="wikitable"
+        !Editor der Werke
+        |{{#ask: [[Editor::{{PAGENAMEE}}]]}}
+        |-
+        !Übersetzer der mittelalterlichen Werke
+        |{{#ask: [[Translator::{{PAGENAMEE}}]]}}
+        |-
+        !Drucker der Druckfassungen
+        |{{#ask: [[Printer::{{PAGENAMEE}}]]}}
+        |-
+        !Herausgeber der Sammelbandeditionen
+        |{{#ask: [[CollectionEditor::{{PAGENAMEE}}]]}}
+        |-
+        !Autor der Sammelbandeditionen
+        |{{#ask: [[InCollectionAuthor::{{PAGENAMEE}}]]}}
+        |-
+        !Autor der Monographien
+        |{{#ask: [[MonographAuthor::{{PAGENAMEE}}]]}}
+        |-
+        !Autor von Zeitschriftenartikel
+        |{{#ask: [[JournalArticleAuthor::{{PAGENAMEE}}]]}}
+        |-
+        !GND
+        |{{#if:{{{GndIdentifier|}}}|[[GndIdentifier::{{{GndIdentifier}}}]]|kein GND Identifier eingetragen}}
+        |-
+        !CT
+        |{{#if:{{{CtIdentifier|}}}|[[CtIdentifier::{{{CtIdentifier}}}]]|kein CT Identifier eingetragen}}
+    |}
+    |
+    {{#network:
+        {{#ask: [[{{PAGENAMEE}}]]
+            |format=array
+            |link=none
+        }}
+    }}
+    {{#sparql:
+        SELECT ?img WHERE {
+        ?item wdt:P31 wd:Q5.
+        ?item ?label "{{{Name}}}"@de .
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+        ?item wdt:P18 ?img
+        } LIMIT 1
+        |templates=WikidataImage
+        |footer=NO
+        |config=http://www.wikidata.org        
+    }}
+|}
+{{DISPLAYTITLE:{{{Name}}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}
+[[Category:Editor]]
+&lt;/includeonly&gt;</text>
+      <sha1>l05hysz97rlqvz3fsw15i1mskfkqcen</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EventSubobject</title>
+    <ns>10</ns>
+    <id>4353</id>
+    <revision>
+      <id>6096</id>
+      <timestamp>2021-05-11T07:55:37Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{#subobject:     |EventSort={{{EventSort|}}}     |EventType={{{EventType|}}}     |Provenance={{{Provenance|}}}     |EventDateNote={{{EventDateNo…“</comment>
+      <origin>6096</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="346" sha1="5rsv32gse78trgbbyw4i1qnaw4orae5" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |EventSort={{{EventSort|}}}
+    |EventType={{{EventType|}}}
+    |Provenance={{{Provenance|}}}
+    |EventDateNote={{{EventDateNote|}}}
+    |EventType={{{Type|}}}
+    |Place={{{Place|}}}
+    |EventDate={{{EventDate|}}}
+    |EventDateDescription={{{EventDateDescription|}}}
+    |Source={{{Source|}}}
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>5rsv32gse78trgbbyw4i1qnaw4orae5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:FormCreateButton</title>
+    <ns>10</ns>
+    <id>4376</id>
+    <revision>
+      <id>6257</id>
+      <timestamp>2021-05-14T06:59:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;span class="create-btn"&gt;{{#formlink:form={{{1}}}|link text={{{2}}}|target={{#idprovider-increment:{{{1}}}_|padding=6}}}}&lt;/span&gt; &lt;/includeonly&gt;“</comment>
+      <origin>6257</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="157" sha1="llt36boybcv7enmhw65skiynsiy2gb3" xml:space="preserve">&lt;includeonly&gt;
+&lt;span class="create-btn"&gt;{{#formlink:form={{{1}}}|link text={{{2}}}|target={{#idprovider-increment:{{{1}}}_|padding=6}}}}&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>llt36boybcv7enmhw65skiynsiy2gb3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:InCollection</title>
+    <ns>10</ns>
+    <id>3796</id>
+    <revision>
+      <id>6394</id>
+      <parentid>5495</parentid>
+      <timestamp>2021-05-17T11:27:16Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6394</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1813" sha1="2hi7e1wsbd84sezlpj3i4mf7thy28gd" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Sammelbandedition {{#info: Text einer Edition in einem Sammelband }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Ist Teil von {{#info: Teil-Ganzes-Verhältnis zwischen Textteil und Text }}
+    |{{#if:{{{PartOf|}}}|[[PartOf::{{{PartOf}}}]]|kein Teil angegeben}}
+    |-
+    !Druckfassung {{#info: 	Gedruckte Form einer Edition (z.B. Monographieedition als gedrucktes Buch) }}
+    |{{#ask: 
+        [[IsEditionManifestationOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Druckfassung angegeben
+    }}
+    |-
+    !PublicationYear {{#info: Jahr der Publikation }}
+    |{{#if:{{{PublicationYear|}}}|[[PublicationYear::{{{PublicationYear}}}]]|kein Jahr angegeben}}
+    |-
+    !Ist Realisierung von
+    |{{#arraymap:{{{IsEditionExpressionOf|}}}|,|x1|[[IsEditionExpressionOf::x1]]|}} 
+    |-
+    !Volume {{#info: Angabe des Bandes in dem sich der Beitrag befindet }}
+    |{{#if:{{{Volume|}}}|[[Volume::{{{Volume}}}]]|kein Band angegeben}}
+    |-
+    !Beitragautor {{#info: 	Angabe des Autors des Sammelbandbeitrags }}
+    |{{#if:{{{InCollectionAuthor|}}}|[[InCollectionAuthor::{{{InCollectionAuthor}}}]]|kein Autor angegeben}}    
+    |-
+    !Bibliografische Zitation {{#info: Bibliographische Angaben zur Zitation eines Texts }}
+    |{{#if:{{{BibliographicCitation|}}}|[[BibliographicCitation::{{{BibliographicCitation}}}]]|keine Zitation angegeben}}    
+    |-
+    !Referenzen {{#info: Verknüpfung einer Entität mit einem Dokument (z.B. der Sekundärliteratur) das weiterführende Information darüber enthält }}
+    |{{#ask: 
+        [[References::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |{{#arraymap:{{{References|}}}|,|x1|[[References::x1]]|}}
+|}
+[[Category:InCollection]]
+&lt;/includeonly&gt;</text>
+      <sha1>2hi7e1wsbd84sezlpj3i4mf7thy28gd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Journal</title>
+    <ns>10</ns>
+    <id>3797</id>
+    <revision>
+      <id>6208</id>
+      <parentid>6207</parentid>
+      <timestamp>2021-05-12T11:33:30Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6208</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1232" sha1="n0taj8k7flpf0a7thjppohroepcp5w2" xml:space="preserve">&lt;includeonly&gt;
+&lt;h1&gt;{{#if:{{{JournalTitle|}}}|[[JournalTitle::{{{JournalTitle}}}]]|kein Titel}}&lt;/h1&gt;
+{|
+    |+Kurztitel
+    |Kurztitel der Zeitschrift.
+    |-
+    |{{#if:{{{JournalShortTitle|}}}|[[JournalShortTitle::{{{JournalShortTitle}}}]]|kein Kurztitel angegeben}}
+|}
+{|
+    |+Teile
+    |Teil-Ganzes-Verhältnis zwischen Text und Textteil.
+    |-
+    |{{#ask: 
+        [[PartOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Teile angegeben
+    }}
+|}
+{{#ask:[[PartOf::{{PAGENAMEE}}]]
+    |?Printed
+    |?Printed.PageRange
+    |?Printed.PageRangeOfEditedText
+    |?Printed.PublicationDate
+    |?Printed.PublicationPlace
+    |?Printed.Publisher
+    |?Volume
+    |format=broadtable
+    |class=datatables
+    |limit=5000
+}}
+{{DISPLAYTITLE:{{#if:{{{JournalTitle|}}}|{{{JournalTitle}}}|kein Titel}}}}
+[[Category:Journal]]
+{{#vardefine: ZdbIdentifier|{{{ZdbIdentifier|}}}}}
+{{#vardefine: Issn|{{{Issn|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !ISSN
+    !ZDB
+    |-
+    |ISSN (International Standard Serial Number) der Zeitschrift.
+    |ID des Eintrags in der ZDB (Zeitschriftendatenbank).
+    |-
+    |[[Issn::{{#var:Issn}}]]
+    |[[ZdbIdentifier::{{#var:ZdbIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>n0taj8k7flpf0a7thjppohroepcp5w2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:JournalArticle</title>
+    <ns>10</ns>
+    <id>3799</id>
+    <revision>
+      <id>6342</id>
+      <parentid>6337</parentid>
+      <timestamp>2021-05-17T09:10:41Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6342</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2217" sha1="ip528eibqcu13eoxq051mirkwfes3wt" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Zeitschriftenedition {{#info: Text einer Edition in einem Zeitschriftenaufsatz veröffentlicht }}&lt;/h4&gt;
+&lt;h1&gt;{{#if:{{{JournalArticleTitle|}}}|[[JournalArticleTitle::{{{JournalArticleTitle}}}]]|kein Titel}}&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Ist Teil von {{#info: Teil-Ganzes-Verhältnis zwischen Textteil und Text }}
+    |{{#if:{{{PartOf|}}}|[[PartOf::{{{PartOf}}}]]|kein Teil angegeben}}
+    |-
+    !Druckfassung {{#info: 	Gedruckte Form einer Edition (z.B. Monographieedition als gedrucktes Buch) }}
+    |{{#ask: 
+        [[IsEditionManifestationOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Druckfassung angegeben
+    }}
+    |-
+    !PublicationYear {{#info: Jahr der Publikation }}
+    |{{#if:{{{PublicationYear|}}}|[[PublicationYear::{{{PublicationYear}}}]]|kein Jahr angegeben}}
+    |-
+    !Ist Realisierung von
+    |{{#arraymap:{{{IsEditionExpressionOf|}}}|,|x1|[[IsEditionExpressionOf::x1]]|}}
+    |-
+    !Ausgabe {{#info: Angabe der Ausgabennummer in dem sich der Beitrag befindet }}
+    |{{#if:{{{Issue|}}}|[[Issue::{{{Issue}}}]]|keine Ausgabe angegeben}}   
+    |-
+    !Volume {{#info: Angabe des Bandes in dem sich der Beitrag befindet }}
+    |{{#if:{{{Volume|}}}|[[Volume::{{{Volume}}}]]|kein Band angegeben}}    
+    |-
+    !Aufsatzautor {{#info: Angabe des Autors des Zeitschriftenartikels }}
+    |{{#if:{{{JournalArticleAuthor|}}}|[[JournalArticleAuthor::{{{JournalArticleAuthor}}}]]|kein Autor angegeben}}    
+    |-
+    !Bibliografische Zitation {{#info: Bibliographische Angaben zur Zitation eines Texts }}
+    |{{#if:{{{BibliographicCitation|}}}|[[BibliographicCitation::{{{BibliographicCitation}}}]]|keine Zitation angegeben}}    
+    |-
+    !Referenzen {{#info: Verknüpfung einer Entität mit einem Dokument (z.B. der Sekundärliteratur) das weiterführende Information darüber enthält }}
+    |{{#ask: 
+        [[References::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |{{#arraymap:{{{References|}}}|,|x1|[[References::x1]]|}}
+|}
+{{DISPLAYTITLE:{{#if:{{{JournalArticleTitle|}}}|{{{JournalArticleTitle}}}|kein Titel}}}}
+[[Category:JournalArticle]]
+&lt;/includeonly&gt;</text>
+      <sha1>ip528eibqcu13eoxq051mirkwfes3wt</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Library</title>
+    <ns>10</ns>
+    <id>4406</id>
+    <revision>
+      <id>6371</id>
+      <timestamp>2021-05-17T10:57:33Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Bibliothek&lt;/h4&gt; &lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein Name}}&lt;/h1&gt; {|class="wikitable smwtable"…“</comment>
+      <origin>6371</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1228" sha1="oj25e1r1tv2rn3s3uyluq18x6jg8um1" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Bibliothek&lt;/h4&gt;
+&lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein Name}}&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Einrichtungskürzel {{#info: Kürzel für die Einrichtung }}
+    |{{#if:{{{OrganizationAbbreviation|}}}|[[OrganizationAbbreviation::{{{OrganizationAbbreviation}}}]]|kein Kürzel angegeben}}
+    |-
+    !Standort {{#info: Standort einer Einrichtung }}
+    |{{#if:{{{Location|}}}|[[Location::{{{Location}}}]]|kein Standort angegeben}}
+    |-
+    !Besitzt {{#info: Angabe des Manuskripts, das sich im Besitz der Einrichtung befindet }}
+    |{{#ask: 
+        [[HeldBy::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=kein Manuskript angegeben
+    }}
+|}
+{{DISPLAYTITLE:{{#if:{{{OrganizationName|}}}|{{{OrganizationName}}}|kein Name}}}}
+[[Category:Library]]
+{{#vardefine: GndIdentifier|{{{GndIdentifier|}}}}}
+{{#vardefine: CtIdentifier|{{{CtIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !GND
+    !CT
+    |-
+    |ID des Eintrags in der GND (Gemeinsame Normdatei).
+    |ID des Eintrags im CERL Thesaurus (CT).
+    |-
+    |[[GndIdentifier::{{#var:GndIdentifier}}]]
+    |[[CtIdentifier::{{#var:CtIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>oj25e1r1tv2rn3s3uyluq18x6jg8um1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Manuscript</title>
+    <ns>10</ns>
+    <id>64</id>
+    <revision>
+      <id>6358</id>
+      <parentid>6246</parentid>
+      <timestamp>2021-05-17T10:08:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6358</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2420" sha1="c43q81tv465uu301w4ytk3m19h2zf54" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Manuskript {{#info: Ein Manuskript ist eine unikale Manifestation des Textes eines oder mehrerer Werke. Typischerweise ist die Zitationsangabe zu einem Manuskript ist wie folgt strukturiert: Ort, Bibliothek/Archiv, Signatur, ggf. Folio-Angaben }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Signatur des Manuskripts
+    |{{#if:{{{Shelfmark|}}}|[[Shelfmark::{{{Shelfmark}}}]]|keine Signatur angegeben}}
+    |-
+    !Vorhaltende Einrichtung {{#info: Angabe der Einrichtung, in deren Besitz sich das Manuskript befindet }}
+    |{{#if:{{{HeldBy|}}}|[[HeldBy::{{{HeldBy}}}]]|keine Einrichtung angegeben}}
+    |-
+    !Incipit {{#info: Incipit zur Identifikation eines Textes }}
+    |{{#if:{{{Incipit|}}}|[[Incipit::{{{Incipit}}}]]|kein Incipit angegeben}}
+    |-
+    !Ist Manuskript von {{#info: Verknüpfung von Manuskript (in dem der Text des Werks vorliegt) und dem Werk }}
+    |{{#if:{{{IsManuscriptOf|}}}|[[IsManuscriptOf::{{{IsManuscriptOf}}}]]|kein Werk angegeben}}
+    |-
+    !Manuskriptquelle {{#info: Verknüpfung von Manuskript (in dem der Text des Werks vorliegt) und dem Werk }}
+    |{{#if:{{{WasManuscriptSourceOf|}}}|[[WasManuscriptSourceOf::{{{WasManuscriptSourceOf}}}]]|kein Manuskriptquelle angegeben}}
+    |-
+    !Reproduktion {{#info: Die Eigenschaft repräsentiert die Beziehung zwischen einem Manuskript oder einer gedruckten Edition und einer Reproduktion }}
+    |{{#if:{{{IsReproductionOf|}}}|[[IsReproductionOf::{{{IsReproductionOf}}}]]|keine Reproduktion angegeben}}
+    |{{#ask: 
+        [[IsReproductionOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Reproduktion angegeben
+    }}
+    |-
+    !Teile {{#info: Teil-Ganzes-Verhältnis zwischen Text und Textteil }}
+    |{{#if:{{{PartOf|}}}|[[PartOf::{{{PartOf}}}]]|kein Ganzes angegeben}}
+    |{{#ask: 
+        [[PartOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Teile angegeben
+    }}
+|}
+[[Category:Manuscript]]
+{{#vardefine: Source|{{{Source|}}}}}
+{{#vardefine: Provenance|{{{Provenance|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Quelle
+    !Herkunft
+    |-
+    |Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei.
+    |Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3'.
+    |-
+    |[[Source::{{#var:Source}}]]
+    |[[Provenance::{{#var:Provenance}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>c43q81tv465uu301w4ytk3m19h2zf54</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:ManuscriptPart</title>
+    <ns>10</ns>
+    <id>4397</id>
+    <revision>
+      <id>6359</id>
+      <timestamp>2021-05-17T10:14:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Manuskriptteil {{#info: Teil eines Manuskripts, der den edierten Text enthält }}&lt;/h4&gt; {|class="wikitable smwtable"     !Manuskriptquelle {{#…“</comment>
+      <origin>6359</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="978" sha1="6m5lf3s21nl5wq7ercy7419ipaqq3xy" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Manuskriptteil {{#info: Teil eines Manuskripts, der den edierten Text enthält }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Manuskriptquelle {{#info: Verknüpfung von Manuskript (in dem der Text des Werks vorliegt) und dem Werk }}
+    |{{#if:{{{WasManuscriptSourceOf|}}}|[[WasManuscriptSourceOf::{{{WasManuscriptSourceOf}}}]]|kein Manuskriptquelle angegeben}}
+    |-
+    !Erstes Blatt {{#info: Angabe des ersten Blatts eines Texts in einem Manuskripts }}
+    |{{#if:{{{StartingFolio|}}}|[[StartingFolio::{{{StartingFolio}}}]]|kein Blatt angegeben}}
+    |-
+    !Letztes Blatt {{#info: Angabe des letzten Blatts eines Texts in einem Manuskript }}
+    |{{#if:{{{EndingFolio|}}}|[[EndingFolio::{{{EndingFolio}}}]]|kein Blatt angegeben}}
+    |-
+    !Foliobereich {{#info: Angabe des Foliobereichs eines Texts in einem Manuskript }}
+    |{{#if:{{{FolioRange|}}}|[[FolioRange::{{{FolioRange}}}]]|kein Bereich angegeben}}    
+|}
+[[Category:ManuscriptPart]]
+&lt;/includeonly&gt;</text>
+      <sha1>6m5lf3s21nl5wq7ercy7419ipaqq3xy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Monograph</title>
+    <ns>10</ns>
+    <id>3795</id>
+    <revision>
+      <id>6353</id>
+      <parentid>6350</parentid>
+      <timestamp>2021-05-17T09:52:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6353</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1483" sha1="9y0pv2chr1612lbbldctbu582901ilg" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Monographieedition {{#info: Text einer Edition in einem Buch veröffentlicht }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Buchautor {{#info: Angabe des Autors der Monographie }}
+    |{{#if:{{{MonographAuthor|}}}|[[MonographAuthor::{{{MonographAuthor}}}]]|kein Autor angegeben}}    
+    |-
+    !Druckfassung {{#info: Gedruckte Form einer Edition (z.B. Monographieedition als gedrucktes Buch) }}
+    |{{#ask: 
+        [[IsEditionManifestationOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Druckfassung angegeben
+    }}
+    |-
+    !Volume {{#info: Angabe des Bandes in dem sich der Beitrag befindet }}
+    |{{#if:{{{Volume|}}}|[[Volume::{{{Volume}}}]]|kein Band angegeben}}    
+    |-
+    !Ist Realisierung von
+    |{{#arraymap:{{{IsEditionExpressionOf|}}}|,|x1|[[IsEditionExpressionOf::x1]]|}}
+    |-
+    !Bibliografische Zitation {{#info: Bibliographische Angaben zur Zitation eines Texts }}
+    |{{#if:{{{BibliographicCitation|}}}|[[BibliographicCitation::{{{BibliographicCitation}}}]]|keine Zitation angegeben}}    
+    |-
+    !Referenzen {{#info: Verknüpfung einer Entität mit einem Dokument (z.B. der Sekundärliteratur) das weiterführende Information darüber enthält }}
+    |{{#ask: 
+        [[References::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |{{#arraymap:{{{References|}}}|,|x1|[[References::x1]]|}}
+|}
+[[Category:Monograph]]
+&lt;/includeonly&gt;</text>
+      <sha1>9y0pv2chr1612lbbldctbu582901ilg</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Order</title>
+    <ns>10</ns>
+    <id>4408</id>
+    <revision>
+      <id>6373</id>
+      <timestamp>2021-05-17T11:00:08Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Orden&lt;/h4&gt; &lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein Name}}&lt;/h1&gt; {{DISPLAYTITLE:{{#if:{{{Organizati…“</comment>
+      <origin>6373</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="610" sha1="hfqikbtkxy2mcmyoras4ridk832ne2b" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Orden&lt;/h4&gt;
+&lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein Name}}&lt;/h1&gt;
+{{DISPLAYTITLE:{{#if:{{{OrganizationName|}}}|{{{OrganizationName}}}|kein Name}}}}
+[[Category:Order]]
+{{#vardefine: GndIdentifier|{{{GndIdentifier|}}}}}
+{{#vardefine: CtIdentifier|{{{CtIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !GND
+    !CT
+    |-
+    |ID des Eintrags in der GND (Gemeinsame Normdatei).
+    |ID des Eintrags im CERL Thesaurus (CT).
+    |-
+    |[[GndIdentifier::{{#var:GndIdentifier}}]]
+    |[[CtIdentifier::{{#var:CtIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>hfqikbtkxy2mcmyoras4ridk832ne2b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Print</title>
+    <ns>10</ns>
+    <id>62</id>
+    <revision>
+      <id>6326</id>
+      <parentid>6325</parentid>
+      <timestamp>2021-05-17T07:40:14Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6326</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3508" sha1="4j13a9em4zvk1dh9othti7p7lkxniwz" xml:space="preserve">&lt;includeonly&gt;
+&lt;h1&gt;{{#if:{{{IsPrintOf|}}}|Druck von {{#getdisplaytitle:{{{IsPrintOf}}}}}|kein Titel}}&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Druck von
+    |{{#if:{{{IsPrintOf|}}}|[[IsPrintOf::{{{IsPrintOf}}}|{{#getdisplaytitle: {{{IsPrintOf}}}}}]]|keine Edition eingetragen}}
+    |-
+    !Manifestation von {{#info: Gedruckte Form einer Edition (z.B. Monographieedition als gedrucktes Buch) }}
+    |{{#if:{{{IsEditionManifestationOf|}}}|[[IsEditionManifestationOf::{{{IsEditionManifestationOf}}}]]|keine Manifestation eingetragen}}
+    |-
+    !Seitenbereich {{#info: Angabe des Seitenbereichs eines gedruckten Texts (üblicherweise in einem übergeordneten Titel) }}
+    |{{#if:{{{PageRange|}}}|[[PageRange::{{{PageRange}}}]]|kein Seitenbereich eingetragen}}
+    |-
+    !Seitenbereich des edierten Texts {{#info: Angabe des Seitenbereichs des edierten Texts im gedruckten Text }}
+    |{{#if:{{{PageRangeOfEditedText|}}}|[[PageRangeOfEditedText::{{{PageRangeOfEditedText}}}]]|kein Seitenbereich eingetragen}}
+    |-
+    !Jahr der Publikation
+    |{{#if:{{{PublicationYear|}}}|[[PublicationYear::{{{PublicationYear}}}]]|kein Jahr eingetragen}}
+    |-
+    !Datum der Publikation {{#info: Datum der Publikation. Das Publikationsdatum kann in verschiedener Granularität angegeben werden (z.B. das Jahr oder Jahr und Montag oder die Angabe von Jahr, Montag und Tag) }}
+    |{{#if:{{{PublicationDate|}}}|[[PublicationDate::{{{PublicationDate}}}]]|kein Datum eingetragen}}
+    |-
+    !Ort der Publikation
+    |{{#if:{{{PublicationPlace|}}}|[[PublicationPlace::{{{PublicationPlace}}}]]|kein Ort eingetragen}}
+    |-
+    !Herausgeber
+    |{{#if:{{{Publisher|}}}|[[Publisher::{{{Publisher}}}]]|kein Herausgeber eingetragen}}
+    |-
+    !Drucker {{#info: Drucker der Druckfassung }}
+    |{{#if:{{{Printer|}}}|[[Printer::{{{Printer}}}]]|kein Drucker eingetragen}}
+    |-
+    !Nachdruck {{#info: Die Eigenschaft repräsentiert die Beziehung zwischen einer gedruckten Edition (retmo:Print) und seinem Nachdruck (ebenfalls ein retmo:Print) }}
+    |{{#if:{{{IsReprintOf|}}}|[[IsReprintOf::{{{IsReprintOf}}}]]|kein Nachdruck eingetragen}}
+    |{{#ask: 
+        [[IsReprintOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=kein Nachdruck angegeben
+    }}
+    |-
+    !Reproduktionen {{#info: Die Eigenschaft repräsentiert die Beziehung zwischen einem Manuskript oder einer gedruckten Edition und einer Reproduktion }}
+    |{{#if:{{{IsReproductionOf|}}}|[[IsReproductionOf::{{{IsReproductionOf}}}]]|keine Reproduktion eingetragen}}
+    |{{#ask: 
+        [[IsReproductionOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Reproduktion angegeben
+    }}
+    |-
+    !Inkunabel {{#info: Wiegenkatalog-Nummerierung eines Wiegendruckes (Inkunabel). Inkunabeln/Wiegendrucke wurden zwischen 1454 (Druck der Gutenberg-Bibel) und dem 31. Dezember 1500 gedruckt. Die Katalognummern kommen meist aus dem Repertorium bibliographicum von Hain (z.B. 'Hain 487'), dem Gesamtkatalog der Wiegendrucke (GW), oder auch den Ergänzungen von Copinger (z.B. 'Copinger 615'). Siehe auch folgende Webseite mit einer tabellarischen Übersicht typischer Muster der Signaturen von Wiegendrucken: https://www.cerl.org/help/incunabula/shelfmark_patterns }}
+    |{{#if:{{{Incunable|}}}|[[Incunable::{{{Incunable}}}]]|keine Inkunabel eingetragen}}    
+    |-
+|}
+{{DISPLAYTITLE:{{#if:{{{IsPrintOf|}}}|Druck von {{#getdisplaytitle:{{{IsPrintOf}}}}}|kein Titel}}}}
+[[Category:Print]]
+&lt;/includeonly&gt;</text>
+      <sha1>4j13a9em4zvk1dh9othti7p7lkxniwz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Printer</title>
+    <ns>10</ns>
+    <id>4405</id>
+    <revision>
+      <id>6369</id>
+      <timestamp>2021-05-17T10:53:09Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Drucker {{#info: Der Drucker eines edierten Texts }}&lt;/h4&gt; &lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein…“</comment>
+      <origin>6369</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="886" sha1="brt2r72raefgozgzwnhf0ayaf5h7u52" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Drucker {{#info: Der Drucker eines edierten Texts }}&lt;/h4&gt;
+&lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein Name}}&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Einrichtungskürzel {{#info: Kürzel für die Einrichtung }}
+    |{{#if:{{{OrganizationAbbreviation|}}}|[[OrganizationAbbreviation::{{{OrganizationAbbreviation}}}]]|kein Kürzel angegeben}}
+|}
+{{DISPLAYTITLE:{{#if:{{{OrganizationName|}}}|{{{OrganizationName}}}|kein Name}}}}
+[[Category:Printer]]
+{{#vardefine: GndIdentifier|{{{GndIdentifier|}}}}}
+{{#vardefine: CtIdentifier|{{{CtIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !GND
+    !CT
+    |-
+    |ID des Eintrags in der GND (Gemeinsame Normdatei).
+    |ID des Eintrags im CERL Thesaurus (CT).
+    |-
+    |[[GndIdentifier::{{#var:GndIdentifier}}]]
+    |[[CtIdentifier::{{#var:CtIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>brt2r72raefgozgzwnhf0ayaf5h7u52</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Publisher</title>
+    <ns>10</ns>
+    <id>4407</id>
+    <revision>
+      <id>6372</id>
+      <timestamp>2021-05-17T10:59:16Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Verlag {{#info: Der Verlag einer gedruckten Edition }}&lt;/h4&gt; &lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|ke…“</comment>
+      <origin>6372</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1207" sha1="eew9o6t4qizhixr8tc6qj3whclbj95g" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Verlag {{#info: Der Verlag einer gedruckten Edition }}&lt;/h4&gt;
+&lt;h1&gt;{{#if:{{{OrganizationName|}}}|[[OrganizationName::{{{OrganizationName}}}]]|kein Name}}&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Einrichtungskürzel {{#info: Kürzel für die Einrichtung }}
+    |{{#if:{{{OrganizationAbbreviation|}}}|[[OrganizationAbbreviation::{{{OrganizationAbbreviation}}}]]|kein Kürzel angegeben}}
+    |-
+    !Standort {{#info: Standort einer Einrichtung }}
+    |{{#if:{{{Location|}}}|[[Location::{{{Location}}}]]|kein Standort angegeben}}
+    |-
+    !Druckfassungen
+    |{{#ask: 
+        [[Publisher::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Druckfassung angegeben
+    }}
+|}
+{{DISPLAYTITLE:{{#if:{{{OrganizationName|}}}|{{{OrganizationName}}}|kein Name}}}}
+[[Category:Publisher]]
+{{#vardefine: GndIdentifier|{{{GndIdentifier|}}}}}
+{{#vardefine: CtIdentifier|{{{CtIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !GND
+    !CT
+    |-
+    |ID des Eintrags in der GND (Gemeinsame Normdatei).
+    |ID des Eintrags im CERL Thesaurus (CT).
+    |-
+    |[[GndIdentifier::{{#var:GndIdentifier}}]]
+    |[[CtIdentifier::{{#var:CtIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>eew9o6t4qizhixr8tc6qj3whclbj95g</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:WikidataImage</title>
+    <ns>10</ns>
+    <id>3980</id>
+    <revision>
+      <id>4148</id>
+      <parentid>4147</parentid>
+      <timestamp>2021-04-19T07:33:06Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>4148</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="36" sha1="qiti1qjl7oetsta3crq6uvki5ktloaj" xml:space="preserve">&lt;includeonly&gt;{{{img}}}&lt;/includeonly&gt;</text>
+      <sha1>qiti1qjl7oetsta3crq6uvki5ktloaj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Work</title>
+    <ns>10</ns>
+    <id>67</id>
+    <revision>
+      <id>6282</id>
+      <parentid>6281</parentid>
+      <timestamp>2021-05-14T09:07:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6282</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="11027" sha1="h0v583h4j6ssta3g1lkw5t9gnub3d9q" xml:space="preserve">&lt;includeonly&gt;
+{|class="flextable"
+    |
+    &lt;h1&gt;{{#if:{{{Title|}}}|[[Title::{{{Title}}}]]|kein Titel}}&lt;/h1&gt;
+    {{#ask:
+        [[-Has subobject::{{FULLPAGENAME}}]]
+        [[CreationDate::+]]
+        |mainlabel=-
+        |?CreationDate=Datum
+        |?CreationDateNote=Notiz
+        |?CreationDateDescription=Beschreibung
+        |format=table
+        |default=kein Erstellungsdatum angegeben
+    }}
+    {{#ask:
+        [[-Has subobject::{{FULLPAGENAME}}]] 
+        [[WorkCreator::+]]
+        |mainlabel=-
+        |?WorkCreator=Autor
+        |?WorkAuthorshipAttribution=Authentizität
+        |format=table
+        |default=kein Autor angegeben
+    }}
+    {{#ask: 
+        [[AuthoredWork::{{PAGENAMEE}}]]
+        |mainlabel=-
+        |?WorkCreator=Autor
+        |?WorkAuthorshipAttribution=Authentizität
+        |format=table
+        |default=kein Autor angegeben
+    }}
+    {{#ask: [[DatedWork::{{PAGENAMEE}}]]
+        |mainlabel=-
+        |?CreationDate=Datum
+        |?CreationDateDescription=Beschreibung
+        |?CreationDateNote=Notiz
+        |format=table
+        |default=kein Erstellungsdatum angegeben
+    }}
+    {|
+        |+Werkteile
+        |{{#ask: 
+            [[IsWorkPartOf::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Werkteile angegeben
+        }}
+    |}
+    {|
+        |+Manuskripte
+        |{{#ask: 
+            [[IsManuscriptOf::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Manuskripte angegeben
+        }}
+    |}
+    {|
+        |+Titelvarianten
+        |{{#arraymap:{{{AlternateTitle|}}}|,|x1|&lt;li&gt;[[AlternateTitle::x1]]&lt;li&gt;|}}
+    |}
+    {|
+        |+Incipit
+        |Incipit zur Identifikation eines Textes.
+        |-
+        |{{#if:{{{Incipit|}}}|[[Incipit::{{{Incipit}}}]]|kein Incipit angegeben}}
+    |}
+    {|
+        |+Übersetzer des Werks im Mittelalter
+        |{{#if:{{{Translator|}}}|[[Translator::{{{Translator}}}]]|kein Übersetzer angegeben}}
+    |}
+    {|
+        |+Sprache
+        |{{#if:{{{Language|}}}|[[Language::{{{Language}}}]]|keine Sprache angegeben}}    
+    |}
+    {|
+        |+Sprache des Texts aus dem in der mittelalterlichen Übersetzung übersetzt wurde 
+        |{{#if:{{{BaseLanguage|}}}|[[BaseLanguage::{{{BaseLanguage}}}]]|keine Sprache angegeben}}
+    |}
+    {|
+        |+Anmerkung zu Sprache des Werks
+        |{{#if:{{{LanguageNote|}}}|[[LanguageNote::{{{LanguageNote}}}]]|keine Anmerkung angegeben}}
+    |}
+    {|
+        |+Werk handelt von
+        |{{#if:{{{IsAbout|}}}|[[IsAbout::{{{IsAbout}}}]]|kein Bezug zu Autor angegeben}}
+    |}
+    {|
+        |+Textgattung
+        |{{#if: {{{WorkType|}}}|[[WorkType::{{{Type}}}]]|keine Textgattung angegeben}}
+        |{{#if: {{{IsCommentOf|}}}| von [[IsCommentOf::{{{IsCommentOf}}}|{{#getdisplaytitle:{{{IsCommentOf}}}}}]]|}}
+        |{{#if: {{{IsMedievalTranslationOf|}}}| von [[IsMedievalTranslationOf::{{{IsMedievalTranslationOf}}}|{{#getdisplaytitle:{{{IsMedievalTranslationOf}}}}}]]|}}
+        |{{#if: {{{Receiver|}}}| Empfänger des Briefes: [[Receiver::{{{Receiver}}}]]|}}
+        |{{#if: {{{Sender|}}}| Absender des Briefes: [[Sender::{{{Sender}}}]]|}}
+    |}
+    {|
+        |+Bibliografische Zitation
+        |Bibliographische Angaben zur Zitation eines Texts.
+        |-
+        |{{#if:{{{BibliographicCitation|}}}|[[BibliographicCitation::{{{BibliographicCitation}}}]]|keine Zitation angegeben}}
+    |}
+    {|
+        |+Verfügbarkeit
+        |{{#if:{{{Availability|}}}|[[Availability::{{{Availability}}}]]|keine Verfügbarkeit angegeben}}
+    |}
+    {|
+        |+Kommentare
+        |{{#ask: 
+            [[HasComment::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Kommentare angegeben
+        }}
+    |}
+   {|
+        |+Mittelalterliche Übersetzungen
+        |{{#ask: 
+            [[HasMedievalTranslation::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine mittelalterliche Übersetzungen angegeben
+        }}
+    |}
+    {|
+        |+In Werksammlung enthalten
+        |{{#ask: 
+            [[ContainsText::{{PAGENAMEE}}]]
+            |format=table
+            |headers=none
+            |default=keine Werksammlungen angegeben
+        }}
+    |}
+    {|
+        |+Kurzkommentar
+        ||{{#if:{{{Note|}}}|[[Note::{{{Note}}}]]|kein Kurzkommentar angegeben}}
+    |}
+    |
+    {{#network:
+        {{#ask:
+            [[{{PAGENAMEE}}]]
+            |format=array
+            |link=none
+        }}
+        |class=network
+    }}
+|}
+{{#ask: 
+    [[IsEditionOf::{{PAGENAMEE}}]]
+    |mainlabel=-
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+    |?EditionType=Typ
+    |format=moderntimeline
+}}
+&lt;tabs&gt;
+    &lt;tab name="Volleditionen"&gt;
+        {{#ask:
+            [[EditionType::Ve]]
+            [[IsEditionOf::{{PAGENAMEE}}]]
+            |mainlabel=-
+            |?Editor
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate=Datum
+            |?OperaOmnia
+            |?Series
+            |?EditionTitle=Titel der Edition
+            |format=broadtable
+            |class=datatable
+            |default=Keine Volleditionen vorhanden
+        }}
+        &lt;/tab&gt;
+        &lt;tab name="Teileditionen"&gt;
+            {{#ask:
+            [[EditionType::Te]]
+            [[IsEditionOf::{{PAGENAMEE}}]]
+            |mainlabel=Editionen
+            |?IsEditionOfWorkPart=Werkteil
+            |?Editor
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate=Datum
+            |?OperaOmnia
+            |?Series
+            |?EditionTitle=Titel der Edition
+            |format=broadtable
+            |class=datatable
+            |default=Keine Teileditionen vorhanden
+        }}
+    &lt;/tab&gt;
+    &lt;tab name="Übersetzungen"&gt;
+        {{#ask:
+            [[EditionType::Ue]]
+            [[IsEditionOf::{{PAGENAMEE}}]]
+            |mainlabel=Editionen
+            |?Language=Sprache
+            |?Editor
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate=Datum
+            |?OperaOmnia
+            |?Series
+            |?EditionTitle=Titel der Edition
+            |format=broadtable
+            |class=datatable
+            |default=Keine Übersetzungen vorhanden
+        }}
+    &lt;/tab&gt;
+    &lt;tab name="Alle Editionen"&gt;
+        {|
+        !Jahr
+        !Editionsform
+        !(moderne) Übersetzungen
+        |-
+        |{{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            SELECT ?century (count(?century) as ?count)
+            {
+                ?edition retmop:IsEditionOf page:{{PAGENAMEE}} .
+                ?expr retmop:IsEditionExpressionOf ?edition .
+                ?print retmop:IsEditionManifestationOf ?expr . 
+                ?print retmop:PublicationYear ?year
+                BIND(CONCAT(SUBSTR(STR(CEIL(YEAR(?year)/100)), 0, 3), ". Jhd.") AS ?century) . 
+            }
+            GROUP BY ?century
+            ORDER BY ?century
+            |chart=google.visualization.Pie
+            |options=width=500px!height=300px!pieSliceText=value
+            |log=2
+        }}
+        |{{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            SELECT ?label (count(?label) as ?count)
+            {
+                ?edition retmop:IsEditionOf page:{{PAGENAMEE}} .
+                ?edition retmop:EditionType/retmop:Label ?label .
+            }
+            GROUP by ?label
+            |chart=google.visualization.Pie
+            |options=width=500px!height=300px!pieSliceText=value
+            |log=2
+        }}
+        |{{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+            SELECT ?language (count(?language) as ?count)
+            {
+                ?edition retmop:IsEditionOf page:{{PAGENAMEE}} .
+                ?edition retmop:EditionType page:Ue .
+                ?edition retmop:Language ?language .
+            }
+            GROUP by ?language
+            |chart=google.visualization.Pie
+            |options=width=500px!height=300px!pieSliceText=value
+            |log=2
+        }}
+        |}
+        {{#ask:
+            [[IsEditionOf::{{PAGENAMEE}}]]
+            |mainlabel=-
+            |?Editor
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+            |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate=Datum
+            |?OperaOmnia
+            |?Series
+            |?EditionTitle=Titel der Edition
+            |format=broadtable
+            |class=datatable
+            |default=Keine Editionen vorhanden
+        }}
+    &lt;/tab&gt;
+&lt;/tabs&gt;
+{|
+    |+Referenzen
+    |Verknüpfung einer Entität mit einem Dokument (z.B. der Sekundärliteratur) das weiterführende Information darüber enthält.
+    |-
+    |{{#ask: 
+        [[References::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |-
+    |{{#arraymap:{{{References|}}}|,|x1|[[References::x1]]|}}
+|}
+{{#vardefine: Source|{{{Source|}}}}}
+{{#vardefine: SiglumIdentifier|{{{SiglumIdentifier|}}}}}
+{{#vardefine: Provenance|{{{Provenance|}}}}}
+{{#vardefine: Retm2Identifier|{{{Retm2Identifier|}}}}}
+{{DISPLAYTITLE:{{#if:{{{Title|}}}|{{{Title}}}|kein Titel}}}}
+[[Category:Work]]
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum
+    !Quelle
+    !Herkunft
+    !Retm2Identifier
+    |-
+    |Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29').
+    |Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei.
+    |Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3'.
+    |Signatur einer Edition (oder eines Werkes) im RETM2 (Repertorium edierter Texte des Mittelalters).    
+    |-
+    |[[SiglumIdentifier::{{#var:SiglumIdentifier}}]]
+    |[[Source::{{#var:Source}}]]
+    |[[Provenance::{{#var:Provenance}}]]
+    |[[Retm2Identifier::{{#var:Retm2Identifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>h0v583h4j6ssta3g1lkw5t9gnub3d9q</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:WorkPart</title>
+    <ns>10</ns>
+    <id>65</id>
+    <revision>
+      <id>6329</id>
+      <parentid>6328</parentid>
+      <timestamp>2021-05-17T07:52:55Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6329</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1470" sha1="2nsiupx82gswcbpxek5km5hgad5t7ib" xml:space="preserve">&lt;includeonly&gt;
+&lt;h1&gt;{{#if:{{{Heading|}}}|[[Heading::{{{Heading}}}]]|keine Überschrift}}&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Werkteil von
+    |{{#if:{{{IsWorkPartOf|}}}|[[IsWorkPartOf::{{{IsWorkPartOf}}}|{{#getdisplaytitle:{{{IsWorkPartOf}}}}}
+    |-
+    !Sektion {{#info: Name oder Bezeichnung des Werkteils. Die Angabe der edierten Textstelle erfolgt in der für die jeweilige Textgattung typischen Weise (z.B. 'Sent. III' bei einer Sentenz als Bestandteil in einem Sentenzenkommentar) }}
+    |{{#if:{{{Section|}}}|[[Section::{{{Section}}}]]|keine Sektion angegeben}}
+    |-
+    !Editionen des Werkteils
+    |{{#ask: 
+        [[IsEditionOfWorkPart::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Editionen angegeben
+    }}
+    |-
+    !Bibliografische Zitation {{#info: Bibliographische Angaben zur Zitation eines Texts }}
+    |{{#if:{{{BibliographicCitation|}}}|[[BibliographicCitation::{{{BibliographicCitation}}}]]|keine Zitation angegeben}}    
+    |-
+    !Referenzen {{#info: Verknüpfung einer Entität mit einem Dokument (z.B. der Sekundärliteratur) das weiterführende Information darüber enthält }}
+    |{{#ask: 
+        [[References::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Referenzen angegeben
+    }}
+    |{{#arraymap:{{{References|}}}|,|x1|[[References::x1]]|}}
+|}
+{{DISPLAYTITLE:{{#if:{{{Heading|}}}|{{{Heading}}}|keine Überschrift}}}}
+[[Category:WorkPart]]
+&lt;/includeonly&gt;</text>
+      <sha1>2nsiupx82gswcbpxek5km5hgad5t7ib</sha1>
+    </revision>
+  </page>
+</mediawiki>

@@ -1,0 +1,990 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Formular:Author</title>
+    <ns>106</ns>
+    <id>4301</id>
+    <revision>
+      <id>6317</id>
+      <parentid>6296</parentid>
+      <timestamp>2021-05-14T10:11:11Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6317</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2689" sha1="1ho04kvg74vukvq3bxqwzkvsb3ubcdz" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Author|Neuen Autor erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+{{#vardefine: gndIdentifier
+|{{#ask: [[{{PAGENAMEE}}]]
+        |mainlabel=-
+        |?GndIdentifier
+        |format=array
+    }}
+}}
+{{#if: {{#var: gndIdentifier}}
+|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#var: gndIdentifier}} Bei Lobid betrachten]&lt;/span&gt;
+|{{#get_web_data:url=http://lobid.org/gnd/search?q={{urlencode:{{#getdisplaytitle:{{PAGENAMEE}}}}}}&amp;amp;format=json
+        |format=JSON
+        |data=GND1=gndIdentifier
+        |suppress error=
+    }}
+    {{#if:{{#external_value:GND1|}}|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#external_value:GND1}} Bei Lobid betrachten]&lt;/span&gt;|kein entsprechender Lobid-Eintrag gefunden}}
+}}
+&lt;h1&gt;Autor erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Author}}}
+{| class="formtable"
+    ! Name: 
+    | {{{field|Name}}}
+    |-
+    ! Namenszusatz: 
+    | {{{field|NameAddition}}}
+    |-
+    ! Geburtsdatum: 
+    | {{{field|BirthDate|input type=date}}}
+    |-
+    ! Geburtsort: 
+    | {{{field|BirthPlace}}}
+    |-
+    ! Todesdatum: 
+    | {{{field|DeathDate}}}
+    |-
+    ! Todesort: 
+    | {{{field|DeathPlace}}}
+    |-
+    ! Kurzkommentar zu Werken: 
+    | {{{field|WorkShortComment}}}
+    |-
+    ! Kurzkommentar zu Editionen: 
+    | {{{field|EditionShortComment}}}
+    |-
+    ! Biographie: 
+    | {{{field|Biography}}}
+    |-
+    ! Referenzen: 
+    | {{{field|References|input type=tokens|existing values only|values from category=Document}}}
+    |-
+    ! GND Identifier: 
+    | {{{field|GndIdentifier}}}
+    |-
+    ! CT Identifier: 
+    | {{{field|CtIdentifier}}}
+|}
+{{{end template}}}
+
+{{{for template|EventSubobject|multiple|label=Lebensereignisse|add button text=Lebensereignis hinzufügen}}}
+    {| class="formtable"
+        ! Typ: 
+        | {{{field|EventType|input type=text with autocomplete|max values=1|values from property=EventType}}}
+        |-
+        ! Beschreibung: 
+        | {{{field|EventDateNote|input type=textarea}}}
+        |-
+        ! Ort: 
+        | {{{field|Place|input type=text with autocomplete|values from property=Place|max values=1}}}
+        |-
+        ! Datum: 
+        | {{{field|EventDate|input type=date}}}
+        |-
+        ! Datumsbeschreibung: 
+        | {{{field|EventDateDescription|input type=textarea}}}
+        |-
+        ! Sortierung: 
+        | {{{field|EventSort}}}
+    |}
+{{{end template}}}
+
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>1ho04kvg74vukvq3bxqwzkvsb3ubcdz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Collection</title>
+    <ns>106</ns>
+    <id>4422</id>
+    <revision>
+      <id>6398</id>
+      <parentid>6396</parentid>
+      <timestamp>2021-05-17T11:34:42Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6398</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="680" sha1="jiudqpfhhskb0gqmlg9ow9nmrgny8te" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Collection|Neuen Sammelband erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Sammelband erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Collection}}}
+{| class="formtable"
+    ! Herausgeber: 
+    | {{{field|CollectionEditor|input type=text with autocomplete|existing values only|values from category=Editor|mapping property=Name}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>jiudqpfhhskb0gqmlg9ow9nmrgny8te</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Edition</title>
+    <ns>106</ns>
+    <id>4240</id>
+    <revision>
+      <id>6297</id>
+      <parentid>6261</parentid>
+      <timestamp>2021-05-14T09:30:10Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6297</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2279" sha1="paa57qf2dm597gce8yvvq2xbou0yva9" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Edition|Neue Edition erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Edition erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Edition}}}
+{| class="formtable"
+    ! Titel: 
+    | {{{field|EditionTitle|mandatory}}}
+    |-
+    ! Alternative Titel: 
+    | {{{field|AlternateEditionTitle|input type=tokens}}}
+    |-
+    ! Siglum: 
+    | {{{field|Siglum}}}
+    |-
+    ! Editor: 
+    | {{{field|Editor|input type=text with autocomplete|existing values only|values from category=Editor}}}
+    |-
+    ! Ist Edition von: 
+    | {{{field|IsEditionOf|input type=text with autocomplete|existing values only|values from category=Work|mapping property=Title}}}
+    |-
+    ! Ist Edition des Werkteils: 
+    | {{{field|IsEditionOfWorkPart|input type=text with autocomplete|existing values only|values from category=WorkPart}}}
+    |-
+    ! Bibliografische Zitation: 
+    | {{{field|BibliographicCitation|input type=textarea}}}
+    |-
+    ! Editionsform: 
+    | {{{field
+            |EditionType
+            |input type=radiobutton
+            |values from property=EditionType
+            |show on select=Werksammlung=&gt;containstext
+        }}}
+    |-
+    | &lt;div id="containstext"&gt;enthält Text von: {{{field|ContainsText|input type=tokens|existing values only|values from concept=WerkWerkteile|mapping property=Title}}}&lt;/div&gt;
+    |-
+    ! Incipit: 
+    | {{{field|Incipit|input type=textarea}}}
+    |-
+    ! Kurzkommentar: 
+    | {{{field|Note|input type=textarea}}}
+    |-
+    ! Sprache der Edition: 
+    | {{{field|Language}}}
+    |-
+    ! Übersetzer der Edition im Mittelalter: 
+    | {{{field|Translator|input type=text with autocomplete|existing values only|values from category=Person}}}
+    |-
+    ! Übersetzung von: 
+    | {{{field|IsTranslationOf|input type=tokens|existing values only|values from category=Edition|mapping property=EditionTitle}}}
+    |-
+    ! Anmerkung zur Sprache: 
+    | {{{field|LanguageNote|input type=textarea}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>paa57qf2dm597gce8yvvq2xbou0yva9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Editor</title>
+    <ns>106</ns>
+    <id>4307</id>
+    <revision>
+      <id>5716</id>
+      <timestamp>2021-05-06T09:28:42Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;noinclude&gt; Dies ist das Formular „Editor“. Um eine Seite mit diesem Formular zu erstellen, gib den Seitennamen in das Eingabefeld unten ein. Sofern bereit…“</comment>
+      <origin>5716</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="768" sha1="nlj4p1asmeuy2fnwwrqqbi71ajznh9r" xml:space="preserve">&lt;noinclude&gt;
+Dies ist das Formular „Editor“.
+Um eine Seite mit diesem Formular zu erstellen, gib den Seitennamen in das Eingabefeld unten ein.
+Sofern bereits eine Seite dieses Namens vorhanden ist, wirst du automatisch zum Bearbeitungsformular der Seite weitergeleitet.
+
+{{#forminput:form=Editor}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+{{{for template|Editor}}}
+{| class="formtable"
+! Name: 
+| {{{field|Name}}}
+|-
+! NameAddition: 
+| {{{field|NameAddition}}}
+|-
+! GndIdentifier: 
+| {{{field|GndIdentifier}}}
+|-
+! CtIdentifier: 
+| {{{field|CtIdentifier}}}
+|}
+{{{end template}}}
+
+'''Freitext:'''
+
+{{{standard input|free text|rows=10}}}
+&lt;/includeonly&gt;</text>
+      <sha1>nlj4p1asmeuy2fnwwrqqbi71ajznh9r</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:InCollection</title>
+    <ns>106</ns>
+    <id>4423</id>
+    <revision>
+      <id>6401</id>
+      <parentid>6399</parentid>
+      <timestamp>2021-05-17T11:39:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6401</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1400" sha1="5zmzssm0rauy4b9rxhcvh29yyudu4n6" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|InCollection|Neue Sammelbandedition erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Sammelbandedition erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|InCollection}}}
+{| class="formtable"
+    ! Teil von:     
+    | {{{field|PartOf|input type=text with autocomplete|existing values only|values from concept=KollektionenZeitschriftenManuskriptteile}}}
+    |-
+    ! Veröffentlichungsjahr: 
+    | {{{field|PublicationYear}}}
+    |-
+    ! ist Realisierung von: 
+    | {{{field|IsEditionExpressionOf|input type=text with autocomplete|existing values only|values from category=Edition|mapping property=EditionTitle}}}
+    |-
+    ! Band: 
+    | {{{field|Volume}}}
+    |-
+    ! Beitragautor: 
+    | {{{field|InCollectionAuthor|input type=text with autocomplete|existing values only|values from category=Editor|mapping property=Name}}}
+    |-
+    ! Bibliografische Zitation: 
+    | {{{field|BibliographicCitation|input type=textarea}}}
+    |-
+    ! Referenzen: 
+    | {{{field|References|input type=tokens|existing values only|values from category=Document}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>5zmzssm0rauy4b9rxhcvh29yyudu4n6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Journal</title>
+    <ns>106</ns>
+    <id>4364</id>
+    <revision>
+      <id>6264</id>
+      <parentid>6256</parentid>
+      <timestamp>2021-05-14T07:02:32Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6264</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="725" sha1="aaooe4tbdmey8h9ccanlwb7g9eraxyy" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Journal|Neue Zeitschrift erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Zeitschrift erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Journal}}}
+{| class="formtable"
+    ! Titel: 
+    | {{{field|JournalTitle|mandatory}}}
+    |-
+    ! Kurztitel: 
+    | {{{field|JournalShortTitle}}}
+    |-
+    ! ISSN: 
+    | {{{field|Issn}}}
+    |-
+    ! ZDB: 
+    | {{{field|ZdbIdentifier}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>aaooe4tbdmey8h9ccanlwb7g9eraxyy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:JournalArticle</title>
+    <ns>106</ns>
+    <id>4392</id>
+    <revision>
+      <id>6400</id>
+      <parentid>6397</parentid>
+      <timestamp>2021-05-17T11:38:04Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6400</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1522" sha1="71ft7k9pxd0gn2en5ag266alh6k5act" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|JournalArticle|Neue Zeitschriftenedition erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Zeitschriftenedition erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|JournalArticle}}}
+{| class="formtable"
+    ! Titel: 
+    | {{{field|JournalArticleTitle}}}
+    |-
+    ! Teil von:     
+    | {{{field|PartOf|input type=text with autocomplete|existing values only|values from concept=KollektionenZeitschriftenManuskriptteile}}}
+    |-
+    ! ist Realisierung von: 
+    | {{{field|IsEditionExpressionOf|input type=text with autocomplete|existing values only|values from category=Edition|mapping property=EditionTitle}}}
+    |-
+    ! Veröffentlichungsjahr: 
+    | {{{field|PublicationYear}}}
+    |-
+    ! Ausgabe: 
+    | {{{field|Issue}}}
+    |-
+    ! Band: 
+    | {{{field|Volume}}}
+    |-
+    ! Aufsatzautor: 
+    | {{{field|JournalArticleAuthor|input type=text with autocomplete|existing values only|values from category=Editor|mapping property=Name}}}
+    |-
+    ! Bibliografische Zitation: 
+    | {{{field|BibliographicCitation|input type=textarea}}}
+    |-
+    ! Referenzen: 
+    | {{{field|References|input type=tokens|existing values only|values from category=Document}}}
+    |}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>71ft7k9pxd0gn2en5ag266alh6k5act</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Library</title>
+    <ns>106</ns>
+    <id>4415</id>
+    <revision>
+      <id>6382</id>
+      <parentid>6381</parentid>
+      <timestamp>2021-05-17T11:07:54Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6382</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="899" sha1="5r4ywnln0y8yfnbwjgj8lzw2ldh5dn2" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Library|Neue Bibliothek erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Bibliothek erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Library}}}
+{| class="formtable"
+    ! Einrichtungsname: 
+    | {{{field|OrganizationName|mandatory}}}
+    |-
+    ! Einrichtungskürzel: 
+    | {{{field|OrganizationAbbreviation}}}
+    |-
+    ! Standort: 
+    | {{{field|Location|input type=text with autocomplete|values from property=Place}}}
+    |-
+    ! GND Identifier: 
+    | {{{field|GndIdentifier}}}
+    |-
+    ! CT Identifier: 
+    | {{{field|CtIdentifier}}}
+    |}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>5r4ywnln0y8yfnbwjgj8lzw2ldh5dn2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Manuscript</title>
+    <ns>106</ns>
+    <id>4369</id>
+    <revision>
+      <id>6370</id>
+      <parentid>6362</parentid>
+      <timestamp>2021-05-17T10:55:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6370</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1507" sha1="pg0zjefi6x4xochwjzr3algtqqro12p" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Manuscript|Neues Manuskript erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Manuskript erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Manuscript}}}
+{| class="formtable"
+    ! Signatur des Manuskripts: 
+    | {{{field|Shelfmark}}}
+    |-
+    ! Im Besitz von: 
+    | {{{field|HeldBy|input type=text with autocomplete|existing values only|values from Category=Library|mapping property=OrganizationName}}}
+    |-
+    ! Incipit: 
+    | {{{field|Incipit|input type=textarea}}}
+    |-
+    ! Manuskript von: 
+    | {{{field|IsManuscriptOf|input type=text with autocomplete|existing values only|values from category=Work|mapping property=Title}}}
+    |-
+    ! Manuskriptgrundlage von: 
+    | {{{field|WasManuscriptSourceOf|input type=text with autocomplete|existing values only|values from category=Edition|mapping property=EditionTitle}}}
+    |-
+    ! Reproduktion von: 
+    | {{{field|IsReproductionOf|input type=text with autocomplete|existing values only|values from concept=ManuskripteDrucke}}}
+    |-
+    ! Teil von: 
+    | {{{field|PartOf|input type=text with autocomplete|existing values only|values from concept=KollektionenZeitschriftenManuskriptteile}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>pg0zjefi6x4xochwjzr3algtqqro12p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:ManuscriptPart</title>
+    <ns>106</ns>
+    <id>4399</id>
+    <revision>
+      <id>6363</id>
+      <parentid>6361</parentid>
+      <timestamp>2021-05-17T10:18:37Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6363</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="898" sha1="sgckbd9yred8q3hkiji0oh83vqezemu" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|ManuscriptPart|Neuen Manuskriptteil erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Manuskriptteil erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|ManuscriptPart}}}
+{| class="formtable"
+    ! Manuskriptgrundlage von: 
+    | {{{field|WasManuscriptSourceOf|input type=text with autocomplete|existing values only|values from category=Edition|mapping property=EditionTitle}}}
+    |-
+    ! Erstes Blatt: 
+    | {{{field|StartingFolio}}}
+    |-
+    ! Letztes Blatt: 
+    | {{{field|EndingFolio}}}
+    |-
+    ! Foliobereich: 
+    | {{{field|FolioRange}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>sgckbd9yred8q3hkiji0oh83vqezemu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Monograph</title>
+    <ns>106</ns>
+    <id>4396</id>
+    <revision>
+      <id>6357</id>
+      <parentid>6355</parentid>
+      <timestamp>2021-05-17T09:59:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6357</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1097" sha1="ccqex78qk43hmh58cztcqr12cl8p2e2" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Monograph|Neue Monographieedition erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Monographieedition erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Monograph}}}
+{| class="formtable"
+    ! Ist Realisierung von: 
+    | {{{field|IsEditionExpressionOf|input type=text with autocomplete|existing values only|values from category=Edition}}}
+    |-
+    ! Band: 
+    | {{{field|Volume}}}
+    |-
+    ! Buchautor: 
+    | {{{field|MonographAuthor|input type=text with autocomplete|existing values only|values from category=Editor}}}
+    |-
+    ! Bibliografische Zitation: 
+    | {{{field|BibliographicCitation|input type=textarea}}}
+    |-
+    ! Referenzen: 
+    | {{{field|References|input type=tokens|existing values only|values from category=Document}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>ccqex78qk43hmh58cztcqr12cl8p2e2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Order</title>
+    <ns>106</ns>
+    <id>4417</id>
+    <revision>
+      <id>6386</id>
+      <parentid>6385</parentid>
+      <timestamp>2021-05-17T11:10:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6386</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="570" sha1="32wptjccb0g02fd6cljlf0zuu1dcgmk" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Order|Neuen Orden erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Orden erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Order}}}
+{| class="formtable"
+    ! Einrichtungsname: 
+    | {{{field|OrganizationName|mandatory}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>32wptjccb0g02fd6cljlf0zuu1dcgmk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Print</title>
+    <ns>106</ns>
+    <id>4375</id>
+    <revision>
+      <id>6302</id>
+      <parentid>6300</parentid>
+      <timestamp>2021-05-14T09:40:44Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6302</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2044" sha1="lckqaapz1qnenwstukl93yrybpl6bm7" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Print|Neuen Druck erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Druck erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Print}}}
+{| class="formtable"
+    ! Gedruckte Edition: 
+    | {{{field|IsPrintOf|values from category=Edition|input type=text with autocomplete|existing values only|mapping property=EditionTitle}}}
+    |-
+    ! Gedruckte Form der Edition: 
+    | {{{field|IsEditionManifestationOf|values from concept=MonographZeitschriftenartikelInKollektion|input type=text with autocomplete|existing values only}}}
+    |-
+    ! Drucker: 
+    | {{{field|Printer|values from concept=PersonenDrucker|input type=text with autocomplete|existing values only}}}
+    |-
+    ! Seitenbereich: 
+    | {{{field|PageRange}}}
+    |-
+    ! Seitenbereichs des edierten Texts: 
+    | {{{field|PageRangeOfEditedText}}}
+    |-
+    ! Veröffentlichungsjahr: 
+    | {{{field|PublicationYear}}}
+    |-
+    ! Veröffentlichungsdatum: 
+    | {{{field|PublicationDate|input type=date}}}
+    |-
+    ! Veröffentlichungsort: 
+    | {{{field|PublicationPlace|values from category=Place|input type=text with autocomplete|existing values only|mapping property=PlaceName}}}
+    |-
+    ! Herausgeber: 
+    | {{{field|Publisher|values from category=Publisher|input type=text with autocomplete|existing values only|mapping property=Location}}}
+    |-
+    ! Nachdruck von: 
+    | {{{field|IsReprintOf|values from category=Print|input type=text with autocomplete|existing values only}}}
+    |-
+    ! Reproduktion von: 
+    | {{{field|IsReproductionOf|values from concept=ManuskripteDrucke|input type=text with autocomplete|existing values only}}}
+    |-
+    ! Inkunabel: 
+    | {{{field|Incunable|input type=textarea}}}
+    |}
+{{{end template}}}
+
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>lckqaapz1qnenwstukl93yrybpl6bm7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Printer</title>
+    <ns>106</ns>
+    <id>4414</id>
+    <revision>
+      <id>6380</id>
+      <parentid>6379</parentid>
+      <timestamp>2021-05-17T11:05:53Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6380</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="782" sha1="0dd6fi914pvq2eugubvcn435ihxgled" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Printer|Neuen Drucker erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Drucker erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Printer}}}
+{| class="formtable"
+    ! Einrichtungsname: 
+    | {{{field|OrganizationName|mandatory}}}
+    |-
+    ! Einrichtungskürzel: 
+    | {{{field|OrganizationAbbreviation}}}
+    |-
+    ! GND Identifier: 
+    | {{{field|GndIdentifier}}}
+    |-
+    ! CT Identifier: 
+    | {{{field|CtIdentifier}}}
+    |}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>0dd6fi914pvq2eugubvcn435ihxgled</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Publisher</title>
+    <ns>106</ns>
+    <id>4416</id>
+    <revision>
+      <id>6384</id>
+      <parentid>6383</parentid>
+      <timestamp>2021-05-17T11:09:12Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6384</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="896" sha1="hu9b29dswttcmanwc5vwhj1b02ktfon" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Publisher|Neuen Verlag erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Verlag erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Publisher}}}
+{| class="formtable"
+    ! Einrichtungsname: 
+    | {{{field|OrganizationName|mandatory}}}
+    |-
+    ! Einrichtungskürzel: 
+    | {{{field|OrganizationAbbreviation}}}
+    |-
+    ! Standort: 
+    | {{{field|Location|input type=text with autocomplete|values from property=Place}}}
+    |-
+    ! GND Identifier: 
+    | {{{field|GndIdentifier}}}
+    |-
+    ! CT Identifier: 
+    | {{{field|CtIdentifier}}}
+    |}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>hu9b29dswttcmanwc5vwhj1b02ktfon</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Work</title>
+    <ns>106</ns>
+    <id>4239</id>
+    <revision>
+      <id>6298</id>
+      <parentid>6283</parentid>
+      <timestamp>2021-05-14T09:31:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6298</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4993" sha1="nabc4i4ilhdmj808lhx33ouvkdxid24" xml:space="preserve">&lt;noinclude&gt;
+&lt;span class="create-btn"&gt;{{#formlink:form=Work|link text=Neues Werk erstellen|target=Work_{{#idprovider-random:uuid}}}}&lt;/span&gt;
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Werk erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|Work}}}
+    {| class="formtable"
+        ! Titel: 
+        | {{{field|Title|mandatory}}}
+        |-
+        ! Siglum: 
+        | {{{field|Siglum}}}
+        |-
+        ! Titelvarianten: 
+        | {{{field|AlternateTitle|input type=tokens}}}
+        |-
+        ! Incipit: 
+        | {{{field|Incipit|input type=textarea}}}
+        |-
+        ! Bibliografische Zitation: 
+        | {{{field|BibliographicCitation|input type=textarea}}}
+        |-
+        ! Textgattung: 
+        | {{{field
+                |WorkType
+                |input type=radiobutton
+                |values from property=WorkType
+                |values=Kommentar
+                |show on select=Kommentar=&gt;isCommentOf
+                |show on select=Brief=&gt;receiver
+                |show on select=Übersetzung=&gt;translation
+            }}}
+        |-
+        | &lt;div id="translation"&gt;mittelalterliche Übersetzung von: {{{field|IsMedievalTranslationOf|values from category=Work|input type=text with autocomplete|existing values only|mapping property=Title}}}&lt;/div&gt;
+        | &lt;div id="isCommentOf"&gt;Kommentar von: {{{field|IsCommentOf|values from category=Work|input type=text with autocomplete|existing values only|mapping property=Title}}}&lt;/div&gt;
+        | &lt;div id="receiver"&gt;Empfänger des Briefes: {{{field|Receiver|values from category=Author|input type=text with autocomplete|existing values only|mapping property=Name}}}    Sender des Briefes: {{{field|Sender|values from category=Author|input type=text with autocomplete|existing values only|mapping property=Name}}}&lt;/div&gt;
+        |-
+        ! Verfügbarkeit: 
+        | {{{field|Availability|input type=text with autocomplete|values from property=Availability}}}
+        |-
+        ! Übersetzer des Werks im Mittelalter: 
+        | {{{field|Translator|input type=text with autocomplete|existing values only|values from category=Person}}}
+        |-
+        ! Sprache des Werks: 
+        | {{{field|Language}}}
+        |-
+        ! Sprache des Texts aus dem in der mittelalterlichen Übersetzung übersetzt wurde: 
+        | {{{field|BaseLanguage}}}
+        |-
+        ! Anmerkung zur Sprache des Werks: 
+        | {{{field|LanguageNote|input type=textarea}}}
+        |-
+        ! Handelt von: 
+        | {{{field|IsAbout|input type=text with autocomplete|existing values only|values from category=Author}}}
+        |-
+        ! Kurzkommentar: 
+        | {{{field|Note|input type=textarea}}}
+        |-
+        ! Referenzen: 
+        | {{{field|References|input type=tokens|existing values only|values from category=Document}}}
+    |}
+{{{end template}}}
+
+{{{for template|AuthorshipSubobject|multiple|label=Autorschaften|add button text=Autorschaft hinzufügen}}}
+    {| class="formtable"
+        ! Authentizität: 
+        | {{{field|WorkAuthorshipAttribution|input type=text with autocomplete|max values=1|existing values only|values from property=WorkAuthorshipAttribution|mapping property=Label}}}
+        |-
+        ! Autor: 
+        | {{{field|WorkCreator|input type=text with autocomplete|max values=1|existing values only|values from category=Author|mapping property=Name}}}
+        |-
+        ! Beleg der Zuweisung: 
+        | {{{field|WorkAuthorshipAttributionEvidence|input type=text with autocomplete|existing values only|max values=1}}}
+    |}
+{{{end template}}}
+
+{{{for template|CreatedSubobject|multiple|label=Erstellungsdaten|add button text=Erstellungsdatum hinzufügen}}}
+    {| class="formtable"
+        ! Datum: 
+        | {{{field|CreationDate|input type=date}}}
+        |-
+        ! Notiz: 
+        | {{{field|CreationDateNote|input type=textarea}}}
+        |-
+        ! Beschreibung: 
+        | {{{field|CreationDateDescription|input type=textarea}}}
+    |}
+{{{end template}}}
+
+
+{{#ask: [[AuthoredWork::{{PAGENAMEE}}]]
+    |?WorkCreator.Name |+filter=value
+    |?WorkAuthorshipAttribution
+    |?WorkAuthorshipAttributionEvidence
+    |format=plainlist
+    |intro={{{!}} class="wikitable sortable broadtable"
+           !Bearbeiten !!Autor !!Authentizität !!Beleg der Zuweisung !!Löschen
+           {{!}}+Autorschaften
+           {{!}}-
+    |outro={{!}}}
+    |template=QueryEditAuthorships
+    |default=Keine Autorschaften angegeben
+    |class=datatable
+    |link=none
+}}
+
+&lt;span class="create-btn"&gt;{{#formlink:form=Authorship|link text=neue Autorschaft|tooltip=Autorschaft erstellen|target=Authorship_{{#idprovider-random:uuid}}|query string=WorkAuthorshipReference[AuthoredWork]={{PAGENAMEE}}|popup|reload}}&lt;/span&gt;
+
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>nabc4i4ilhdmj808lhx33ouvkdxid24</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:WorkPart</title>
+    <ns>106</ns>
+    <id>4362</id>
+    <revision>
+      <id>6268</id>
+      <parentid>6254</parentid>
+      <timestamp>2021-05-14T07:03:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6268</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="885" sha1="6j0bvxdqa06sus9kluwp0s3vnmakk8l" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|WorkPart|Neuen Werkteil erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
+&lt;h1&gt;Werkteil erstellen / bearbeiten&lt;/h1&gt;
+{{{for template|WorkPart}}}
+{| class="formtable"
+    ! Überschrift: 
+    | {{{field|Heading|mandatory}}}
+    |-
+    ! Ist Werkteil von: 
+    | {{{field|IsWorkPartOf|input type=text with autocomplete|existing values only|values from category=Work|mapping property=Title}}}
+    |-
+    ! Sektion: 
+    | {{{field|Section}}}
+    |-
+    ! Bibliografische Zitation: 
+    | {{{field|BibliographicCitation|input type=textarea}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>6j0bvxdqa06sus9kluwp0s3vnmakk8l</sha1>
+    </revision>
+  </page>
+</mediawiki>

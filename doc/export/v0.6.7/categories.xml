@@ -1,0 +1,457 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Kategorie:Author</title>
+    <ns>14</ns>
+    <id>4303</id>
+    <revision>
+      <id>6287</id>
+      <parentid>5712</parentid>
+      <timestamp>2021-05-14T09:22:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6287</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="69" sha1="5ccaknixkm7gt2rxqnfsz46da05bz27" xml:space="preserve">{{DISPLAYTITLE:Autoren}}
+{{#default_form:Author}}
+[[Category:Person]]</text>
+      <sha1>5ccaknixkm7gt2rxqnfsz46da05bz27</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Collection</title>
+    <ns>14</ns>
+    <id>4424</id>
+    <revision>
+      <id>6403</id>
+      <timestamp>2021-05-17T11:40:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Sammelband}} {{#default_form:Collection}}“</comment>
+      <origin>6403</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="56" sha1="bqtwi3s5c6fswsyem6r745iwwkqjvag" xml:space="preserve">{{DISPLAYTITLE:Sammelband}}
+{{#default_form:Collection}}</text>
+      <sha1>bqtwi3s5c6fswsyem6r745iwwkqjvag</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Document</title>
+    <ns>14</ns>
+    <id>4380</id>
+    <revision>
+      <id>6288</id>
+      <timestamp>2021-05-14T09:24:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Dokument}}“</comment>
+      <origin>6288</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="25" sha1="9e8clffsyecplvsepsw5k2ptr1ls4p7" xml:space="preserve">{{DISPLAYTITLE:Dokument}}</text>
+      <sha1>9e8clffsyecplvsepsw5k2ptr1ls4p7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Edition</title>
+    <ns>14</ns>
+    <id>4241</id>
+    <revision>
+      <id>6292</id>
+      <parentid>4901</parentid>
+      <timestamp>2021-05-14T09:25:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6292</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="72" sha1="3wx0u611z2vr59pv5zy9t4ihw7eiuxf" xml:space="preserve">{{DISPLAYTITLE:Edition}}
+{{#default_form:Edition}}
+[[Category:Document]]</text>
+      <sha1>3wx0u611z2vr59pv5zy9t4ihw7eiuxf</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Editor</title>
+    <ns>14</ns>
+    <id>4302</id>
+    <revision>
+      <id>6286</id>
+      <parentid>5711</parentid>
+      <timestamp>2021-05-14T09:21:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6286</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="70" sha1="fvze9kfzfgat8xl4ejeo3jdmue3fz49" xml:space="preserve">{{DISPLAYTITLE:Editoren}}
+{{#default_form:Editor}}
+[[Category:Person]]</text>
+      <sha1>fvze9kfzfgat8xl4ejeo3jdmue3fz49</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:InCollection</title>
+    <ns>14</ns>
+    <id>4382</id>
+    <revision>
+      <id>6402</id>
+      <parentid>6291</parentid>
+      <timestamp>2021-05-17T11:39:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6402</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="87" sha1="18sdooc6t9m4q3ks8mr38r0zbqwqjzq" xml:space="preserve">{{DISPLAYTITLE:Sammelbandedition}}
+{{#default_form:InCollection}}
+[[Category:Document]]</text>
+      <sha1>18sdooc6t9m4q3ks8mr38r0zbqwqjzq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Journal</title>
+    <ns>14</ns>
+    <id>4365</id>
+    <revision>
+      <id>6199</id>
+      <timestamp>2021-05-12T08:44:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Zeitschrift}} {{#default_form:Journal}}“</comment>
+      <origin>6199</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="54" sha1="m2grinqi9ycpce0nyf3tatzjvp0ysqv" xml:space="preserve">{{DISPLAYTITLE:Zeitschrift}}
+{{#default_form:Journal}}</text>
+      <sha1>m2grinqi9ycpce0nyf3tatzjvp0ysqv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:JournalArticle</title>
+    <ns>14</ns>
+    <id>4383</id>
+    <revision>
+      <id>6341</id>
+      <parentid>6293</parentid>
+      <timestamp>2021-05-17T09:09:59Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6341</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="92" sha1="lys9j5kiedwmr1xuyeaj6djyqnr2edh" xml:space="preserve">{{DISPLAYTITLE:Zeitschriftenedition}}
+{{#default_form:JournalArticle}}
+[[Category:Document]]</text>
+      <sha1>lys9j5kiedwmr1xuyeaj6djyqnr2edh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Library</title>
+    <ns>14</ns>
+    <id>4410</id>
+    <revision>
+      <id>6375</id>
+      <timestamp>2021-05-17T11:01:59Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Bibliothek}} {{#default_form:Library}} [[Category:Organization]]“</comment>
+      <origin>6375</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="2wig7qkj28benb6y9swykagmi1ow5cg" xml:space="preserve">{{DISPLAYTITLE:Bibliothek}}
+{{#default_form:Library}}
+[[Category:Organization]]</text>
+      <sha1>2wig7qkj28benb6y9swykagmi1ow5cg</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Manuscript</title>
+    <ns>14</ns>
+    <id>4368</id>
+    <revision>
+      <id>6211</id>
+      <timestamp>2021-05-12T11:50:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Manuskript}} {{#default_form:Manuscript}}“</comment>
+      <origin>6211</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="56" sha1="7q7wp0k7dmanh250now8asgpuk66j5n" xml:space="preserve">{{DISPLAYTITLE:Manuskript}}
+{{#default_form:Manuscript}}</text>
+      <sha1>7q7wp0k7dmanh250now8asgpuk66j5n</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:ManuscriptPart</title>
+    <ns>14</ns>
+    <id>4398</id>
+    <revision>
+      <id>6360</id>
+      <timestamp>2021-05-17T10:15:06Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Manuskriptteil}} {{#default_form:ManuscriptPart}}“</comment>
+      <origin>6360</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="64" sha1="fg91vuqco2ltt3fefuk1phhlupz93kj" xml:space="preserve">{{DISPLAYTITLE:Manuskriptteil}}
+{{#default_form:ManuscriptPart}}</text>
+      <sha1>fg91vuqco2ltt3fefuk1phhlupz93kj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Monograph</title>
+    <ns>14</ns>
+    <id>4381</id>
+    <revision>
+      <id>6352</id>
+      <parentid>6289</parentid>
+      <timestamp>2021-05-17T09:52:11Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6352</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="85" sha1="d54s0f8b4qrr29pme0ybe2qvc5sk5eb" xml:space="preserve">{{DISPLAYTITLE:Monographieedition}}
+{{#default_form:Monograph}}
+[[Category:Document]]</text>
+      <sha1>d54s0f8b4qrr29pme0ybe2qvc5sk5eb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Order</title>
+    <ns>14</ns>
+    <id>4409</id>
+    <revision>
+      <id>6374</id>
+      <timestamp>2021-05-17T11:01:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Orden}} {{#default_form:Order}} [[Category:Organization]]“</comment>
+      <origin>6374</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="72" sha1="2n8jo2qk1cbxgrj35g7jdtv6j7vhyd2" xml:space="preserve">{{DISPLAYTITLE:Orden}}
+{{#default_form:Order}}
+[[Category:Organization]]</text>
+      <sha1>2n8jo2qk1cbxgrj35g7jdtv6j7vhyd2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Organization</title>
+    <ns>14</ns>
+    <id>4413</id>
+    <revision>
+      <id>6378</id>
+      <timestamp>2021-05-17T11:02:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Organisation}}“</comment>
+      <origin>6378</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="29" sha1="izkigkdeww8a12kpt45dlj5c5uvh0uc" xml:space="preserve">{{DISPLAYTITLE:Organisation}}</text>
+      <sha1>izkigkdeww8a12kpt45dlj5c5uvh0uc</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Person</title>
+    <ns>14</ns>
+    <id>4379</id>
+    <revision>
+      <id>6285</id>
+      <timestamp>2021-05-14T09:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Personen}}“</comment>
+      <origin>6285</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="25" sha1="1xac461cf6iifmwx6ya6qa4xofyogq8" xml:space="preserve">{{DISPLAYTITLE:Personen}}</text>
+      <sha1>1xac461cf6iifmwx6ya6qa4xofyogq8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Print</title>
+    <ns>14</ns>
+    <id>4374</id>
+    <revision>
+      <id>6248</id>
+      <timestamp>2021-05-12T13:12:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Druck}} {{#default_form:Print}}“</comment>
+      <origin>6248</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="46" sha1="kkzor9wpbovxcyjnpgjj3ssu3kzhc1n" xml:space="preserve">{{DISPLAYTITLE:Druck}}
+{{#default_form:Print}}</text>
+      <sha1>kkzor9wpbovxcyjnpgjj3ssu3kzhc1n</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Printer</title>
+    <ns>14</ns>
+    <id>4411</id>
+    <revision>
+      <id>6376</id>
+      <timestamp>2021-05-17T11:02:13Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Drucker}} {{#default_form:Printer}} [[Category:Organization]]“</comment>
+      <origin>6376</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="76" sha1="1w7fjst84lb3wmeyyfr9oak7zlbyhkr" xml:space="preserve">{{DISPLAYTITLE:Drucker}}
+{{#default_form:Printer}}
+[[Category:Organization]]</text>
+      <sha1>1w7fjst84lb3wmeyyfr9oak7zlbyhkr</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Publisher</title>
+    <ns>14</ns>
+    <id>4412</id>
+    <revision>
+      <id>6377</id>
+      <timestamp>2021-05-17T11:02:30Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Verlag}} {{#default_form:Publisher}} [[Category:Organization]]“</comment>
+      <origin>6377</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="77" sha1="r7snrrg61qn33enua6332z6xm3ucir8" xml:space="preserve">{{DISPLAYTITLE:Verlag}}
+{{#default_form:Publisher}}
+[[Category:Organization]]</text>
+      <sha1>r7snrrg61qn33enua6332z6xm3ucir8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:Work</title>
+    <ns>14</ns>
+    <id>4242</id>
+    <revision>
+      <id>6290</id>
+      <parentid>6189</parentid>
+      <timestamp>2021-05-14T09:24:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6290</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="66" sha1="sjtn6a40h0x1p8v2d4u2f2816fkhthz" xml:space="preserve">{{DISPLAYTITLE:Werk}}
+{{#default_form:Work}}
+[[Category:Document]]</text>
+      <sha1>sjtn6a40h0x1p8v2d4u2f2816fkhthz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kategorie:WorkPart</title>
+    <ns>14</ns>
+    <id>4363</id>
+    <revision>
+      <id>6294</id>
+      <parentid>6188</parentid>
+      <timestamp>2021-05-14T09:25:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6294</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="74" sha1="px37pzzbw0i870ul0zr92uxdl91p7tn" xml:space="preserve">{{DISPLAYTITLE:Werkteil}}
+{{#default_form:WorkPart}}
+[[Category:Document]]</text>
+      <sha1>px37pzzbw0i870ul0zr92uxdl91p7tn</sha1>
+    </revision>
+  </page>
+</mediawiki>

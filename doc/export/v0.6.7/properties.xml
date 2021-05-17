@@ -1,0 +1,1342 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Attribut:AlternateTitle</title>
+    <ns>102</ns>
+    <id>85</id>
+    <revision>
+      <id>3847</id>
+      <parentid>86</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>86</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:BibliographicCitation</title>
+    <ns>102</ns>
+    <id>73</id>
+    <revision>
+      <id>4032</id>
+      <parentid>3853</parentid>
+      <timestamp>2021-04-18T14:06:28Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>74</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Biography</title>
+    <ns>102</ns>
+    <id>3964</id>
+    <revision>
+      <id>4301</id>
+      <parentid>4300</parentid>
+      <timestamp>2021-04-20T13:11:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>4029</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:BirthDate</title>
+    <ns>102</ns>
+    <id>94</id>
+    <revision>
+      <id>4992</id>
+      <parentid>95</parentid>
+      <timestamp>2021-04-23T10:08:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>4992</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="g68g5qjl2p76elehbi4g6k8nlz5jtpq" xml:space="preserve">[[Has type::Date]]</text>
+      <sha1>g68g5qjl2p76elehbi4g6k8nlz5jtpq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:BirthPlace</title>
+    <ns>102</ns>
+    <id>106</id>
+    <revision>
+      <id>108</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>108</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:ContainsText</title>
+    <ns>102</ns>
+    <id>98</id>
+    <revision>
+      <id>6179</id>
+      <parentid>100</parentid>
+      <timestamp>2021-05-12T08:06:24Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6179</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:CreationDate</title>
+    <ns>102</ns>
+    <id>72</id>
+    <revision>
+      <id>5405</id>
+      <parentid>73</parentid>
+      <timestamp>2021-04-29T10:25:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5405</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="g68g5qjl2p76elehbi4g6k8nlz5jtpq" xml:space="preserve">[[Has type::Date]]</text>
+      <sha1>g68g5qjl2p76elehbi4g6k8nlz5jtpq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:CreationDateDescription</title>
+    <ns>102</ns>
+    <id>3998</id>
+    <revision>
+      <id>4297</id>
+      <parentid>4296</parentid>
+      <timestamp>2021-04-20T13:11:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>4296</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:CreationDateNote</title>
+    <ns>102</ns>
+    <id>100</id>
+    <revision>
+      <id>102</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>102</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DeathDate</title>
+    <ns>102</ns>
+    <id>101</id>
+    <revision>
+      <id>4993</id>
+      <parentid>103</parentid>
+      <timestamp>2021-04-23T10:09:06Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>4993</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="g68g5qjl2p76elehbi4g6k8nlz5jtpq" xml:space="preserve">[[Has type::Date]]</text>
+      <sha1>g68g5qjl2p76elehbi4g6k8nlz5jtpq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DeathPlace</title>
+    <ns>102</ns>
+    <id>79</id>
+    <revision>
+      <id>80</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>80</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Description</title>
+    <ns>102</ns>
+    <id>16</id>
+    <revision>
+      <id>4287</id>
+      <parentid>4286</parentid>
+      <timestamp>2021-04-20T13:11:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>16</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EditionTitle</title>
+    <ns>102</ns>
+    <id>4373</id>
+    <revision>
+      <id>6221</id>
+      <timestamp>2021-05-12T12:02:54Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>6221</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EditionType</title>
+    <ns>102</ns>
+    <id>4289</id>
+    <revision>
+      <id>5641</id>
+      <parentid>5303</parentid>
+      <timestamp>2021-05-05T07:14:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5641</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Editor</title>
+    <ns>102</ns>
+    <id>75</id>
+    <revision>
+      <id>76</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>76</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EndingFolio</title>
+    <ns>102</ns>
+    <id>4402</id>
+    <revision>
+      <id>6366</id>
+      <timestamp>2021-05-17T10:37:45Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type:Text]]“</comment>
+      <origin>6366</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="0vn4y4orvh0h6kz1dhsi9po8pbozbur" xml:space="preserve">[[Has type:Text]]</text>
+      <sha1>0vn4y4orvh0h6kz1dhsi9po8pbozbur</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventDate</title>
+    <ns>102</ns>
+    <id>3994</id>
+    <revision>
+      <id>4862</id>
+      <parentid>4281</parentid>
+      <timestamp>2021-04-22T08:29:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>4862</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="19" sha1="nn17mkwbugil16hak3oza3q6if17umi" xml:space="preserve">
+[[Has type::Date]]</text>
+      <sha1>nn17mkwbugil16hak3oza3q6if17umi</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventDateDescription</title>
+    <ns>102</ns>
+    <id>4355</id>
+    <revision>
+      <id>6116</id>
+      <parentid>6113</parentid>
+      <timestamp>2021-05-11T08:25:09Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6116</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventDateNote</title>
+    <ns>102</ns>
+    <id>4356</id>
+    <revision>
+      <id>6115</id>
+      <parentid>6114</parentid>
+      <timestamp>2021-05-11T08:25:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6115</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventSort</title>
+    <ns>102</ns>
+    <id>3997</id>
+    <revision>
+      <id>4295</id>
+      <parentid>4294</parentid>
+      <timestamp>2021-04-20T13:11:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>4294</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventType</title>
+    <ns>102</ns>
+    <id>4288</id>
+    <revision>
+      <id>5642</id>
+      <parentid>5302</parentid>
+      <timestamp>2021-05-05T07:14:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5642</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:FolioRange</title>
+    <ns>102</ns>
+    <id>4403</id>
+    <revision>
+      <id>6367</id>
+      <timestamp>2021-05-17T10:37:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type:Text]]“</comment>
+      <origin>6367</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="0vn4y4orvh0h6kz1dhsi9po8pbozbur" xml:space="preserve">[[Has type:Text]]</text>
+      <sha1>0vn4y4orvh0h6kz1dhsi9po8pbozbur</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:GndIdentifier</title>
+    <ns>102</ns>
+    <id>4294</id>
+    <revision>
+      <id>5515</id>
+      <timestamp>2021-04-30T08:59:15Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>5515</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Heading</title>
+    <ns>102</ns>
+    <id>4389</id>
+    <revision>
+      <id>6313</id>
+      <timestamp>2021-05-14T09:55:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>6313</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:InCollectionAuthor</title>
+    <ns>102</ns>
+    <id>4292</id>
+    <revision>
+      <id>5498</id>
+      <timestamp>2021-04-30T07:13:39Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>5498</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Incipit</title>
+    <ns>102</ns>
+    <id>93</id>
+    <revision>
+      <id>3854</id>
+      <parentid>94</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>94</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Incunable</title>
+    <ns>102</ns>
+    <id>92</id>
+    <revision>
+      <id>93</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>93</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsCommentOf</title>
+    <ns>102</ns>
+    <id>105</id>
+    <revision>
+      <id>107</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>107</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsEditionExpressionOf</title>
+    <ns>102</ns>
+    <id>3811</id>
+    <revision>
+      <id>3865</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3865</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsEditionManifestationOf</title>
+    <ns>102</ns>
+    <id>3801</id>
+    <revision>
+      <id>3841</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3841</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsEditionOf</title>
+    <ns>102</ns>
+    <id>84</id>
+    <revision>
+      <id>3862</id>
+      <parentid>85</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>85</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsEditionOfWorkPart</title>
+    <ns>102</ns>
+    <id>71</id>
+    <revision>
+      <id>3864</id>
+      <parentid>71</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>71</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsManuscriptOf</title>
+    <ns>102</ns>
+    <id>90</id>
+    <revision>
+      <id>91</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>91</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsPrintOf</title>
+    <ns>102</ns>
+    <id>87</id>
+    <revision>
+      <id>88</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>88</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsTranslationOf</title>
+    <ns>102</ns>
+    <id>83</id>
+    <revision>
+      <id>84</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>84</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsWorkPartOf</title>
+    <ns>102</ns>
+    <id>97</id>
+    <revision>
+      <id>3855</id>
+      <parentid>99</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>99</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Issn</title>
+    <ns>102</ns>
+    <id>4367</id>
+    <revision>
+      <id>6204</id>
+      <timestamp>2021-05-12T11:31:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Number]]“</comment>
+      <origin>6204</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="kph48zlgloy5jxc3qmxgjzz2179e04c" xml:space="preserve">[[Has type::Number]]</text>
+      <sha1>kph48zlgloy5jxc3qmxgjzz2179e04c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:JournalTitle</title>
+    <ns>102</ns>
+    <id>4366</id>
+    <revision>
+      <id>6203</id>
+      <timestamp>2021-05-12T11:31:26Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>6203</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Language</title>
+    <ns>102</ns>
+    <id>76</id>
+    <revision>
+      <id>3846</id>
+      <parentid>77</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>77</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Name</title>
+    <ns>102</ns>
+    <id>77</id>
+    <revision>
+      <id>4303</id>
+      <parentid>4302</parentid>
+      <timestamp>2021-04-20T13:11:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>78</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Note</title>
+    <ns>102</ns>
+    <id>91</id>
+    <revision>
+      <id>3844</id>
+      <parentid>92</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>92</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Order</title>
+    <ns>102</ns>
+    <id>4001</id>
+    <revision>
+      <id>4307</id>
+      <parentid>4306</parentid>
+      <timestamp>2021-04-20T13:11:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>4306</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="22" sha1="kkg693lu0kkn0k4gslkeo2ypmpbhby8" xml:space="preserve">
+[[Has type::Number]]
+</text>
+      <sha1>kkg693lu0kkn0k4gslkeo2ypmpbhby8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PageRange</title>
+    <ns>102</ns>
+    <id>3807</id>
+    <revision>
+      <id>3857</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3857</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PageRangeOfEditedText</title>
+    <ns>102</ns>
+    <id>3806</id>
+    <revision>
+      <id>3851</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3851</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PartOf</title>
+    <ns>102</ns>
+    <id>3810</id>
+    <revision>
+      <id>4073</id>
+      <parentid>4028</parentid>
+      <timestamp>2021-04-18T13:29:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>4073</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="19" sha1="lhtx20bxtx48eu5v98etgsqbslfabh3" xml:space="preserve">
+[[Has type::Page]]</text>
+      <sha1>lhtx20bxtx48eu5v98etgsqbslfabh3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Place</title>
+    <ns>102</ns>
+    <id>4357</id>
+    <revision>
+      <id>6119</id>
+      <parentid>6117</parentid>
+      <timestamp>2021-05-11T08:28:37Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6119</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Provenance</title>
+    <ns>102</ns>
+    <id>95</id>
+    <revision>
+      <id>4026</id>
+      <parentid>3867</parentid>
+      <timestamp>2021-04-18T14:06:28Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>97</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PublicationDate</title>
+    <ns>102</ns>
+    <id>3800</id>
+    <revision>
+      <id>5327</id>
+      <parentid>3840</parentid>
+      <timestamp>2021-04-28T09:05:45Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5327</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="g68g5qjl2p76elehbi4g6k8nlz5jtpq" xml:space="preserve">[[Has type::Date]]</text>
+      <sha1>g68g5qjl2p76elehbi4g6k8nlz5jtpq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PublicationPlace</title>
+    <ns>102</ns>
+    <id>3804</id>
+    <revision>
+      <id>3848</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3848</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PublicationYear</title>
+    <ns>102</ns>
+    <id>4290</id>
+    <revision>
+      <id>6301</id>
+      <parentid>5328</parentid>
+      <timestamp>2021-05-14T09:40:31Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6301</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="kph48zlgloy5jxc3qmxgjzz2179e04c" xml:space="preserve">[[Has type::Number]]</text>
+      <sha1>kph48zlgloy5jxc3qmxgjzz2179e04c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Publisher</title>
+    <ns>102</ns>
+    <id>3802</id>
+    <revision>
+      <id>3842</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3842</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:References</title>
+    <ns>102</ns>
+    <id>3965</id>
+    <revision>
+      <id>4289</id>
+      <parentid>4288</parentid>
+      <timestamp>2021-04-20T13:11:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>4033</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Retm2Identifier</title>
+    <ns>102</ns>
+    <id>96</id>
+    <revision>
+      <id>98</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>98</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Section</title>
+    <ns>102</ns>
+    <id>107</id>
+    <revision>
+      <id>3843</id>
+      <parentid>109</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>109</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Source</title>
+    <ns>102</ns>
+    <id>74</id>
+    <revision>
+      <id>4030</id>
+      <parentid>3858</parentid>
+      <timestamp>2021-04-18T14:06:28Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>4030</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1" sha1="kaseilp6gltbnm1slih62zq0av5kzr0" xml:space="preserve">
+</text>
+      <sha1>kaseilp6gltbnm1slih62zq0av5kzr0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:StartingFolio</title>
+    <ns>102</ns>
+    <id>4404</id>
+    <revision>
+      <id>6368</id>
+      <timestamp>2021-05-17T10:37:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type:Text]]“</comment>
+      <origin>6368</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="0vn4y4orvh0h6kz1dhsi9po8pbozbur" xml:space="preserve">[[Has type:Text]]</text>
+      <sha1>0vn4y4orvh0h6kz1dhsi9po8pbozbur</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Title</title>
+    <ns>102</ns>
+    <id>70</id>
+    <revision>
+      <id>3850</id>
+      <parentid>70</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>70</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Translator</title>
+    <ns>102</ns>
+    <id>78</id>
+    <revision>
+      <id>3852</id>
+      <parentid>79</parentid>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>79</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:VariantName</title>
+    <ns>102</ns>
+    <id>109</id>
+    <revision>
+      <id>4291</id>
+      <parentid>4290</parentid>
+      <timestamp>2021-04-20T13:11:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>111</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Volume</title>
+    <ns>102</ns>
+    <id>3812</id>
+    <revision>
+      <id>3866</id>
+      <timestamp>2021-04-18T14:06:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>3866</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkAuthorshipAttribution</title>
+    <ns>102</ns>
+    <id>104</id>
+    <revision>
+      <id>106</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>106</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkAuthorshipAttributionEvidence</title>
+    <ns>102</ns>
+    <id>81</id>
+    <revision>
+      <id>82</id>
+      <timestamp>2021-04-18T14:05:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Page created by RDF2SMW commandline tool</comment>
+      <origin>82</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkCreator</title>
+    <ns>102</ns>
+    <id>89</id>
+    <revision>
+      <id>4991</id>
+      <parentid>90</parentid>
+      <timestamp>2021-04-23T09:58:48Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>4991</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkType</title>
+    <ns>102</ns>
+    <id>4287</id>
+    <revision>
+      <id>5643</id>
+      <parentid>5301</parentid>
+      <timestamp>2021-05-05T07:15:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5643</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+</mediawiki>

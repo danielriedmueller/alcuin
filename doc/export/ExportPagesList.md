@@ -1,72 +1,155 @@
 ## Seiten
-- Autoren
-- Editoren
-- Werke
-- Editionen
-- Datenbankabfragen
+Autoren
+Editoren
+Werke
+Editionen
+Zeitschriften
+Manuskripte
+Drucke
+Werkteile
+Zeitschrifteneditionen
+Manuskriptteile
+Organisationen
+Sammelbaende
+Sammelbandeditionen
+Autor/editionen
+Autor/werke
 
 ## Templates
-- Template:Author
-- Template:AuthorEditions
-- Template:AuthorWorks
-- Template:Authorship
-- Template:BioEvent
-- Template:Comment
-- Template:Edition
-- Template:Events
-- Template:HasWorkPart
-- Template:Manuscript
-- Template:Monograph
-- Template:Person
-- Template:Place
-- Template:Print
-- Template:PrintQueryOutput
-- Template:Quaestio
-- Template:ReferencedBy
-- Template:Work
-- Template:WorkAuthorshipReference
-- Template:WorkCitation
-- Template:WorkDatingReference
-- Template:WorkEditions
-- Template:WorkPart
+Template:Author
+Template:AuthorshipSubobject
+Template:Collection
+Template:CreatedSubobject
+Template:Edition
+Template:Editor
+Template:EventSubobject
+Template:FormCreateButton
+Template:InCollection
+Template:Journal
+Template:JournalArticle
+Template:Library
+Template:Manuscript
+Template:ManuscriptPart
+Template:Monograph
+Template:Order
+Template:Print
+Template:Printer
+Template:Publisher
+Template:WikidataImage
+Template:Work
+Template:WorkPart
                                                   
 ## Properties
-- Property:Author
-- Property:AuthorWork
-- Property:AuthorWorkRef
-- Property:Availability
-- Property:BibliographicCitation
-- Property:CreationDateDescription
-- Property:CreationDateNote
-- Property:DatedWork
-- Property:Editor
-- Property:Event
-- Property:EventType
-- Property:EventPlace
-- Property:EventContent
-- Property:EventDate
-- Property:EventDateDescription
-- Property:HasEdition
-- Property:HasPlaceOfPublication
-- Property:HasPrint
-- Property:IsEdtionOf
-- Property:IsReferencedBy
-- Property:NameAddition
-- Property:PlaceName
-- Property:WorkAuthorshipAttribution
-- Property:WorkAuthorshipAttributionEvidence
-- Property:WorkAuthorshipAttributionNote
-- Property:WorkAuthorshipAttributionRef
-- Property:WorkAuthorshipReference
-- Property:WorkAuthorshipRole
-- Property:WorkCreator
-- Property:WorkCreatorRef
-- Property:WorkDatingReference
-- Property:BirthDate
-- Property:DeathDate
-- Property:Type
+Property:AlternateTitle
+Property:Availability
+Property:BibliographicCitation
+Property:Biography
+Property:BirthDate
+Property:BirthPlace
+Property:ContainsText
+Property:CreationDate
+Property:CreationDateDescription
+Property:CreationDateNote
+Property:DeathDate
+Property:DeathPlace
+Property:Description
+Property:EditionShortComment
+Property:EditionTitle
+Property:EditionType
+Property:Editor
+Property:EndingFolio
+Property:EventDate
+Property:EventDateDescription
+Property:EventDateNote
+Property:EventSort
+Property:EventType
+Property:FolioRange
+Property:GndIdentifier
+Property:Heading
+Property:InCollectionAuthor
+Property:Incipit
+Property:Incunable
+Property:IsCommentOf
+Property:IsEditionExpressionOf
+Property:IsEditionManifestationOf
+Property:IsEditionOf
+Property:IsEditionOfWorkPart
+Property:IsManuscriptOf
+Property:IsPrintOf
+Property:IsTranslationOf
+Property:IsWorkPartOf
+Property:Issn
+Property:JournalTitle
+Property:Language
+Property:Name
+Property:Note
+Property:Order
+Property:OrganizationAbbreviation
+Property:OrganizationName
+Property:PageRange
+Property:PageRangeOfEditedText
+Property:PartOf
+Property:Place
+Property:Provenance
+Property:PublicationDate
+Property:PublicationPlace
+Property:PublicationYear
+Property:Publisher
+Property:Receiver
+Property:References
+Property:Retm2Identifier
+Property:Section
+Property:Sender
+Property:Source
+Property:StartingFolio
+Property:Title
+Property:Translator
+Property:VariantName
+Property:Volume
+Property:WorkAuthorshipAttribution
+Property:WorkAuthorshipAttributionEvidence
+Property:WorkCreator
+Property:WorkShortComment
+Property:WorkType
+Property:ZdbIdentifier
+
+## Categories
+Category:Author
+Category:Collection
+Category:Document
+Category:Edition
+Category:Editor
+Category:InCollection
+Category:Journal
+Category:JournalArticle
+Category:Library
+Category:Manuscript
+Category:ManuscriptPart
+Category:Monograph
+Category:Order
+Category:Organization
+Category:Person
+Category:Print
+Category:Printer
+Category:Publisher
+Category:Work
+Category:WorkPart
 
 ## Forms
-- Form:Person
-- Form:Work
-- Form:Edition
+Form:Author
+Form:Collection
+Form:Edition
+Form:Editor
+Form:InCollection
+Form:Journal
+Form:JournalArticle
+Form:Library
+Form:Manuscript
+Form:ManuscriptPart
+Form:Monograph
+Form:Order
+Form:Print
+Form:Printer
+Form:Publisher
+Form:Work
+Form:WorkPart
