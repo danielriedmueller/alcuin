@@ -58,3 +58,24 @@ table.wikitable {
     }
   }
 }
+
+table.datatable.autoren {
+  $iconWidth: 15px;
+
+  th.Werke,
+  th.Editionen {
+    width: $iconWidth;
+  }
+
+  td.Werke.smwtype_uri,
+  td.Editionen.smwtype_uri {
+    a {
+      font-size: 0;
+      display: block;
+      width: $iconWidth;
+      height: $iconWidth;
+      background: transparent url($imgDir + "/external-link.svg") center center no-repeat;
+      background-size: $iconWidth;
+    }
+  }
+}

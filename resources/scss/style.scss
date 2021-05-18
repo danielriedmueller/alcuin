@@ -29,9 +29,24 @@ body {
 h1, h2, h3, h4 {
   font-family: $font-family-sans-serif;
   color: $font-color-dark;
+}
+
+h1 {
   font-size: 2rem;
   letter-spacing: -2px;
   border-bottom: 1px solid $alcuin-anthrazit-light;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 h1#firstHeading {
