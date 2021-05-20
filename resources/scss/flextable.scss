@@ -12,16 +12,7 @@ table.flextable {
 
       > td {
         display: block;
-      }
-    }
-  }
-
-  &.2col {
-    > tbody {
-      > tr {
-        > td {
-          flex-basis: 50%;
-        }
+        flex-basis: 50%;
       }
     }
   }
