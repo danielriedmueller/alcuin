@@ -15,4 +15,34 @@ table.flextable {
       }
     }
   }
+
+  &.2col {
+    > tbody {
+      > tr {
+        > td {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+
+  &.3col {
+    > tbody {
+      > tr {
+        > td {
+          flex-basis: 33.33%;
+        }
+      }
+    }
+  }
+
+  &.4col {
+    > tbody {
+      > tr {
+        > td {
+          flex-basis: 25%;
+        }
+      }
+    }
+  }
 }
