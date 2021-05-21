@@ -1,6 +1,6 @@
 <?php
 
-class BeerwikiStorageMethod extends StorageMethodAbstract {
+class AlcuinStorageMethod extends StorageMethodAbstract {
     /**
      * @return string
      */

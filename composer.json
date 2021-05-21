@@ -10,7 +10,6 @@
         "mediawiki/semantic-cite": "~2.1",
         "mediawiki/maps": "~8.0",
         "mediawiki/semantic-forms-select": "~3.0",
-        "professional-wiki/modern-timeline": "~1.0",
         "php": ">=7.1.0"
     },
     "authors": [
