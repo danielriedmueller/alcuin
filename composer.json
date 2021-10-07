@@ -3,7 +3,7 @@
     "description": "Mediawiki extension",
     "type": "mediawiki-extension",
     "license": "GPL-3.0-or-later",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "require": {
         "mediawiki/chameleon-skin": "~3.0",
         "mediawiki/semantic-media-wiki": "~3.0",
