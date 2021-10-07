@@ -5,12 +5,12 @@
     "license": "GPL-3.0-or-later",
     "version": "0.0.1",
     "require": {
-        "mediawiki/chameleon-skin": "^3.0@dev",
-        "mediawiki/semantic-media-wiki": "^3.0@dev",
+        "mediawiki/chameleon-skin": "~4.0",
+        "mediawiki/semantic-media-wiki": "~3.0",
         "mediawiki/semantic-cite": "~2.1",
         "mediawiki/maps": "~8.0",
         "mediawiki/semantic-forms-select": "~3.0",
-        "php": ">=7.1.0"
+        "php": ">=7.3"
     },
     "authors": [
         {
