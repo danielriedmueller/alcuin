@@ -37,6 +37,8 @@ Template:OperaOmnia
 Template:Order
 Template:Organisation
 Template:OrganisationFormFields
+Template:Person
+Template:PersonFormFields
 Template:Print
 Template:Printer
 Template:Publication

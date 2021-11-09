@@ -1,0 +1,632 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Autoren</title>
+    <ns>0</ns>
+    <id>50</id>
+    <revision>
+      <id>326</id>
+      <parentid>287</parentid>
+      <timestamp>2021-05-19T10:56:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>326</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="188" sha1="3pw5g556c0o19jhsf1vs68g0s7llsu9" xml:space="preserve">{{FormCreateButton|Author|Neuen Autor erstellen}}
+{{#ask:
+[[Category:Author]]
+|?WorksURL=Werke
+|?EditionsURL=Editionen
+|?VariantName=Synonyme
+|format=broadtable
+|class=datatable autoren
+}}</text>
+      <sha1>3pw5g556c0o19jhsf1vs68g0s7llsu9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Editoren</title>
+    <ns>0</ns>
+    <id>51</id>
+    <revision>
+      <id>92</id>
+      <parentid>91</parentid>
+      <timestamp>2021-05-19T07:58:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>91</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="117" sha1="ei1ksq30j1fka6j9b3pqwautfqp4d6b" xml:space="preserve">{{FormCreateButton|Editor|Neuen Editor erstellen}}
+{{#ask:
+[[Category:Editor]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>ei1ksq30j1fka6j9b3pqwautfqp4d6b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Werke</title>
+    <ns>0</ns>
+    <id>52</id>
+    <revision>
+      <id>358</id>
+      <parentid>357</parentid>
+      <timestamp>2021-05-19T13:04:06Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>358</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="183" sha1="spg0toq61t39a5f437vvx7y8tkadvb5" xml:space="preserve">{{FormCreateButton|Work|Neues Werk erstellen}}
+{{#ask:
+[[Category:Work]]
+|?has subobject.WorkCreator=Autor
+|?WorkType=Textgattung
+|headers=plain
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>spg0toq61t39a5f437vvx7y8tkadvb5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Editionen</title>
+    <ns>0</ns>
+    <id>53</id>
+    <revision>
+      <id>96</id>
+      <parentid>95</parentid>
+      <timestamp>2021-05-19T07:58:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>95</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="149" sha1="5d5k9yotmr1je5y36fc59pkwy9lkz03" xml:space="preserve">{{FormCreateButton|Edition|Neue Edition erstellen}}
+{{#ask:
+[[Category:Edition]]
+|mainlabel=Edition
+|?Editor
+|?IsEditionOf=Werk
+|format=broadtable
+}}</text>
+      <sha1>5d5k9yotmr1je5y36fc59pkwy9lkz03</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Zeitschriften</title>
+    <ns>0</ns>
+    <id>54</id>
+    <revision>
+      <id>98</id>
+      <parentid>97</parentid>
+      <timestamp>2021-05-19T07:58:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>97</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="123" sha1="tcrtw9kaz4ghche8q5o8nqgb0hh68lq" xml:space="preserve">{{FormCreateButton|Journal|Neue Zeitschrift erstellen}}
+{{#ask:
+[[Category:Journal]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>tcrtw9kaz4ghche8q5o8nqgb0hh68lq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Manuskripte</title>
+    <ns>0</ns>
+    <id>55</id>
+    <revision>
+      <id>100</id>
+      <parentid>99</parentid>
+      <timestamp>2021-05-19T07:58:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>99</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="129" sha1="rhsrixh8hzf9nw3g9y9ggv4r2f490vx" xml:space="preserve">{{FormCreateButton|Manuscript|Neues Manuskript erstellen}}
+{{#ask:
+[[Category:Manuscript]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>rhsrixh8hzf9nw3g9y9ggv4r2f490vx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Drucke</title>
+    <ns>0</ns>
+    <id>56</id>
+    <revision>
+      <id>102</id>
+      <parentid>101</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>101</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="114" sha1="jrx67loxb92ltzhx4aywdb4ahwuevxa" xml:space="preserve">{{FormCreateButton|Print|Neuen Druck erstellen}}
+{{#ask:
+[[Category:Print]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>jrx67loxb92ltzhx4aywdb4ahwuevxa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Werkteile</title>
+    <ns>0</ns>
+    <id>57</id>
+    <revision>
+      <id>104</id>
+      <parentid>103</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>103</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="123" sha1="4ujzo52abwavr2xjxai4ond5mpqi2ji" xml:space="preserve">{{FormCreateButton|WorkPart|Neuen Werkteil erstellen}}
+{{#ask:
+[[Category:WorkPart]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>4ujzo52abwavr2xjxai4ond5mpqi2ji</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Zeitschrifteneditionen</title>
+    <ns>0</ns>
+    <id>58</id>
+    <revision>
+      <id>106</id>
+      <parentid>105</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>105</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="146" sha1="ah5hnczikz0xrcov6zo1w74y2z39m8d" xml:space="preserve">{{FormCreateButton|JournalArticle|Neue Zeitschriftenedition erstellen}}
+{{#ask:
+[[Category:JournalArticle]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>ah5hnczikz0xrcov6zo1w74y2z39m8d</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Manuskriptteile</title>
+    <ns>0</ns>
+    <id>59</id>
+    <revision>
+      <id>108</id>
+      <parentid>107</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>107</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="141" sha1="djxk8lhodumv6byle1lw5vqz6n0nu2c" xml:space="preserve">{{FormCreateButton|ManuscriptPart|Neuen Manuskriptteil erstellen}}
+{{#ask:
+[[Category:ManuscriptPart]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>djxk8lhodumv6byle1lw5vqz6n0nu2c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Organisationen</title>
+    <ns>0</ns>
+    <id>60</id>
+    <revision>
+      <id>110</id>
+      <parentid>109</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>109</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="294" sha1="h8k13ilfi87p7m58z8vj3docj3ley0f" xml:space="preserve">{{FormCreateButton|Publisher|Neuen Verlag erstellen}}
+{{FormCreateButton|Library|Neue Bibliothek erstellen}}
+{{FormCreateButton|Printer|Neuen Drucker erstellen}}
+{{FormCreateButton|Order|Neuen Orden erstellen}}
+{{#ask:
+[[Category:Organization]]
+|?Category
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>h8k13ilfi87p7m58z8vj3docj3ley0f</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Sammelbaende</title>
+    <ns>0</ns>
+    <id>61</id>
+    <revision>
+      <id>112</id>
+      <parentid>111</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>111</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="129" sha1="qjag7z997z7qg2u8eetlcsd8vhfdhbh" xml:space="preserve">{{FormCreateButton|Collection|Neuen Sammelband erstellen}}
+{{#ask:
+[[Category:Collection]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>qjag7z997z7qg2u8eetlcsd8vhfdhbh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Sammelbandeditionen</title>
+    <ns>0</ns>
+    <id>62</id>
+    <revision>
+      <id>114</id>
+      <parentid>113</parentid>
+      <timestamp>2021-05-19T07:58:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>113</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="139" sha1="038en2n0u5y6z078n0jstbjhhsowte1" xml:space="preserve">{{FormCreateButton|InCollection|Neue Sammelbandedition erstellen}}
+{{#ask:
+[[Category:InCollection]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>038en2n0u5y6z078n0jstbjhhsowte1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Autor/editionen</title>
+    <ns>0</ns>
+    <id>11</id>
+    <revision>
+      <id>449</id>
+      <parentid>447</parentid>
+      <timestamp>2021-05-21T09:18:16Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>449</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4419" sha1="kk17id5k2wh16b3sjt896v5utmxz1t7" xml:space="preserve">{{#vardefine:author|{{#urlget:author}}}}
+&lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Editionen|kein Autor gefunden}}&lt;/h1&gt;
+{|
+    !Jahr
+    !Editionsform
+    !(moderne) Übersetzungen
+    |-
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?century (count(?century) as ?count)
+        {
+            ?authorship retmop:WorkCreator page:{{#var:author}} .
+            ?work retmop:Has_subobject ?authorship .
+            ?edition retmop:IsEditionOf ?work .
+            ?expr retmop:IsEditionExpressionOf ?edition .
+            ?print retmop:IsEditionManifestationOf ?expr . 
+            ?print retmop:PublicationYear ?year
+            BIND(CONCAT(SUBSTR(STR(CEIL(?year/100)), 0, 3), ". Jhd.") AS ?century) . 
+        }
+        GROUP BY ?century
+        ORDER BY ?century
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+            ?authorship retmop:WorkCreator page:{{#var:author}} .
+            ?work retmop:Has_subobject ?authorship .
+            ?edition retmop:IsEditionOf ?work . 
+            ?edition retmop:EditionType/retmop:Label ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        SELECT ?language (count(?language) as ?count)
+        {
+            ?authorship retmop:WorkCreator page:{{#var:author}} .
+            ?work retmop:Has_subobject ?authorship .
+            ?edition retmop:IsEditionOf ?work . 
+            ?edition retmop:EditionType page:Ue .
+            ?edition retmop:Language ?language .
+        }
+        GROUP by ?language
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+|}
+{|
+!Werkgattungen
+!Authentizität
+|-
+|{{#sparql:
+    PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+    PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+    PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+    SELECT ?label (count(?label) as ?count)
+    {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?work retmop:Has_subobject ?authorship .
+        ?edition retmop:IsEditionOf ?work .
+        ?work retmop:WorkType/retmop:Label ?label
+    }
+    GROUP by ?label
+    |chart=google.visualization.Pie
+    |options=width=500px!height=300px!pieSliceText=value
+    |log=2
+    }}
+|{{#sparql:
+    PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+    PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+    PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+    SELECT ?label (count(?label) as ?count)
+    {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?work retmop:Has_subobject ?authorship .
+        ?edition retmop:IsEditionOf ?work . 
+        ?authorship retmop:WorkAuthorshipAttribution/rdfs:label ?label .
+    }
+    GROUP by ?label
+    |chart=google.visualization.Pie
+    |options=width=500px!height=300px!pieSliceText=value
+    |log=2
+    }}
+|}
+{{#ask:
+    [[IsEditionOf.Has subobject.WorkCreator::{{#var:author}}]]
+    |?IsEditionOf=Werktitel
+    |?Editor
+    |?IsEditionOf.Has subobject.WorkAuthorshipAttribution=Authentizität
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate=Editionsdatum
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+    |?OperaOmnia=Opera omnia
+    |?EditionType=Editionstyp
+    |?Language=Sprache
+    |mainlabel=-
+    |headers=plain
+    |format=broadtable
+    |class=datatable
+    |limit=5000
+}}
+{|
+    |+Kurzkommentar
+    |{{#ask: [[EditionShortComment::{{#var:author}}]]}}
+|}</text>
+      <sha1>kk17id5k2wh16b3sjt896v5utmxz1t7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Autor/werke</title>
+    <ns>0</ns>
+    <id>12</id>
+    <revision>
+      <id>444</id>
+      <parentid>443</parentid>
+      <timestamp>2021-05-20T13:47:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>444</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2747" sha1="1wpuxmihjmi1hcgyz3wtzp36rgnc13g" xml:space="preserve">{{#vardefine:author|{{#urlget:author}}}}
+&lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Werke|kein Autor gefunden}}&lt;/h1&gt;
+{|class="flextable"
+    |
+    {|
+        |+Kurzkommentar
+        |{{#ask: [[WorkShortComment::{{#var:author}}]]}}
+    |}
+    |
+    {{#network:
+        {{#ask: [[{{#var:author}}]]
+            |format=array
+            |link=none
+        }}
+    }}
+|}
+{{#ask: 
+    [[WorkCreator::{{#var:author}}]]
+    |?-has subobject.Has subobject.CreationDate
+    |?-has subobject.Incipit
+    |?-has subobject.WorkType=Typ
+    |format=moderntimeline
+}}
+{|
+    !Authentizität
+    !Werkgattung
+    !Verfügbarkeit
+    |-
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?authorship retmop:WorkAuthorshipAttribution ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+        }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?work retmop:Has_subobject ?authorship .
+        ?work retmop:WorkType ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?work retmop:Has_subobject ?authorship .
+        ?work retmop:Availability ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+|}
+{{#ask:
+    [[WorkCreator::{{#var:author}}]]
+    |mainlabel=Titel
+    |?-has subobject.AlternateTitle=Titelsynonyme
+    |?-has subobject.Incipit=Incipit
+    |?-has subobject.-IsManuscriptOf=Manuskripte
+    |?-has subobject.WorkType=Werkgattung
+    |?WorkAuthorshipAttribution=Authentizität
+    |?-has subobject.Availability=Verfügbarkeit
+    |?-has subobject.-DatedWork.CreationDate=Datierung
+    |headers=plain
+    |format=table
+    |class=datatable
+    |limit=5000
+}}</text>
+      <sha1>1wpuxmihjmi1hcgyz3wtzp36rgnc13g</sha1>
+    </revision>
+  </page>
+</mediawiki>
