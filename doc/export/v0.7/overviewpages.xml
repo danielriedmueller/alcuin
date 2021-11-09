@@ -1,0 +1,371 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Autoren</title>
+    <ns>0</ns>
+    <id>3975</id>
+    <revision>
+      <id>6303</id>
+      <parentid>5704</parentid>
+      <timestamp>2021-05-14T09:48:16Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6303</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="186" sha1="id9i2eq99v34j6xyqqegd8bhw9dg4oq" xml:space="preserve">{{FormCreateButton|Author|Neuen Autor erstellen}}
+{{#ask:
+[[Category:Author]]
+|?URL=Werke/Editionen
+|?VariantName=Synonyme
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>id9i2eq99v34j6xyqqegd8bhw9dg4oq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Editoren</title>
+    <ns>0</ns>
+    <id>3976</id>
+    <revision>
+      <id>6304</id>
+      <parentid>5703</parentid>
+      <timestamp>2021-05-14T09:48:42Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6304</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="143" sha1="qls091b8fdoq0maeuj5cg2b339eynu5" xml:space="preserve">{{FormCreateButton|Editor|Neuen Editor erstellen}}
+{{#ask:
+[[Category:Editor]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>qls091b8fdoq0maeuj5cg2b339eynu5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Werke</title>
+    <ns>0</ns>
+    <id>3977</id>
+    <revision>
+      <id>6305</id>
+      <parentid>5647</parentid>
+      <timestamp>2021-05-14T09:48:56Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6305</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="206" sha1="fqui22qw27e5o90vqqty330v9olw25l" xml:space="preserve">{{FormCreateButton|Work|Neues Werk erstellen}}
+{{#ask:
+[[Category:Work]]
+|?-AuthoredWork.WorkCreator=Autor
+|?WorkType=Textgattung
+|headers=plain
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>fqui22qw27e5o90vqqty330v9olw25l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Editionen</title>
+    <ns>0</ns>
+    <id>3978</id>
+    <revision>
+      <id>6306</id>
+      <parentid>6157</parentid>
+      <timestamp>2021-05-14T09:49:15Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6306</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="176" sha1="dkarnt01dvewo7kplpx88a871cdw4g2" xml:space="preserve">{{FormCreateButton|Edition|Neue Edition erstellen}}
+{{#ask:
+[[Category:Edition]]
+|mainlabel=Edition
+|?Editor
+|?IsEditionOf=Werk
+|format=broadtable
+}}</text>
+      <sha1>dkarnt01dvewo7kplpx88a871cdw4g2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Zeitschriften</title>
+    <ns>0</ns>
+    <id>4385</id>
+    <revision>
+      <id>6307</id>
+      <timestamp>2021-05-14T09:50:57Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Zeitschriften}} {{FormCreateButton|Journal|Neue Zeitschrift erstellen}} {{#ask: [[Category:Journal]] |format=broadtable |class=datatable }}“</comment>
+      <origin>6307</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="154" sha1="7mhh93wnnzhsndykkygcy0w7ce3e90s" xml:space="preserve">{{FormCreateButton|Journal|Neue Zeitschrift erstellen}}
+{{#ask:
+[[Category:Journal]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>7mhh93wnnzhsndykkygcy0w7ce3e90s</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Manuskripte</title>
+    <ns>0</ns>
+    <id>4386</id>
+    <revision>
+      <id>6308</id>
+      <timestamp>2021-05-14T09:52:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Manuskripte}} {{FormCreateButton|Manuscript|Neues Manuskript erstellen}} {{#ask: [[Category:Manuscript]] |format=broadtable |class=datatable }}“</comment>
+      <origin>6308</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="158" sha1="blgph7qgh34l6udc402hg8v1c2pgl28" xml:space="preserve">{{FormCreateButton|Manuscript|Neues Manuskript erstellen}}
+{{#ask:
+[[Category:Manuscript]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>blgph7qgh34l6udc402hg8v1c2pgl28</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Drucke</title>
+    <ns>0</ns>
+    <id>4387</id>
+    <revision>
+      <id>6309</id>
+      <timestamp>2021-05-14T09:53:09Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Drucke}} {{FormCreateButton|Print|Neuen Druck erstellen}} {{#ask: [[Category:Print]] |format=broadtable |class=datatable }}“</comment>
+      <origin>6309</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="138" sha1="5h17a9ska6gtoajdxzcxlss07e17ow1" xml:space="preserve">{{FormCreateButton|Print|Neuen Druck erstellen}}
+{{#ask:
+[[Category:Print]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>5h17a9ska6gtoajdxzcxlss07e17ow1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Werkteile</title>
+    <ns>0</ns>
+    <id>4390</id>
+    <revision>
+      <id>6320</id>
+      <timestamp>2021-05-14T12:37:39Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Werkteil}} {{FormCreateButton|WorkPart|Neuen Werkteil erstellen}} {{#ask: [[Category:WorkPart]] |format=broadtable |class=datatable }}“</comment>
+      <origin>6320</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="149" sha1="owz4q4dgjszdyxjss6i4kdhs8145e0l" xml:space="preserve">{{FormCreateButton|WorkPart|Neuen Werkteil erstellen}}
+{{#ask:
+[[Category:WorkPart]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>owz4q4dgjszdyxjss6i4kdhs8145e0l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Zeitschrifteneditionen</title>
+    <ns>0</ns>
+    <id>4394</id>
+    <revision>
+      <id>6349</id>
+      <timestamp>2021-05-17T09:45:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Zeitschrifteneditionen}} {{FormCreateButton|JournalArticle|Neue Zeitschriftenedition erstellen}} {{#ask: [[Category:JournalArticle]] |format=bro…“</comment>
+      <origin>6349</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="186" sha1="sv24234rrz1igmkh92dvw6pils016xl" xml:space="preserve">{{FormCreateButton|JournalArticle|Neue Zeitschriftenedition erstellen}}
+{{#ask:
+[[Category:JournalArticle]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>sv24234rrz1igmkh92dvw6pils016xl</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Manuskriptteile</title>
+    <ns>0</ns>
+    <id>4400</id>
+    <revision>
+      <id>6364</id>
+      <timestamp>2021-05-17T10:36:54Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{DISPLAYTITLE:Manuskriptteile}} {{FormCreateButton|ManuscriptPart|Neuen Manuskriptteil erstellen}} {{#ask: [[Category:ManuscriptPart]] |format=broadtable |cla…“</comment>
+      <origin>6364</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="174" sha1="husb6i5hj4cqyyp8rj3h6qlva9mub7l" xml:space="preserve">{{FormCreateButton|ManuscriptPart|Neuen Manuskriptteil erstellen}}
+{{#ask:
+[[Category:ManuscriptPart]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>husb6i5hj4cqyyp8rj3h6qlva9mub7l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Organisationen</title>
+    <ns>0</ns>
+    <id>4418</id>
+    <revision>
+      <id>6392</id>
+      <parentid>6391</parentid>
+      <timestamp>2021-05-17T11:14:13Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6392</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="294" sha1="h8k13ilfi87p7m58z8vj3docj3ley0f" xml:space="preserve">{{FormCreateButton|Publisher|Neuen Verlag erstellen}}
+{{FormCreateButton|Library|Neue Bibliothek erstellen}}
+{{FormCreateButton|Printer|Neuen Drucker erstellen}}
+{{FormCreateButton|Order|Neuen Orden erstellen}}
+{{#ask:
+[[Category:Organization]]
+|?Category
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>h8k13ilfi87p7m58z8vj3docj3ley0f</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Sammelbaende</title>
+    <ns>0</ns>
+    <id>4425</id>
+    <revision>
+      <id>6404</id>
+      <timestamp>2021-05-17T11:42:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{FormCreateButton|Collection|Neuen Sammelband erstellen}} {{#ask: [[Category:Collection]] |format=broadtable |class=datatable }}“</comment>
+      <origin>6404</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="129" sha1="qjag7z997z7qg2u8eetlcsd8vhfdhbh" xml:space="preserve">{{FormCreateButton|Collection|Neuen Sammelband erstellen}}
+{{#ask:
+[[Category:Collection]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>qjag7z997z7qg2u8eetlcsd8vhfdhbh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Sammelbandeditionen</title>
+    <ns>0</ns>
+    <id>4426</id>
+    <revision>
+      <id>6405</id>
+      <timestamp>2021-05-17T11:42:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{FormCreateButton|InCollection|Neue Sammelbandedition erstellen}} {{#ask: [[Category:InCollection]] |format=broadtable |class=datatable }}“</comment>
+      <origin>6405</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="139" sha1="038en2n0u5y6z078n0jstbjhhsowte1" xml:space="preserve">{{FormCreateButton|InCollection|Neue Sammelbandedition erstellen}}
+{{#ask:
+[[Category:InCollection]]
+|format=broadtable
+|class=datatable
+}}</text>
+      <sha1>038en2n0u5y6z078n0jstbjhhsowte1</sha1>
+    </revision>
+  </page>
+</mediawiki>

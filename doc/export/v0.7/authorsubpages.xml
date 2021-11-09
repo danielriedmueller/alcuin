@@ -1,0 +1,272 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Autor/editionen</title>
+    <ns>0</ns>
+    <id>4297</id>
+    <revision>
+      <id>5594</id>
+      <timestamp>2021-05-03T08:25:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{#vardefine:author|{{#urlget:author}}}} &lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Editionen|kein Autor gefunden}}&lt;/h1&gt; {|     !Jahr…“</comment>
+      <origin>5594</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4406" sha1="nmprfy8pxfxq7l7wk8hdro6305bsm3o" xml:space="preserve">{{#vardefine:author|{{#urlget:author}}}}
+&lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Editionen|kein Autor gefunden}}&lt;/h1&gt;
+{|
+    !Jahr
+    !Editionsform
+    !(moderne) Übersetzungen
+    |-
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?century (count(?century) as ?count)
+        {
+            ?authorship retmop:WorkCreator page:{{#var:author}} .
+            ?authorship retmop:AuthoredWork ?work . 
+            ?edition retmop:IsEditionOf ?work .
+            ?expr retmop:IsEditionExpressionOf ?edition .
+            ?print retmop:IsEditionManifestationOf ?expr . 
+            ?print retmop:PublicationYear ?year
+            BIND(CONCAT(SUBSTR(STR(CEIL(YEAR(?year)/100)), 0, 3), ". Jhd.") AS ?century) . 
+        }
+        GROUP BY ?century
+        ORDER BY ?century
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+            ?authorship retmop:WorkCreator page:{{#var:author}} .
+            ?authorship retmop:AuthoredWork ?work . 
+            ?edition retmop:IsEditionOf ?work . 
+            ?edition retmop:EditionType/retmop:Label ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        SELECT ?language (count(?language) as ?count)
+        {
+            ?authorship retmop:WorkCreator page:{{#var:author}} .
+            ?authorship retmop:AuthoredWork ?work . 
+            ?edition retmop:IsEditionOf ?work . 
+            ?edition retmop:EditionType page:Ue .
+            ?edition retmop:Language ?language .
+        }
+        GROUP by ?language
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+|}
+{|
+!Werkgattungen
+!Authentizität
+|-
+|{{#sparql:
+    PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+    PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+    PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+    SELECT ?label (count(?label) as ?count)
+    {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?authorship retmop:AuthoredWork ?work . 
+        ?edition retmop:IsEditionOf ?work .
+        ?work retmop:WorkType/retmop:Label ?label
+    }
+    GROUP by ?label
+    |chart=google.visualization.Pie
+    |options=width=500px!height=300px!pieSliceText=value
+    |log=2
+    }}
+|{{#sparql:
+    PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+    PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+    PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+    SELECT ?label (count(?label) as ?count)
+    {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?authorship retmop:AuthoredWork ?work . 
+        ?edition retmop:IsEditionOf ?work . 
+        ?authorship retmop:WorkAuthorshipAttribution/rdfs:label ?label .
+    }
+    GROUP by ?label
+    |chart=google.visualization.Pie
+    |options=width=500px!height=300px!pieSliceText=value
+    |log=2
+    }}
+|}
+{{#ask:
+    [[IsEditionOf.-AuthoredWork.WorkCreator::{{#var:author}}]]
+    |?IsEditionOf=Werktitel
+    |?Editor
+    |?IsEditionOf.-AuthoredWork.WorkAuthorshipAttribution=Authentizität
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationPlace=Ort
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.PublicationDate=Editionsdatum
+    |?-IsEditionExpressionOf.-IsEditionManifestationOf.Publisher=Verlag
+    |?OperaOmnia=Opera omnia
+    |?EditionType=Editionsart
+    |?Language=Sprache
+    |mainlabel=-
+    |format=broadtable
+    |class=datatable
+    |limit=5000
+}}
+{|
+    |+Kurzkommentar
+    |{{#ask: [[EditionShortComment::{{#var:author}}]]}}
+|}</text>
+      <sha1>nmprfy8pxfxq7l7wk8hdro6305bsm3o</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Autor/werke</title>
+    <ns>0</ns>
+    <id>4296</id>
+    <revision>
+      <id>6021</id>
+      <parentid>6020</parentid>
+      <timestamp>2021-05-07T13:13:28Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>6021</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2370" sha1="49on57kllm8gkdem12ot2chb6se815e" xml:space="preserve">{{#vardefine:author|{{#urlget:author}}}}
+&lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Werke|kein Autor gefunden}}&lt;/h1&gt;
+{{#network:
+    {{#ask: [[{{#var:author}}]]
+        |format=array
+        |link=none
+    }}
+}}
+{|
+    !Authentizität
+    !Werkgattung
+    !Verfügbarkeit
+    |-
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?authorship retmop:WorkAuthorshipAttribution/rdfs:label ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+        }}
+    |{{#sparql:
+        PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+        PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+        SELECT ?label (count(?label) as ?count)
+        {
+        ?authorship retmop:WorkCreator page:{{#var:author}} .
+        ?authorship retmop:AuthoredWork/retmop:WorkType/retmop:Label ?label .
+        }
+        GROUP by ?label
+        |chart=google.visualization.Pie
+        |options=width=500px!height=300px!pieSliceText=value
+        |log=2
+    }}
+|}
+{{#ifexpr: {{#ask: [[DatedWork.-AuthoredWork.WorkCreator::{{#var:author}}]]|format=count }} &gt; 0
+    |{{#ask: 
+        [[-AuthoredWork.WorkCreator::{{#var:author}}]]
+        [[-DatedWork::+]]
+        |?-DatedWork.CreationDate=Datum
+        |?AlternateTitle=Titelsynonyme
+        |?Incipit
+        |?WorkType=Typ
+        |format=moderntimeline
+    }}
+}}
+{{#ask:
+    [[WorkCreator::{{#var:author}}]]
+    |?AuthoredWork=Werktitel
+    |?AuthoredWork.AlternateTitle=Titelsynonyme
+    |?AuthoredWork.Incipit=Incipit
+    |?AuthoredWork.-IsManuscriptOf=Manuskripte
+    |?AuthoredWork.WorkType.Label=Werkgattung
+    |?WorkAuthorshipAttribution.Label=Authentizität
+    |?AuthoredWork.Availability=Verfügbarkeit
+    |?AuthoredWork.-DatedWork.CreationDate=Datierung
+    |mainlabel=-
+    |headers=plain
+    |format=table
+    |class=datatable
+    |limit=5000
+}}
+{|
+    |+Kurzkommentar
+    |{{#ask: [[WorkShortComment::{{#var:author}}]]}}
+|}</text>
+      <sha1>49on57kllm8gkdem12ot2chb6se815e</sha1>
+    </revision>
+  </page>
+</mediawiki>

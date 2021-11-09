@@ -1,0 +1,175 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://localhost:8001/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Konzept:Editionsformen</title>
+    <ns>108</ns>
+    <id>4268</id>
+    <revision>
+      <id>5112</id>
+      <parentid>5111</parentid>
+      <timestamp>2021-04-26T10:15:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>5112</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="31" sha1="b2yj4wb4n198tg18g36hu74i8mu1jsq" xml:space="preserve">
+{{#ask:
+[[Notation::Actum]]
+}}</text>
+      <sha1>b2yj4wb4n198tg18g36hu74i8mu1jsq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Konzept:KollektionenZeitschriftenManuskriptteile</title>
+    <ns>108</ns>
+    <id>4371</id>
+    <revision>
+      <id>6216</id>
+      <timestamp>2021-05-12T12:01:10Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{#concept:  [[Category:Collection]] OR [[Category:Journal]] OR [[Category:ManuscriptPart]] }}“</comment>
+      <origin>6216</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="94" sha1="811cle498r4zrtizxhvaslz9bfmc75p" xml:space="preserve">{{#concept:
+ [[Category:Collection]] OR [[Category:Journal]] OR [[Category:ManuscriptPart]]
+}}</text>
+      <sha1>811cle498r4zrtizxhvaslz9bfmc75p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Konzept:MonographZeitschriftenartikelInKollektion</title>
+    <ns>108</ns>
+    <id>4384</id>
+    <revision>
+      <id>6299</id>
+      <timestamp>2021-05-14T09:38:58Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{#concept:  [[Category:InCollection]] OR [[Category:JournalArticle]] OR [[Category:Monograph]] }}“</comment>
+      <origin>6299</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="98" sha1="r4bz6enni5i9jzgqz49d1y743ujuk3f" xml:space="preserve">{{#concept:
+ [[Category:InCollection]] OR [[Category:JournalArticle]] OR [[Category:Monograph]]
+}}</text>
+      <sha1>r4bz6enni5i9jzgqz49d1y743ujuk3f</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Konzept:ManuskripteDrucke</title>
+    <ns>108</ns>
+    <id>4370</id>
+    <revision>
+      <id>6215</id>
+      <timestamp>2021-05-12T11:58:37Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{#concept:  [[Category:Manuscript]] OR [[Category:Print]] }}“</comment>
+      <origin>6215</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="61" sha1="o67pji748ka6y5u3x2kpt5quv50iav1" xml:space="preserve">{{#concept:
+ [[Category:Manuscript]] OR [[Category:Print]]
+}}</text>
+      <sha1>o67pji748ka6y5u3x2kpt5quv50iav1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Konzept:PersonenDrucker</title>
+    <ns>108</ns>
+    <id>4378</id>
+    <revision>
+      <id>6284</id>
+      <timestamp>2021-05-14T09:17:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{#concept:  [[Category:Printer]] OR [[Category:Person]] }}“</comment>
+      <origin>6284</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="59" sha1="qfd1452qx1gix75pt43czg8qmyx51r4" xml:space="preserve">{{#concept:
+ [[Category:Printer]] OR [[Category:Person]]
+}}</text>
+      <sha1>qfd1452qx1gix75pt43czg8qmyx51r4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Konzept:WerkWerkteile</title>
+    <ns>108</ns>
+    <id>4361</id>
+    <revision>
+      <id>6159</id>
+      <timestamp>2021-05-11T11:15:53Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „{{#concept:  [[Category:Work]] OR [[Category:WorkPart]] }}“</comment>
+      <origin>6159</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="58" sha1="p7u7rx92gqm6z200yj3yrj53tzu5txm" xml:space="preserve">{{#concept:
+ [[Category:Work]] OR [[Category:WorkPart]]
+}}</text>
+      <sha1>p7u7rx92gqm6z200yj3yrj53tzu5txm</sha1>
+    </revision>
+  </page>
+</mediawiki>

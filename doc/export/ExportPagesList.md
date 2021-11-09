@@ -153,3 +153,10 @@ Form:Printer
 Form:Publisher
 Form:Work
 Form:WorkPart
+
+## Concepts
+Concept:KollektionenZeitschriftenManuskriptteile
+Concept:ManuskripteDrucke
+Concept:MonographZeitschriftenartikelInKollektion
+Concept:PersonenDrucker
+Concept:WerkWerkteile
