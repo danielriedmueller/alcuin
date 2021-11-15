@@ -67,7 +67,6 @@ Property:DateVague
 Property:EditionTitle
 Property:EditionsURL
 Property:Editor
-Property:Event
 Property:EventDescription
 Property:EventType
 Property:FolioRange
