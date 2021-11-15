@@ -50,28 +50,27 @@
     <ns>10</ns>
     <id>127</id>
     <revision>
-      <id>611879</id>
-      <parentid>611877</parentid>
-      <timestamp>2021-11-08T13:53:16Z</timestamp>
+      <id>611913</id>
+      <parentid>611879</parentid>
+      <timestamp>2021-11-09T14:18:41Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611879</origin>
+      <origin>611913</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="3476" sha1="0wl233ql896r2a2yp68rda9eeo1q3dy" xml:space="preserve">{{#set: Event={{PAGENAME}}#Event}}
-{{#vardefine: Birthplace|{{#ask: [[{{PAGENAME}}#Event]][[EventType::Geburt]]|mainlabel=-|?Place=}} }}
-{{#vardefine: Birthdate|{{#ask: [[{{PAGENAME}}#Event]][[EventType::Geburt]]|mainlabel=-|?Date=}} }}
-{{#vardefine: Deathplace|{{#ask: [[{{PAGENAME}}#Event]][[EventType::Tod]]|mainlabel=-|?Place=}} }}
-{{#vardefine: Deathdate|{{#ask: [[{{PAGENAME}}#Event]][[EventType::Tod]]|mainlabel=-|?Date=}} }}
-{{#vardefine: Occupation|{{#ask: [[{{PAGENAME}}#Event]][[EventType::Beruf]]|mainlabel=-|?EventDescription=}} }}
+      <text bytes="3540" sha1="003j8uxfac3bgehb1hpu4zrgxyztfnw" xml:space="preserve">{{#vardefine: Birthplace|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Geburt]]|mainlabel=-|?Place=}} }}
+{{#vardefine: Birthdate|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Geburt]]|mainlabel=-|?Date=}} }}
+{{#vardefine: Deathplace|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Tod]]|mainlabel=-|?Place=}} }}
+{{#vardefine: Deathdate|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Tod]]|mainlabel=-|?Date=}} }}
+{{#vardefine: Occupation|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Beruf]]|mainlabel=-|?EventDescription=}} }}
 {{#vardefine: PlacesOfAction|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Wirkungsort]]|mainlabel=-|?Place=}} }}
 {{#arraymap:{{{References|}}}|,|x1|{{#set: References=x1}}|,\s|}}
 &lt;includeonly&gt;
 &lt;h4&gt;Autor {{#info: Ein Autor ist Schöpfer eines mittelalterlichen Werkes }}&lt;/h4&gt;
 {|class="flextable"
-    |&lt;h1&gt;[[Name::{{{Name}}}]]{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}}&lt;/h1&gt;
+    |&lt;h1&gt;[[Name::{{{Name|}}}]]{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}}&lt;/h1&gt;
     {|
         | &lt;span class="info-btn"&gt;[[WorksURL::http://alcuin.soital.de/index.php/Autor/werke?author={{PAGENAMEE}}|Werke]]&lt;/span&gt; 
         | &lt;span class="info-btn"&gt;[[EditionsURL::http://alcuin.soital.de/index.php/Autor/editionen?author={{PAGENAMEE}}|Editionen]]&lt;/span&gt;
@@ -130,7 +129,7 @@
     |}}
 |}
 {{#ask: 
-    [[{{PAGENAME}}#Event]]
+    [[-Has subobject::{{FULLPAGENAME}}]]
     |mainlabel=-
     |?Date
     |?Place
@@ -138,7 +137,7 @@
     |format=moderntimeline
 }}
 {{#ask:
-    [[{{PAGENAME}}#Event]]
+    [[-Has subobject::{{FULLPAGENAME}}]]
     |+Lebensereignisse
     |mainlabel=-
     |?EventType=Lebensereignis
@@ -158,7 +157,7 @@
 {{DISPLAYTITLE:{{{Name}}}{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}
 [[Category:Author]]
 &lt;/includeonly&gt;</text>
-      <sha1>0wl233ql896r2a2yp68rda9eeo1q3dy</sha1>
+      <sha1>003j8uxfac3bgehb1hpu4zrgxyztfnw</sha1>
     </revision>
   </page>
   <page>
@@ -549,18 +548,18 @@
     <ns>10</ns>
     <id>133</id>
     <revision>
-      <id>611878</id>
-      <parentid>611527</parentid>
-      <timestamp>2021-11-08T13:52:55Z</timestamp>
+      <id>611912</id>
+      <parentid>611878</parentid>
+      <timestamp>2021-11-09T14:18:07Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611878</origin>
+      <origin>611912</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="450" sha1="fmn2enjs27qy2w5ghsdec5r8t3xgkk7" xml:space="preserve">&lt;includeonly&gt;
-{{#subobject:{{{Property|}}}
+      <text bytes="435" sha1="0aoeawdgtohafpbvdsmpghuq3rrxjfd" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
     |EventType={{{EventType|}}}
     |EventDescription={{{EventDescription|}}}
     |Place={{{Place|}}}
@@ -575,7 +574,7 @@
     |Source={{{Source|}}}
 }}
 &lt;/includeonly&gt;</text>
-      <sha1>fmn2enjs27qy2w5ghsdec5r8t3xgkk7</sha1>
+      <sha1>0aoeawdgtohafpbvdsmpghuq3rrxjfd</sha1>
     </revision>
   </page>
   <page>
@@ -583,22 +582,20 @@
     <ns>10</ns>
     <id>134</id>
     <revision>
-      <id>258</id>
-      <parentid>257</parentid>
-      <timestamp>2021-05-19T07:58:20Z</timestamp>
+      <id>611930</id>
+      <parentid>258</parentid>
+      <timestamp>2021-11-15T10:20:42Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <minor/>
-      <comment>1 Version importiert</comment>
-      <origin>257</origin>
+      <origin>611930</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="157" sha1="llt36boybcv7enmhw65skiynsiy2gb3" xml:space="preserve">&lt;includeonly&gt;
-&lt;span class="create-btn"&gt;{{#formlink:form={{{1}}}|link text={{{2}}}|target={{#idprovider-increment:{{{1}}}_|padding=6}}}}&lt;/span&gt;
+      <text bytes="105" sha1="7tm23ivwdemjdfbjgt0zesp6a40vby4" xml:space="preserve">&lt;includeonly&gt;
+&lt;span class="create-btn"&gt;{{#formlink:form={{{1}}}|link text={{{2}}}}}&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>llt36boybcv7enmhw65skiynsiy2gb3</sha1>
+      <sha1>7tm23ivwdemjdfbjgt0zesp6a40vby4</sha1>
     </revision>
   </page>
   <page>
@@ -812,20 +809,18 @@
     <ns>10</ns>
     <id>241710</id>
     <revision>
-      <id>611631</id>
-      <parentid>611627</parentid>
-      <timestamp>2021-10-26T09:22:00Z</timestamp>
+      <id>611923</id>
+      <parentid>611922</parentid>
+      <timestamp>2021-11-09T14:30:43Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611631</origin>
+      <origin>611923</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="899" sha1="kknk5ka9pylyrumcya3xdynhsa6gv81" xml:space="preserve">{{#vardefine: Title|TODO QUERY }}
-&lt;includeonly&gt;
+      <text bytes="805" sha1="mqwfck6qmgbh0sz52e87wbqcp53uwts" xml:space="preserve">&lt;includeonly&gt;
 &lt;h4&gt;Literaturverweis {{#info: Referenzdatentyp für Literaturverweis }}&lt;/h4&gt;
-&lt;h1&gt;{{#var: Title}}&lt;/h1&gt;
 {|class="wikitable"
     !Publikation auf die sich der Literaturverweis bezieht {{#info: Verknüpfung einer Referenz als Publikation für den Literaturverweis }}
     |[[LiteratureReferencePublication::{{{LiteratureReferencePublication}}}]]
@@ -836,10 +831,9 @@
     !Zitationsangabe zum Literaturverweis {{#info: Angaben zur Zitation (Seitenzahlen etc.) des Literaturverweises }}
     |[[LiteratureReferenceCitation::{{{LiteratureReferenceCitation}}}]]     
 |}
-{{DISPLAYTITLE: {{#var: Title}} }}
 [[Category:LiteratureReference]]
 &lt;/includeonly&gt;</text>
-      <sha1>kknk5ka9pylyrumcya3xdynhsa6gv81</sha1>
+      <sha1>mqwfck6qmgbh0sz52e87wbqcp53uwts</sha1>
     </revision>
   </page>
   <page>
