@@ -50,17 +50,18 @@
     <ns>106</ns>
     <id>33</id>
     <revision>
-      <id>611870</id>
-      <parentid>611861</parentid>
-      <timestamp>2021-11-08T13:45:42Z</timestamp>
+      <id>611939</id>
+      <parentid>611937</parentid>
+      <timestamp>2021-11-15T10:26:23Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611870</origin>
+      <origin>611939</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="2913" sha1="cd8zzt0xyk9172xx82ntolx1xrv5zwl" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Author|Neuen Autor erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+      <text bytes="2798" sha1="c9b17uxq4l7wnlnjlfgapy7og1168n0" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Author|Neuen Autor erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Autor erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Author_&lt;unique number;start=1000&gt;}}}
 {{#vardefine: gndIdentifier
 |{{#ask: [[{{PAGENAMEE}}]]
         |mainlabel=-
@@ -77,19 +78,17 @@
     }}
     {{#if:{{#external_value:GND1|}}|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#external_value:GND1}} Bei Lobid betrachten]&lt;/span&gt;|kein entsprechender Lobid-Eintrag gefunden}}
 }}
-&lt;h1&gt;Autor erstellen / bearbeiten&lt;/h1&gt;
 {{{for template|Author}}}
 {{PersonFormFields}}
 {| class="formtable"
     ! Biographie: 
-    | {{{field|Biography|mandatory|input type=textarea}}}
-    |-
-    ! Beziehung: 
-    | {{{field|Relationship|existing values only|input type=tokens|values from category=Relationship}}}
-    | &lt;span class="create-btn"&gt;{{#formlink:form=Relationship|link text=neue Beziehung|tooltip=Beziehung erstellen|target=Relationship_{{#idprovider-random:uuid}}|popup|reload}}&lt;/span&gt;
+    | {{{field|Biography|input type=textarea}}}
     |-
     ! Literaturverweis: 
     | {{{field|References|existing values only|input type=tokens|values from category=LiteratureReference}}}
+    |-
+    | &lt;span class="create-btn"&gt;{{#queryformlink:form=LiteratureReference|link text=Literaturverweis suchen|tooltip=Literaturverweis suchen|popup}}&lt;/span&gt;
+    |-
     | &lt;span class="create-btn"&gt;{{#formlink:form=LiteratureReference|link text=neuer Literaturverweis|tooltip=Literaturverweis erstellen|target=LiteratureReference_{{#idprovider-random:uuid}}|popup|reload}}&lt;/span&gt;
 |}
 {{{end template}}}
@@ -126,7 +125,6 @@
         ! Anmerkung zum Datum: 
         | {{{field|DateNote|input type=textarea}}}
     |}
-    {{{field|Property|hidden|default=Event}}}
 {{{end template}}}
 
 {{{standard input|save}}}
@@ -134,7 +132,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>cd8zzt0xyk9172xx82ntolx1xrv5zwl</sha1>
+      <sha1>c9b17uxq4l7wnlnjlfgapy7og1168n0</sha1>
     </revision>
   </page>
   <page>
@@ -142,18 +140,18 @@
     <ns>106</ns>
     <id>241691</id>
     <revision>
-      <id>611749</id>
-      <parentid>611748</parentid>
-      <timestamp>2021-11-04T11:34:52Z</timestamp>
+      <id>611940</id>
+      <parentid>611749</parentid>
+      <timestamp>2021-11-15T11:20:38Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611749</origin>
+      <origin>611940</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="941" sha1="mdo47m3fw3e70nbrpbwzus1yfs8437w" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Book|Neue Monografie erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Monografie erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="1031" sha1="ten3y4aobskmamrz4d5s4u506vtubn9" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Book|Neue Monografie erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neue Monografie erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Monographie_&lt;unique number;start=1000&gt;}}}
 {{{for template|Book}}}
 {{PublicationFormFields}}
 {| class="formtable"
@@ -181,7 +179,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>mdo47m3fw3e70nbrpbwzus1yfs8437w</sha1>
+      <sha1>ten3y4aobskmamrz4d5s4u506vtubn9</sha1>
     </revision>
   </page>
   <page>
@@ -189,18 +187,18 @@
     <ns>106</ns>
     <id>34</id>
     <revision>
-      <id>611753</id>
-      <parentid>58</parentid>
-      <timestamp>2021-11-04T11:46:52Z</timestamp>
+      <id>611942</id>
+      <parentid>611753</parentid>
+      <timestamp>2021-11-15T11:21:28Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611753</origin>
+      <origin>611942</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="852" sha1="lve4jm25j5t8d62g4uktfwbr1sys8vc" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Collection|Neuen Sammelband erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Sammelband erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="942" sha1="5agtje2mwsaxce9mtg5h49lshsuml4v" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Collection|Neuen Sammelband erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Sammelband erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Collection_&lt;unique number;start=1000&gt;}}}
 {{{for template|Collection}}}
 {{PublicationFormFields}}
 {| class="formtable"
@@ -225,7 +223,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>lve4jm25j5t8d62g4uktfwbr1sys8vc</sha1>
+      <sha1>5agtje2mwsaxce9mtg5h49lshsuml4v</sha1>
     </revision>
   </page>
   <page>
@@ -233,18 +231,18 @@
     <ns>106</ns>
     <id>35</id>
     <revision>
-      <id>611853</id>
-      <parentid>611852</parentid>
-      <timestamp>2021-11-08T09:25:56Z</timestamp>
+      <id>611943</id>
+      <parentid>611853</parentid>
+      <timestamp>2021-11-15T11:21:52Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611853</origin>
+      <origin>611943</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1968" sha1="sro0nb2gnbsng56mmieczqycngmgzg8" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Edition|Neuen edierten Text erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Edierter Text erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="2058" sha1="h2djhbyuziz7u8c4zf57eskj18mgke7" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Edition|Neuen edierten Text erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen edierten Text erstellen|edit title=&lt;page name&gt; bearbeiten|page name=EditedText_&lt;unique number;start=1000&gt;}}}
 {{{for template|Edition}}}
 {| class="formtable"
     ! Titel: 
@@ -290,7 +288,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>sro0nb2gnbsng56mmieczqycngmgzg8</sha1>
+      <sha1>h2djhbyuziz7u8c4zf57eskj18mgke7</sha1>
     </revision>
   </page>
   <page>
@@ -298,17 +296,18 @@
     <ns>106</ns>
     <id>36</id>
     <revision>
-      <id>611804</id>
-      <parentid>611690</parentid>
-      <timestamp>2021-11-05T09:23:26Z</timestamp>
+      <id>611944</id>
+      <parentid>611804</parentid>
+      <timestamp>2021-11-15T11:22:19Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611804</origin>
+      <origin>611944</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1020" sha1="n9i8v4hbh853uiaezca0xsikl1g8lhd" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Editor|Neuen Editor erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+      <text bytes="1106" sha1="batdlwh7mq6j0cggtyjwx9chda32lwv" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Editor|Neuen Editor erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Editor erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Editor_&lt;unique number;start=1000&gt;}}}
 {{#vardefine: gndIdentifier
 |{{#ask: [[{{PAGENAMEE}}]]
         |mainlabel=-
@@ -325,7 +324,6 @@
     }}
     {{#if:{{#external_value:GND1|}}|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#external_value:GND1}} Bei Lobid betrachten]&lt;/span&gt;|kein entsprechender Lobid-Eintrag gefunden}}
 }}
-&lt;h1&gt;Editor erstellen / bearbeiten&lt;/h1&gt;
 {{{for template|Editor}}}
 {{PersonFormFields}}
 {{{end template}}}
@@ -335,7 +333,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>n9i8v4hbh853uiaezca0xsikl1g8lhd</sha1>
+      <sha1>batdlwh7mq6j0cggtyjwx9chda32lwv</sha1>
     </revision>
   </page>
   <page>
@@ -343,18 +341,18 @@
     <ns>106</ns>
     <id>37</id>
     <revision>
-      <id>611754</id>
-      <parentid>64</parentid>
-      <timestamp>2021-11-04T11:53:21Z</timestamp>
+      <id>611945</id>
+      <parentid>611754</parentid>
+      <timestamp>2021-11-15T11:22:35Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611754</origin>
+      <origin>611945</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="907" sha1="sqpsg7tj5msj5c2k65ffyfwio9m7iu7" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|InCollection|Neuen Sammelbandbeitrag erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Sammelbandbeitrag erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="999" sha1="sqwi5mukjhfqk7qfz549k6m77fjxc9c" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|InCollection|Neuen Sammelbandbeitrag erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Sammelbandbeitrag erstellen|edit title=&lt;page name&gt; bearbeiten|page name=InCollection_&lt;unique number;start=1000&gt;}}}
 {{{for template|InCollection}}}
 {{PublicationFormFields}}
 {| class="formtable"
@@ -376,7 +374,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>sqpsg7tj5msj5c2k65ffyfwio9m7iu7</sha1>
+      <sha1>sqwi5mukjhfqk7qfz549k6m77fjxc9c</sha1>
     </revision>
   </page>
   <page>
@@ -384,18 +382,18 @@
     <ns>106</ns>
     <id>241750</id>
     <revision>
-      <id>611781</id>
-      <parentid>611755</parentid>
-      <timestamp>2021-11-04T12:57:54Z</timestamp>
+      <id>611946</id>
+      <parentid>611781</parentid>
+      <timestamp>2021-11-15T11:23:00Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611781</origin>
+      <origin>611946</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="717" sha1="2xog73bwe7aloxgjm9egi1nwa7c40vp" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Incunable|Neue Inkunabel erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Inkunabel erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="805" sha1="7pthjmnfw98q3m0z4qhr690kk3qfzku" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Incunable|Neue Inkunabel erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neue Inkunabel erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Incunable_&lt;unique number;start=1000&gt;}}}
 {{{for template|Incunable}}}
 {{PublicationFormFields}}
 {| class="formtable"
@@ -414,7 +412,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>2xog73bwe7aloxgjm9egi1nwa7c40vp</sha1>
+      <sha1>7pthjmnfw98q3m0z4qhr690kk3qfzku</sha1>
     </revision>
   </page>
   <page>
@@ -422,21 +420,18 @@
     <ns>106</ns>
     <id>38</id>
     <revision>
-      <id>66</id>
-      <parentid>65</parentid>
-      <timestamp>2021-05-19T07:57:55Z</timestamp>
+      <id>611947</id>
+      <parentid>66</parentid>
+      <timestamp>2021-11-15T11:23:20Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <minor/>
-      <comment>1 Version importiert</comment>
-      <origin>65</origin>
+      <origin>611947</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="725" sha1="aaooe4tbdmey8h9ccanlwb7g9eraxyy" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Journal|Neue Zeitschrift erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
-&lt;h1&gt;Zeitschrift erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="682" sha1="n5znud3x6tp04d6a84ylbc1hlhf5fey" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Journal|Neue Zeitschrift erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neue Zeitschrift erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Journal_&lt;unique number;start=1000&gt;}}}
 {{{for template|Journal}}}
 {| class="formtable"
     ! Titel: 
@@ -457,7 +452,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>aaooe4tbdmey8h9ccanlwb7g9eraxyy</sha1>
+      <sha1>n5znud3x6tp04d6a84ylbc1hlhf5fey</sha1>
     </revision>
   </page>
   <page>
@@ -465,18 +460,18 @@
     <ns>106</ns>
     <id>39</id>
     <revision>
-      <id>611750</id>
-      <parentid>611735</parentid>
-      <timestamp>2021-11-04T11:38:48Z</timestamp>
+      <id>611948</id>
+      <parentid>611750</parentid>
+      <timestamp>2021-11-15T11:23:42Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611750</origin>
+      <origin>611948</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1043" sha1="0z3c3p202q1gr0t8cd2hswk5658xyss" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|JournalArticle|Neuen Zeitschriftenaufsatz erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Zeitschriftenaufsatz erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="1137" sha1="m1ea2gjqp4ci4kfmb10959lbyxnqxt7" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|JournalArticle|Neuen Zeitschriftenaufsatz erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Zeitschriftenaufsatz erstellen|edit title=&lt;page name&gt; bearbeiten|page name=JournalArticle_&lt;unique number;start=1000&gt;}}}
 {{{for template|JournalArticle}}}
 {{PublicationFormFields}}
 {| class="formtable"
@@ -504,7 +499,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>0z3c3p202q1gr0t8cd2hswk5658xyss</sha1>
+      <sha1>m1ea2gjqp4ci4kfmb10959lbyxnqxt7</sha1>
     </revision>
   </page>
   <page>
@@ -512,18 +507,18 @@
     <ns>106</ns>
     <id>40</id>
     <revision>
-      <id>611790</id>
-      <parentid>611500</parentid>
-      <timestamp>2021-11-05T08:23:34Z</timestamp>
+      <id>611949</id>
+      <parentid>611790</parentid>
+      <timestamp>2021-11-15T11:24:01Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611790</origin>
+      <origin>611949</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="387" sha1="fqgs79xsdc9psl9pxg0qml9ue8unuca" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Library|Neue Bibliothek erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Bibliothek erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="473" sha1="12v2edhlh0m5bbq8prpmaukloq5roa1" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Library|Neue Bibliothek erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neue Bibliothek erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Library_&lt;unique number;start=1000&gt;}}}
 {{{for template|Library}}}
 {{OrganisationFormFields}}
 {{{end template}}}
@@ -532,7 +527,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>fqgs79xsdc9psl9pxg0qml9ue8unuca</sha1>
+      <sha1>12v2edhlh0m5bbq8prpmaukloq5roa1</sha1>
     </revision>
   </page>
   <page>
@@ -540,18 +535,18 @@
     <ns>106</ns>
     <id>241706</id>
     <revision>
-      <id>611657</id>
-      <parentid>611656</parentid>
-      <timestamp>2021-10-27T11:30:30Z</timestamp>
+      <id>611950</id>
+      <parentid>611924</parentid>
+      <timestamp>2021-11-15T11:24:22Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611657</origin>
+      <origin>611950</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="807" sha1="ga7x718s9rlqc6g7349o4efuchzoo75" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|LiteratureReference|Neuen Literaturverweis erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Literaturverweis erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="906" sha1="slqmnpy5vtc3107wsgrerchbbi5wafj" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|LiteratureReference|Neuen Literaturverweis erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Literaturverweis erstellen|edit title=&lt;page name&gt; bearbeiten|page name=LiteratureReference_&lt;unique number;start=1000&gt;}}}
 {{{for template|LiteratureReference}}}
 {| class="formtable"
     ! Publikation: 
@@ -569,7 +564,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>ga7x718s9rlqc6g7349o4efuchzoo75</sha1>
+      <sha1>slqmnpy5vtc3107wsgrerchbbi5wafj</sha1>
     </revision>
   </page>
   <page>
@@ -577,18 +572,18 @@
     <ns>106</ns>
     <id>41</id>
     <revision>
-      <id>611692</id>
-      <parentid>72</parentid>
-      <timestamp>2021-10-28T10:20:46Z</timestamp>
+      <id>611951</id>
+      <parentid>611692</parentid>
+      <timestamp>2021-11-15T11:24:38Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611692</origin>
+      <origin>611951</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="688" sha1="iqfzj4561777f91pp0yj3h3pi50zqff" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Manuscript|Neues Manuskript erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Manuskript erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="778" sha1="rt3g29zu0i1rbqcrpa3g1s2q1zlhjox" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Manuscript|Neues Manuskript erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neues Manuskript erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Manuscript_&lt;unique number;start=1000&gt;}}}
 {{{for template|Manuscript}}}
 {| class="formtable"
     ! Signatur des Manuskripts: 
@@ -606,7 +601,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>iqfzj4561777f91pp0yj3h3pi50zqff</sha1>
+      <sha1>rt3g29zu0i1rbqcrpa3g1s2q1zlhjox</sha1>
     </revision>
   </page>
   <page>
@@ -614,18 +609,18 @@
     <ns>106</ns>
     <id>241724</id>
     <revision>
-      <id>611658</id>
-      <timestamp>2021-10-27T11:32:28Z</timestamp>
+      <id>611952</id>
+      <parentid>611658</parentid>
+      <timestamp>2021-11-15T11:24:56Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <comment>Die Seite wurde neu angelegt: „&lt;noinclude&gt;{{FormCreateButton|ManuscriptReference|Neuen Manuskriptverweis erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt; &lt;h1&gt;Manuskriptverweis erstellen / bearbeiten&lt;/h1…“</comment>
-      <origin>611658</origin>
+      <origin>611952</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="761" sha1="177ak2bc59jn4hntpggt5efdjnyre63" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|ManuscriptReference|Neuen Manuskriptverweis erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Manuskriptverweis erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="860" sha1="h57ebsg5gz8m7ho7wx86ixqra6kfkkf" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|ManuscriptReference|Neuen Manuskriptverweis erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Manuskriptverweis erstellen|edit title=&lt;page name&gt; bearbeiten|page name=ManuscriptReference_&lt;unique number;start=1000&gt;}}}
 {{{for template|ManuscriptReference}}}
 {| class="formtable"
     ! Manuskript: 
@@ -643,7 +638,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>177ak2bc59jn4hntpggt5efdjnyre63</sha1>
+      <sha1>h57ebsg5gz8m7ho7wx86ixqra6kfkkf</sha1>
     </revision>
   </page>
   <page>
@@ -651,18 +646,18 @@
     <ns>106</ns>
     <id>241741</id>
     <revision>
-      <id>611728</id>
-      <parentid>611720</parentid>
-      <timestamp>2021-11-04T10:31:02Z</timestamp>
+      <id>611954</id>
+      <parentid>611953</parentid>
+      <timestamp>2021-11-15T11:25:18Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611728</origin>
+      <origin>611954</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="851" sha1="44inrpfuoirl9p1gsmta8yway104x0g" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|OperaOmnia|Neue Opera Omnia erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Opera Omnia erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="941" sha1="3od6133a0482sfacqdljk833dqlc1ki" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|OperaOmnia|Neue Opera Omnia erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neues Opera Omnia erstellen|edit title=&lt;page name&gt; bearbeiten|page name=OperaOmnia_&lt;unique number;start=1000&gt;}}}
 {{{for template|OperaOmnia}}}
 {| class="formtable"
     ! Titel 
@@ -686,7 +681,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>44inrpfuoirl9p1gsmta8yway104x0g</sha1>
+      <sha1>3od6133a0482sfacqdljk833dqlc1ki</sha1>
     </revision>
   </page>
   <page>
@@ -694,18 +689,18 @@
     <ns>106</ns>
     <id>44</id>
     <revision>
-      <id>611794</id>
-      <parentid>611533</parentid>
-      <timestamp>2021-11-05T08:29:13Z</timestamp>
+      <id>611957</id>
+      <parentid>611794</parentid>
+      <timestamp>2021-11-15T11:26:42Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611794</origin>
+      <origin>611957</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="374" sha1="9ef1tak052kze3uof21ueayxpy93zej" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Order|Neuen Orden erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Orden erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="459" sha1="mf17vnorr190mtafpsl3765lznp9ppv" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Order|Neuen Orden erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Orden erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Order_&lt;unique number;start=1000&gt;}}}
 {{{for template|Order}}}
 {{OrganisationFormFields}}
 {{{end template}}}
@@ -714,7 +709,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>9ef1tak052kze3uof21ueayxpy93zej</sha1>
+      <sha1>mf17vnorr190mtafpsl3765lznp9ppv</sha1>
     </revision>
   </page>
   <page>
@@ -722,18 +717,18 @@
     <ns>106</ns>
     <id>45</id>
     <revision>
-      <id>611850</id>
-      <parentid>611849</parentid>
-      <timestamp>2021-11-08T09:04:13Z</timestamp>
+      <id>611958</id>
+      <parentid>611850</parentid>
+      <timestamp>2021-11-15T11:26:53Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611850</origin>
+      <origin>611958</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1684" sha1="lm33ggm075wpl3ey9zytrhc2adwem7j" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Print|Neuen Druck erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Druck erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="1769" sha1="6pohagh7oa1r8i1l0rdru580qg1uycm" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Print|Neuen Druck erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Druck erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Print_&lt;unique number;start=1000&gt;}}}
 {{{for template|Print}}}
 {| class="formtable"
     ! Drucker: 
@@ -781,7 +776,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>lm33ggm075wpl3ey9zytrhc2adwem7j</sha1>
+      <sha1>6pohagh7oa1r8i1l0rdru580qg1uycm</sha1>
     </revision>
   </page>
   <page>
@@ -789,18 +784,18 @@
     <ns>106</ns>
     <id>46</id>
     <revision>
-      <id>611792</id>
-      <parentid>611791</parentid>
-      <timestamp>2021-11-05T08:28:27Z</timestamp>
+      <id>611959</id>
+      <parentid>611792</parentid>
+      <timestamp>2021-11-15T11:27:01Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611792</origin>
+      <origin>611959</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="451" sha1="4ptslf92ach0yuaxvlltciga220xr67" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Printer|Neuen Drucker erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Drucker erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="538" sha1="9ty97g41m1j2kohlybu8trfacpgv5a5" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Printer|Neuen Drucker erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Drucker erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Printer_&lt;unique number;start=1000&gt;}}}
 {{{for template|Printer}}}
 {{OrganisationFormFields}}
 {| class="formtable"
@@ -813,7 +808,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>4ptslf92ach0yuaxvlltciga220xr67</sha1>
+      <sha1>9ty97g41m1j2kohlybu8trfacpgv5a5</sha1>
     </revision>
   </page>
   <page>
@@ -821,18 +816,18 @@
     <ns>106</ns>
     <id>47</id>
     <revision>
-      <id>611795</id>
-      <parentid>611793</parentid>
-      <timestamp>2021-11-05T08:31:02Z</timestamp>
+      <id>611960</id>
+      <parentid>611795</parentid>
+      <timestamp>2021-11-15T11:27:17Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611795</origin>
+      <origin>611960</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="384" sha1="7lnbkxcwkr9gdddwkk2tssshgm7x7hj" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Publisher|Neuen Verlag erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Verlag erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="473" sha1="kenoxnjl6fmhby3qaagaa8ctw8rgiu6" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Publisher|Neuen Verlag erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen Verlag erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Publisher_&lt;unique number;start=1000&gt;}}}
 {{{for template|Publisher}}}
 {{OrganisationFormFields}}
 {{{end template}}}
@@ -841,7 +836,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>7lnbkxcwkr9gdddwkk2tssshgm7x7hj</sha1>
+      <sha1>kenoxnjl6fmhby3qaagaa8ctw8rgiu6</sha1>
     </revision>
   </page>
   <page>
@@ -849,18 +844,18 @@
     <ns>106</ns>
     <id>241740</id>
     <revision>
-      <id>611722</id>
-      <parentid>611716</parentid>
-      <timestamp>2021-11-04T10:26:46Z</timestamp>
+      <id>611961</id>
+      <parentid>611722</parentid>
+      <timestamp>2021-11-15T11:27:32Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611722</origin>
+      <origin>611961</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="676" sha1="4pewo1w90v7fxitacus5tzhi2px22fv" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Series|Neue Reihe erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Reihe erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="761" sha1="2sa8tbi00j1wat6ka6q43vxp1s8pbma" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Series|Neue Reihe erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neue Reihe erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Series_&lt;unique number;start=1000&gt;}}}
 {{{for template|Series}}}
 {| class="formtable"
     ! Titel 
@@ -881,7 +876,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>4pewo1w90v7fxitacus5tzhi2px22fv</sha1>
+      <sha1>2sa8tbi00j1wat6ka6q43vxp1s8pbma</sha1>
     </revision>
   </page>
   <page>
@@ -889,18 +884,18 @@
     <ns>106</ns>
     <id>241739</id>
     <revision>
-      <id>611727</id>
-      <parentid>611717</parentid>
-      <timestamp>2021-11-04T10:30:55Z</timestamp>
+      <id>611962</id>
+      <parentid>611727</parentid>
+      <timestamp>2021-11-15T11:27:49Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611727</origin>
+      <origin>611962</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="847" sha1="cszfwwcx0ky5xixhde24j8l4sn22mh1" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Subseries|Neue Unterreihe erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Unterreihe erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="935" sha1="dm5cxnphyyagov67t4vabbhn01li9tv" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Subseries|Neue Unterreihe erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neue Unterreihe erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Subseries_&lt;unique number;start=1000&gt;}}}
 {{{for template|Subseries}}}
 {| class="formtable"
     ! Titel 
@@ -924,7 +919,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>cszfwwcx0ky5xixhde24j8l4sn22mh1</sha1>
+      <sha1>dm5cxnphyyagov67t4vabbhn01li9tv</sha1>
     </revision>
   </page>
   <page>
@@ -932,21 +927,18 @@
     <ns>106</ns>
     <id>48</id>
     <revision>
-      <id>611865</id>
-      <parentid>611809</parentid>
-      <timestamp>2021-11-08T13:37:42Z</timestamp>
+      <id>611963</id>
+      <parentid>611865</parentid>
+      <timestamp>2021-11-15T11:28:19Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611865</origin>
+      <origin>611963</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="5290" sha1="ct4tv3f9imp4tbrvj46bv8kgi928p36" xml:space="preserve">&lt;noinclude&gt;
-&lt;span class="create-btn"&gt;{{#formlink:form=Work|link text=Neues Werk erstellen|target=Work_{{#idprovider-random:uuid}}}}&lt;/span&gt;
-&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"&gt;&lt;/div&gt;
-&lt;h1&gt;Werk erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="5165" sha1="bzyuiun33bm4y3c67uy1w8yldq26oxz" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|Author|Neues Werk erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neues Werk erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Work_&lt;unique number;start=1000&gt;}}}
 {{{for template|Work}}}
     {| class="formtable"
         ! Titel: 
@@ -1047,7 +1039,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>ct4tv3f9imp4tbrvj46bv8kgi928p36</sha1>
+      <sha1>bzyuiun33bm4y3c67uy1w8yldq26oxz</sha1>
     </revision>
   </page>
   <page>
@@ -1055,18 +1047,18 @@
     <ns>106</ns>
     <id>49</id>
     <revision>
-      <id>611857</id>
-      <parentid>611855</parentid>
-      <timestamp>2021-11-08T09:29:02Z</timestamp>
+      <id>611956</id>
+      <parentid>611857</parentid>
+      <timestamp>2021-11-15T11:26:31Z</timestamp>
       <contributor>
         <username>Admin</username>
         <id>1</id>
       </contributor>
-      <origin>611857</origin>
+      <origin>611956</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="574" sha1="ju5caoo9nayovq8lq0vrjlbdupv2vcz" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|WorkPart|Neuen edierten Werkteil erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
-&lt;h1&gt;Edierten Werkteil erstellen / bearbeiten&lt;/h1&gt;
+      <text bytes="662" sha1="kaqjcgjubtooo283ewehkrh9b6ig2dx" xml:space="preserve">&lt;noinclude&gt;{{FormCreateButton|WorkPart|Neuen edierten Werkteil erstellen}}&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|create title=Neuen edierten Werkteil erstellen|edit title=&lt;page name&gt; bearbeiten|page name=WorkPart_&lt;unique number;start=1000&gt;}}}
 {{{for template|WorkPart}}}
 {| class="formtable"
     ! Überschrift: 
@@ -1084,7 +1076,7 @@
 {{{standard input|cancel}}}
 &lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
 &lt;/includeonly&gt;</text>
-      <sha1>ju5caoo9nayovq8lq0vrjlbdupv2vcz</sha1>
+      <sha1>kaqjcgjubtooo283ewehkrh9b6ig2dx</sha1>
     </revision>
   </page>
 </mediawiki>
