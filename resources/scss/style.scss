@@ -7,7 +7,6 @@
 @import "tabs";
 @import "network";
 @import "moderntimeline";
-@import "buttons";
 @import "navbar";
 @import "content";
 @import "popupform";
@@ -32,13 +31,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2rem;
-  letter-spacing: -2px;
+  font-size: 1.5rem;
   border-bottom: 1px solid $alcuin-anthrazit-light;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h3 {
@@ -47,10 +45,6 @@ h3 {
 
 h4 {
   font-size: 1rem;
-}
-
-h1#firstHeading {
-  display: none;
 }
 
 p {
@@ -84,4 +78,12 @@ div.mw-parser-output {
 
 a:visited {
   color: $alcuin-orange-dark;
+}
+
+fieldset {
+  margin-bottom: $spacing;
+
+  legend {
+    font-size: 1.2rem;
+  }
 }
