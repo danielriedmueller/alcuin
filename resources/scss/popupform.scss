@@ -1,5 +1,5 @@
 .popupform-container {
-  border: 1px solid $alcuin-orange-dark !important;
+  border: 1px solid $alcuin-anthrazit !important;
 
   width: 85vw !important;
   height: 85% !important;
@@ -8,14 +8,10 @@
   box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.85);
 }
 
-body.mw-special-FormEdit {
+body.mw-special-FormEdit, body.mw-special-RunQuery {
   padding: $spacing-s !important;
   width: unset !important;
   height: unset !important;
-
-  .navbar-row {
-    display: none;
-  }
 }
 
 div.popupform-anchor {
