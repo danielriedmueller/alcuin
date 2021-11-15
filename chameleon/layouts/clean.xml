@@ -59,21 +59,7 @@ M
                     <row>
                         <cell>
                             <component type="Html">
-                                <div class="mainpage-table-links">
-                                    <a href="/index.php/Autoren">Autoren</a>
-                                    <a href="/index.php/Editoren">Editoren</a>
-                                    <a href="/index.php/Werke">Werke</a>
-                                    <a href="/index.php/Editionen">Editionen</a>
-                                    <a href="/index.php/Zeitschriften">Zeitschriften</a>
-                                    <a href="/index.php/Manuskripte">Manuskripte</a>
-                                    <a href="/index.php/Drucke">Drucke</a>
-                                    <a href="/index.php/Werkteile">Werkteile</a>
-                                    <a href="/index.php/Zeitschrifteneditionen">Zeitschrifteneditionen</a>
-                                    <a href="/index.php/Manuskriptteile">Manuskriptteile</a>
-                                    <a href="/index.php/Organisationen">Organisationen</a>
-                                    <a href="/index.php/Sammelbaende">Sammelbände</a>
-                                    <a href="/index.php/Sammelbandeditionen">Sammelbandeditionen</a>
-                                </div>
+                                <div class="mainpage-table-links"></div>
                             </component>
                         </cell>
                     </row>
