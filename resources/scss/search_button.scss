@@ -1,0 +1,16 @@
+span.search-btn {
+  cursor: pointer;
+  width: $search-button-size;
+  height: $search-button-size;
+  display: inline-block;
+  position: relative;
+  margin-left: $spacing-xxs;
+
+  a {
+    position: absolute;
+    top: 0;
+    width: $search-button-size;
+    height: $search-button-size;
+    display: block;
+  }
+}
