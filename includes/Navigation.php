@@ -6,7 +6,6 @@ class Navigation
 {
     public static function enrichSidebarNavigation(&$bar)
     {
-        //Create Form links
         $forms = [
             'Author' => 'Autor',
             'Book' => 'Buch',
@@ -63,6 +62,12 @@ class Navigation
             [
                 'text' => 'Alle Vorlagen',
                 'href' => '/index.php/Special:Templates',
+                'id' => 'n-templates',
+                'active' => '',
+            ],
+            [
+                'text' => 'Alle Formulare',
+                'href' => '/index.php/Special:Forms',
                 'id' => 'n-templates',
                 'active' => '',
             ],

@@ -1,0 +1,1107 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Formular:Author</title>
+    <ns>106</ns>
+    <id>33</id>
+    <revision>
+      <id>612026</id>
+      <parentid>612024</parentid>
+      <timestamp>2021-11-16T08:43:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612026</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2473" sha1="kzgb7uo2djn46lx0l14re5rfa7ogzq3" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Autor erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Author_&lt;unique number;start=1000&gt;}}}
+{{#vardefine: gndIdentifier
+|{{#ask: [[{{PAGENAMEE}}]]
+        |mainlabel=-
+        |?GndIdentifier
+        |format=array
+    }}
+}}
+{{#if: {{#var: gndIdentifier}}
+|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#var: gndIdentifier}} Bei Lobid betrachten]&lt;/span&gt;
+|{{#get_web_data:url=http://lobid.org/gnd/search?q={{urlencode:{{#getdisplaytitle:{{PAGENAMEE}}}}}}&amp;amp;format=json
+        |format=JSON
+        |data=GND1=gndIdentifier
+        |suppress error=
+    }}
+    {{#if:{{#external_value:GND1|}}|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#external_value:GND1}} Bei Lobid betrachten]&lt;/span&gt;|kein entsprechender Lobid-Eintrag gefunden}}
+}}
+{{{for template|Author}}}
+{{PersonFormFields}}
+{| class="formtable"
+    ! Biographie: 
+    | {{{field|Biography|input type=textarea}}}
+    |-
+    ! Literaturverweis: 
+    | {{{field|References|existing values only|input type=tokens|values from category=LiteratureReference}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=LiteratureReferenceQuery|link text=|tooltip=Literaturverweis suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+
+{{{for template|EventSubobject|multiple|label=Lebensereignisse|add button text=Lebensereignis hinzufügen}}}
+    {| class="formtable"
+        ! Typ: 
+        | {{{field|EventType|input type=text with autocomplete|max values=1|values from property=EventType}}}
+        |-
+        ! Beschreibung: 
+        | {{{field|EventDescription|input type=textarea}}}
+        |-
+        ! Ort: 
+        | {{{field|Place|input type=text with autocomplete|values from property=Place}}}
+        |-
+        ! Datum von: 
+        | {{{field|Date|input type=date}}}
+        |-
+        ! Sicher: 
+        | {{{field|DateCertain|input type=checkbox}}}
+        |-
+        ! Vage: 
+        | {{{field|DateVague|input type=checkbox}}}
+        |-
+        ! Datum bis: 
+        | {{{field|DateEnd|input type=date}}}
+        |-
+        ! Sicher: 
+        | {{{field|DateEndCertain|input type=checkbox}}}
+        |-
+        ! Vage: 
+        | {{{field|DateEndVague|input type=checkbox}}}
+        |-
+        ! Anmerkung zum Datum: 
+        | {{{field|DateNote|input type=textarea}}}
+    |}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>kzgb7uo2djn46lx0l14re5rfa7ogzq3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Book</title>
+    <ns>106</ns>
+    <id>241691</id>
+    <revision>
+      <id>612029</id>
+      <parentid>612025</parentid>
+      <timestamp>2021-11-16T08:48:36Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612029</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1278" sha1="ar2ocdiy4xagfz5c2fxyjaau7g2mmn1" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neue Monografie erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Monographie_&lt;unique number;start=1000&gt;}}}
+{{{for template|Book}}}
+{{PublicationFormFields}}
+{| class="formtable"
+    ! Enthält: 
+    | {{{field|Incorporates|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! Verwendet: 
+    | {{{field|Reuses|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! In Reihe: 
+    | {{{field|Series|existing values only|input type=tokens|values from category=Series}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=SeriesQuery|link text=|tooltip=Reihe suchen|popup}}&lt;/span&gt;
+    |-
+    ! Bandnummer: 
+    | {{{field|Volume|input type=tokens}}}
+    |-
+    ! ISBN: 
+    | {{{field|Isbn}}}
+    |-
+    ! Siglum: 
+    | {{{field|SiglumIdentifier|input type=tokens}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>ar2ocdiy4xagfz5c2fxyjaau7g2mmn1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Collection</title>
+    <ns>106</ns>
+    <id>34</id>
+    <revision>
+      <id>612030</id>
+      <parentid>612027</parentid>
+      <timestamp>2021-11-16T08:48:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612030</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1072" sha1="eg8dz7drt98yteucy9x9l2hoa02zu7e" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Sammelband erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Collection_&lt;unique number;start=1000&gt;}}}
+{{{for template|Collection}}}
+{{PublicationFormFields}}
+{| class="formtable"
+    ! Herausgeber: 
+    | {{{field|CollectionEditor|existing values only|input type=tokens|values from category=Person|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+    |-
+    ! In Reihe: 
+    | {{{field|Series|existing values only|input type=tokens|values from category=Series}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=SeriesQuery|link text=|tooltip=Serie suchen|popup}}&lt;/span&gt;
+    |-
+    ! Bandnummer: 
+    | {{{field|Volume|input type=tokens}}}
+    |-
+    ! ISBN: 
+    | {{{field|Isbn}}}
+    |-
+    ! Siglum: 
+    | {{{field|SiglumIdentifier|input type=tokens}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>eg8dz7drt98yteucy9x9l2hoa02zu7e</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Edition</title>
+    <ns>106</ns>
+    <id>35</id>
+    <revision>
+      <id>612028</id>
+      <parentid>611943</parentid>
+      <timestamp>2021-11-16T08:47:41Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612028</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2431" sha1="f7tr0mx70wicdozyvzh7xatnxum84r6" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen edierten Text erstellen|edit title=&lt;page name&gt; bearbeiten|page name=EditedText_&lt;unique number;start=1000&gt;}}}
+{{{for template|Edition}}}
+{| class="formtable"
+    ! Titel: 
+    | {{{field|EditionTitle}}}
+    |-
+    ! Editor: 
+    | {{{field|Editor|input type=tokens|existing values only|values from category=Editor|mapping property=Name}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditorQuery|link text=|tooltip=Editor suchen|popup}}&lt;/span&gt;
+    |-
+    ! Seitenbereich des edierten Texts: 
+    | {{{field|PageRangeOfEditedText}}}
+    |-
+    ! Ist Edition von: 
+    | {{{field|IsEditionOf|input type=text with autocomplete|existing values only|values from category=Work|mapping property=Title|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=WorkQuery|link text=|tooltip=Werk suchen|popup}}&lt;/span&gt;
+    |-
+    ! Ist Edition des Werkteils: 
+    | {{{field|IsEditionOfWorkPart|input type=tokens|existing values only|values from category=WorkPart|mapping property=Heading}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=WorkPartQuery|link text=|tooltip=Werkteil suchen|popup}}&lt;/span&gt;
+    |-
+    ! Incipit: 
+    | {{{field|Incipit|input type=tokens}}}
+    |-
+    ! Anmerkung: 
+    | {{{field|Note|input type=textarea}}}
+    |-
+    ! Sprache: 
+    | {{{field|Language|input type=tokens|mandatory}}}
+    |-
+    ! Hat Übersetzer: 
+    | {{{field|Translator|input type=tokens|existing values only|values from category=Person}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+    |-
+    ! Übersetzung von: 
+    | {{{field|IsTranslationOf|input type=text with autocomplete|existing values only|values from category=Edition|mapping property=EditionTitle}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! Anmerkung zur Sprache: 
+    | {{{field|LanguageNote|input type=textarea}}}
+    |-
+    ! Manuskriptverweis: 
+    | {{{field|hadManuscriptSource|existing values only|input type=tokens|values from category=ManuscriptReference}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=ManuscriptReferenceQuery|link text=|tooltip=Manuskript suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>f7tr0mx70wicdozyvzh7xatnxum84r6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Editor</title>
+    <ns>106</ns>
+    <id>36</id>
+    <revision>
+      <id>612031</id>
+      <parentid>611944</parentid>
+      <timestamp>2021-11-16T08:49:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612031</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1032" sha1="3sn7hpkf687fvr6yzv8t9pj2q7nv959" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Editor erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Editor_&lt;unique number;start=1000&gt;}}}
+{{#vardefine: gndIdentifier
+|{{#ask: [[{{PAGENAMEE}}]]
+        |mainlabel=-
+        |?GndIdentifier
+        |format=array
+    }}
+}}
+{{#if: {{#var: gndIdentifier}}
+|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#var: gndIdentifier}} Bei Lobid betrachten]&lt;/span&gt;
+|{{#get_web_data:url=http://lobid.org/gnd/search?q={{urlencode:{{#getdisplaytitle:{{PAGENAMEE}}}}}}&amp;amp;format=json
+        |format=JSON
+        |data=GND1=gndIdentifier
+        |suppress error=
+    }}
+    {{#if:{{#external_value:GND1|}}|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#external_value:GND1}} Bei Lobid betrachten]&lt;/span&gt;|kein entsprechender Lobid-Eintrag gefunden}}
+}}
+{{{for template|Editor}}}
+{{PersonFormFields}}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>3sn7hpkf687fvr6yzv8t9pj2q7nv959</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:InCollection</title>
+    <ns>106</ns>
+    <id>37</id>
+    <revision>
+      <id>612034</id>
+      <parentid>611945</parentid>
+      <timestamp>2021-11-16T08:52:57Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612034</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1239" sha1="r8y11w8q9dcz4hg3ktuljusp7tt9l23" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Sammelbandbeitrag erstellen|edit title=&lt;page name&gt; bearbeiten|page name=InCollection_&lt;unique number;start=1000&gt;}}}
+{{{for template|InCollection}}}
+{{PublicationFormFields}}
+{| class="formtable"
+    ! Seitenbereich: 
+    | {{{field|PageRange|mandatory}}}
+    |-
+    ! Enthält: 
+    | {{{field|Incorporates|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! Verwendet: 
+    | {{{field|Reuses|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! Publiziert in: 
+    | {{{field|IsPublishedIn|existing values only|input type=text with autocomplete|values from category=Collection|mandatory|max values=1}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=CollectionQuery|link text=|tooltip=Sammelband suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>r8y11w8q9dcz4hg3ktuljusp7tt9l23</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Incunable</title>
+    <ns>106</ns>
+    <id>241750</id>
+    <revision>
+      <id>612035</id>
+      <parentid>611946</parentid>
+      <timestamp>2021-11-16T08:53:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612035</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="943" sha1="ke1ze6xba8nqofgbgsc7f0o2eafc9b6" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neue Inkunabel erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Incunable_&lt;unique number;start=1000&gt;}}}
+{{{for template|Incunable}}}
+{{PublicationFormFields}}
+{| class="formtable"
+    ! Inkunabel: 
+    | {{{field|Incunable|input type=tokens}}}
+    |-
+    ! Enthält: 
+    | {{{field|Incorporates|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! Verwendet: 
+    | {{{field|Reuses|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>ke1ze6xba8nqofgbgsc7f0o2eafc9b6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Journal</title>
+    <ns>106</ns>
+    <id>38</id>
+    <revision>
+      <id>612036</id>
+      <parentid>611947</parentid>
+      <timestamp>2021-11-16T08:53:31Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612036</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="604" sha1="qwuzsuep0mua06wrwna0ont4jcwrgnw" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neue Zeitschrift erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Journal_&lt;unique number;start=1000&gt;}}}
+{{{for template|Journal}}}
+{| class="formtable"
+    ! Titel: 
+    | {{{field|JournalTitle|mandatory}}}
+    |-
+    ! Kurztitel: 
+    | {{{field|JournalShortTitle}}}
+    |-
+    ! ISSN: 
+    | {{{field|Issn}}}
+    |-
+    ! ZDB: 
+    | {{{field|ZdbIdentifier}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>qwuzsuep0mua06wrwna0ont4jcwrgnw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:JournalArticle</title>
+    <ns>106</ns>
+    <id>39</id>
+    <revision>
+      <id>612037</id>
+      <parentid>611948</parentid>
+      <timestamp>2021-11-16T08:54:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612037</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1370" sha1="ilez109smw0flcxbi0m6klzswbn7it5" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Zeitschriftenaufsatz erstellen|edit title=&lt;page name&gt; bearbeiten|page name=JournalArticle_&lt;unique number;start=1000&gt;}}}
+{{{for template|JournalArticle}}}
+{{PublicationFormFields}}
+{| class="formtable"
+    ! Ausgabe: 
+    | {{{field|Issue|input type=tokens}}}
+    |-
+    ! Seitenbereich: 
+    | {{{field|PageRange|mandatory}}}
+    |-
+    ! Bandnummer: 
+    | {{{field|Volume|input type=tokens}}}
+    |-
+    ! Enthält: 
+    | {{{field|Incorporates|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! Verwendet: 
+    | {{{field|Reuses|existing values only|input type=tokens|values from category=Edition}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=EditionQuery|link text=|tooltip=Edition suchen|popup}}&lt;/span&gt;
+    |-
+    ! In Zeitschrift: 
+    | {{{field|Journal|existing values only|input type=text with autocomplete|values from category=Journal|mandatory|max values=1}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=JournalQuery|link text=|tooltip=Zeitschrift suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>ilez109smw0flcxbi0m6klzswbn7it5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Library</title>
+    <ns>106</ns>
+    <id>40</id>
+    <revision>
+      <id>612038</id>
+      <parentid>611949</parentid>
+      <timestamp>2021-11-16T08:54:15Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612038</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="246su1qip1law9zjkwlhk1fp3uhbr68" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neue Bibliothek erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Library_&lt;unique number;start=1000&gt;}}}
+{{{for template|Library}}}
+{{OrganisationFormFields}}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>246su1qip1law9zjkwlhk1fp3uhbr68</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:LiteratureReference</title>
+    <ns>106</ns>
+    <id>241706</id>
+    <revision>
+      <id>612039</id>
+      <parentid>611950</parentid>
+      <timestamp>2021-11-16T08:54:51Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612039</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="926" sha1="6qi55qkgzudlml8xgvz4m1ij8nsvcqs" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Literaturverweis erstellen|edit title=&lt;page name&gt; bearbeiten|page name=LiteratureReference_&lt;unique number;start=1000&gt;}}}
+{{{for template|LiteratureReference}}}
+{| class="formtable"
+    ! Publikation: 
+    | {{{field|LiteratureReferencePublication|existing values only|input type=text with autocomplete|values from category=Publication|max values=1|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=PublicationQuery|link text=|tooltip=Publikation suchen|popup}}&lt;/span&gt;
+    |-
+    ! Anmerkung zum Literaturverweis: 
+    | {{{field|LiteratureReferenceNote|input type=textarea}}}
+    |-
+    ! Zitationsangabe zum Literaturverweis: 
+    | {{{field|LiteratureReferenceCitation}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>6qi55qkgzudlml8xgvz4m1ij8nsvcqs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:LiteratureReferenceQuery</title>
+    <ns>106</ns>
+    <id>241803</id>
+    <revision>
+      <id>611971</id>
+      <timestamp>2021-11-15T14:12:36Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{{info|query form at top}}} {{{for template|LiteratureReferenceQuery}}} {| class="formtable"     ! Publikation:      | {{{field|LiteratureRefere…“</comment>
+      <origin>611971</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="530" sha1="9cfuhht42zoh9ly6f254p8ad039ge4w" xml:space="preserve">&lt;includeonly&gt;
+{{{info|query form at top}}}
+{{{for template|LiteratureReferenceQuery}}}
+{| class="formtable"
+    ! Publikation: 
+    | {{{field|LiteratureReferencePublication|existing values only|input type=text with autocomplete|values from category=Publication|max values=1|mandatory}}}
+    |-
+    ! Anmerkung zum Literaturverweis: 
+    | {{{field|LiteratureReferenceNote|input type=textarea}}}
+    |-
+    ! Zitationsangabe zum Literaturverweis: 
+    | {{{field|LiteratureReferenceCitation}}}
+|}
+{{{end template}}}
+&lt;/includeonly&gt;</text>
+      <sha1>9cfuhht42zoh9ly6f254p8ad039ge4w</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Manuscript</title>
+    <ns>106</ns>
+    <id>41</id>
+    <revision>
+      <id>612041</id>
+      <parentid>611951</parentid>
+      <timestamp>2021-11-16T08:55:56Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612041</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="697" sha1="32zfqsf8ktowgw2vsmu0vrk9btesezh" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neues Manuskript erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Manuscript_&lt;unique number;start=1000&gt;}}}
+{{{for template|Manuscript}}}
+{| class="formtable"
+    ! Signatur des Manuskripts: 
+    | {{{field|Shelfmark}}}
+    |-
+    ! Im Besitz von: 
+    | {{{field|HeldBy|input type=text with autocomplete|existing values only|values from Category=Library|mandatory|mapping property=OrganizationName}}}
+    |-
+    ! HCS-ID: 
+    | {{{field|HcsIdentifier}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>32zfqsf8ktowgw2vsmu0vrk9btesezh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:ManuscriptReference</title>
+    <ns>106</ns>
+    <id>241724</id>
+    <revision>
+      <id>612040</id>
+      <parentid>611952</parentid>
+      <timestamp>2021-11-16T08:55:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612040</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="877" sha1="hvlfb8xq7z08x25id629bmukhqs64kw" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Manuskriptverweis erstellen|edit title=&lt;page name&gt; bearbeiten|page name=ManuscriptReference_&lt;unique number;start=1000&gt;}}}
+{{{for template|ManuscriptReference}}}
+{| class="formtable"
+    ! Manuskript: 
+    | {{{field|ManuscriptReferenceCodex|existing values only|input type=text with autocomplete|values from category=Manuscript|max values=1|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=ManuscriptQuery|link text=|tooltip=Manuskript suchen|popup}}&lt;/span&gt;
+    |-
+    ! Anmerkung zum Manuskriptverweis: 
+    | {{{field|ManuscriptReferenceNote|input type=textarea}}}
+    |-
+    ! Foliobereich: 
+    | {{{field|FolioRange}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>hvlfb8xq7z08x25id629bmukhqs64kw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:OperaOmnia</title>
+    <ns>106</ns>
+    <id>241741</id>
+    <revision>
+      <id>612042</id>
+      <parentid>611954</parentid>
+      <timestamp>2021-11-16T08:56:36Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612042</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1071" sha1="0aqvh7qwz8u75kdi0l5hmq5e1oitath" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neues Opera Omnia erstellen|edit title=&lt;page name&gt; bearbeiten|page name=OperaOmnia_&lt;unique number;start=1000&gt;}}}
+{{{for template|OperaOmnia}}}
+{| class="formtable"
+    ! Titel 
+    | {{{field|SeriesTitle|mandatory}}}
+    |-
+    ! Reihenkürzel: 
+    | {{{field|SeriesAbbreviation|}}}
+    |-
+    ! ISSN: 
+    | {{{field|Issn}}}
+    |-
+    ! Teil von: 
+    | {{{field|PartOf|values from category=Series|input type=text with autocomplete|existing values only|max values=1|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=SeriesQuery|link text=|tooltip=Reihe suchen|popup}}&lt;/span&gt;
+    |-
+    ! Reihenherausgeber: 
+    | {{{field|SeriesEditor|values from category=Person|input type=tokens|existing values only|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>0aqvh7qwz8u75kdi0l5hmq5e1oitath</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Order</title>
+    <ns>106</ns>
+    <id>44</id>
+    <revision>
+      <id>612043</id>
+      <parentid>611957</parentid>
+      <timestamp>2021-11-16T08:56:45Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612043</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="388" sha1="lycvy041e280uw462ycba87h3xyc2p4" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Orden erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Order_&lt;unique number;start=1000&gt;}}}
+{{{for template|Order}}}
+{{OrganisationFormFields}}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>lycvy041e280uw462ycba87h3xyc2p4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Print</title>
+    <ns>106</ns>
+    <id>45</id>
+    <revision>
+      <id>612044</id>
+      <parentid>611958</parentid>
+      <timestamp>2021-11-16T08:58:39Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612044</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1697" sha1="9482q1lqdxgupqc2igtzxt0mhw2yvfj" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Druck erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Print_&lt;unique number;start=1000&gt;}}}
+{{{for template|Print}}}
+{| class="formtable"
+    ! Drucker: 
+    | {{{field|Printer|values from category=Printer|input type=tokens|existing values only}}}
+    |-
+    ! Veröffentlichungsort: 
+    | {{{field|PublicationPlace|values from Property=Place|input type=tokens|mandatory}}}
+    |-
+    ! Verlag: 
+    | {{{field|Publisher|values from category=Publisher|input type=tokens|existing values only}}}
+    |-
+    ! Auftraggeber: 
+    | {{{field|Purchaser|values from category=Organisation|input type=text with autocomplete|existing values only|max values=1}}}
+|}
+{{{end template}}}
+
+{{{for template|DateSubobject|label=Publikationsdatum|mandatory|minimum instances=1|maximum instances=1}}}
+    {| class="formtable"
+        ! Datum von: 
+        | {{{field|Date|input type=date|mandatory}}}
+        |-
+        ! Sicher: 
+        | {{{field|DateCertain|input type=checkbox}}}
+        |-
+        ! Vage: 
+        | {{{field|DateVague|input type=checkbox}}}
+        |-
+        ! Datum bis: 
+        | {{{field|DateEnd|input type=date}}}
+        |-
+        ! Sicher: 
+        | {{{field|DateEndCertain|input type=checkbox}}}
+        |-
+        ! Vage: 
+        | {{{field|DateEndVague|input type=checkbox}}}
+        |-
+        ! Anmerkung zum Datum: 
+        | {{{field|DateNote|input type=textarea}}}
+    |}
+    {{{field|Property|hidden|default=PublicationDate}}}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>9482q1lqdxgupqc2igtzxt0mhw2yvfj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Printer</title>
+    <ns>106</ns>
+    <id>46</id>
+    <revision>
+      <id>612045</id>
+      <parentid>611959</parentid>
+      <timestamp>2021-11-16T08:58:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612045</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="463" sha1="e8z5oeyitlcaf4guqbt87o45n3s5sad" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Drucker erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Printer_&lt;unique number;start=1000&gt;}}}
+{{{for template|Printer}}}
+{{OrganisationFormFields}}
+{| class="formtable"
+    ! CT-ID: 
+    | {{{field|CtIdentifier}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>e8z5oeyitlcaf4guqbt87o45n3s5sad</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Publisher</title>
+    <ns>106</ns>
+    <id>47</id>
+    <revision>
+      <id>612046</id>
+      <parentid>611960</parentid>
+      <timestamp>2021-11-16T08:58:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612046</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="397" sha1="7dn9t262fjnl3rhsm656sewcfteph5d" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen Verlag erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Publisher_&lt;unique number;start=1000&gt;}}}
+{{{for template|Publisher}}}
+{{OrganisationFormFields}}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>7dn9t262fjnl3rhsm656sewcfteph5d</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Series</title>
+    <ns>106</ns>
+    <id>241740</id>
+    <revision>
+      <id>612047</id>
+      <parentid>611961</parentid>
+      <timestamp>2021-11-16T08:59:15Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612047</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="796" sha1="fxq19lhsblznakh7z6v5gxgeq7et774" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neue Reihe erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Series_&lt;unique number;start=1000&gt;}}}
+{{{for template|Series}}}
+{| class="formtable"
+    ! Titel 
+    | {{{field|SeriesTitle|mandatory}}}
+    |-
+    ! Reihenkürzel: 
+    | {{{field|SeriesAbbreviation|}}}
+    |-
+    ! ISSN: 
+    | {{{field|Issn}}}
+    |-
+    ! Reihenherausgeber: 
+    | {{{field|SeriesEditor|values from category=Person|input type=tokens|existing values only|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>fxq19lhsblznakh7z6v5gxgeq7et774</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Subseries</title>
+    <ns>106</ns>
+    <id>241739</id>
+    <revision>
+      <id>612048</id>
+      <parentid>611962</parentid>
+      <timestamp>2021-11-16T08:59:46Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612048</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1067" sha1="mzm36vzg8rht1end52gpd1yoy62jz8v" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neue Unterreihe erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Subseries_&lt;unique number;start=1000&gt;}}}
+{{{for template|Subseries}}}
+{| class="formtable"
+    ! Titel 
+    | {{{field|SeriesTitle|mandatory}}}
+    |-
+    ! Reihenkürzel: 
+    | {{{field|SeriesAbbreviation|}}}
+    |-
+    ! ISSN: 
+    | {{{field|Issn}}}
+    |-
+    ! Teil von: 
+    | {{{field|PartOf|values from category=Series|input type=text with autocomplete|existing values only|max values=1|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=SeriesQuery|link text=|tooltip=Reihe suchen|popup}}&lt;/span&gt;
+    |-
+    ! Reihenherausgeber: 
+    | {{{field|SeriesEditor|values from category=Person|input type=tokens|existing values only|mandatory}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>mzm36vzg8rht1end52gpd1yoy62jz8v</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:Work</title>
+    <ns>106</ns>
+    <id>48</id>
+    <revision>
+      <id>612023</id>
+      <parentid>612022</parentid>
+      <timestamp>2021-11-16T08:36:08Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612023</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="5094" sha1="9q5vnj6pnc105eg11fhah1zx8vo4taf" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neues Werk erstellen|edit title=&lt;page name&gt; bearbeiten|page name=Work_&lt;unique number;start=1000&gt;}}}
+{{{for template|Work}}}
+    {| class="formtable"
+        ! Titel: 
+        | {{{field|Title|mandatory}}}
+        |-
+        ! Siglum: 
+        | {{{field|SiglumIdentifier|input type=tokens}}}
+        |-
+        ! Titelvarianten: 
+        | {{{field|AlternateTitle|input type=tokens}}}
+        |-
+        ! Incipit: 
+        | {{{field|Incipit|input type=tokens}}}
+        |-
+        ! Textgattung: 
+        | {{{field
+                |WorkType
+                |input type=dropdown
+                |values from property=WorkType
+                |values=Bulle, Biographie, Brief, Chronik, Epitaph, Gebet, Hymne, Inschrift, Aristoteleskommentar, Bibelkommentar, Sentenzenkommentar, Lied, Predigt, Quaestiones, Quaestiones disputata, Quodlibeta, Rede, Rätsel, Summe, Traktat, mittelalterliche Übersetzung
+                |show on select=Kommentar=&gt;isCommentOf
+                |show on select=Brief=&gt;receiver
+                |show on select=Brief=&gt;sender
+                |show on select=mittelalterliche Übersetzung=&gt;translation
+                |show on select=Bulle=&gt;isAbout
+            }}}
+        |-
+        | &lt;div id="translation"&gt;mittelalterliche Übersetzung von: {{{field|IsMedievalTranslationOf|values from category=Work|input type=text with autocomplete|existing values only|mapping property=Title}}} Sprache der Übersetzungsgrundlage: {{{field|BaseLanguage|values=TODO}}}&lt;/div&gt;
+        |-
+        | &lt;div id="isCommentOf"&gt;Kommentar von: {{{field|IsCommentOf|values from category=Work|input type=tokens|multiple|existing values only|mapping property=Title}}}&lt;/div&gt;
+        |-
+        | &lt;div id="receiver"&gt;Empfänger des Briefes: {{{field|Receiver|values from category=Author|input type=tokens|multiple|existing values only|mapping property=Name}}}&lt;/div&gt;
+        |-
+        | &lt;div id="sender"&gt;Sender des Briefes: {{{field|Sender|values from category=Author|input type=tokens|multiple|existing values only|mapping property=Name}}}&lt;/div&gt;
+        |-
+        | &lt;div id="isAbout"&gt;Handelt von: {{{field|IsAbout|input type=tokens|multiple|existing values only|values from category=Author|mapping property=Name}}}&lt;/div&gt;
+        |-
+        ! Übersetzer des Texts: 
+        | {{{field|Translator|input type=text with autocomplete|existing values only|values from category=Person|mapping property=Name}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=TranslatorQuery|link text=|tooltip=Übersetzer suchen|popup}}&lt;/span&gt;
+        |-
+        ! Sprache des Werks: 
+        | {{{field|Language}}}
+        |-
+        ! Anmerkung:
+        | {{{field|Note|input type=textarea}}}
+        |-
+        ! Manuskriptverweis: 
+        | {{{field|HasManuscript|existing values only|input type=tokens|values from category=ManuscriptReference}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=ManuscriptReferenceQuery|link text=|tooltip=Manuskriptverweis suchen|popup}}&lt;/span&gt;
+        |-
+        ! Literaturverweis: 
+        | {{{field|References|existing values only|input type=tokens|values from category=LiteratureReference}}}&lt;span class="search-btn"&gt;{{#queryformlink:form=LiteratureReferenceQuery|link text=|tooltip=Literaturverweis suchen|popup}}&lt;/span&gt;
+    |}
+{{{end template}}}
+
+{{{for template|AuthorshipSubobject|multiple|label=Autorschaften|add button text=Autorschaft hinzufügen}}}
+    {| class="formtable"
+        ! Authentizität: 
+        | {{{field|WorkAuthorshipAttribution|input type=text with autocomplete|max values=1|values from property=WorkAuthorshipAttribution|mapping property=Label}}}
+        |-
+        ! Autor: 
+        | {{{field|WorkCreator|input type=text with autocomplete|max values=1|existing values only|values from category=Author|mapping property=Name}}}
+        |-
+        ! Anmerkung zur Autorschaftszuschreibung: 
+        | {{{field|WorkAuthorshipAttributionNote|input type=textarea}}}
+        |-
+        ! Beleg der Autorschaftszuschreibung: 
+        | {{{field|WorkAuthorshipAttributionEvidence|input type=text with autocomplete|existing values only|max values=1|values from category=Publication}}}
+    |}
+{{{end template}}}
+
+{{{for template|DateSubobject|multiple|label=Erstellungsdaten|add button text=Erstellungsdatum hinzufügen}}}
+    {| class="formtable"
+        ! Datum von: 
+        | {{{field|Date|input type=date}}}
+        |-
+        ! Sicher: 
+        | {{{field|DateCertain|input type=checkbox}}}
+        |-
+        ! Vage: 
+        | {{{field|DateVague|input type=checkbox}}}
+        |-
+        ! Datum bis: 
+        | {{{field|DateEnd|input type=date}}}
+        |-
+        ! Sicher: 
+        | {{{field|DateEndCertain|input type=checkbox}}}
+        |-
+        ! Vage: 
+        | {{{field|DateEndVague|input type=checkbox}}}
+        |-
+        ! Anmerkung zum Datum: 
+        | {{{field|DateNote|input type=textarea}}}
+    |}
+{{{end template}}}
+
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>9q5vnj6pnc105eg11fhah1zx8vo4taf</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formular:WorkPart</title>
+    <ns>106</ns>
+    <id>49</id>
+    <revision>
+      <id>612049</id>
+      <parentid>611956</parentid>
+      <timestamp>2021-11-16T09:00:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>612049</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="576" sha1="dhfdgv80yu21pbt7e6qwxkwol8hjm9t" xml:space="preserve">&lt;includeonly&gt;
+{{{info|create title=Neuen edierten Werkteil erstellen|edit title=&lt;page name&gt; bearbeiten|page name=WorkPart_&lt;unique number;start=1000&gt;}}}
+{{{for template|WorkPart}}}
+{| class="formtable"
+    ! Überschrift: 
+    | {{{field|Heading|mandatory}}}
+    |-
+    ! Sektion: 
+    | {{{field|Section}}}
+    |-
+    ! Incipit: 
+    | {{{field|Incipit|input type=tokens}}}
+|}
+{{{end template}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|cancel}}}
+&lt;span class="delete-btn"&gt;[{{fullurl:{{PAGENAMEE}}|action=delete}} Löschen]&lt;/span&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>dhfdgv80yu21pbt7e6qwxkwol8hjm9t</sha1>
+    </revision>
+  </page>
+</mediawiki>

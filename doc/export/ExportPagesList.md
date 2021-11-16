@@ -1,17 +1,4 @@
 ## Seiten
-Autoren
-Editoren
-Werke
-Editionen
-Zeitschriften
-Manuskripte
-Drucke
-Werkteile
-Zeitschrifteneditionen
-Manuskriptteile
-Organisationen
-Sammelbaende
-Sammelbandeditionen
 Autor/editionen
 Autor/werke
 
@@ -24,13 +11,13 @@ Template:DateSubobject
 Template:Edition
 Template:Editor
 Template:EventSubobject
-Template:FormCreateButton
 Template:InCollection
 Template:Incunable
 Template:Journal
 Template:JournalArticle
 Template:Library
 Template:LiteratureReference
+Template:LiteratureReferenceQuery
 Template:Manuscript
 Template:ManuscriptReference
 Template:OperaOmnia
@@ -172,6 +159,7 @@ Form:Journal
 Form:JournalArticle
 Form:Library
 Form:LiteratureReference
+Form:LiteratureReferenceQuery
 Form:Manuscript
 Form:ManuscriptReference
 Form:OperaOmnia
