@@ -46,7 +46,6 @@ Template:PublicationFormFields
 Template:Publisher
 Template:Series
 Template:Subseries
-Template:WikidataImage
 Template:Work
 Template:WorkPart
                                                   
