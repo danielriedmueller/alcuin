@@ -5,6 +5,7 @@ table table {
 table {
   th {
     min-width: 170px;
+    font-weight: normal;
   }
 }
 
@@ -32,10 +33,6 @@ table.wikitable {
         border-bottom: 1px solid $alcuin-anthrazit-light;
       }
     }
-
-    td.Bearbeiten {
-
-    }
   }
 
   tbody {
@@ -52,33 +49,16 @@ table.wikitable {
     background-color: $headline-color;
     color: $headline-font-color;
     text-align: left;
-    font-weight: bold;
+    font-weight: normal;
     border-bottom: 1px solid $alcuin-anthrazit-light;
 
     a {
-      font-weight: bold;
+      font-weight: normal;
       color: $headline-font-color !important;
     }
   }
 }
 
-table.datatable.autoren {
-  $iconWidth: 15px;
-
-  th.Werke,
-  th.Editionen {
-    width: $iconWidth;
-  }
-
-  td.Werke.smwtype_uri,
-  td.Editionen.smwtype_uri {
-    a {
-      font-size: 0;
-      display: block;
-      width: $iconWidth;
-      height: $iconWidth;
-      background: transparent url($imgDir + "/external-link.svg") center center no-repeat;
-      background-size: $iconWidth;
-    }
-  }
+table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+  font-weight: normal;
 }

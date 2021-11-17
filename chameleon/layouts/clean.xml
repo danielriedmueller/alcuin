@@ -55,18 +55,7 @@ M
         </row>
         <row>
             <cell>
-                <component type="MainPageContainer">
-                    <row>
-                        <cell>
-                            <component type="Html">
-                                <div class="mainpage-table-links"></div>
-                            </component>
-                        </cell>
-                    </row>
-                </component>
-                <component type="NotMainPageContainer">
-                    <component type="MainContent" class="main-content"/>
-                </component>
+                <component type="MainContent" class="main-content"/>
             </cell>
         </row>
     </grid>
