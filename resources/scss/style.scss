@@ -9,8 +9,10 @@
 @import "navbar";
 @import "content";
 @import "popupform";
-@import "search_button";
+@import "buttons";
 @import "datatable";
+@import "table";
+@import "flextable";
 
 @font-face {
   font-family: "Augusta";
@@ -31,21 +33,17 @@ h1, h2, h3, h4 {
   color: $font-color-dark;
 }
 
-h1 {
-  font-size: 1.5rem;
+h1, h1.firstHeading {
+  font-size: $font-size-headline;
   border-bottom: 1px solid $alcuin-anthrazit-light;
 }
 
-h2 {
-  font-size: 1.2rem;
-}
-
-h3 {
-  font-size: 1.2rem;
+h2, h3 {
+  font-size: $font-size-subheadline;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: $font-size-body;
 }
 
 p {
@@ -54,10 +52,6 @@ p {
 
 p:empty, p br:first-child:last-child {
   display: none;
-}
-
-.tl-timeline, table, .datatable {
-  margin: $spacing 0 !important;
 }
 
 caption {
@@ -85,6 +79,6 @@ fieldset {
   margin-bottom: $spacing;
 
   legend {
-    font-size: 1.2rem;
+    font-size: $font-size-subheadline;
   }
 }

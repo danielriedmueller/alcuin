@@ -35,7 +35,7 @@ class Navigation
             $bar['Formulare'][] = [
                 'text' => $name,
                 'href' => '/index.php/Spezial:Mit_Formular_bearbeiten/' . $form,
-                'target' => 'blank',
+                'target' => '_blank',
                 'active' => '',
             ];
         }
