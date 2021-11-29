@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
 });
-$(document).on("keydown", "form", function(event) {
+$(document).on("keydown", ":input:not(textarea)", function(event) {
     return event.key != "Enter";
 });
