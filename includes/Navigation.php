@@ -10,7 +10,7 @@ class Navigation
             'Author' => 'Autor',
             'Book' => 'Buch',
             'Collection' => 'Sammelband',
-            'Edition' => 'Edierter Text',
+            'EditedText' => 'Edierter Text',
             'Editor' => 'Editor',
             'InCollection' => 'Sammbelbandbeitrag',
             'Incunable' => 'Inkunabel',
