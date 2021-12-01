@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
 });
-$(document).on("keydown", ":input:not(textarea)", function(event) {
+$(document).on("keydown", "form#pfForm :input:not(textarea)", function(event) {
     return event.key != "Enter";
 });
