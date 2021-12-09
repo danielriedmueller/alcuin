@@ -5,10 +5,10 @@ Autor/werke
 ## Templates
 Template:Author
 Template:AuthorshipSubobject
-Template:Book
+Template:Monograph
 Template:Collection
 Template:DateSubobject
-Template:Edition
+Template:EditedText
 Template:Editor
 Template:EventSubobject
 Template:InCollection
@@ -16,25 +16,35 @@ Template:Incunable
 Template:Journal
 Template:JournalArticle
 Template:Library
-Template:LiteratureReference
+Template:LiteratureReferenceSubobject
 Template:LiteratureReferenceQuery
 Template:Manuscript
-Template:ManuscriptReference
+Template:ManuscriptReferenceSubobject
 Template:OperaOmnia
 Template:Order
 Template:Organisation
 Template:OrganisationFormFields
 Template:Person
 Template:PersonFormFields
-Template:Print
+Template:PrintSubobject
+Template:ReprintSubobject
 Template:Printer
 Template:Publication
 Template:PublicationFormFields
+Template:PublicationSubobjectsFormFields
 Template:Publisher
 Template:Series
 Template:Subseries
 Template:Work
 Template:WorkPart
+Template:MainpagePersonQuery
+Template:MainpageWorkQuery
+Template:MainpageEditedTextQuery
+Template:MainpageOrganizationQuery
+Template:MainpagePublicationQuery
+Template:MainpageSeriesQuery
+Template:MainpageJournalQuery
+Template:EditionTypeQuery
                                                   
 ## Properties
 Property:Affiliation
@@ -57,9 +67,6 @@ Property:EventDescription
 Property:EventType
 Property:FolioRange
 Property:GndIdentifier
-Property:HasManuscript
-Property:HasPrint
-Property:HasReprint
 Property:Heading
 Property:HeldBy
 Property:Incipit
@@ -75,6 +82,8 @@ Property:IsTranslationOf
 Property:Isbn
 Property:Issn
 Property:JournalTitle
+Property:JournalSubtitle
+Property:JournalAbbreviation
 Property:Language
 Property:LanguageNote
 Property:LiteratureReferenceCitation
@@ -82,6 +91,7 @@ Property:LiteratureReferenceNote
 Property:LiteratureReferencePublication
 Property:Location
 Property:ManuscriptReferenceNote
+Property:ManuscriptReferenceCodex
 Property:Name
 Property:Note
 Property:Order
@@ -104,6 +114,7 @@ Property:Series
 Property:SenderAbbreviation
 Property:SeriesEditor
 Property:SeriesTitle
+Property:SeriesAbbreviation
 Property:Shelfmark
 Property:SiglumIdentifier
 Property:Source
@@ -114,6 +125,7 @@ Property:VariantName
 Property:Volume
 Property:WorkAuthorshipAttribution
 Property:WorkAuthorshipAttributionEvidence
+Property:WorkAuthorshipAttributionNote
 Property:WorkCreator
 Property:WorkType
 Property:WorksURL
@@ -121,18 +133,16 @@ Property:ZdbIdentifier
 
 ## Categories
 Category:Author
-Category:Book
+Category:Monograph
 Category:Collection
-Category:Edition
+Category:EditedText
 Category:Editor
 Category:InCollection
 Category:Incunable
 Category:Journal
 Category:JournalArticle
 Category:Library
-Category:LiteratureReference
 Category:Manuscript
-Category:ManuscriptReference
 Category:OperaOmnia
 Category:Order
 Category:Organization
@@ -149,25 +159,22 @@ Category:WorkPart
 
 ## Forms
 Form:Author
-Form:Book
+Form:Monograph
 Form:Collection
-Form:Edition
+Form:EditedText
 Form:Editor
 Form:InCollection
 Form:Incunable
 Form:Journal
 Form:JournalArticle
 Form:Library
-Form:LiteratureReference
-Form:LiteratureReferenceQuery
 Form:Manuscript
-Form:ManuscriptReference
 Form:OperaOmnia
 Form:Order
-Form:Print
 Form:Printer
 Form:Publisher
 Form:Series
 Form:Subseries
 Form:Work
 Form:WorkPart
+Form:Mainpage
