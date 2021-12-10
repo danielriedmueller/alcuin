@@ -9,7 +9,11 @@ table {
   }
 }
 
-table.wikitable {
+table.formtable > tbody {
+  margin-bottom: $spacing;
+}
+
+table.wikitable > tbody {
   background-color: transparent;
   border: none;
   border-collapse: collapse;
