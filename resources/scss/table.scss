@@ -9,38 +9,36 @@ table {
   }
 }
 
-table.formtable > tbody {
+table.formtable {
   margin-bottom: $spacing;
 }
 
-table.wikitable > tbody {
+table.wikitable {
   background-color: transparent;
   border: none;
   border-collapse: collapse;
   max-width: unset;
 
-  tr {
-    td, th {
-      padding: $spacing-xs $spacing-xs $spacing-xs 0;
-      vertical-align: top;
-      text-align: left !important;
-      border: none;
-      background-color: transparent;
-    }
-
-    th {
-      word-break: keep-all;
-    }
-
-    &:not(:last-child) {
-      td, th {
-        border-bottom: 1px solid $alcuin-anthrazit-light;
-      }
-    }
-  }
-
-  tbody {
+  > tbody {
     tr {
+      td, th {
+        padding: $spacing-xs $spacing-xs $spacing-xs 0;
+        vertical-align: top;
+        text-align: left !important;
+        border: none;
+        background-color: transparent;
+      }
+
+      th {
+        word-break: keep-all;
+      }
+
+      &:not(:last-child) {
+        td, th {
+          border-bottom: 1px solid $alcuin-anthrazit-light;
+        }
+      }
+
       &:hover {
         th, td {
           background-color: $alcuin-creme;
