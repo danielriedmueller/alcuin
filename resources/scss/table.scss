@@ -20,8 +20,8 @@ table.wikitable {
   max-width: unset;
 
   > tbody {
-    tr {
-      td, th {
+    > tr {
+      > td, > th {
         padding: $spacing-xs $spacing-xs $spacing-xs 0;
         vertical-align: top;
         text-align: left !important;
@@ -29,18 +29,18 @@ table.wikitable {
         background-color: transparent;
       }
 
-      th {
+      > th {
         word-break: keep-all;
       }
 
       &:not(:last-child) {
-        td, th {
+        > td, > th {
           border-bottom: 1px solid $alcuin-anthrazit-light;
         }
       }
 
       &:hover {
-        th, td {
+        > th, > td {
           background-color: $alcuin-creme;
         }
       }
