@@ -9,10 +9,12 @@ class Navigation
         $forms = [
             'Author' => 'Autor',
             'Library' => 'Bibliothek',
+            'Dissertation' => 'Dissertation',
             'Printer' => 'Drucker',
             'EditedText' => 'Edierter Text',
             'Editor' => 'Editor',
             'Incunable' => 'Inkunabel',
+            'Encyclopedia' => 'Lexikon',
             'Manuscript' => 'Manuskript',
             'Monograph' => 'Monografie',
             'Order' => 'Orden',
