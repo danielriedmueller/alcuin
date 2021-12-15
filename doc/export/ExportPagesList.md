@@ -1,5 +1,5 @@
 ## Seiten
-Autor/editionen
+Autor/edierteTexte
 Autor/werke
 
 ## Templates

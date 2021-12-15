@@ -1,0 +1,2720 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="3000" case="first-letter">Alcuin</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Vorlage:Author</title>
+    <ns>10</ns>
+    <id>142</id>
+    <revision>
+      <id>66590</id>
+      <parentid>66589</parentid>
+      <timestamp>2021-12-15T09:14:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66590</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3447" sha1="10qny2k1pq2x73eeuj3sj5mk1eyqh8h" xml:space="preserve">{{#vardefine: Birthplace|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Geburt]]|mainlabel=-|?Place=}} }}
+{{#vardefine: Birthdate|{{EventDateQuery|EventType=Geburt}} }}
+{{#vardefine: Deathplace|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Tod]]|mainlabel=-|?Place=}} }}
+{{#vardefine: Deathdate|{{EventDateQuery|EventType=Tod}} }}
+{{#vardefine: Occupation|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Tätigkeit]]|mainlabel=-|?EventDescription=}} }}
+{{#vardefine: PlacesOfAction|{{#ask: [[-Has subobject::{{FULLPAGENAME}}]][[EventType::Wirkungsort]]|mainlabel=-|?Place=}} }}
+{{#vardefine: Lifespan|{{EventDateQuery|EventType=Wirkungszeitraum}} }}
+&lt;includeonly&gt;
+&lt;h4&gt;Autor {{#info: Ein Autor ist Schöpfer eines mittelalterlichen Werkes }}&lt;/h4&gt;
+{|class="flextable"
+    |
+&lt;span class="link-btn"&gt;[[WorksURL::http://alcuin.soital.de/index.php/Autor/werke?author={{PAGENAMEE}}|Werke]]&lt;/span&gt; 
+&lt;span class="link-btn"&gt;[[EditionsURL::http://alcuin.soital.de/index.php/Autor/edierteTexte?author={{PAGENAMEE}}|Edierte Texte]]&lt;/span&gt;
+    {|class="wikitable"
+        !Synonyme
+        |{{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            SELECT ?Synonyme WHERE { page:{{PAGENAMEE}} retmop:VariantName ?Synonyme .} ORDER BY(?Synonyme)
+            |chart=sgvizler.visualization.Table
+            |options=headings=false
+        }}
+        |-
+        !Tätigkeit
+        |{{#var: Occupation}}
+        |-
+        !Geburtsdatum
+        |{{#var: Birthdate}}
+        |-
+        !Geburtsort
+        |{{#var: Birthplace}}
+        |-
+        !Todesdatum
+        |{{#var: Deathdate}}
+        |-
+        !Todesort
+        |{{#var: Deathplace}}
+        |-
+        !Ordenszugehörigkeit
+        |{{#if:{{{Affiliation|}}}|[[Affiliation::{{{Affiliation}}}]]}}
+        |-
+        !Wirkungsorte
+        |{{#var: PlacesOfAction}}
+        |-
+        !Wirkungszeitraum
+        |{{#var: Lifespan}}
+        |-
+        !Biographie
+        |[[Biography::{{{Biography|}}}]]
+        |-
+        !GND
+        |{{#if:{{{GndIdentifier|}}}|[[GndIdentifier::{{{GndIdentifier}}}]]}}
+    |}
+    |
+&lt;span class="datatable-bare"&gt;{{#sparql:
+SELECT ?Portrait WHERE {
+        ?item wdt:P227 "{{{GndIdentifier}}}" .
+        ?item wdt:P18 ?Portrait .
+} LIMIT 1
+|footer=NO
+|header=NO
+|config=http://www.wikidata.org
+|chart=bordercloud.visualization.DataTable
+|options=width=300px!colstyle=col0_img_max-width:300px;col0_img_display:block;
+|log=2
+}}&lt;/span&gt;
+{{#display_map:
+    {{#if: {{#var: Birthplace}}|{{#var: Birthplace}}~Geboren in {{#var: Birthplace}};|}}
+    {{#if: {{#var: Deathplace}}|{{#var: Deathplace}}~Gestorben in {{#var: Deathplace}};|}}
+    {{#arraymap: {{#var: PlacesOfAction}}|,|x1|x1~Wirkungsort x1;|}}
+    |width=300
+}}
+|}
+== Lebensereignisse ==
+{{EventsQuery}}
+{{#ask: 
+    [[-Has subobject::{{PAGENAMEE}}]]
+    |?Date
+    |?Place
+    |?EventType=Typ
+    |format=moderntimeline
+}}
+== Literaturverweise ==
+{{LiteratureReferenceQuery}}
+{{#arraymap:{{{VariantName|}}}|,|x1|{{#set: VariantName=x1}}}}
+{{#set: Name={{{Name}}} }}
+{{#if:{{{WorkShortComment|}}}|{{#set: WorkShortComment={{{WorkShortComment}}}}}|}}
+{{DISPLAYTITLE:{{{Name}}}{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}
+[[Category:Author]]
+&lt;/includeonly&gt;</text>
+      <sha1>10qny2k1pq2x73eeuj3sj5mk1eyqh8h</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:AuthorshipSubobject</title>
+    <ns>10</ns>
+    <id>143</id>
+    <revision>
+      <id>1870</id>
+      <parentid>276</parentid>
+      <timestamp>2021-11-23T09:35:46Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1870</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="323" sha1="01bhsmo78myivpwsa8anf9muc579pkj" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |WorkCreator={{{WorkCreator|}}}
+    |WorkAuthorshipAttribution={{{WorkAuthorshipAttribution|}}}
+    |WorkAuthorshipAttributionNote={{{WorkAuthorshipAttributionNote|}}}
+    |WorkAuthorshipAttributionEvidence={{{WorkAuthorshipAttributionEvidence|}}}
+    |@category=Authorship
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>01bhsmo78myivpwsa8anf9muc579pkj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Collection</title>
+    <ns>10</ns>
+    <id>145</id>
+    <revision>
+      <id>280</id>
+      <parentid>279</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>279</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1298" sha1="sy8d8p99bc5ks5dx7veepkmadkhrlm7" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Sammelband {{#info: Sammelband mit mehreren edierten Texten }}&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !In Reihe {{#info: Angabe der Publikationsreihe }}
+    |{{#arraymap:{{{Series|}}}|,|x1|&lt;li&gt;[[Series::x1]]&lt;li&gt;|}}
+    |-
+    !Herausgeber {{#info: Angabe des Herausgebers des Sammelbandbeitrags }}
+    |{{#arraymap:{{{CollectionEditor|}}}|,|x1|&lt;li&gt;[[CollectionEditor::x1]]&lt;li&gt;|}}
+    |-
+    !Bandnummer {{#info: Angabe des Bandes (Sammelband oder Ausgabe einer Zeitschrift) in dem sich die Publikation befindet }}
+    |{{#arraymap:{{{Volume|}}}|,|x1|&lt;li&gt;[[Volume::x1]]&lt;li&gt;|}}
+|}
+{{#vardefine: SiglumIdentifier|{{{SiglumIdentifier|}}}}}
+{{#vardefine: Isbn|{{{Isbn|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum {{#info: Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29') }}
+    !ISBN {{#info: ISBN (International Standard Book Number) eines Buches }}
+    |-
+    |{{#arraymap:{{#var:SiglumIdentifier}}|,|x1|[[SiglumIdentifier::x1]]|}}
+    |[[Isbn::{{#var:Isbn}}]]
+|}
+&lt;/tab&gt;
+[[Category:Collection]]
+&lt;/includeonly&gt;</text>
+      <sha1>sy8d8p99bc5ks5dx7veepkmadkhrlm7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:CollectionQuery</title>
+    <ns>10</ns>
+    <id>42717</id>
+    <revision>
+      <id>66560</id>
+      <parentid>66559</parentid>
+      <timestamp>2021-12-15T08:26:30Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66560</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="qbomq9os0tszhrq4hfpprktkkqifnc6" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>qbomq9os0tszhrq4hfpprktkkqifnc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:CreationDateQuery</title>
+    <ns>10</ns>
+    <id>12279</id>
+    <revision>
+      <id>66585</id>
+      <parentid>66563</parentid>
+      <timestamp>2021-12-15T09:08:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66585</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1799" sha1="fvn952oz20gjaxpy1i7zudbeggnupbb" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT ?Erstellungsdaten WHERE 
+{ 
+    page:{{PAGENAMEE}} retmop:Has_subobject ?z .
+    ?z rdf:type retmoc:Date
+    OPTIONAL {?z retmop:Date ?DateStart .}
+    OPTIONAL {?z retmop:DateEnd ?DateEnd .}
+    OPTIONAL {?z retmop:DateCertain ?dc .}
+    OPTIONAL {?z retmop:DateVague ?dv .}
+    OPTIONAL {?z retmop:DateCertain ?dec .}
+    OPTIONAL {?z retmop:DateVague ?dev .}
+    BIND (IF(BOUND(?dc), ?dc, 0) AS ?DateCertain) .
+    BIND (IF(BOUND(?dv), ?dv, 0) AS ?DateVague) .
+    BIND (IF(BOUND(?dec), ?dec, 0) AS ?DateEndCertain) .
+    BIND (IF(BOUND(?dev), ?dev, 0) AS ?DateEndVague) .
+    BIND (
+        IF(
+            ?DateCertain,
+            CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart))),
+            CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart)), " (?)")
+        ) as ?a
+    ) .
+    BIND (
+        IF(
+            ?DateEndCertain,
+            CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd))),
+            CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd)), " (?)")
+        ) as ?b
+    ) .
+    BIND (IF(BOUND(?DateEnd), CONCAT(?a, " - ", ?b), ?a) as ?Erstellungsdaten) .
+}
+|chart=sgvizler.visualization.Table
+|options=headings=false
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>fvn952oz20gjaxpy1i7zudbeggnupbb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:DateSubobject</title>
+    <ns>10</ns>
+    <id>146</id>
+    <revision>
+      <id>66470</id>
+      <parentid>1902</parentid>
+      <timestamp>2021-12-13T13:38:33Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66470</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="299" sha1="gok9myugmzg5tt5lmuw0i0jhi1c1vvw" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |Date={{{Date|}}} Gr
+    |DateVague={{{DateVague|}}}
+    |DateCertain={{{DateCertain|}}}
+    |DateEnd={{{DateEnd|}}} Gr
+    |DateEndVague={{{DateEndVague|}}}
+    |DateEndCertain={{{DateEndCertain|}}}
+    |DateNote={{{DateNote|}}}
+    |@category=Date
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>gok9myugmzg5tt5lmuw0i0jhi1c1vvw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Dissertation</title>
+    <ns>10</ns>
+    <id>42691</id>
+    <revision>
+      <id>66436</id>
+      <timestamp>2021-12-13T10:11:35Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Dissertation&lt;/h4&gt; {{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}…“</comment>
+      <origin>66436</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1819" sha1="5btd81oo1oq991l691ni6rvghqdkzct" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Dissertation&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !Enthält {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text }}
+    |{{#arraymap:{{{Incorporates|}}}|,|x1|&lt;li&gt;[[Incorporates::x1]]&lt;li&gt;|}}
+    |-
+    !Verwendet {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text. Der edierte Text wird übernommen und quasi nachgedruckt und dadurch nachgenutzt (z.B. als Übersetzungsgrundlage) }}
+    |{{#arraymap:{{{Reuses|}}}|,|x1|&lt;li&gt;[[Reuses::x1]]&lt;li&gt;|}}
+    |-
+    !In Reihe {{#info: Angabe der Publikationsreihe }}
+    |{{#arraymap:{{{Series|}}}|,|x1|&lt;li&gt;[[Series::x1]]&lt;li&gt;|}}
+    |-
+    !Bandnummer {{#info: Angabe des Bandes (Sammelband oder Ausgabe einer Zeitschrift) in dem sich die Publikation befindet }}
+    |{{#arraymap:{{{Volume|}}}|,|x1|&lt;li&gt;[[Volume::x1]]&lt;li&gt;|}}
+    |-
+    !Hochschule {{#info: Angabe der Einrichtung an der die Dissertation eingereicht wurde. }}
+    |{{#if:{{{School|}}}|[[School::{{{School}}}]]}}
+|}
+{{#vardefine: SiglumIdentifier|{{{SiglumIdentifier|}}}}}
+{{#vardefine: Isbn|{{{Isbn|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum {{#info: Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29') }}
+    !ISBN {{#info: ISBN (International Standard Book Number) eines Buches }}
+    |-
+    |{{#arraymap:{{#var:SiglumIdentifier}}|,|x1|[[SiglumIdentifier::x1]]|}}
+    |[[Isbn::{{#var:Isbn}}]]
+|}
+&lt;/tab&gt;
+[[Category:Dissertation]]
+&lt;/includeonly&gt;</text>
+      <sha1>5btd81oo1oq991l691ni6rvghqdkzct</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EditedText</title>
+    <ns>10</ns>
+    <id>147</id>
+    <revision>
+      <id>39397</id>
+      <parentid>24576</parentid>
+      <timestamp>2021-12-09T12:55:22Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>39397</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4614" sha1="2b3vjk1y9vugwvjk0iyd452dtwsdnmr" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Edierter Text {{#info: Der edierte Text eines mittelalterlichen Werkes }}&lt;/h4&gt;
+{|class="flextable"
+    |
+        {{EditionTypeQuery}}
+        {|class="wikitable smwtable"
+            !Editor {{#info: Ein Editor ist Bearbeiter einer Edition }}            
+            |{{#arraymap:{{{Editor|}}}|,|x1|&lt;li&gt;[[Editor::x1]]&lt;li&gt;|}}
+            |-
+            !Seitenbereich des edierten Texts {{#info: Angabe des Seitenbereichs des edierten Texts im publizierten Text }}
+            |{{#if:{{{PageRangeOfEditedText|}}}|[[PageRangeOfEditedText::{{{PageRangeOfEditedText}}}]]}}
+            |-
+            !Ist Edition von {{#info: Zusammenhang zwischen ediertem Text und dem Werk }}
+            |[[IsEditionOf::{{{IsEditionOf}}}|{{#getdisplaytitle:{{{IsEditionOf}}}}}]]
+            |-
+            !Ist Edition des Werkteils {{#info: Zusammenhang zwischen ediertem Text und dem Werkteil }}            
+            |{{#arraymap:{{{IsEditionOfWorkPart|}}}|,|x1|&lt;li&gt;[[IsEditionOfWorkPart::x1]]&lt;li&gt;|}}
+            |-
+            !Incipit {{#info: Incipit zur Identifikation eines Textes }}
+            |{{#arraymap:{{{Incipit|}}}|,|x1|&lt;li&gt;[[Incipit::x1]]&lt;li&gt;|}}
+            |-
+            !Übersetzer {{#info: Übersetzer des Werks im Mittelalter }}
+            |{{#arraymap:{{{Translator|}}}|,|x1|&lt;li&gt;[[Translator::x1]]&lt;li&gt;|}}
+            |-
+            !Sprache {{#info: Sprache des Werks oder des edierten Textes bzw. des übersetzten Textes in der Edition. Die Sprache sollte aus einem kontrollierten Vokabular wie den ISO-639-3-Ländercodes ausgewählt werden: http://www.lexvo.org/linkeddata/resources.html ISO-639-3 beinhaltet auch hsitorische Sprachen wie Mittelhochdeutsch (gmh) oder Altenglisch (ang) }}
+            |{{#arraymap:{{{Language|}}}|,|x1|&lt;li&gt;[[Language::x1]]&lt;li&gt;|}}
+            |-
+            !Anmerkung zur Sprache {{#info: Anmerkung zur Sprache des Werks oder des edierten Textes und/oder des übersetzten Textes in der Edition (z.B. typographische Angaben wie 'lat./kroatisch in Synopse') }}
+            |{{#if:{{{LanguageNote|}}}|[[LanguageNote::{{{LanguageNote}}}]]}}
+            |-
+            !Übersetzung von            
+            |{{#if:{{{IsTranslationOf|}}}|[[IsTranslationOf::{{{IsTranslationOf}}}]]}}
+            |-
+            !Anmerkung {{#info: Anmerkungen zu Datierung, Zuschreibung, etc }}
+            ||{{#if:{{{Note|}}}|[[Note::{{{Note}}}]]|keine Anmerkung angegeben}}
+        |}
+    |
+        {{#network:
+            {{#ask:
+                [[{{PAGENAMEE}}]]
+                |format=array
+                |link=none
+            }}
+            |class=network
+        }}
+|}
+        {{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+            SELECT
+            (CONCAT('&lt;a target="_blank" href=\'',STR(?Manuscript),'\'&gt;',?Shelfmark,'&lt;/a&gt;') as ?Manuskript)
+            ?Bibliothek
+            ?Standort
+            ?Foliobereich
+            ?Seitenbereich
+            ?Anmerkung
+            WHERE { 
+            page:{{PAGENAMEE}} retmop:Has_subobject ?Subobject .
+            ?Subobject a retmoc:ManuscriptReference .
+            ?Subobject retmop:ManuscriptReferenceCodex ?Manuscript .
+            ?Manuscript retmop:Shelfmark ?Shelfmark . 
+            ?Manuscript retmop:HeldBy/rdfs:label ?Bibliothek . 
+            ?Manuscript retmop:Place ?Standort . 
+            OPTIONAL {?Subobject retmop:FolioRange ?Foliobereich .}
+            OPTIONAL {?Subobject retmop:PageRange ?Seitenbereich .}
+            OPTIONAL {?Subobject retmop:ManuscriptReferenceNote ?Anmerkung .}
+            } ORDER BY ASC(?Shelfmark)
+            |config=fuseki
+            |chart=bordercloud.visualization.DataTable
+            |options=width=100%!height=500px
+            |log=2
+        }}
+{{#if: {{{EditionTitle|}}}|
+{{#set:EditionTitle={{{EditionTitle}}}}}
+{{DISPLAYTITLE:{{{EditionTitle}}}}}
+}}
+{{#vardefine: Source|{{{Source|}}}}}
+{{#vardefine: Provenance|{{{Provenance|}}}}}
+[[Category:EditedText]]
+&lt;tab name="Metadaten" collapsed&gt;
+{|    
+    !Quelle {{#info: Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei }}
+    !Herkunft {{#info: Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3' }}    
+    |-    
+    |[[Source::{{#var:source}}]]
+    |[[Provenance::{{#var:provenance}}]]    
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>2b3vjk1y9vugwvjk0iyd452dtwsdnmr</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EditedTextQuery</title>
+    <ns>10</ns>
+    <id>42709</id>
+    <revision>
+      <id>66562</id>
+      <parentid>66522</parentid>
+      <timestamp>2021-12-15T08:26:45Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66562</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="qbomq9os0tszhrq4hfpprktkkqifnc6" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>qbomq9os0tszhrq4hfpprktkkqifnc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EditionTypeQuery</title>
+    <ns>10</ns>
+    <id>12309</id>
+    <revision>
+      <id>66561</id>
+      <parentid>66557</parentid>
+      <timestamp>2021-12-15T08:26:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66561</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="765" sha1="k78dg0dbkj6lj2lh70c0p5q6o8e9uin" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT DISTINCT ?Editionsformen
+WHERE {
+    {
+        ?Incorporates retmop:Incorporates page:{{PAGENAMEE}} .    
+        ?Incorporates rdf:type/rdfs:label ?Editionsformen .    
+    } UNION {
+        page:{{PAGENAMEE}} retmop:IsTranslationOf ?IsTranslationOf .
+        BIND(IF(BOUND(?IsTranslationOf), "Übersetzung", "") AS ?Editionsformen) .
+    }    
+}
+|chart=sgvizler.visualization.Table
+|options=headings=false
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>k78dg0dbkj6lj2lh70c0p5q6o8e9uin</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Editor</title>
+    <ns>10</ns>
+    <id>148</id>
+    <revision>
+      <id>39404</id>
+      <parentid>39403</parentid>
+      <timestamp>2021-12-09T13:16:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>39404</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2280" sha1="oqv3goylis2qpdh3mlw2deln4jd7vly" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Editor {{#info: Ein Editor ist Bearbeiter einer Edition (d.h. eines edierten Texts) }}&lt;/h4&gt;
+{|class="flextable"
+|
+    {|class="wikitable"
+        !Synonyme
+        |{{#arraymap:{{{VariantName|}}}|,|x|[[VariantName::x]]|,\s|}}
+        |-
+        !Ordenszugehörigkeit
+        |{{#if:{{{Affiliation|}}}|[[Affiliation::{{{Affiliation}}}]]}}
+        |-
+        !GND
+        |{{#if:{{{GndIdentifier|}}}|[[GndIdentifier::{{{GndIdentifier}}}]]}}
+    |}
+    |
+&lt;span class="datatable-bare"&gt;{{#sparql:
+SELECT ?Portrait WHERE {
+        ?item wdt:P227 "{{{GndIdentifier}}}" .
+        ?item wdt:P18 ?Portrait .
+} LIMIT 1
+|footer=NO
+|header=NO
+|config=http://www.wikidata.org
+|chart=bordercloud.visualization.DataTable
+|options=width=300px!colstyle=col0_img_max-width:300px;col0_img_display:block;
+|log=2
+}}&lt;/span&gt;
+|}
+===Edierte Texte===
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+SELECT 
+(CONCAT('&lt;a target="_blank" href=\'',STR(?EditedText),'\'&gt;',?Title,'&lt;/a&gt;') as ?Titel)
+WHERE {
+?EditedText retmop:Editor page:{{PAGENAMEE}} .
+OPTIONAL {
+    ?EditedText retmop:EditionTitle ?EditionTitle .
+}
+BIND(IF(BOUND(?EditionTitle), ?EditionTitle, "kein Titel") as ?Title) 
+}
+|config=fuseki
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+===Publikationen===
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT 
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Publication),'\'&gt;',?Title,'&lt;/a&gt;') as ?Titel)
+?Typ
+WHERE {
+?Publication retmop:PublicationAuthor page:{{PAGENAMEE}} .
+?Publication retmop:Title ?Title .
+?Publication rdf:type ?Category .
+?Category rdfs:label ?Typ .
+}
+|config=fuseki
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+{{#set: Name={{{Name}}} }}
+{{DISPLAYTITLE:{{{Name}}}{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}
+[[Category:Editor]]
+&lt;/includeonly&gt;</text>
+      <sha1>oqv3goylis2qpdh3mlw2deln4jd7vly</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EditorQuery</title>
+    <ns>10</ns>
+    <id>42702</id>
+    <revision>
+      <id>66564</id>
+      <parentid>66514</parentid>
+      <timestamp>2021-12-15T08:27:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66564</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="qbomq9os0tszhrq4hfpprktkkqifnc6" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>qbomq9os0tszhrq4hfpprktkkqifnc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Encyclopedia</title>
+    <ns>10</ns>
+    <id>42682</id>
+    <revision>
+      <id>66425</id>
+      <timestamp>2021-12-13T09:50:33Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Lexikon {{#info: Ein Lexikon mit Lexikoneinträgen }}&lt;/h4&gt; {{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{Pub…“</comment>
+      <origin>66425</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1285" sha1="gzx5m62yr4d84p3izwp11eazjf23z0p" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Lexikon {{#info: Ein Lexikon mit Lexikoneinträgen }}&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !In Reihe {{#info: Angabe der Publikationsreihe }}
+    |{{#arraymap:{{{Series|}}}|,|x1|&lt;li&gt;[[Series::x1]]&lt;li&gt;|}}
+    |-
+    !Herausgeber {{#info: Angabe des Herausgebers des Lexikons }}
+    |{{#arraymap:{{{EncyclopediaEditor|}}}|,|x1|&lt;li&gt;[[EncyclopediaEditor::x1]]&lt;li&gt;|}}
+    |-
+    !Bandnummer {{#info: Angabe des Bandes (Sammelband oder Ausgabe einer Zeitschrift) in dem sich die Publikation befindet }}
+    |{{#arraymap:{{{Volume|}}}|,|x1|&lt;li&gt;[[Volume::x1]]&lt;li&gt;|}}
+|}
+{{#vardefine: SiglumIdentifier|{{{SiglumIdentifier|}}}}}
+{{#vardefine: Isbn|{{{Isbn|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum {{#info: Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29') }}
+    !ISBN {{#info: ISBN (International Standard Book Number) eines Buches }}
+    |-
+    |{{#arraymap:{{#var:SiglumIdentifier}}|,|x1|[[SiglumIdentifier::x1]]|}}
+    |[[Isbn::{{#var:Isbn}}]]
+|}
+&lt;/tab&gt;
+[[Category:Encyclopedia]]
+&lt;/includeonly&gt;</text>
+      <sha1>gzx5m62yr4d84p3izwp11eazjf23z0p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EncyclopediaEntry</title>
+    <ns>10</ns>
+    <id>42688</id>
+    <revision>
+      <id>66432</id>
+      <timestamp>2021-12-13T10:04:16Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; &lt;h4&gt;Lexikonartikel {{#info: Ein Eintrag in einem Lexikon }}&lt;/h4&gt; {{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{P…“</comment>
+      <origin>66432</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1588" sha1="bpyo6ovp2rsflxzbd67iqjtnqao0msi" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Lexikonartikel {{#info: Ein Eintrag in einem Lexikon }}&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !Enthält {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text }}
+    |{{#arraymap:{{{Incorporates|}}}|,|x1|&lt;li&gt;[[Incorporates::x1]]&lt;li&gt;|}}
+    |-
+    !Verwendet {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text. Der edierte Text wird übernommen und quasi nachgedruckt und dadurch nachgenutzt (z.B. als Übersetzungsgrundlage) }}
+    |{{#arraymap:{{{Reuses|}}}|,|x1|&lt;li&gt;[[Reuses::x1]]&lt;li&gt;|}}
+    |-
+    !Publiziert in {{#info: Teil-Ganzes-Verhältnis zwischen Publikation und übergeordnetem Titel (Sammelband oder Zeitschriftenausgabe). Entspricht (bei Sammelbänden) crossref in BibTeX Einträgen. Bezeichnung orientiert an neuem DataCite-Relationstype IsPublishedIn }}
+    |{{#arraymap:{{{IsPublishedIn|}}}|,|x1|&lt;li&gt;[[IsPublishedIn::x1]]&lt;li&gt;|}}
+    |-
+    !Seitenbereich {{#info: Angabe des Seitenbereichs eines publizierten Texts (üblicherweise in einem übergeordneten Titel wie z.B. der Seitenbereich eines Aufsatzes in einer Aufsatzsammlung) }}
+    |[[PageRange::{{{PageRange}}}]]
+|}
+[[Category:EncyclopediaEntry]]
+&lt;/includeonly&gt;</text>
+      <sha1>bpyo6ovp2rsflxzbd67iqjtnqao0msi</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EventDateQuery</title>
+    <ns>10</ns>
+    <id>12312</id>
+    <revision>
+      <id>66565</id>
+      <parentid>66558</parentid>
+      <timestamp>2021-12-15T08:27:32Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66565</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1710" sha1="9mlbwuaa0f3viatuqam0p3go35hbk8b" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT ?Datum WHERE 
+{ 
+    page:{{PAGENAMEE}} retmop:Has_subobject ?z .
+    ?z retmop:EventType "{{{EventType}}}" .
+    OPTIONAL {?z retmop:Date ?DateStart .}
+    OPTIONAL {?z retmop:DateEnd ?DateEnd .}
+    OPTIONAL {?z retmop:DateCertain ?dc .}
+    OPTIONAL {?z retmop:DateVague ?dv .}
+    OPTIONAL {?z retmop:DateCertain ?dec .}
+    OPTIONAL {?z retmop:DateVague ?dev .}
+    BIND (IF(BOUND(?dc), ?dc, 0) AS ?DateCertain) .
+    BIND (IF(BOUND(?dv), ?dv, 0) AS ?DateVague) .
+    BIND (IF(BOUND(?dec), ?dec, 0) AS ?DateEndCertain) .
+    BIND (IF(BOUND(?dev), ?dev, 0) AS ?DateEndVague) .
+    BIND (
+        IF(
+            ?DateCertain,
+            CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart))),
+            CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart)), " (?)")
+        ) as ?a
+    ) .
+    BIND (
+        IF(
+            ?DateEndCertain,
+            CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd))),
+            CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd)), " (?)")
+        ) as ?b
+    ) .
+    BIND (IF(BOUND(?DateEnd), CONCAT(?a, " - ", ?b), ?a) as ?Datum) .
+}
+|chart=sgvizler.visualization.Table
+|options=headings=false
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>9mlbwuaa0f3viatuqam0p3go35hbk8b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:EventSubobject</title>
+    <ns>10</ns>
+    <id>149</id>
+    <revision>
+      <id>66546</id>
+      <parentid>1903</parentid>
+      <timestamp>2021-12-14T11:37:13Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66546</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="462" sha1="0i2opdnemp966f27c0zzei7uweu8272" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |EventType={{{EventType|}}}
+    |EventDescription={{{EventDescription|}}}
+    |Place={{{Place|}}}
+    |Date={{{Date|}}} Gr
+    |DateVague={{{DateVague|}}}
+    |DateCertain={{{DateCertain|}}}
+    |DateEnd={{{DateEnd|}}} Gr
+    |DateEndVague={{{DateEndVague|}}}
+    |DateEndCertain={{{DateEndCertain|}}}
+    |DateNote={{{DateNote|}}}
+    |Provenance={{{Provenance|}}}
+    |Source={{{Source|}}}
+    |@category=Event
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>0i2opdnemp966f27c0zzei7uweu8272</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:InCollection</title>
+    <ns>10</ns>
+    <id>150</id>
+    <revision>
+      <id>66431</id>
+      <parentid>290</parentid>
+      <timestamp>2021-12-13T10:04:10Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66431</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1596" sha1="l60z2qvahl6253bhcx6071b4dxtcoqq" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Sammelbandedition {{#info: Text einer Edition in einem Sammelband }}&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !Enthält {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text }}
+    |{{#arraymap:{{{Incorporates|}}}|,|x1|&lt;li&gt;[[Incorporates::x1]]&lt;li&gt;|}}
+    |-
+    !Verwendet {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text. Der edierte Text wird übernommen und quasi nachgedruckt und dadurch nachgenutzt (z.B. als Übersetzungsgrundlage) }}
+    |{{#arraymap:{{{Reuses|}}}|,|x1|&lt;li&gt;[[Reuses::x1]]&lt;li&gt;|}}
+    |-
+    !Publiziert in {{#info: Teil-Ganzes-Verhältnis zwischen Publikation und übergeordnetem Titel (Sammelband oder Zeitschriftenausgabe). Entspricht (bei Sammelbänden) crossref in BibTeX Einträgen. Bezeichnung orientiert an neuem DataCite-Relationstype IsPublishedIn }}
+    |{{#arraymap:{{{IsPublishedIn|}}}|,|x1|&lt;li&gt;[[IsPublishedIn::x1]]&lt;li&gt;|}}
+    |-
+    !Seitenbereich {{#info: Angabe des Seitenbereichs eines publizierten Texts (üblicherweise in einem übergeordneten Titel wie z.B. der Seitenbereich eines Aufsatzes in einer Aufsatzsammlung) }}
+    |[[PageRange::{{{PageRange}}}]]
+|}
+[[Category:InCollection]]
+&lt;/includeonly&gt;</text>
+      <sha1>l60z2qvahl6253bhcx6071b4dxtcoqq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Incunable</title>
+    <ns>10</ns>
+    <id>151</id>
+    <revision>
+      <id>292</id>
+      <parentid>291</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>291</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1584" sha1="6pl2kygt0kb3ufpig500p3td77o0jpy" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Inkunabel {{#info: 	Wiegenkatalog-Nummerierung eines Wiegendruckes (Inkunabel). Inkunabeln/Wiegendrucke wurden zwischen 1454 (Druck der Gutenberg-Bibel) und dem 31. Dezember 1500 gedruckt. Die Katalognummern kommen meist aus dem Repertorium bibliographicum von Hain (z.B. 'Hain 487'), dem Gesamtkatalog der Wiegendrucke (GW), oder auch den Ergänzungen von Copinger (z.B. 'Copinger 615'). Siehe auch folgende Webseite mit einer tabellarischen Übersicht typischer Muster der Signaturen von Wiegendrucken: https://www.cerl.org/help/incunabula/shelfmark_patterns }}&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !Inkunabel
+    |{{#arraymap:{{{Incunable|}}}|,|x1|&lt;li&gt;[[Incunable::x1]]&lt;li&gt;|}}   
+    |-
+    !Enthält {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text }}
+    |{{#arraymap:{{{Incorporates|}}}|,|x1|&lt;li&gt;[[Incorporates::x1]]&lt;li&gt;|}}
+    |-
+    !Verwendet {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text. Der edierte Text wird übernommen und quasi nachgedruckt und dadurch nachgenutzt (z.B. als Übersetzungsgrundlage) }}
+    |{{#arraymap:{{{Reuses|}}}|,|x1|&lt;li&gt;[[Reuses::x1]]&lt;li&gt;|}}
+|}
+[[Category:Incunable]]
+&lt;/includeonly&gt;</text>
+      <sha1>6pl2kygt0kb3ufpig500p3td77o0jpy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Journal</title>
+    <ns>10</ns>
+    <id>152</id>
+    <revision>
+      <id>66542</id>
+      <parentid>39394</parentid>
+      <timestamp>2021-12-14T11:24:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66542</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1079" sha1="c8yqcc69y8tbll6i6lsm2lawa6n77ip" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Zeitschrift {{#info: Eine wissenschaftliche Zeitschrift }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Untertitel
+    |{{#if:{{{JournalSubtitle|}}}|[[JournalSubtitle::{{{JournalSubtitle}}}]]}}
+    |-
+    !Zeitschriftenkürzel
+    |{{#if:{{{JournalAbbreviation|}}}|[[JournalAbbreviation::{{{JournalAbbreviation}}}]]}}
+    |-
+    !ISSN
+    |{{#if:{{{Issn|}}}|[[Issn::{{{Issn}}}]]}}
+    |-
+    !ZDB-ID
+    |{{#if:{{{ZdbIdentifier|}}}|[[ZdbIdentifier::{{{ZdbIdentifier}}}]]}}
+|}
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+SELECT 
+(CONCAT('&lt;a target="_blank" href=\'',STR(?JournalArticle),'\'&gt;',?Title,'&lt;/a&gt;') as ?Zeitschriftenaufsatz)
+WHERE {
+?JournalArticle retmop:Journal page:{{PAGENAMEE}} .
+?JournalArticle retmop:Title ?Title .
+}
+|config=fuseki
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+{{#set: JournalTitle={{{JournalTitle}}}}}
+{{DISPLAYTITLE:{{{JournalTitle}}}}}
+[[Category:Journal]]
+&lt;/includeonly&gt;</text>
+      <sha1>c8yqcc69y8tbll6i6lsm2lawa6n77ip</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:JournalQuery</title>
+    <ns>10</ns>
+    <id>42719</id>
+    <revision>
+      <id>66567</id>
+      <parentid>66539</parentid>
+      <timestamp>2021-12-15T08:27:56Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66567</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="qbomq9os0tszhrq4hfpprktkkqifnc6" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>qbomq9os0tszhrq4hfpprktkkqifnc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:JournalArticle</title>
+    <ns>10</ns>
+    <id>153</id>
+    <revision>
+      <id>66452</id>
+      <parentid>296</parentid>
+      <timestamp>2021-12-13T10:37:40Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66452</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1598" sha1="en37c6pfz410fpgjqpur7dyafentn9z" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Zeitschriftenaufsatz {{#info: Text einer Edition in einem Zeitschriftenaufsatz veröffentlicht }}&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !Seitenbereich {{#info: 	Angabe des Seitenbereichs eines publizierten Texts (üblicherweise in einem übergeordneten Titel wie z.B. der Seitenbereich eines Aufsatzes in einer Aufsatzsammlung) }}
+    |[[PageRange::{{{PageRange}}}]]
+    |-
+    !Bandnummer {{#info: Angabe des Bandes (Sammelband oder Ausgabe einer Zeitschrift) in dem sich die Publikation befindet }}
+    |{{#arraymap:{{{Volume|}}}|,|x1|&lt;li&gt;[[Volume::x1]]&lt;li&gt;|}}
+    |-
+    !Enthält {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text }}
+    |{{#arraymap:{{{Incorporates|}}}|,|x1|&lt;li&gt;[[Incorporates::x1]]&lt;li&gt;|}}
+    |-
+    !Verwendet {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text. Der edierte Text wird übernommen und quasi nachgedruckt und dadurch nachgenutzt (z.B. als Übersetzungsgrundlage) }}
+    |{{#arraymap:{{{Reuses|}}}|,|x1|&lt;li&gt;[[Reuses::x1]]&lt;li&gt;|}}
+    |-
+    !In Zeitschrift {{#info: Angabe der Zeitschrift in der der Beitrag publiziert wurde }}
+    |[[Journal::{{{Journal}}}]]
+|}
+[[Category:JournalArticle]]
+&lt;/includeonly&gt;</text>
+      <sha1>en37c6pfz410fpgjqpur7dyafentn9z</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Library</title>
+    <ns>10</ns>
+    <id>154</id>
+    <revision>
+      <id>66410</id>
+      <parentid>24435</parentid>
+      <timestamp>2021-12-13T08:35:26Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66410</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="535" sha1="e48sp9v4t9efb5ipymabdhuju3jgrl7" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Bibliothek&lt;/h4&gt;
+{{Organisation|OrganizationName={{{OrganizationName|}}}|OrganizationAbbreviation={{{OrganizationAbbreviation|}}}|GndIdentifier={{{GndIdentifier|}}}}}
+{|class="wikitable smwtable"
+    !Standort
+    |[[Place::{{{Place}}}]]
+    |-
+    !Besitzt {{#info: Angabe des Manuskripts, das sich im Besitz der Einrichtung befindet }}
+    |{{#ask: 
+        [[HeldBy::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=kein Manuskript angegeben
+    }}
+|}
+[[Category:Library]]
+&lt;/includeonly&gt;</text>
+      <sha1>e48sp9v4t9efb5ipymabdhuju3jgrl7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:LibraryQuery</title>
+    <ns>10</ns>
+    <id>42713</id>
+    <revision>
+      <id>66568</id>
+      <parentid>66527</parentid>
+      <timestamp>2021-12-15T08:28:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66568</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="396" sha1="qbomq9os0tszhrq4hfpprktkkqifnc6" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>qbomq9os0tszhrq4hfpprktkkqifnc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:LiteratureReferenceQuery</title>
+    <ns>10</ns>
+    <id>12311</id>
+    <revision>
+      <id>66569</id>
+      <parentid>24644</parentid>
+      <timestamp>2021-12-15T08:28:06Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66569</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="993" sha1="saocsn1m4p9my1swgxe9xi2bnf9t5x2" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+    PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+    PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+    PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+    SELECT
+    (CONCAT('&lt;a target="_blank" href=\'',STR(?Publication),'\'&gt;',?Title,'&lt;/a&gt;') as ?Publikation)
+    ?Zitationsangabe
+    ?Anmerkung
+    WHERE { 
+    page:{{PAGENAMEE}} retmop:Has_subobject ?Subobject .
+    ?Subobject a retmoc:LiteratureReference .
+    ?Subobject retmop:LiteratureReferencePublication ?Publication .
+    ?Publication retmop:Title ?Title . 
+    OPTIONAL {?Subobject retmop:LiteratureReferenceCitation ?Zitationsangabe .}
+    OPTIONAL {?Subobject retmop:LiteratureReferenceNote ?Anmerkung .}
+    } ORDER BY ASC(?Title)
+    |config=fuseki
+    |chart=bordercloud.visualization.DataTable
+    |options=width=100%!height=500px
+    |log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>saocsn1m4p9my1swgxe9xi2bnf9t5x2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:LiteratureReferenceSubobject</title>
+    <ns>10</ns>
+    <id>155</id>
+    <revision>
+      <id>66506</id>
+      <parentid>66505</parentid>
+      <timestamp>2021-12-14T09:47:29Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66506</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="282" sha1="bo977hysq5c0gs5j930tkhqve0x2052" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |LiteratureReferencePublication={{{LiteratureReferencePublication|}}}
+    |LiteratureReferenceNote={{{LiteratureReferenceNote|}}}
+    |LiteratureReferenceCitation={{{LiteratureReferenceCitation|}}}
+    |@category=LiteratureReference
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>bo977hysq5c0gs5j930tkhqve0x2052</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpageEditedTextQuery</title>
+    <ns>10</ns>
+    <id>12282</id>
+    <revision>
+      <id>66575</id>
+      <parentid>24413</parentid>
+      <timestamp>2021-12-15T08:32:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66575</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="851" sha1="mmhmdtyoq8c6nga155b3f4qg3zqn0ze" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{EditedText|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Title),'&lt;/a&gt;') as ?Edierter_Text)
+(GROUP_CONCAT(?Incipt) AS ?Incipite)
+WHERE {
+?Page rdf:type retmoc:EditedText .
+?Page retmop:EditionTitle ?Title filter contains(lcase(?Title), lcase("{{{EditedText}}}") ) .
+OPTIONAL { ?Page retmop:Incipit ?Incipit }
+} GROUP BY ?Page ORDER BY ASC(?Title)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>mmhmdtyoq8c6nga155b3f4qg3zqn0ze</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpageJournalQuery</title>
+    <ns>10</ns>
+    <id>12291</id>
+    <revision>
+      <id>24412</id>
+      <parentid>24411</parentid>
+      <timestamp>2021-12-01T09:42:38Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>24412</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1037" sha1="8aa1avrt6kkhzldsaivxs4n49b1qt2r" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{Journal|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Title),'&lt;/a&gt;') as ?Zeitschrift)
+(SAMPLE(?JournalAbbreviation) AS ?Zeitschriftkürzel)
+(SAMPLE(?JournalSubtitle) AS ?Untertitel)
+WHERE {
+?Page a retmoc:Journal .
+?Page retmop:JournalTitle{{!}}retmop:JournalAbbreviation{{!}}retmop:JournalSubtitle ?a filter contains(lcase(?a), lcase("{{{Journal}}}") )  .
+?Page retmop:JournalTitle ?Title .
+OPTIONAL { ?Page retmop:JournalAbbreviation ?JournalAbbreviation } . 
+OPTIONAL { ?Page retmop:JournalSubtitle ?JournalSubtitle } . 
+} GROUP BY ?Page ORDER BY ASC(?Title)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+[[Category:Query]]</text>
+      <sha1>8aa1avrt6kkhzldsaivxs4n49b1qt2r</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpageOrganizationQuery</title>
+    <ns>10</ns>
+    <id>12284</id>
+    <revision>
+      <id>66576</id>
+      <parentid>24414</parentid>
+      <timestamp>2021-12-15T08:32:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66576</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1104" sha1="hqgzllwoxtwc6saaqlt3wkhf7zsn60f" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{Organization|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT
+(SAMPLE(?Type) AS ?Typ)
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Title),'&lt;/a&gt;') as ?Organisation)
+(SAMPLE(?OrganizationAbbreviation) AS ?Organisationskürzel)
+WHERE {
+?Page rdf:type/rdfs:subClassOf retmoc:Organization .
+?Page retmop:OrganizationName{{!}}retmop:OrganizationAbbreviation ?a filter contains(lcase(?a), lcase("{{{Organization}}}") )  .
+?Page retmop:OrganizationName ?Title .
+OPTIONAL { ?Page retmop:OrganizationAbbreviation ?OrganizationAbbreviation }
+?Page a/rdfs:label ?Type
+} GROUP BY ?Page ORDER BY ASC(?Title)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>hqgzllwoxtwc6saaqlt3wkhf7zsn60f</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpagePersonQuery</title>
+    <ns>10</ns>
+    <id>12283</id>
+    <revision>
+      <id>66572</id>
+      <parentid>24415</parentid>
+      <timestamp>2021-12-15T08:28:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66572</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3373" sha1="f66dg8uyw3asx559yqalaq78zsluu9g" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{Person|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT 
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Label),'&lt;/a&gt;') as ?Person)
+(SAMPLE(?Birthdate) as ?Geburt)
+(SAMPLE(?Deathdate) as ?Tod)
+(CONCAT('&lt;ul class="collapsable"&gt;&lt;input type="checkbox"&gt;', GROUP_CONCAT(DISTINCT ?Synonym), '&lt;/ul&gt;') AS ?Synonyme)
+(CONCAT('&lt;ul class="collapsable"&gt;&lt;input type="checkbox"&gt;', GROUP_CONCAT(DISTINCT ?Works), '&lt;/ul&gt;') AS ?Werke)
+WHERE {
+?Page rdf:type/rdfs:subClassOf retmoc:Person .
+?Page retmop:Name{{!}}retmop:VariantName ?a filter contains(lcase(?a), lcase("{{{Person}}}") ) .
+?Page rdfs:label ?Label .
+OPTIONAL {
+     ?Page retmop:VariantName ?VariantName . 
+     BIND(IF(BOUND(?VariantName), CONCAT('&lt;li&gt;', ?VariantName, '&lt;/li&gt;'), "") AS ?Synonym) .
+}
+OPTIONAL {
+    ?Page retmop:Has_subobject ?Event .    
+    OPTIONAL {
+        ?Event retmop:EventType "Geburt" .
+        ?Event retmop:Date ?DateStart .    
+        OPTIONAL {?Event retmop:DateCertain ?DateCertain .}
+        OPTIONAL {?Event retmop:DateVague ?DateVague .}
+        BIND (
+            IF(
+                ?DateCertain,
+                CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart))),
+                CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart)), "?")
+            ) as ?Birthdate
+        ) .
+    }
+    OPTIONAL {
+        ?Event retmop:EventType "Tod" .
+        ?Event retmop:Date ?DateStart .    
+        OPTIONAL {?Event retmop:DateCertain ?DateCertain .}
+        OPTIONAL {?Event retmop:DateVague ?DateVague .}
+        BIND (
+            IF(
+                ?DateCertain,
+                CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart))),
+                CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart)), "?")
+            ) as ?Deathdate
+        ) .
+    }
+}
+OPTIONAL {
+        SELECT 
+            (CONCAT(
+                '&lt;li&gt;&lt;a target="_blank" href=\'', STR(?WorkPage), '\'&gt;', SAMPLE(?Worktitle), '&lt;/a&gt;&lt;ul&gt;', GROUP_CONCAT(DISTINCT ?WorkAlternateTitles), GROUP_CONCAT(DISTINCT ?Incipits), '&lt;/ul&gt;&lt;/li&gt;'
+            ) as ?Works)
+            ?Page
+        WHERE {
+            ?WorkPage retmop:Has_subobject/retmop:WorkCreator ?Page .
+            ?WorkPage retmop:Title ?Worktitle .
+            OPTIONAL {?WorkPage retmop:AlternateTitle ?WorkAlternateTitle .}
+            OPTIONAL {?WorkPage retmop:Incipit ?Incipit .}
+            BIND(IF(BOUND(?WorkAlternateTitle), CONCAT('&lt;li&gt;', ?WorkAlternateTitle, '&lt;/li&gt;'), "") AS ?WorkAlternateTitles) .
+            BIND(IF(BOUND(?Incipit), CONCAT('&lt;li&gt;', ?Incipit, '&lt;/li&gt;'), "") AS ?Incipits) .
+         } GROUP BY ?WorkPage ?Page
+    }
+} GROUP BY ?Page ORDER BY ASC(?Label)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>f66dg8uyw3asx559yqalaq78zsluu9g</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpagePublicationQuery</title>
+    <ns>10</ns>
+    <id>12285</id>
+    <revision>
+      <id>66577</id>
+      <parentid>24416</parentid>
+      <timestamp>2021-12-15T08:32:13Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66577</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1000" sha1="8izyhfqxhcspfrz86rpbd0zobyhf0f6" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{Publication|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT
+(SAMPLE(?Type) AS ?Typ)
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Title),'&lt;/a&gt;') as ?Publikation)
+(SAMPLE(?Subtitle) AS ?Untertitel)
+WHERE {
+?Page a/rdfs:subClassOf retmoc:Publication .
+?Page retmop:Title{{!}}retmop:Subtitle ?a filter contains(lcase(?a), lcase("{{{Publication}}}") )  .
+?Page retmop:Title ?Title .
+OPTIONAL { ?Page retmop:Subtitle ?Subtitle } . 
+?Page a/rdfs:label ?Type
+} GROUP BY ?Page ORDER BY ASC(?Title)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>8izyhfqxhcspfrz86rpbd0zobyhf0f6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpageSeriesQuery</title>
+    <ns>10</ns>
+    <id>12287</id>
+    <revision>
+      <id>66578</id>
+      <parentid>24417</parentid>
+      <timestamp>2021-12-15T08:32:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66578</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="933" sha1="6xluaatljf2hmp710f62cylkl8fn450" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{Series|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Title),'&lt;/a&gt;') as ?Reihe)
+(SAMPLE(?SeriesAbbreviation) AS ?Reihenkürzel)
+WHERE {
+?Page a/rdfs:subClassOf{{!}}a retmoc:Series .
+?Page retmop:SeriesTitle{{!}}retmop:SeriesAbbreviation ?a filter contains(lcase(?a), lcase("{{{Series}}}") )  .
+?Page retmop:SeriesTitle ?Title .
+OPTIONAL { ?Page retmop:SeriesAbbreviation ?SeriesAbbreviation } . 
+} GROUP BY ?Page ORDER BY ASC(?Title)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>6xluaatljf2hmp710f62cylkl8fn450</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:MainpageWorkQuery</title>
+    <ns>10</ns>
+    <id>12280</id>
+    <revision>
+      <id>66574</id>
+      <parentid>24428</parentid>
+      <timestamp>2021-12-15T08:31:43Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66574</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1287" sha1="1fxnc2xuqneo4is90dzomn0laqhn05f" xml:space="preserve">&lt;includeonly&gt;
+{{#if: {{{Work|}}}|
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT
+(CONCAT('&lt;a target="_blank" href=\'',STR(?Page),'\'&gt;',SAMPLE(?Title),'&lt;/a&gt;') as ?Werk)
+(CONCAT('&lt;ul class="collapsable"&gt;&lt;input type="checkbox"&gt;', GROUP_CONCAT(DISTINCT ?Titelvariante), '&lt;/ul&gt;') AS ?Titelvarianten)
+(SAMPLE(?Worktype) AS ?Werktyp)
+(GROUP_CONCAT(?Incipt) AS ?Incipite)
+WHERE {
+?Page rdf:type retmoc:Work .
+?Page retmop:AlternateTitle{{!}}retmop:Title ?a filter contains(lcase(?a), lcase("{{{Work}}}") ) .
+?Page retmop:Title ?Title
+OPTIONAL {
+     ?Page retmop:AlternateTitle ?AlternateTitle . 
+     BIND(IF(BOUND(?AlternateTitle), CONCAT('&lt;li&gt;', ?AlternateTitle, '&lt;/li&gt;'), "") AS ?Titelvariante) .
+}
+OPTIONAL { ?Page retmop:WorkType ?Worktype }
+OPTIONAL { ?Page retmop:Incipit ?Incipit }
+} GROUP BY ?Page ORDER BY ASC(?Title)
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+|}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>1fxnc2xuqneo4is90dzomn0laqhn05f</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Manuscript</title>
+    <ns>10</ns>
+    <id>157</id>
+    <revision>
+      <id>24444</id>
+      <parentid>24443</parentid>
+      <timestamp>2021-12-01T10:50:21Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>24444</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1196" sha1="2e0t7pkaj4n282pkpavc2pghvbbygzx" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Manuskript {{#info: Ein Manuskript ist eine unikale Manifestation des Textes eines oder mehrerer Werke. Typischerweise ist die Zitationsangabe zu einem Manuskript ist wie folgt strukturiert: Ort, Bibliothek/Archiv, Signatur, ggf. Folio-Angaben }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Signatur des Manuskripts
+    |[[Shelfmark::{{{Shelfmark}}}]]
+    |-
+    !Im Besitz von {{#info: Angabe der Einrichtung, in deren Besitz sich das Manuskript befindet }}
+    |[[HeldBy::{{{HeldBy}}}]]
+    |-
+    !Standort
+    |[[Place::{{{Place}}}]]
+|}
+[[Category:Manuscript]]
+{{#vardefine: Source|{{{Source|}}}}}
+{{#vardefine: Provenance|{{{Provenance|}}}}}
+{{#vardefine: HcsIdentifier|{{{HcsIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Quelle {{#info: Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei }}
+    !Herkunft {{#info: Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3' }}
+    !HCS-ID {{#info: ID des Eintrags im Handschriftencensus (HCS) }}
+    |-
+    |[[Source::{{#var:Source}}]]
+    |[[Provenance::{{#var:Provenance}}]]
+    |[[HcsIdentifier::{{#var:HcsIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>2e0t7pkaj4n282pkpavc2pghvbbygzx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:ManuscriptReferenceSubobject</title>
+    <ns>10</ns>
+    <id>158</id>
+    <revision>
+      <id>66450</id>
+      <parentid>24326</parentid>
+      <timestamp>2021-12-13T10:36:21Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66450</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="305" sha1="0sytkdxog2km8dkqldslcsc0qnrgvw2" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |ManuscriptReferenceCodex={{{ManuscriptReferenceCodex|}}}
+    |ManuscriptReferenceNote={{{ManuscriptReferenceNote|}}}
+    |FolioRange={{{FolioRange|}}}
+    |PageRange={{{PageRange|}}}
+    |Incipit={{{Incipit|}}}
+    |@category=Category:ManuscriptReference
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>0sytkdxog2km8dkqldslcsc0qnrgvw2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Monograph</title>
+    <ns>10</ns>
+    <id>144</id>
+    <revision>
+      <id>24606</id>
+      <parentid>24605</parentid>
+      <timestamp>2021-12-07T09:23:41Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>Admin verschob die Seite [[Vorlage:Monography]] nach [[Vorlage:Monograph]], ohne dabei eine Weiterleitung anzulegen</comment>
+      <origin>24605</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1661" sha1="9vvvskhnu64aaah8mm6qoea4whzencp" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Monografie&lt;/h4&gt;
+{{Publication|Title={{{Title|}}}|Subtitle={{{Subtitle|}}}|PublicationAuthor={{{PublicationAuthor|}}}|Language={{{Language|}}}|LanguageNote={{{LanguageNote|}}}|Note={{{Note|}}}|HasPrint={{{HasPrint|}}}|HasReprint={{{HasReprint|}}}|Translator={{{Translator|}}}}}
+{|class="wikitable smwtable"
+    !Enthält {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text }}
+    |{{#arraymap:{{{Incorporates|}}}|,|x1|&lt;li&gt;[[Incorporates::x1]]&lt;li&gt;|}}
+    |-
+    !Verwendet {{#info: Teil-Ganzes-Verhältnis zwischen Publikation ('Monographieedition', 'Sammelbandedition', 'Zeitschriftenedition') und ediertem Text. Der edierte Text wird übernommen und quasi nachgedruckt und dadurch nachgenutzt (z.B. als Übersetzungsgrundlage) }}
+    |{{#arraymap:{{{Reuses|}}}|,|x1|&lt;li&gt;[[Reuses::x1]]&lt;li&gt;|}}
+    |-
+    !In Reihe {{#info: Angabe der Publikationsreihe }}
+    |{{#arraymap:{{{Series|}}}|,|x1|&lt;li&gt;[[Series::x1]]&lt;li&gt;|}}
+    |-
+    !Bandnummer {{#info: Angabe des Bandes (Sammelband oder Ausgabe einer Zeitschrift) in dem sich die Publikation befindet }}
+    |{{#arraymap:{{{Volume|}}}|,|x1|&lt;li&gt;[[Volume::x1]]&lt;li&gt;|}}
+|}
+{{#vardefine: SiglumIdentifier|{{{SiglumIdentifier|}}}}}
+{{#vardefine: Isbn|{{{Isbn|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum {{#info: Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29') }}
+    !ISBN {{#info: ISBN (International Standard Book Number) eines Buches }}
+    |-
+    |{{#arraymap:{{#var:SiglumIdentifier}}|,|x1|[[SiglumIdentifier::x1]]|}}
+    |[[Isbn::{{#var:Isbn}}]]
+|}
+&lt;/tab&gt;
+[[Category:Monograph]]
+&lt;/includeonly&gt;</text>
+      <sha1>9vvvskhnu64aaah8mm6qoea4whzencp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:OperaOmnia</title>
+    <ns>10</ns>
+    <id>159</id>
+    <revision>
+      <id>308</id>
+      <parentid>307</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>307</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="586" sha1="g8dxd0ytp4f4ymxc2n8flxyc2kwfw5w" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Unterreihe {{#info: Eine Schriftenreihe mit dem Gesamtwerk eines Autors }}&lt;/h4&gt;
+&lt;h1&gt;[[SeriesTitle::{{{SeriesTitle}}}]]&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Reihenherausgeber
+    |{{#arraymap:{{{SeriesEditor|}}}|,|x1|&lt;li&gt;[[SeriesEditor::x1]]&lt;li&gt;|}}
+    |-
+    !Reihenkürzel
+    |{{#if:{{{SeriesAbbreviation|}}}|[[SeriesAbbreviation::{{{SeriesAbbreviation}}}]]}}
+    |-
+    !ISSN
+    |{{#if:{{{Issn|}}}|[[Issn::{{{Issn}}}]]}}
+    |-
+    !Teil von
+    |{{{PartOf|}}}|[[PartOf::{{{PartOf}}}]]
+|}
+{{DISPLAYTITLE:{{{SeriesTitle}}}}}
+[[Category:OperaOmnia]]
+&lt;/includeonly&gt;</text>
+      <sha1>g8dxd0ytp4f4ymxc2n8flxyc2kwfw5w</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Order</title>
+    <ns>10</ns>
+    <id>160</id>
+    <revision>
+      <id>310</id>
+      <parentid>309</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>309</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="212" sha1="jgim16z1nyi54are9xuu0i8895g3dts" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Orden&lt;/h4&gt;
+{{Organisation|OrganizationName={{{OrganizationName|}}}|OrganizationAbbreviation={{{OrganizationAbbreviation|}}}|GndIdentifier={{{GndIdentifier|}}}}}
+[[Category:Order]]
+&lt;/includeonly&gt;</text>
+      <sha1>jgim16z1nyi54are9xuu0i8895g3dts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:OrderQuery</title>
+    <ns>10</ns>
+    <id>175</id>
+    <revision>
+      <id>66571</id>
+      <parentid>347</parentid>
+      <timestamp>2021-12-15T08:28:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66571</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="918" sha1="d1gch6n9ql8px41qguvo25jwk8yk3ix" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?Id ?Organisationsname ?Organisationskürzel WHERE
+{ 
+{{#if: {{{OrganizationName|}}}|?x retmop:OrganizationName ?a filter contains(lcase(?a), lcase("{{{OrganizationName}}}")) .}}
+{{#if: {{{OrganizationAbbreviation|}}}|?x retmop:OrganizationAbbreviation ?b filter contains(lcase(?b), lcase("{{{OrganizationAbbreviation}}}")) .}}
+{{#if: {{{GndIdentifier|}}}|?x retmop:GndIdentifier "{{{GndIdentifier}}}" .}}
+?x rdfs:label ?Id .
+?x retmop:OrganizationName ?Organisationsname .
+?x retmop:OrganizationAbbreviation ?Organisationskürzel .
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>d1gch6n9ql8px41qguvo25jwk8yk3ix</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Organisation</title>
+    <ns>10</ns>
+    <id>161</id>
+    <revision>
+      <id>66396</id>
+      <parentid>343</parentid>
+      <timestamp>2021-12-10T10:04:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66396</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="465" sha1="7fnhajktipa5cplekzs0o6lgg1yfesi" xml:space="preserve">&lt;includeonly&gt;
+{|class="wikitable smwtable"
+    !Kürzel {{#info: Kürzel für die Einrichtung }}
+    |{{#if:{{{OrganizationAbbreviation|}}}|[[OrganizationAbbreviation::{{{OrganizationAbbreviation}}}]]}}
+    |-
+    !GND-ID {{#info: ID des Eintrags in der GND (Gemeinsame Normdatei) }}
+    |{{#if:{{{GndIdentifier|}}}|[[GndIdentifier::{{{GndIdentifier}}}]]}}
+|}
+{{DISPLAYTITLE:{{{OrganizationName}}}}}
+&lt;/includeonly&gt;
+{{#set: OrganizationName={{{OrganizationName}}} }}</text>
+      <sha1>7fnhajktipa5cplekzs0o6lgg1yfesi</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:OrganisationFormFields</title>
+    <ns>10</ns>
+    <id>162</id>
+    <revision>
+      <id>66395</id>
+      <parentid>314</parentid>
+      <timestamp>2021-12-10T10:04:06Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66395</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="281" sha1="c90doel59c3ic5y7kavxq7g27dra0bu" xml:space="preserve">&lt;includeonly&gt;
+{| class="formtable"
+    ! Name: 
+    | &lt;nowiki&gt;{{{field|OrganizationName|mandatory}}}&lt;/nowiki&gt;
+    |-
+    ! Kürzel: 
+    | &lt;nowiki&gt;{{{field|OrganizationAbbreviation}}}&lt;/nowiki&gt;
+    |-
+    ! GND-ID: 
+    | &lt;nowiki&gt;{{{field|GndIdentifier}}}&lt;/nowiki&gt;
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>c90doel59c3ic5y7kavxq7g27dra0bu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Person</title>
+    <ns>10</ns>
+    <id>163</id>
+    <revision>
+      <id>316</id>
+      <parentid>315</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>315</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="911" sha1="jkfwidxk2semkkkj3wkxlo1dd8tp1zp" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Person {{#info: Eine Person kann Schöpfer eines Werkes oder Bearbeiter einer Edition sein }}&lt;/h4&gt;
+&lt;h1&gt;[[Name::{{{Name}}}]]{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}}&lt;/h1&gt;
+{|class="wikitable"
+    !Synonyme
+    |{{#arraymap:{{{VariantName|}}}|,|x|[[VariantName::x]]|,\s|}}        
+    |-
+    !Ordenszugehörigkeit
+    |{{#if:{{{Affiliation|}}}|[[Affiliation::{{{Affiliation}}}]]}}
+|}
+{{DISPLAYTITLE:{{{Name}}}{{#if:{{{Affiliation|}}}|, {{#show: {{{Affiliation}}}|?organizationAbbreviation }}|}}{{#if:{{{NameAddition|}}}|, {{{NameAddition}}}|}} }}
+[[Category:Person]]
+{{#vardefine: GndIdentifier|{{{GndIdentifier|}}}}}
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !GND {{#info: ID des Eintrags in der GND (Gemeinsame Normdatei) }}
+    |-
+    |[[GndIdentifier::{{#var:GndIdentifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>jkfwidxk2semkkkj3wkxlo1dd8tp1zp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:PersonQuery</title>
+    <ns>10</ns>
+    <id>178</id>
+    <revision>
+      <id>66573</id>
+      <parentid>385</parentid>
+      <timestamp>2021-12-15T08:28:29Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66573</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="978" sha1="bx39w0ivn3jr09bzyqz5fhwh85hd4jm" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+{{#if: {{{Name|}}}|?x retmop:Name ?Name filter contains(lcase(?Name), lcase("{{{Name}}}")) .}}
+{{#if: {{{NameAddition|}}}|?x retmop:NameAddition ?Namenszusatz filter contains(lcase(?Namenszusatz), lcase("{{{NameAddition}}}")) .}}
+{{#if: {{{VariantName|}}}|?x retmop:VariantName ?Synonyme filter contains(lcase(?Synonyme), lcase("{{{VariantName}}}")) .}}
+{{#if: {{{Affiliation|}}}|?x retmop:Affiliation ?Ordenszugehörigkeit filter contains(lcase(?Ordenszugehörigkeit), lcase("{{{Affiliation}}}")) .}}
+{{#if: {{{GndIdentifier|}}}|?x retmop:GndIdentifier ?GND filter contains(lcase(?GND), lcase("{{{GndIdentifier}}}")) .}}
+} 
+|chart=bordercloud.visualization.DataTable
+}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+[[Category:Query]]
+&lt;/noinclude&gt;</text>
+      <sha1>bx39w0ivn3jr09bzyqz5fhwh85hd4jm</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:PersonFormFields</title>
+    <ns>10</ns>
+    <id>164</id>
+    <revision>
+      <id>66459</id>
+      <parentid>1776</parentid>
+      <timestamp>2021-12-13T12:48:07Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66459</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1302" sha1="svtgawwe7lm96qqgeng0qwi6k83cx3b" xml:space="preserve">&lt;includeonly&gt;
+{{#get_web_data:url=http://lobid.org/gnd/search?q={{urlencode:{{#explode:{{#getdisplaytitle:{{FULLPAGENAME}}}}|,|0}}}}&amp;amp;format=json
+    |format=JSON
+    |data=GND1=gndIdentifier
+    |suppress error=
+}}
+{{#vardefine: gndIdentifier
+|{{#ask: [[{{PAGENAMEE}}]]
+        |mainlabel=-
+        |?GndIdentifier
+        |format=array
+    }}
+}}
+{{#if: {{#var: gndIdentifier}}|&lt;span class="info-btn"&gt;[http://lobid.org/gnd/{{#var: gndIdentifier}} Bei Lobid betrachten]&lt;/span&gt;}}
+{| class="formtable"
+    ! Name: 
+    | &lt;nowiki&gt;{{{field|Name|mandatory}}}&lt;/nowiki&gt;
+    |-
+    ! Namenszusatz: 
+    | &lt;nowiki&gt;{{{field|NameAddition}}}&lt;/nowiki&gt;
+    |-
+    ! Synonyme: 
+    | &lt;nowiki&gt;{{{field|VariantName|multiple|input type=tokens}}}&lt;/nowiki&gt;
+    |-
+    ! Ordenszugehörigkeit: 
+    | &lt;nowiki&gt;{{{field|Affiliation|existing values only|input type=text with autocomplete|values from category=Order|mapping property=OrganizationAbbreviation|max values=1}}}&lt;/nowiki&gt;&lt;span class="search-btn"&gt;{{#queryformlink:form=OrderQuery|link text=|tooltip=Orden suchen|popup}}&lt;/span&gt;
+    |-
+    ! GND Identifier: 
+    |{{#if:{{#external_value:GND1|}}|&lt;nowiki&gt;{{{field|GndIdentifier|input type=text with autocomplete|values={{#external_value:GND1}}}}}&lt;/nowiki&gt;|&lt;nowiki&gt;{{{field|GndIdentifier}}}&lt;/nowiki&gt;}}
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>svtgawwe7lm96qqgeng0qwi6k83cx3b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:PrintSubobject</title>
+    <ns>10</ns>
+    <id>12292</id>
+    <revision>
+      <id>66584</id>
+      <parentid>66441</parentid>
+      <timestamp>2021-12-15T09:07:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66584</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="460" sha1="9ba7p2ka23k4oe8wqgam35hib8e80ix" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |PublicationPlace={{{PublicationPlace|}}}
+    |Publisher={{{Publisher|}}}
+    |Printer={{{Printer|}}}
+    |Purchaser={{{Purchaser|}}}
+    |Note={{{Note|}}}
+    |Date={{{Date|}}} Gr
+    |DateVague={{{DateVague|}}}
+    |DateCertain={{{DateCertain|}}}
+    |DateEnd={{{DateEnd|}}} Gr
+    |DateEndVague={{{DateEndVague|}}}
+    |DateEndCertain={{{DateEndCertain|}}}
+    |DateNote={{{DateNote|}}}
+    |@category=Print
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>9ba7p2ka23k4oe8wqgam35hib8e80ix</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Printer</title>
+    <ns>10</ns>
+    <id>166</id>
+    <revision>
+      <id>322</id>
+      <parentid>321</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>321</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="425" sha1="o65iz5nqn6736zzbcfc0mhsozsbexqi" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Drucker {{#info: Der Drucker eines edierten Texts }}&lt;/h4&gt;
+{{Organisation|OrganizationName={{{OrganizationName|}}}|OrganizationAbbreviation={{{OrganizationAbbreviation|}}}|GndIdentifier={{{GndIdentifier|}}}}}
+{|class="wikitable smwtable"
+    !CT-ID {{#info: ID des Eintrags im CERL Thesaurus (CT) }}
+    |{{#if:{{{CtIdentifier|}}}|[[CtIdentifier::{{{CtIdentifier}}}]]}}
+|}
+[[Category:Printer]]
+&lt;/includeonly&gt;</text>
+      <sha1>o65iz5nqn6736zzbcfc0mhsozsbexqi</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Publication</title>
+    <ns>10</ns>
+    <id>167</id>
+    <revision>
+      <id>1711</id>
+      <parentid>324</parentid>
+      <timestamp>2021-11-19T10:10:45Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1711</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1517" sha1="fkr87lhxwr1dezbna0eike5sxrq1815" xml:space="preserve">&lt;includeonly&gt;
+{|class="wikitable smwtable"
+    !Untertitel {{#info: Untertitel der Publikation }}
+    |{{#if:{{{Subtitle|}}}|[[Subtitle::{{{Subtitle}}}]]}}
+    |-
+    !Sprache {{#info: Sprache des Werks oder des edierten Textes bzw. des übersetzten Textes in der Edition. Die Sprache sollte aus einem kontrollierten Vokabular wie den ISO-639-3-Ländercodes ausgewählt werden: http://www.lexvo.org/linkeddata/resources.html ISO-639-3 beinhaltet auch hsitorische Sprachen wie Mittelhochdeutsch (gmh) oder Altenglisch (ang) }}
+    |{{#arraymap:{{{Language|}}}|,|x1|&lt;li&gt;[[Language::x1]]&lt;li&gt;|}}
+    |-
+    !Anmerkung zur Sprache {{#info: Anmerkung zur Sprache des Werks oder des edierten Textes und/oder des übersetzten Textes in der Edition (z.B. typographische Angaben wie 'lat./kroatisch in Synopse') }}
+    |{{#if:{{{LanguageNote|}}}|[[LanguageNote::{{{LanguageNote}}}]]}}
+    |-
+    !Hat Druck
+    |[[HasPrint::{{{HasPrint}}}]]
+    |-
+    !Hat Nachdruck
+    |{{#arraymap:{{{HasReprint|}}}|,|x1|&lt;li&gt;[[HasReprint::x1]]&lt;li&gt;|}}
+    |-
+    !Anmerkung {{#info: Anmerkungen zu Datierung, Zuschreibung, etc }}
+    ||{{#if:{{{Note|}}}|[[Note::{{{Note}}}]]}}
+    |-
+    !Publikationsautor {{#info: Angabe des Autors der Publikation }}    
+    |{{#arraymap:{{{PublicationAuthor|}}}|,|x1|&lt;li&gt;[[PublicationAuthor::x1]]&lt;li&gt;|}}
+    |-
+    !Übersetzer {{#info: Übersetzer des Texts }}
+    |{{#arraymap:{{{Translator|}}}|,|x1|&lt;li&gt;[[Translator::x1]]&lt;li&gt;|}}
+|}
+{{#set:Title={{{Title}}}}}
+{{DISPLAYTITLE:{{{Title}}}}}
+&lt;/includeonly&gt;</text>
+      <sha1>fkr87lhxwr1dezbna0eike5sxrq1815</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:PublicationFormFields</title>
+    <ns>10</ns>
+    <id>168</id>
+    <revision>
+      <id>24581</id>
+      <parentid>24525</parentid>
+      <timestamp>2021-12-07T08:41:07Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>24581</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="985" sha1="fnxjt0le82cskkbb1kpi1qin3d4zqw9" xml:space="preserve">&lt;includeonly&gt;
+{| class="formtable"
+    ! Titel: 
+    | &lt;nowiki&gt;{{{field|Title|mandatory}}}&lt;/nowiki&gt;
+    |-
+    ! Untertitel: 
+    | &lt;nowiki&gt;{{{field|Subtitle}}}&lt;/nowiki&gt;
+    |-
+    ! Publikationsautor: 
+    | &lt;nowiki&gt;{{{field|PublicationAuthor|input type=tokens|existing values only|values from category=Person|mapping property=Name|mandatory}}}&lt;/nowiki&gt;&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+    |-
+    ! Sprache: 
+    | &lt;nowiki&gt;{{{field|Language}}}&lt;/nowiki&gt;
+    |-
+    ! Anmerkung zur Sprache: 
+    | &lt;nowiki&gt;{{{field|LanguageNote|input type=textarea}}}&lt;/nowiki&gt;
+    |-
+    ! Anmerkung: 
+    | &lt;nowiki&gt;{{{field|Note|input type=textarea}}}&lt;/nowiki&gt;
+    |-
+    ! Hat Übersetzer: 
+    | &lt;nowiki&gt;{{{field|Translator|input type=tokens|existing values only|values from category=Person}}}&lt;/nowiki&gt;&lt;span class="search-btn"&gt;{{#queryformlink:form=PersonQuery|link text=|tooltip=Person suchen|popup}}&lt;/span&gt;
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>fnxjt0le82cskkbb1kpi1qin3d4zqw9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:PublicationSubobjectsFormFields</title>
+    <ns>10</ns>
+    <id>12305</id>
+    <revision>
+      <id>66555</id>
+      <parentid>66442</parentid>
+      <timestamp>2021-12-15T08:05:17Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66555</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3282" sha1="m450xsj660cqgztgwtcpj7nwvvfz8vc" xml:space="preserve">&lt;includeonly&gt;
+&lt;nowiki&gt;{{{for template|PrintSubobject|multiple|label=Drucke|add button text=Druck hinzufügen}}}&lt;/nowiki&gt;
+    {| class="formtable"
+        ! Drucker: 
+        | &lt;nowiki&gt;{{{field|Printer|values from category=Printer|input type=tokens|existing values only}}}&lt;/nowiki&gt;
+        |-
+        ! Veröffentlichungsort: 
+        | &lt;nowiki&gt;{{{field|PublicationPlace|values from Property=Place|input type=tokens|mandatory}}}&lt;/nowiki&gt;
+        |-
+        ! Verlag: 
+        | &lt;nowiki&gt;{{{field|Publisher|values from category=Publisher|input type=tokens|existing values only}}}&lt;/nowiki&gt;
+        |-
+        ! Auftraggeber: 
+        | &lt;nowiki&gt;{{{field|Purchaser|values from category=Organisation|input type=text with autocomplete|existing values only|max values=1}}}&lt;/nowiki&gt;
+        |-
+        ! Anmerkung: 
+        | &lt;nowiki&gt;{{{field|Note|input type=textarea}}}&lt;/nowiki&gt;
+        |-
+        ! Datum: 
+        | &lt;nowiki&gt;{{{field|Date|input type=date|mandatory}}}&lt;/nowiki&gt;
+        |-
+        ! Sicher: 
+        | &lt;nowiki&gt;{{{field|DateCertain|input type=checkbox|default=1}}}&lt;/nowiki&gt;
+        |-
+        ! Vage: 
+        | &lt;nowiki&gt;{{{field|DateVague|input type=checkbox}}}&lt;/nowiki&gt;
+        |-
+        ! Datum bis: 
+        | &lt;nowiki&gt;{{{field|DateEnd|input type=date}}}&lt;/nowiki&gt;
+        |-
+        ! Sicher: 
+        | &lt;nowiki&gt;{{{field|DateEndCertain|input type=checkbox|default=1}}}&lt;/nowiki&gt;
+        |-
+        ! Vage: 
+        | &lt;nowiki&gt;{{{field|DateEndVague|input type=checkbox}}}&lt;/nowiki&gt;
+        |-
+        ! Anmerkung zum Datum: 
+        | &lt;nowiki&gt;{{{field|DateNote|input type=textarea}}}&lt;/nowiki&gt;
+    |}
+&lt;nowiki&gt;{{{end template}}}&lt;/nowiki&gt;
+&lt;nowiki&gt;{{{for template|ReprintSubobject|multiple|label=Nachdrucke|add button text=Nachdruck hinzufügen}}}&lt;/nowiki&gt;
+    {| class="formtable"
+        ! Drucker: 
+        | &lt;nowiki&gt;{{{field|Printer|values from category=Printer|input type=tokens|existing values only}}}&lt;/nowiki&gt;
+        |-
+        ! Veröffentlichungsort: 
+        | &lt;nowiki&gt;{{{field|PublicationPlace|values from Property=Place|input type=tokens|mandatory}}}&lt;/nowiki&gt;
+        |-
+        ! Verlag: 
+        | &lt;nowiki&gt;{{{field|Publisher|values from category=Publisher|input type=tokens|existing values only}}}&lt;/nowiki&gt;
+        |-
+        ! Auftraggeber: 
+        | &lt;nowiki&gt;{{{field|Purchaser|values from category=Organisation|input type=text with autocomplete|existing values only|max values=1}}}&lt;/nowiki&gt;
+        |-
+        ! Anmerkung: 
+        | &lt;nowiki&gt;{{{field|Note|input type=textarea}}}&lt;/nowiki&gt;
+        |-
+        ! Datum: 
+        | &lt;nowiki&gt;{{{field|Date|input type=date}}}&lt;/nowiki&gt;
+        |-
+        ! Sicher: 
+        | &lt;nowiki&gt;{{{field|DateCertain|input type=checkbox|default=1}}}&lt;/nowiki&gt;
+        |-
+        ! Vage: 
+        | &lt;nowiki&gt;{{{field|DateVague|input type=checkbox}}}&lt;/nowiki&gt;
+        |-
+        ! Datum bis: 
+        | &lt;nowiki&gt;{{{field|DateEnd|input type=date}}}&lt;/nowiki&gt;
+        |-
+        ! Sicher: 
+        | &lt;nowiki&gt;{{{field|DateEndCertain|input type=checkbox|default=1}}}&lt;/nowiki&gt;
+        |-
+        ! Vage: 
+        | &lt;nowiki&gt;{{{field|DateEndVague|input type=checkbox}}}&lt;/nowiki&gt;
+        |-
+        ! Anmerkung zum Datum: 
+        | &lt;nowiki&gt;{{{field|DateNote|input type=textarea}}}&lt;/nowiki&gt;
+    |}
+&lt;nowiki&gt;{{{end template}}}&lt;/nowiki&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>m450xsj660cqgztgwtcpj7nwvvfz8vc</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:PublicationQuery</title>
+    <ns>10</ns>
+    <id>42701</id>
+    <revision>
+      <id>66513</id>
+      <parentid>66512</parentid>
+      <timestamp>2021-12-14T09:56:28Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66513</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="352" sha1="2t1nw6sn99o2b9gvx8bgv2sdm74yz2c" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>2t1nw6sn99o2b9gvx8bgv2sdm74yz2c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Publisher</title>
+    <ns>10</ns>
+    <id>169</id>
+    <revision>
+      <id>328</id>
+      <parentid>327</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>327</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="265" sha1="msj57acar9dyoedohdx99p6vvcvzk9e" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Verlag {{#info: Der Verlag einer gedruckten Edition }}&lt;/h4&gt;
+{{Organisation|OrganizationName={{{OrganizationName|}}}|OrganizationAbbreviation={{{OrganizationAbbreviation|}}}|GndIdentifier={{{GndIdentifier|}}}}}
+[[Category:Publisher]]
+&lt;/includeonly&gt;</text>
+      <sha1>msj57acar9dyoedohdx99p6vvcvzk9e</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:ReprintSubobject</title>
+    <ns>10</ns>
+    <id>12293</id>
+    <revision>
+      <id>24420</id>
+      <timestamp>2021-12-01T09:58:17Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{#subobject:     |PublicationPlace={{{PublicationPlace|}}}     |Publisher={{{Publisher|}}}     |Printer={{{Printer|}}}     |Purchaser={{{Purchas…“</comment>
+      <origin>24420</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="434" sha1="5pxjy2xq9cgrd7eyzjhmzqzizv86awa" xml:space="preserve">&lt;includeonly&gt;
+{{#subobject:
+    |PublicationPlace={{{PublicationPlace|}}}
+    |Publisher={{{Publisher|}}}
+    |Printer={{{Printer|}}}
+    |Purchaser={{{Purchaser|}}}
+    |Date={{{Date|}}}
+    |DateVague={{{DateVague|}}}
+    |DateCertain={{{DateCertain|}}}
+    |DateEnd={{{DateEnd|}}}
+    |DateEndVague={{{DateEndVague|}}}
+    |DateEndCertain={{{DateEndCertain|}}}
+    |DateNote={{{DateNote|}}}
+    |@category=Reprint
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>5pxjy2xq9cgrd7eyzjhmzqzizv86awa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Series</title>
+    <ns>10</ns>
+    <id>170</id>
+    <revision>
+      <id>1719</id>
+      <parentid>330</parentid>
+      <timestamp>2021-11-19T10:19:25Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>1719</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="753" sha1="989c53og8ux1u9q69x340ei0mptdgom" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Reihe {{#info: Publikationsreihe/Schriftenreihe, in der Monographien, Sammelbände oder die Bände einer Gesamtwerkausgabe (Opera Omnia) erschienen sind }}&lt;/h4&gt;
+{|class="wikitable smwtable"
+    !Reihenherausgeber
+    |{{#arraymap:{{{SeriesEditor|}}}|,|x1|&lt;li&gt;[[SeriesEditor::x1]]&lt;li&gt;|}}
+    |-
+    !Reihenkürzel
+    |{{#if:{{{SeriesAbbreviation|}}}|[[SeriesAbbreviation::{{{SeriesAbbreviation}}}]]}}
+    |-
+    !ISSN
+    |{{#if:{{{Issn|}}}|[[Issn::{{{Issn}}}]]}}
+    |-
+    !Hat Teile
+    |{{#ask: 
+        [[PartOf::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Teile angegeben
+    }}
+|}
+{{#set:SeriesTitle={{{SeriesTitle}}}}}
+{{DISPLAYTITLE:{{{SeriesTitle}}}}}
+[[Category:Series]]
+&lt;/includeonly&gt;</text>
+      <sha1>989c53og8ux1u9q69x340ei0mptdgom</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:SeriesQuery</title>
+    <ns>10</ns>
+    <id>42715</id>
+    <revision>
+      <id>66531</id>
+      <timestamp>2021-12-14T10:14:36Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{#sparql: PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt; PREFIX page: &lt;http://alcuin.soital.de/index.php/Spe…“</comment>
+      <origin>66531</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="352" sha1="2t1nw6sn99o2b9gvx8bgv2sdm74yz2c" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>2t1nw6sn99o2b9gvx8bgv2sdm74yz2c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Subseries</title>
+    <ns>10</ns>
+    <id>171</id>
+    <revision>
+      <id>332</id>
+      <parentid>331</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>331</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="583" sha1="ci1pz06y780gd9gq0om0naa2i5t2vw4" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Unterreihe {{#info: Unterreihe einer Publikationsreihe/Schriftenreihe }}&lt;/h4&gt;
+&lt;h1&gt;[[SeriesTitle::{{{SeriesTitle}}}]]&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Reihenherausgeber
+    |{{#arraymap:{{{SeriesEditor|}}}|,|x1|&lt;li&gt;[[SeriesEditor::x1]]&lt;li&gt;|}}
+    |-
+    !Reihenkürzel
+    |{{#if:{{{SeriesAbbreviation|}}}|[[SeriesAbbreviation::{{{SeriesAbbreviation}}}]]}}
+    |-
+    !ISSN
+    |{{#if:{{{Issn|}}}|[[Issn::{{{Issn}}}]]}}
+    |-
+    !Teil von
+    |{{{PartOf|}}}|[[PartOf::{{{PartOf}}}]]
+|}
+{{DISPLAYTITLE:{{{SeriesTitle}}}}}
+[[Category:Subseries]]
+&lt;/includeonly&gt;</text>
+      <sha1>ci1pz06y780gd9gq0om0naa2i5t2vw4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:Work</title>
+    <ns>10</ns>
+    <id>172</id>
+    <revision>
+      <id>66443</id>
+      <parentid>66421</parentid>
+      <timestamp>2021-12-13T10:30:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66443</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="7671" sha1="k2z9uy7e4895gbwir24uv8xwy031k7v" xml:space="preserve">&lt;includeonly&gt;
+&lt;h4&gt;Werk {{#info: Das Werk eines mittelalterlichen Autors }}&lt;/h4&gt;
+{|class="flextable"
+    |
+        {|class="wikitable smwtable"
+            !Titelvarianten {{#info: Alternativer Titel des Werks }}
+            |{{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            SELECT ?Titelvarianten WHERE { page:{{PAGENAMEE}} retmop:AlternateTitle ?Titelvarianten .} ORDER BY(?Titelvarianten)
+            |chart=sgvizler.visualization.Table
+            |options=headings=false
+            }}
+            |-
+            !Erstellungsdaten {{#info: Normierte Datumsangabe zur Entstehungszeit eines Werks }}
+            |{{CreationDateQuery}}        
+            |-
+            !Autorschaften {{#info: Angabe des Schöpfers eines Werks }}
+            |{{#ask:
+                [[-Has subobject::{{PAGENAMEE}}]] 
+                [[WorkCreator::+]]
+                |mainlabel=-
+                |?WorkCreator=                
+                |?WorkAuthorshipAttribution=Authentizität
+                |?WorkAuthorshipAttributionNote=Anmerkung zur Autorenschaftszuschreibung
+                |?WorkAuthorshipAttributionEvidence=Beleg zur Autorenschaftszuschreibung
+                |format=ul
+            }}
+            |-
+            !Verfügbarkeit {{#info: Verfügbarkeit des Werkes }}
+            |{{#if:{{{Availability|}}}|[[Availability::{{{Availability}}}]]}}
+            |-
+            !Incipit {{#info: Incipit zur Identifikation eines Textes }}            
+            |{{#arraymap:{{{Incipit|}}}|,|x1|&lt;li&gt;[[Incipit::x1]]&lt;li&gt;|}}
+            |-
+            !Übersetzer {{#info: Übersetzer des Texts }}
+            |{{#if:{{{Translator|}}}|[[Translator::{{{Translator}}}]]}}
+            |-
+            !Sprache {{#info: Sprache des Werks oder des edierten Textes bzw. des übersetzten Textes in der Edition. Die Sprache sollte aus einem kontrollierten Vokabular wie den ISO-639-3-Ländercodes ausgewählt werden: http://www.lexvo.org/linkeddata/resources.html ISO-639-3 beinhaltet auch hsitorische Sprachen wie Mittelhochdeutsch (gmh) oder Altenglisch (ang) }}
+            |{{#if:{{{Language|}}}|[[Language::{{{Language}}}]]}}        
+            |-
+            !Handelt von {{#info: Verknüpfung zwischen einem Werk und dem Autor von dem es handelt }}
+            |{{#if:{{{IsAbout|}}}|[[IsAbout::{{{IsAbout}}}]]}}
+            |-
+            !Handelt von (Freitext) {{#info: Freitext-Beschreibung des Themas von dem das Werk handelt }}
+            |{{#if:{{{IsAboutAsLiteral|}}}|[[IsAboutAsLiteral::{{{IsAboutAsLiteral}}}]]}}
+            |-
+            !Werktyp {{#info: Eigenschaft zur Typisierung von Werken (Werktypen/Textgattungen und thematische Kategorien) }}
+            |{{#if: {{{WorkType|}}}|[[WorkType::{{{WorkType}}}]]}}
+            |-
+            !Kommentar von            
+            |{{#if: {{{IsCommentOf|}}}|[[IsCommentOf::{{{IsCommentOf}}}]]}}
+            |-
+            !Mittelalterliche Übersetzung von            
+            |{{#if: {{{IsMedievalTranslationOf|}}}|[[IsMedievalTranslationOf::{{{IsMedievalTranslationOf}}}]]}}
+            |-
+            !Sprache der Übersetzungsgrundlage {{#info: Sprache des Texts aus dem in der mittelalterlichen Übersetzung übersetzt wurde (z.B. Arabisch). Die Sprache sollte aus einem kontrollierten Vokabular wie den ISO-639-3-Ländercodes ausgewählt werden: http://www.lexvo.org/linkeddata/resources.html ISO-639-3 beinhaltet auch hsitorische Sprachen wie Mittelhochdeutsch (gmh) oder Altenglisch (ang) }}            
+            |{{#if: {{{BaseLanguage|}}}|[[BaseLanguage::{{{BaseLanguage}}}]]}}
+            |-
+            !Empfänger des Briefes
+            |{{#arraymap:{{{Receiver|}}}|,|x1|&lt;li&gt;[[Receiver::x1]]&lt;li&gt;}}
+            |-
+            !Absender des Briefes
+            |{{#arraymap:{{{Sender|}}}|,|x1|&lt;li&gt;[[Sender::x1]]&lt;li&gt;}}
+            |-
+            !Anmerkung {{#info: Anmerkungen zu Datierung, Zuschreibung, etc }}
+            |{{#if:{{{Note|}}}|[[Note::{{{Note}}}]]}}
+        |}
+    |
+|}
+&lt;tabs&gt;
+    &lt;tab name="Edierte Texte"&gt;
+        {{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+            SELECT
+            (CONCAT('&lt;a target="_blank" href=\'',STR(?Edition),'\'&gt;',?Label,'&lt;/a&gt;') as ?Edierter_Text)
+            WHERE { 
+            ?Edition retmop:IsEditionOf page:{{PAGENAMEE}} .
+            ?Edition rdfs:label ?Label
+            } ORDER BY ASC(?Label)
+            |config=fuseki
+            |chart=bordercloud.visualization.DataTable
+            |options=width=100%!height=500px
+            |log=2
+        }}
+        &lt;/tab&gt;
+    &lt;tab name="Manuskripte"&gt;
+        {{#sparql:
+            PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+            PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+            PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+            SELECT
+            (CONCAT('&lt;a target="_blank" href=\'',STR(?Manuscript),'\'&gt;',?Shelfmark,'&lt;/a&gt;') as ?Manuskript)
+            ?Bibliothek
+            ?Standort
+            ?Foliobereich
+            ?Seitenbereich
+            ?Anmerkung
+            WHERE { 
+            page:{{PAGENAMEE}} retmop:Has_subobject ?Subobject .
+            ?Subobject a retmoc:ManuscriptReference .
+            ?Subobject retmop:ManuscriptReferenceCodex ?Manuscript .
+            ?Manuscript retmop:Shelfmark ?Shelfmark . 
+            ?Manuscript retmop:HeldBy/rdfs:label ?Bibliothek . 
+            ?Manuscript retmop:Place ?Standort . 
+            OPTIONAL {?Subobject retmop:FolioRange ?Foliobereich .}
+            OPTIONAL {?Subobject retmop:PageRange ?Seitenbereich .}
+            OPTIONAL {?Subobject retmop:ManuscriptReferenceNote ?Anmerkung .}
+            } ORDER BY ASC(?Shelfmark)
+            |config=fuseki
+            |chart=bordercloud.visualization.DataTable
+            |options=width=100%!height=500px
+            |log=2
+        }}
+    &lt;/tab&gt;
+    &lt;tab name="Literaturverweise"&gt;{{LiteratureReferenceQuery}}&lt;/tab&gt;
+&lt;/tabs&gt;
+    {{#network:
+        {{#ask:
+            [[{{PAGENAMEE}}]]
+            |format=array
+            |link=none
+        }}
+        |class=network
+    }}
+{{#vardefine: Source|{{{Source|}}}}}
+{{#vardefine: SiglumIdentifier|{{{SiglumIdentifier|}}}}}
+{{#vardefine: Provenance|{{{Provenance|}}}}}
+{{#vardefine: Retm2Identifier|{{{Retm2Identifier|}}}}}
+{{#arraymap:{{{AlternateTitle|}}}|,|x1|{{#set:AlternateTitle=x1}}}}
+{{#set:Title={{{Title}}}}}
+{{DISPLAYTITLE:{{{Title}}}}}
+[[Category:Work]]
+&lt;tab name="Metadaten" collapsed&gt;
+{|
+    !Siglum {{#info: Siglum eines Werks (z.B. 'Fauser 10' oder 'CALMA 29') }}
+    !Quelle {{#info: Quellen der integrierten Daten. In der Regel Angabe des Dateinamens der Quelldatei }}
+    !Herkunft {{#info: Provenienz der integrierten Daten. Je nach Herkunft der Daten: 'ALCUIN', 'RETM2', oder 'RETM3' }}
+    !Retm2Identifier {{#info: Signatur einer Edition (oder eines Werkes) im RETM2 (Repertorium edierter Texte des Mittelalters) }}   
+    |-
+    |{{#arraymap:{{#var:SiglumIdentifier}}|,|x1|[[SiglumIdentifier::x1]]|}}
+    |[[Source::{{#var:Source}}]]
+    |[[Provenance::{{#var:Provenance}}]]
+    |[[Retm2Identifier::{{#var:Retm2Identifier}}]]
+|}
+&lt;/tab&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>k2z9uy7e4895gbwir24uv8xwy031k7v</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:WorkPart</title>
+    <ns>10</ns>
+    <id>173</id>
+    <revision>
+      <id>336</id>
+      <parentid>335</parentid>
+      <timestamp>2021-11-16T11:20:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>335</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="776" sha1="io0sgrz9n981qigwznbkc21ipx62hwu" xml:space="preserve">&lt;includeonly&gt;
+&lt;h1&gt;[[Heading::{{{Heading}}}]]&lt;/h1&gt;
+{|class="wikitable smwtable"
+    !Sektion {{#info: Name oder Bezeichnung des Werkteils. Die Angabe der edierten Textstelle erfolgt in der für die jeweilige Textgattung typischen Weise (z.B. 'Sent. III' bei einer Sentenz als Bestandteil in einem Sentenzenkommentar) }}
+    |{{#if:{{{Section|}}}|[[Section::{{{Section}}}]]}}
+    |-
+    !Incipit {{#info: Incipit zur Identifikation eines Textes }}            
+    |{{#arraymap:{{{Incipit|}}}|,|x1|&lt;li&gt;[[Incipit::x1]]&lt;li&gt;|}}
+    !Editionen des Werkteils
+    |{{#ask: 
+        [[IsEditionOfWorkPart::{{PAGENAMEE}}]]
+        |format=table
+        |headers=none
+        |default=keine Editionen angegeben
+    }}
+|}
+{{DISPLAYTITLE:{{{Heading}}}}}
+[[Category:WorkPart]]
+&lt;/includeonly&gt;</text>
+      <sha1>io0sgrz9n981qigwznbkc21ipx62hwu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:WorkQuery</title>
+    <ns>10</ns>
+    <id>42704</id>
+    <revision>
+      <id>66516</id>
+      <timestamp>2021-12-14T10:00:44Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{#sparql: PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt; PREFIX page: &lt;http://alcuin.soital.de/index.php/Spe…“</comment>
+      <origin>66516</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="352" sha1="2t1nw6sn99o2b9gvx8bgv2sdm74yz2c" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>2t1nw6sn99o2b9gvx8bgv2sdm74yz2c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Vorlage:WorkPartQuery</title>
+    <ns>10</ns>
+    <id>42707</id>
+    <revision>
+      <id>66519</id>
+      <timestamp>2021-12-14T10:04:32Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „&lt;includeonly&gt; {{#sparql: PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt; PREFIX page: &lt;http://alcuin.soital.de/index.php/Spe…“</comment>
+      <origin>66519</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="352" sha1="2t1nw6sn99o2b9gvx8bgv2sdm74yz2c" xml:space="preserve">&lt;includeonly&gt;
+{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT * WHERE
+{ 
+} 
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>2t1nw6sn99o2b9gvx8bgv2sdm74yz2c</sha1>
+    </revision>
+  </page>
+</mediawiki>
