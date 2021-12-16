@@ -50,6 +50,7 @@ Template:PersonQuery
 Template:PersonFormFields
 Template:PrintSubobject
 Template:Printer
+Template:Place
 Template:Publication
 Template:PublicationFormFields
 Template:PublicationSubobjectsFormFields
@@ -86,6 +87,7 @@ Property:EncyclopediaEditor
 Property:EventDescription
 Property:EventType
 Property:FolioRange
+Property:Geo
 Property:GndIdentifier
 Property:Heading
 Property:HeldBy
@@ -122,6 +124,7 @@ Property:PageRange
 Property:PageRangeOfEditedText
 Property:PartOf
 Property:Place
+Property:PlaceName
 Property:Provenance
 Property:PublicationDate
 Property:PublicationPlace
@@ -173,6 +176,7 @@ Category:OperaOmnia
 Category:Order
 Category:Organization
 Category:Person
+Category:Place
 Category:Print
 Category:Printer
 Category:Publication

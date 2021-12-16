@@ -64,3 +64,7 @@ table.wikitable {
 table.table-bordered.dataTable th, table.table-bordered.dataTable td {
   font-weight: normal;
 }
+
+div[data-sgvizler-query] > div > .row:nth-child(2) > div {
+  overflow-x: auto;
+}
