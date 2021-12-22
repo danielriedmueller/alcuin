@@ -56,3 +56,12 @@ span.link-btn a {
       }
     }
 }
+
+form#searchform {
+  input {
+    font-size: $font-size-body;
+  }
+  button {
+    padding: 0 $spacing-xxs;
+  }
+}
