@@ -3,7 +3,7 @@
 	"author": [
 		"Daniel Riedmüller"
 	],
-	"version": "1.0.0",
+	"version": "0.94",
 	"url": "https://www.soital.de",
 	"descriptionmsg": "alcuin-desc",
 	"license-name": "GPL-3.0-or-later",
@@ -11,39 +11,19 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
-	"ExtensionMessagesFiles": {
-		"SparqlPagenameMagic": "i18n/Alcuin.i18n.magic.php"
-	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Alcuin\\": "includes/",
 		"Skins\\Chameleon\\Components\\": "chameleon/Components"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "parser",
 		"BeforePageDisplay": "main",
-		"SkinBuildSidebar": "main",
-		"GetMagicVariableIDs": "magic",
-		"ParserGetVariableValueSwitch": "magic"
+		"SkinBuildSidebar": "main"
 	},
 	"HookHandlers": {
 		"main": {
 			"class": "MediaWiki\\Extension\\Alcuin\\HookHandler"
-		},
-		"magic": {
-			"class": "MediaWiki\\Extension\\Alcuin\\MagicWordsExtensionHooks"
-		},
-		"parser": {
-			"class": "MediaWiki\\Extension\\Alcuin\\ParserFunctionHooks"
 		}
 	},
-	"callback": "MediaWiki\\Extension\\Alcuin\\HookHandler::onExtensionLoad",
-	"namespaces": [
-		{
-			"id": 3000,
-			"constant": "NS_ALC",
-			"name": "Alcuin"
-		}
-	],
 	"ResourceModules": {
 		"ext.alcuin": {
 			"scripts": ["script.js"]
