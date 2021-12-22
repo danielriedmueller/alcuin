@@ -75,3 +75,11 @@ fieldset {
     font-size: $font-size-subheadline;
   }
 }
+
+.mw-editsection {
+  display:none! important;
+}
+
+.ml-s {
+  margin-left: $spacing-xxs;
+}

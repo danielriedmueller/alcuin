@@ -4,6 +4,7 @@ Autor/werke
 
 ## Templates
 Template:Author
+Template:AuthorQuery
 Template:AuthorshipSubobject
 Template:Collection
 Template:CollectionQuery
@@ -30,13 +31,6 @@ Template:Library
 Template:LibraryQuery
 Template:LiteratureReferenceQuery
 Template:LiteratureReferenceSubobject
-Template:MainpageEditedTextQuery
-Template:MainpageJournalQuery
-Template:MainpageOrganizationQuery
-Template:MainpagePersonQuery
-Template:MainpagePublicationQuery
-Template:MainpageSeriesQuery
-Template:MainpageWorkQuery
 Template:Manuscript
 Template:ManuscriptReferenceSubobject
 Template:Monograph
@@ -56,6 +50,7 @@ Template:PublicationFormFields
 Template:PublicationSubobjectsFormFields
 Template:PublicationQuery
 Template:Publisher
+Template:PublisherQuery
 Template:ReprintSubobject
 Template:Series
 Template:SeriesQuery
@@ -129,6 +124,7 @@ Property:Provenance
 Property:PublicationDate
 Property:PublicationPlace
 Property:Publisher
+Property:Printer
 Property:Receiver
 Property:References
 Property:Reuses
@@ -190,6 +186,7 @@ Category:WorkPart
 
 ## Forms
 Form:Author
+Form:AuthorQuery
 Form:Collection
 Form:CollectionQuery
 Form:Dissertation
@@ -214,6 +211,7 @@ Form:OrderQuery
 Form:Printer
 Form:PersonQuery
 Form:Publisher
+Form:PublisherQuery
 Form:PublicationQuery
 Form:Series
 Form:SeriesQuery

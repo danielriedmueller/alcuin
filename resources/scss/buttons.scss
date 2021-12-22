@@ -34,3 +34,31 @@ span.link-btn a {
     color: $alcuin-anthrazit;
   }
 }
+
+.rootpage-Hauptseite, .rootpage-Mainpage {
+    div.mw-parser-output {
+      form {
+        display: inline-block;
+        button.oo-ui-inputWidget-input.oo-ui-buttonElement-button {
+          padding: $spacing-s;
+          margin: 0 $spacing-s 0 $spacing-s;
+          background-color: $alcuin-orange;
+          border: 1px solid $alcuin-anthrazit;
+          border-radius: $border-radius;
+
+          &:hover {
+            text-decoration: none;
+            background-color: $alcuin-orange;
+          }
+
+          span {
+            color: $font-color-bright;
+          }
+
+          span.oo-ui-iconElement-icon.oo-ui-icon-next.oo-ui-image-progressive {
+            display: none;
+          }
+        }
+      }
+    }
+}

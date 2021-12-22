@@ -35,8 +35,9 @@ M
         </component>
         <component type="Container" class="page-tools-bar">
             <component type="NavbarHorizontal">
-            <component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
-            <component type="PersonalTools" position="right"/>
+                <component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
+                <component type="PersonalTools" position="right"/>
+                <component type="SearchBar" class="omnibox" placeholder="Alcuin durchsuchen" />
             </component>
         </component>
     </component>
@@ -50,7 +51,6 @@ M
                     <component type="Menu" message="secondary-menu"/>
                     <component type="Toolbox" flatten="no" class="dropup"/>
                 </component>
-                <component type="SearchBar" class="omnibox" placeholder="Suche" position="center"/>
             </cell>
         </row>
         <row>

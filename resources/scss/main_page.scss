@@ -1,24 +1,9 @@
-body.page-Hauptseite {
-  .mainpage-table-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: $spacing;
-    row-gap: $spacing;
-
-    a {
-      background-color: $alcuin-anthrazit;
-      display: inline-block;
-      vertical-align: top;
-      color: $font-color-bright;
-      text-align: center;
-      font-size: 1.1rem;
-      padding: 16px $spacing;
-      border-radius: $border-radius;
-
-      &:hover {
-        text-decoration: none;
-        background-color: $alcuin-orange;
-      }
-    }
-  }
+.intro-text {
+  display: block;
+  max-width: 800px;
+  font-size: $font-size-headline;
+  color: $alcuin-grey;
+  font-family: "NotoSans";
+  text-align: center;
+  margin: 0 auto;
 }
