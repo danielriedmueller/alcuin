@@ -8,6 +8,7 @@ Template:AuthorQuery
 Template:AuthorshipSubobject
 Template:Collection
 Template:CollectionQuery
+Template:CopyPageId
 Template:CreationDateQuery
 Template:DateSubobject
 Template:Dissertation
