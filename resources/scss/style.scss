@@ -86,16 +86,11 @@ fieldset {
 
 span#pageId {
   padding: $spacing-xs;
-  background-color: $alcuin-anthrazit-light;
+  background-color: transparent;
   border: 1px solid $alcuin-anthrazit-light;
   color: $alcuin-grey;
   font-weight: bold;
   position: absolute;
   top: 10px;
   right: 50px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: transparent;
-  }
 }
