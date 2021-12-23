@@ -45,6 +45,32 @@
     </namespaces>
   </siteinfo>
   <page>
+    <title>Hauptseite</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <id>67658</id>
+      <parentid>67464</parentid>
+      <timestamp>2021-12-22T10:19:32Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>67658</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="799" sha1="gycux3fyf230rxuxmex889s8nxbqqx9" xml:space="preserve">&lt;span class="intro-text"&gt;''Alcuin ist eine Forschungsdatenbank, die neben biographischen Daten vor allem Informationen zu den Texten der mittelalterlichen Magistri und gelehrten Autoren enthält: Quellen, Überlieferung, Rezeption, bemerkenswerte Eigentümlichkeiten.''&lt;/span&gt;
+== Suchen ==
+{{#queryformlink:form=AuthorQuery|link text=Suche nach Autoren|link type=button}}
+{{#queryformlink:form=WorkQuery|link text=Suche nach Werken|link type=button}}
+{{#queryformlink:form=PublicationQuery|link text=Suche nach Publikationen|link type=button}}
+{{#queryformlink:form=SeriesQuery|link text=Suche nach Reihen|link type=button}}
+{{#queryformlink:form=JournalQuery|link text=Suche nach Zeitschriften|link type=button}}
+{{#queryformlink:form=PublisherQuery|link text=Suche nach Verläge|link type=button}}</text>
+      <sha1>gycux3fyf230rxuxmex889s8nxbqqx9</sha1>
+    </revision>
+  </page>
+  <page>
     <title>Autor/edierteTexte</title>
     <ns>0</ns>
     <id>140</id>
