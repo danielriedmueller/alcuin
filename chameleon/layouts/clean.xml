@@ -62,9 +62,7 @@ M
     <component type="Container" class="footer">
         <component type="Html">
             <div class="links">
-                <a href="#">Impressum</a>
-                <a href="#">Kontakt</a>
-                <a href="#">Datenschutz</a>
+                <a href="http://rpkggalcuin1.uni-regensburg.de/index.php/impressum">Impressum</a>
             </div>
             <a class="ur-logo" href="https://www.uni-regensburg.de/"></a>
             <a class="dfg-logo" href="https://www.dfg.de/"></a>
