@@ -1,0 +1,465 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Autor/edierteTexte</title>
+    <ns>0</ns>
+    <id>140</id>
+    <revision>
+      <id>67806</id>
+      <parentid>67805</parentid>
+      <timestamp>2021-12-23T09:25:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>67806</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="10939" sha1="nbn9te8yjxlgfsp09doz09i8q6mu0gy" xml:space="preserve">{{#vardefine:author|{{#urlget:author}}}}
+&lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Editionen|kein Autor gefunden}}&lt;/h1&gt;
+{|class="flextable"
+    !Editionsart
+    !Editionsform
+    !Sprache des edierten Textes
+    |-
+|{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+SELECT ?label (count(?label) as ?count)
+{
+?WorkPage retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+?EditedText retmop:IsEditionOf ?WorkPage .    
+OPTIONAL {
+?Publication retmop:Incorporates ?EditedText .
+?Publication a/rdfs:label ?Category .            
+OPTIONAL {
+?Publication retmop:Series/a/rdfs:label ?SeriesCategory .
+}
+}
+BIND(IF(BOUND(?Category), ?Category, "keine Angabe") AS ?preType) .
+BIND(IF(BOUND(?SeriesCategory), ?SeriesCategory, ?preType) AS ?label) .
+} GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=500px!height=500px
+|log=2
+}}
+|{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+SELECT ?label (count(?label) as ?count)
+{
+?WorkPage retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+?EditedText retmop:IsEditionOf ?WorkPage .
+OPTIONAL {
+  ?EditedText retmop:IsEditionOfWorkPart ?WorkPart .            
+}
+BIND(IF(BOUND(?WorkPart), "Teiledition", "Volledition") AS ?label) .
+} GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=500px!height=500px
+|log=2
+}}
+|{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+SELECT ?label (count(?label) as ?count)
+{
+?WorkPage retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+?EditedText retmop:IsEditionOf ?WorkPage .
+?EditedText retmop:IsTranslationOf ?Translation .
+?EditedText retmop:Language ?label . 
+} GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=500px!height=500px
+|log=2
+}}
+|}
+===Liste aller Editionen, die mit diesem Autor verknüpft sind===
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT
+(CONCAT('&lt;a class="ml-s" target="_blank" href=\'',STR(?EditedText),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;') AS ?Link)
+(GROUP_CONCAT(DISTINCT ?aWork) AS ?Werktitel)
+(CONCAT('&lt;ul class="collapsable"&gt;&lt;input type="checkbox"&gt;', GROUP_CONCAT(DISTINCT ?Titelvariante), '&lt;/ul&gt;') AS ?Titelsynonyme)
+(SAMPLE(?WorkAuthorshipAttribution) AS ?Authentizität)
+(SAMPLE(?WorkType) AS ?Werkgattung)
+(GROUP_CONCAT(DISTINCT ?aIncipit) AS ?Incipit)
+(GROUP_CONCAT(DISTINCT ?aEditor) AS ?Editor)
+(GROUP_CONCAT(DISTINCT ?aPlaceName) AS ?Ort)
+(GROUP_CONCAT(DISTINCT ?aPublisher) AS ?Verlag)
+(GROUP_CONCAT(DISTINCT ?PublicationDate) AS ?Jahr)
+(GROUP_CONCAT(DISTINCT ?aPublication) AS ?Titel)
+(GROUP_CONCAT(DISTINCT ?aCollectionEditor) AS ?Sammelbandherausgeber)
+(GROUP_CONCAT(DISTINCT ?aSeriesEditor) AS ?Herausgeber)
+(GROUP_CONCAT(DISTINCT ?aSeries) AS ?Reihe)
+(GROUP_CONCAT(DISTINCT ?aBandnummer) AS ?Bandnummer)
+(GROUP_CONCAT(DISTINCT ?PageRange) AS ?Seitenangabe)
+(GROUP_CONCAT(DISTINCT ?PageRangeOfEditedText) AS ?Seitenangabe_Edition)
+(GROUP_CONCAT(DISTINCT ?aManuscript) AS ?Manuskript)
+(GROUP_CONCAT(DISTINCT ?aLanguage) AS ?Übersetzung)
+(GROUP_CONCAT(DISTINCT ?aWorkPart) AS ?Werkteil)
+(GROUP_CONCAT(DISTINCT ?EditedTextNote) AS ?Zuschreibung_Autorenschaft)
+WHERE {       
+    ?WorkPage retmop:Has_subobject ?Subobject.
+    ?Subobject rdf:type retmoc:Authorship .
+    ?Subobject retmop:WorkCreator page:{{#var:author}} .
+    ?EditedText retmop:IsEditionOf ?WorkPage .
+    ?WorkPage retmop:Title ?Title
+    BIND(CONCAT(?Title,'&lt;a class="ml-s" target="_blank" href=\'',STR(?WorkPage),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;') as ?aWork) .       
+    OPTIONAL {
+        SELECT ?WorkPage ?Titelvariante WHERE {
+            ?WorkPage retmop:AlternateTitle ?AlternateTitle . 
+            BIND(IF(BOUND(?AlternateTitle), CONCAT('&lt;li&gt;', ?AlternateTitle, '&lt;/li&gt;'), "") AS ?Titelvariante) .
+        } ORDER BY LCASE(?AlternateTitle)
+    }
+    OPTIONAL {
+        ?Subobject retmop:WorkAuthorshipAttribution ?WorkAuthorshipAttribution .
+    }
+    OPTIONAL {
+        ?WorkPage retmop:WorkType ?WorkType
+    }
+    OPTIONAL {
+        SELECT ?WorkPage ?aIncipit WHERE {
+            ?WorkPage retmop:Incipit ?WorkIncipit
+            BIND(CONCAT('&lt;li&gt;', ?WorkIncipit, '&lt;/li&gt;') AS ?aIncipit) .
+        } ORDER BY LCASE(?aIncipit)
+    }
+    OPTIONAL {
+        ?EditedText retmop:Editor ?EditorPage .
+        ?EditorPage retmop:Name ?EditorName .
+        BIND(CONCAT(?EditorName,'&lt;a class="ml-s" target="_blank" href=\'',STR(?EditorPage),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;') as ?aEditor) .    
+    }
+    OPTIONAL {
+        ?Publication retmop:Incorporates ?EditedText .
+        ?Publication retmop:Title ?Title .
+        BIND(CONCAT(?Title,'&lt;a class="ml-s" target="_blank" href=\'',STR(?Publication),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;') as ?aPublication) .
+        OPTIONAL {
+            ?Publication retmop:CollectionEditor ?CollectionEditor .
+            ?CollectionEditor retmop:Name ?CollectionEditorName .
+            BIND(CONCAT('&lt;li&gt;',?CollectionEditorName,'&lt;a class="ml-s" target="_blank" href=\'',STR(?CollectionEditor),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;') as ?aCollectionEditor) .        
+        }
+        OPTIONAL {
+                ?Publication retmop:Series ?Series .
+                ?Series retmop:SeriesTitle ?SeriesTitle .
+                BIND(CONCAT('&lt;li&gt;',?SeriesTitle,'&lt;a class="ml-s" target="_blank" href=\'',STR(?Series),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;') as ?aSeries) .        
+                ?Series retmop:SeriesEditor ?SeriesEditor .
+                ?SeriesEditor retmop:Name ?SeriesEditorName .
+                BIND(CONCAT('&lt;li&gt;',?SeriesEditorName,'&lt;a class="ml-s" target="_blank" href=\'',STR(?SeriesEditor),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;') as ?aSeriesEditor) .        
+            }
+        OPTIONAL {
+            ?Publication retmop:Volume ?Volume .
+            BIND(CONCAT('&lt;li&gt;',?Volume,'&lt;/li&gt;') as ?aBandnummer) .
+        }
+        OPTIONAL {
+            ?Publication retmop:PageRange ?PageRange .
+        }
+        OPTIONAL {
+            ?Publication retmop:Has_subobject ?Print .
+            ?Print a retmoc:Print .       
+            OPTIONAL {
+                ?Print retmop:PublicationPlace/retmop:PlaceName ?PlaceName .
+                BIND(CONCAT('&lt;li&gt;',?PlaceName,'&lt;/li&gt;') as ?aPlaceName) .
+            }
+            OPTIONAL {
+                ?Print retmop:Publisher ?Publisher .
+                ?Publisher retmop:OrganizationName ?PublisherName .
+                BIND(CONCAT('&lt;li&gt;',?PublisherName,'&lt;a class="ml-s" target="_blank" href=\'',STR(?Publisher),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;') as ?aPublisher) .        
+            }             
+            OPTIONAL {
+                ?Print retmop:Date ?DateStart .
+                OPTIONAL {?Print retmop:DateEnd ?DateEnd .}
+                OPTIONAL {?Print retmop:DateCertain ?dc .}
+                OPTIONAL {?Print retmop:DateVague ?dv .}
+                OPTIONAL {?Print retmop:DateEndCertain ?dec .}
+                OPTIONAL {?Print retmop:DateEndVague ?dev .}
+                BIND (IF(BOUND(?dc), ?dc, 0) AS ?DateCertain) .
+                BIND (IF(BOUND(?dv), ?dv, 0) AS ?DateVague) .
+                BIND (IF(BOUND(?dec), ?dec, 0) AS ?DateEndCertain) .
+                BIND (IF(BOUND(?dev), ?dev, 0) AS ?DateEndVague) .
+                BIND (
+                    IF(
+                        ?DateCertain,
+                        CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart))),
+                        CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart)), " (?)")
+                    ) as ?DateStartConcated
+                ) .
+                BIND (
+                    IF(
+                        ?DateEndCertain,
+                        CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd))),
+                        CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd)), " (?)")
+                    ) as ?DateEndConcated
+                ) .
+                BIND (IF(BOUND(?DateEnd), CONCAT(?DateStartConcated, " - ", ?DateEndConcated), ?DateStartConcated) as ?PublicationDate) .
+            }    
+        }   
+    }
+    OPTIONAL {
+        ?EditedText retmop:Note ?EditedTextNote
+    }
+    OPTIONAL {
+        ?EditedText retmop:PageRangeOfEditedText ?PageRangeOfEditedText
+    }
+    OPTIONAL {
+        ?EditedText retmop:IsTranslationOf ?Translation .
+        ?EditedText retmop:Language ?Language .
+        BIND(CONCAT('&lt;li&gt;',?Language,'&lt;/li&gt;') as ?aLanguage) .        
+    }
+    OPTIONAL {
+        ?EditedText retmop:IsEditionOfWorkPart ?WorkPart .
+        ?WorkPart retmop:Heading ?WorkPartHeading .
+        BIND(CONCAT('&lt;li&gt;',?WorkPartHeading,'&lt;a class="ml-s" target="_blank" href=\'',STR(?WorkPart),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;') as ?aWorkPart) .        
+    }
+    OPTIONAL {
+        ?EditedText retmop:Has_subobject ?ManuscriptSubobject .
+        ?ManuscriptSubobject a retmoc:ManuscriptReference .
+        ?ManuscriptSubobject retmop:ManuscriptReferenceCodex ?Manuscript .
+        ?Manuscript retmop:Shelfmark ?Shelfmark .
+        BIND(CONCAT('&lt;li&gt;',?Shelfmark,'&lt;a class="ml-s" target="_blank" href=\'',STR(?Manuscript),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;') as ?aManuscript) .        
+    }
+} GROUP BY ?EditedText ORDER BY LCASE(?Werktitel)
+|config=fuseki
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}</text>
+      <sha1>nbn9te8yjxlgfsp09doz09i8q6mu0gy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Autor/werke</title>
+    <ns>0</ns>
+    <id>141</id>
+    <revision>
+      <id>67807</id>
+      <parentid>67761</parentid>
+      <timestamp>2021-12-23T09:26:14Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>67807</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="6392" sha1="ppwdo5pknfethju2grphrdgrnzydwrr" xml:space="preserve">{{#vardefine:author|{{#urlget:author}}}}
+&lt;h1&gt;{{#if:{{#var:author}}|{{#getdisplaytitle:{{#var:author}}}}: Werke|kein Autor gefunden}}&lt;/h1&gt;
+{|
+    |+Kurzkommentar
+    |{{#show: {{#var:author}}|?WorkShortComment}}
+|}
+{|class="flextable"
+    !Authentizität
+    !Verfügbarkeit
+    !Werkgattung
+    |-
+|{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+SELECT ?label (count(?label) as ?count)
+{
+?WorkPage retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+?Subobject retmop:WorkAuthorshipAttribution ?label
+} GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=500px!height=500px
+|log=2
+}}
+|{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+SELECT ?label (count(?label) as ?count)
+{
+?WorkPage retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+?WorkPage retmop:Availability ?label
+} GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=500px!height=500px
+|log=2
+}}
+|{{#sparql:
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+SELECT ?label (count(?label) as ?count)
+{
+?WorkPage retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+OPTIONAL { ?WorkPage retmop:WorkType ?WorkType .}
+BIND(IF(BOUND(?WorkType), ?WorkType, "keine Angabe") AS ?label)
+} GROUP by ?label
+|config=fuseki
+|chart=google.visualization.Pie
+|options=width=500px!height=500px
+|log=2
+}}
+|}
+===Liste aller Werke, die mit diesem Autor verknüpft sind===
+{{#sparql:
+PREFIX retmoc: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Category-3A&gt;
+PREFIX retmop: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/Property-3A&gt;
+PREFIX page: &lt;http://alcuin.soital.de/index.php/Special:URIResolver/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT
+(GROUP_CONCAT(DISTINCT ?aPage) AS ?Titel)
+(CONCAT('&lt;ul class="collapsable"&gt;&lt;input type="checkbox"&gt;', GROUP_CONCAT(DISTINCT ?Titelvariante), '&lt;/ul&gt;') AS ?Titelsynonyme)
+(SAMPLE(?WorkAuthorshipAttribution) AS ?Authentizität)
+(SAMPLE(?WorkType) AS ?Werkgattung)
+(GROUP_CONCAT(DISTINCT ?aIncipit) AS ?Incipit)
+(CONCAT('&lt;ul class="collapsable"&gt;&lt;input type="checkbox"&gt;', GROUP_CONCAT(DISTINCT ?Manuscript), '&lt;/ul&gt;') AS ?Manuskripte)
+(SAMPLE(?Availability) AS ?Verfügbarkeit)
+(GROUP_CONCAT(DISTINCT ?Datum) AS ?Datierungen)
+WHERE {
+?Page retmop:Has_subobject ?Subobject.
+?Subobject rdf:type retmoc:Authorship .
+?Subobject retmop:WorkCreator page:{{#var:author}} .
+?Page retmop:Title ?Title .
+BIND(CONCAT(?Title,'&lt;a class="ml-s" target="_blank" href=\'',STR(?Page),'\'&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt;') as ?aPage) .
+OPTIONAL {
+     ?Page retmop:Availability ?Availability .
+}
+OPTIONAL {
+     ?Subobject retmop:WorkAuthorshipAttribution ?WorkAuthorshipAttribution .
+}
+OPTIONAL {
+    SELECT ?Page ?Titelvariante WHERE {
+        ?Page retmop:AlternateTitle ?AlternateTitle . 
+        BIND(IF(BOUND(?AlternateTitle), CONCAT('&lt;li&gt;', ?AlternateTitle, '&lt;/li&gt;'), "") AS ?Titelvariante) .
+    } ORDER BY LCASE(?AlternateTitle)
+}
+OPTIONAL {
+    ?Page retmop:WorkType ?WorkType
+}
+OPTIONAL {
+    SELECT ?Page ?aIncipit WHERE {
+        ?Page retmop:Incipit ?WorkIncipit
+        BIND(CONCAT('&lt;li&gt;', ?WorkIncipit, '&lt;/li&gt;') AS ?aIncipit) .
+    } ORDER BY LCASE(?aIncipit)
+}
+OPTIONAL {
+    ?EditionPage retmop:IsEditionOf ?Page .
+    ?EditionPage rdfs:label ?Label .
+    BIND(CONCAT('&lt;li&gt;&lt;a target="_blank" href=\'',STR(?EditionPage),'\'&gt;',?Label,'&lt;/a&gt;&lt;/li&gt;') AS ?Edition)
+}
+OPTIONAL {
+    SELECT ?Page ?Manuscript WHERE {
+        ?Page retmop:Has_subobject ?ManuscriptReference . 
+        ?ManuscriptReference rdf:type retmoc:ManuscriptReference .
+        ?ManuscriptReference retmop:ManuscriptReferenceCodex ?ManuscriptPage .
+        ?ManuscriptPage retmop:Shelfmark ?Shelfmark .
+        ?ManuscriptPage retmop:HeldBy/rdfs:label ?HeldBy .
+        ?ManuscriptPage retmop:Place/retmop:PlaceName ?Place .
+        BIND(CONCAT('&lt;li&gt;&lt;a target="_blank" href=\'',STR(?ManuscriptPage),'\'&gt;',?Place, ' ', ?HeldBy, ' ', ?Shelfmark,'&lt;/a&gt;&lt;/li&gt;') AS ?Manuscript)
+    } ORDER BY LCASE(?Shelfmark)
+}
+OPTIONAL { 
+    ?Page retmop:Has_subobject ?CreationDate . 
+    ?CreationDate rdf:type retmoc:Date .
+    OPTIONAL {?CreationDate retmop:Date ?DateStart .}
+    OPTIONAL {?CreationDate retmop:DateEnd ?DateEnd .}
+    OPTIONAL {?CreationDate retmop:DateCertain ?DateCertain .}
+    OPTIONAL {?CreationDate retmop:DateVague ?DateVague .}
+    OPTIONAL {?CreationDate retmop:DateEndCertain ?DateEndCertain .}
+    OPTIONAL {?CreationDate retmop:DateEndVague ?DateEndVague .}
+    BIND (
+        IF(
+            ?DateCertain,
+            CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart))),
+            CONCAT(IF(?DateVague, "ca. ", ""), IF(CONTAINS(STR(?DateStart), "Z"), STRBEFORE(STR(?DateStart), "Z"), STR(?DateStart)), "?")
+        ) as ?a
+    ) .
+    BIND (
+        IF(
+            ?DateEndCertain,
+            CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd))),
+            CONCAT(IF(?DateEndVague, "ca. ", ""), IF(CONTAINS(STR(?DateEnd), "Z"), STRBEFORE(STR(?DateEnd), "Z"), STR(?DateEnd)), "?")
+        ) as ?b
+    ) .
+    BIND (IF(BOUND(?DateEnd), CONCAT("&lt;li&gt;", ?a, " - ", ?b, "&lt;/li&gt;"), CONCAT("&lt;li&gt;", ?a, "&lt;/li&gt;")) as ?Datum) .
+}
+} GROUP BY ?Page ORDER BY LCASE(?Title)
+|config=fuseki
+|chart=bordercloud.visualization.DataTable
+|options=width=100%!height=500px
+|log=2
+}}</text>
+      <sha1>ppwdo5pknfethju2grphrdgrnzydwrr</sha1>
+    </revision>
+  </page>
+</mediawiki>

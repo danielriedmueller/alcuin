@@ -7,7 +7,6 @@ Template:Author
 Template:AuthorQuery
 Template:AuthorshipSubobject
 Template:Collection
-Template:CollectionQuery
 Template:CopyPageId
 Template:CreationDateQuery
 Template:DateSubobject
@@ -16,7 +15,6 @@ Template:EditedText
 Template:EditedTextQuery
 Template:EditionTypeQuery
 Template:Editor
-Template:EditorQuery
 Template:Encyclopedia
 Template:EncyclopediaEntry
 Template:EventDateQuery
@@ -29,7 +27,6 @@ Template:Journal
 Template:JournalQuery
 Template:JournalArticle
 Template:Library
-Template:LibraryQuery
 Template:LiteratureReferenceQuery
 Template:LiteratureReferenceSubobject
 Template:Manuscript
@@ -40,8 +37,6 @@ Template:Order
 Template:OrderQuery
 Template:Organisation
 Template:OrganisationFormFields
-Template:Person
-Template:PersonQuery
 Template:PersonFormFields
 Template:PrintSubobject
 Template:Printer
@@ -98,8 +93,10 @@ Property:IsEditionOfWorkPart
 Property:IsManuscriptOf
 Property:IsMedievalTranslationOf
 Property:IsTranslationOf
+Property:IsPublishedIn
 Property:Isbn
 Property:Issn
+Property:Journal
 Property:JournalAbbreviation
 Property:JournalSubtitle
 Property:JournalTitle
@@ -189,12 +186,10 @@ Category:WorkPart
 Form:Author
 Form:AuthorQuery
 Form:Collection
-Form:CollectionQuery
 Form:Dissertation
 Form:EditedText
 Form:EditedTextQuery
 Form:Editor
-Form:EditorQuery
 Form:Encyclopedia
 Form:EncyclopediaEntry
 Form:InCollection
@@ -203,14 +198,12 @@ Form:Journal
 Form:JournalQuery
 Form:JournalArticle
 Form:Library
-Form:LibraryQuery
 Form:Manuscript
 Form:Monograph
 Form:OperaOmnia
 Form:Order
 Form:OrderQuery
 Form:Printer
-Form:PersonQuery
 Form:Publisher
 Form:PublisherQuery
 Form:PublicationQuery

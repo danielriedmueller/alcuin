@@ -1,0 +1,1976 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="de">
+  <siteinfo>
+    <sitename>Alcuin</sitename>
+    <dbname>mediawiki</dbname>
+    <base>http://alcuin.soital.de/index.php/Hauptseite</base>
+    <generator>MediaWiki 1.35.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Alcuin</namespace>
+      <namespace key="5" case="first-letter">Alcuin Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="102" case="first-letter">Attribut</namespace>
+      <namespace key="103" case="first-letter">Attribut Diskussion</namespace>
+      <namespace key="106" case="first-letter">Formular</namespace>
+      <namespace key="107" case="first-letter">Formular Diskussion</namespace>
+      <namespace key="108" case="first-letter">Konzept</namespace>
+      <namespace key="109" case="first-letter">Konzept Diskussion</namespace>
+      <namespace key="112" case="first-letter">SMW/Schema</namespace>
+      <namespace key="113" case="first-letter">SMW/Schema Diskussion</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="420" case="first-letter">GeoJson</namespace>
+      <namespace key="421" case="first-letter">GeoJson talk</namespace>
+      <namespace key="10000" case="first-letter">Data</namespace>
+      <namespace key="10002" case="first-letter">UserData</namespace>
+      <namespace key="10010" case="first-letter">Schema</namespace>
+      <namespace key="10011" case="first-letter">Schema talk</namespace>
+      <namespace key="10030" case="first-letter">Datatype</namespace>
+      <namespace key="10031" case="first-letter">Datatype talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Attribut:Affiliation</title>
+    <ns>102</ns>
+    <id>60</id>
+    <revision>
+      <id>110</id>
+      <parentid>109</parentid>
+      <timestamp>2021-11-16T11:20:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>109</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="19" sha1="lhtx20bxtx48eu5v98etgsqbslfabh3" xml:space="preserve">
+[[Has type::Page]]</text>
+      <sha1>lhtx20bxtx48eu5v98etgsqbslfabh3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:AlternateTitle</title>
+    <ns>102</ns>
+    <id>61</id>
+    <revision>
+      <id>112</id>
+      <parentid>111</parentid>
+      <timestamp>2021-11-16T11:20:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>111</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Availability</title>
+    <ns>102</ns>
+    <id>62</id>
+    <revision>
+      <id>114</id>
+      <parentid>113</parentid>
+      <timestamp>2021-11-16T11:20:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>113</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:BaseLanguage</title>
+    <ns>102</ns>
+    <id>63</id>
+    <revision>
+      <id>116</id>
+      <parentid>115</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>115</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Biography</title>
+    <ns>102</ns>
+    <id>64</id>
+    <revision>
+      <id>118</id>
+      <parentid>117</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>117</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:CollectionEditor</title>
+    <ns>102</ns>
+    <id>42684</id>
+    <revision>
+      <id>66427</id>
+      <timestamp>2021-12-13T09:53:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>66427</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:CreationDate</title>
+    <ns>102</ns>
+    <id>65</id>
+    <revision>
+      <id>120</id>
+      <parentid>119</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>119</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:CtIdentifier</title>
+    <ns>102</ns>
+    <id>66</id>
+    <revision>
+      <id>122</id>
+      <parentid>121</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>121</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DateCertain</title>
+    <ns>102</ns>
+    <id>67</id>
+    <revision>
+      <id>124</id>
+      <parentid>123</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>123</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="21" sha1="ru5caoojoekbtpgcurqvbbn3z7mjv4p" xml:space="preserve">[[Has type::Boolean]]</text>
+      <sha1>ru5caoojoekbtpgcurqvbbn3z7mjv4p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DateEnd</title>
+    <ns>102</ns>
+    <id>68</id>
+    <revision>
+      <id>126</id>
+      <parentid>125</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>125</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="g68g5qjl2p76elehbi4g6k8nlz5jtpq" xml:space="preserve">[[Has type::Date]]</text>
+      <sha1>g68g5qjl2p76elehbi4g6k8nlz5jtpq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DateEndCertain</title>
+    <ns>102</ns>
+    <id>69</id>
+    <revision>
+      <id>128</id>
+      <parentid>127</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>127</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="21" sha1="ru5caoojoekbtpgcurqvbbn3z7mjv4p" xml:space="preserve">[[Has type::Boolean]]</text>
+      <sha1>ru5caoojoekbtpgcurqvbbn3z7mjv4p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DateEndVague</title>
+    <ns>102</ns>
+    <id>70</id>
+    <revision>
+      <id>130</id>
+      <parentid>129</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>129</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="21" sha1="ru5caoojoekbtpgcurqvbbn3z7mjv4p" xml:space="preserve">[[Has type::Boolean]]</text>
+      <sha1>ru5caoojoekbtpgcurqvbbn3z7mjv4p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DateNote</title>
+    <ns>102</ns>
+    <id>71</id>
+    <revision>
+      <id>132</id>
+      <parentid>131</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>131</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:DateVague</title>
+    <ns>102</ns>
+    <id>72</id>
+    <revision>
+      <id>134</id>
+      <parentid>133</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>133</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="21" sha1="ru5caoojoekbtpgcurqvbbn3z7mjv4p" xml:space="preserve">[[Has type::Boolean]]</text>
+      <sha1>ru5caoojoekbtpgcurqvbbn3z7mjv4p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EditionTitle</title>
+    <ns>102</ns>
+    <id>73</id>
+    <revision>
+      <id>136</id>
+      <parentid>135</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>135</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EditionsURL</title>
+    <ns>102</ns>
+    <id>74</id>
+    <revision>
+      <id>138</id>
+      <parentid>137</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>137</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="1phk8nxscoha60mi2zpgygxdfu4y84v" xml:space="preserve">[[Has type::URL]]</text>
+      <sha1>1phk8nxscoha60mi2zpgygxdfu4y84v</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Editor</title>
+    <ns>102</ns>
+    <id>75</id>
+    <revision>
+      <id>140</id>
+      <parentid>139</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>139</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EncyclopediaEditor</title>
+    <ns>102</ns>
+    <id>42686</id>
+    <revision>
+      <id>66429</id>
+      <timestamp>2021-12-13T09:58:49Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>66429</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventDescription</title>
+    <ns>102</ns>
+    <id>76</id>
+    <revision>
+      <id>142</id>
+      <parentid>141</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>141</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:EventType</title>
+    <ns>102</ns>
+    <id>77</id>
+    <revision>
+      <id>144</id>
+      <parentid>143</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>143</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:FolioRange</title>
+    <ns>102</ns>
+    <id>78</id>
+    <revision>
+      <id>24446</id>
+      <parentid>146</parentid>
+      <timestamp>2021-12-01T11:27:44Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>24446</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Geo</title>
+    <ns>102</ns>
+    <id>42732</id>
+    <revision>
+      <id>66923</id>
+      <timestamp>2021-12-16T07:58:58Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Geographic coordinates]]“</comment>
+      <origin>66923</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="36" sha1="lhvc26hkfvasq1saub5b3cdepbw0jna" xml:space="preserve">[[Has type::Geographic coordinates]]</text>
+      <sha1>lhvc26hkfvasq1saub5b3cdepbw0jna</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:GndIdentifier</title>
+    <ns>102</ns>
+    <id>79</id>
+    <revision>
+      <id>148</id>
+      <parentid>147</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>147</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Heading</title>
+    <ns>102</ns>
+    <id>83</id>
+    <revision>
+      <id>156</id>
+      <parentid>155</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>155</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:HeldBy</title>
+    <ns>102</ns>
+    <id>84</id>
+    <revision>
+      <id>158</id>
+      <parentid>157</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>157</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Incipit</title>
+    <ns>102</ns>
+    <id>85</id>
+    <revision>
+      <id>160</id>
+      <parentid>159</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>159</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Incorporates</title>
+    <ns>102</ns>
+    <id>86</id>
+    <revision>
+      <id>162</id>
+      <parentid>161</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>161</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Incunable</title>
+    <ns>102</ns>
+    <id>87</id>
+    <revision>
+      <id>164</id>
+      <parentid>163</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>163</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsAbout</title>
+    <ns>102</ns>
+    <id>88</id>
+    <revision>
+      <id>166</id>
+      <parentid>165</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>165</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsAboutAsLiteral</title>
+    <ns>102</ns>
+    <id>42681</id>
+    <revision>
+      <id>66424</id>
+      <timestamp>2021-12-13T09:22:58Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>66424</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsCommentOf</title>
+    <ns>102</ns>
+    <id>89</id>
+    <revision>
+      <id>168</id>
+      <parentid>167</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>167</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsEditionOf</title>
+    <ns>102</ns>
+    <id>90</id>
+    <revision>
+      <id>170</id>
+      <parentid>169</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>169</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsEditionOfWorkPart</title>
+    <ns>102</ns>
+    <id>91</id>
+    <revision>
+      <id>172</id>
+      <parentid>171</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>171</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsManuscriptOf</title>
+    <ns>102</ns>
+    <id>92</id>
+    <revision>
+      <id>174</id>
+      <parentid>173</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>173</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsMedievalTranslationOf</title>
+    <ns>102</ns>
+    <id>93</id>
+    <revision>
+      <id>176</id>
+      <parentid>175</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>175</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsTranslationOf</title>
+    <ns>102</ns>
+    <id>94</id>
+    <revision>
+      <id>178</id>
+      <parentid>177</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>177</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:IsPublishedIn</title>
+    <ns>102</ns>
+    <id>42778</id>
+    <revision>
+      <id>67818</id>
+      <timestamp>2021-12-23T10:08:50Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>67818</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Isbn</title>
+    <ns>102</ns>
+    <id>95</id>
+    <revision>
+      <id>180</id>
+      <parentid>179</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>179</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Issn</title>
+    <ns>102</ns>
+    <id>96</id>
+    <revision>
+      <id>182</id>
+      <parentid>181</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>181</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="kph48zlgloy5jxc3qmxgjzz2179e04c" xml:space="preserve">[[Has type::Number]]</text>
+      <sha1>kph48zlgloy5jxc3qmxgjzz2179e04c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Journal</title>
+    <ns>102</ns>
+    <id>42779</id>
+    <revision>
+      <id>67819</id>
+      <timestamp>2021-12-23T10:09:56Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>67819</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:JournalAbbreviation</title>
+    <ns>102</ns>
+    <id>12289</id>
+    <revision>
+      <id>24405</id>
+      <timestamp>2021-12-01T09:32:57Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>24405</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:JournalSubtitle</title>
+    <ns>102</ns>
+    <id>12290</id>
+    <revision>
+      <id>24406</id>
+      <timestamp>2021-12-01T09:33:00Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>24406</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:JournalTitle</title>
+    <ns>102</ns>
+    <id>97</id>
+    <revision>
+      <id>184</id>
+      <parentid>183</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>183</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Language</title>
+    <ns>102</ns>
+    <id>98</id>
+    <revision>
+      <id>186</id>
+      <parentid>185</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>185</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:LanguageNote</title>
+    <ns>102</ns>
+    <id>99</id>
+    <revision>
+      <id>188</id>
+      <parentid>187</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>187</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:LiteratureReferenceCitation</title>
+    <ns>102</ns>
+    <id>100</id>
+    <revision>
+      <id>190</id>
+      <parentid>189</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>189</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:LiteratureReferenceNote</title>
+    <ns>102</ns>
+    <id>101</id>
+    <revision>
+      <id>192</id>
+      <parentid>191</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>191</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:LiteratureReferencePublication</title>
+    <ns>102</ns>
+    <id>102</id>
+    <revision>
+      <id>194</id>
+      <parentid>193</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>193</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Location</title>
+    <ns>102</ns>
+    <id>103</id>
+    <revision>
+      <id>196</id>
+      <parentid>195</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>195</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:ManuscriptReferenceCodex</title>
+    <ns>102</ns>
+    <id>12297</id>
+    <revision>
+      <id>24449</id>
+      <timestamp>2021-12-01T11:33:42Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>24449</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:ManuscriptReferenceNote</title>
+    <ns>102</ns>
+    <id>104</id>
+    <revision>
+      <id>198</id>
+      <parentid>197</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>197</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Name</title>
+    <ns>102</ns>
+    <id>105</id>
+    <revision>
+      <id>200</id>
+      <parentid>199</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>199</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Note</title>
+    <ns>102</ns>
+    <id>106</id>
+    <revision>
+      <id>202</id>
+      <parentid>201</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>201</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Order</title>
+    <ns>102</ns>
+    <id>107</id>
+    <revision>
+      <id>204</id>
+      <parentid>203</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>203</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="22" sha1="kkg693lu0kkn0k4gslkeo2ypmpbhby8" xml:space="preserve">
+[[Has type::Number]]
+</text>
+      <sha1>kkg693lu0kkn0k4gslkeo2ypmpbhby8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:OrganizationAbbreviation</title>
+    <ns>102</ns>
+    <id>108</id>
+    <revision>
+      <id>206</id>
+      <parentid>205</parentid>
+      <timestamp>2021-11-16T11:20:01Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>205</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:OrganizationName</title>
+    <ns>102</ns>
+    <id>109</id>
+    <revision>
+      <id>208</id>
+      <parentid>207</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>207</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PageRange</title>
+    <ns>102</ns>
+    <id>110</id>
+    <revision>
+      <id>210</id>
+      <parentid>209</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>209</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PageRangeOfEditedText</title>
+    <ns>102</ns>
+    <id>111</id>
+    <revision>
+      <id>212</id>
+      <parentid>211</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>211</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PartOf</title>
+    <ns>102</ns>
+    <id>112</id>
+    <revision>
+      <id>214</id>
+      <parentid>213</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>213</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="19" sha1="lhtx20bxtx48eu5v98etgsqbslfabh3" xml:space="preserve">
+[[Has type::Page]]</text>
+      <sha1>lhtx20bxtx48eu5v98etgsqbslfabh3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Place</title>
+    <ns>102</ns>
+    <id>113</id>
+    <revision>
+      <id>66918</id>
+      <parentid>216</parentid>
+      <timestamp>2021-12-16T07:52:54Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66918</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PlaceName</title>
+    <ns>102</ns>
+    <id>42731</id>
+    <revision>
+      <id>66921</id>
+      <parentid>66920</parentid>
+      <timestamp>2021-12-16T07:55:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>66921</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Provenance</title>
+    <ns>102</ns>
+    <id>114</id>
+    <revision>
+      <id>218</id>
+      <parentid>217</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>217</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:PublicationPlace</title>
+    <ns>102</ns>
+    <id>116</id>
+    <revision>
+      <id>222</id>
+      <parentid>221</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>221</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Publisher</title>
+    <ns>102</ns>
+    <id>117</id>
+    <revision>
+      <id>224</id>
+      <parentid>223</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>223</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Printer</title>
+    <ns>102</ns>
+    <id>42771</id>
+    <revision>
+      <id>67594</id>
+      <timestamp>2021-12-21T10:16:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Page]]“</comment>
+      <origin>67594</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Receiver</title>
+    <ns>102</ns>
+    <id>118</id>
+    <revision>
+      <id>226</id>
+      <parentid>225</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>225</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:References</title>
+    <ns>102</ns>
+    <id>119</id>
+    <revision>
+      <id>228</id>
+      <parentid>227</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>227</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Reuses</title>
+    <ns>102</ns>
+    <id>120</id>
+    <revision>
+      <id>230</id>
+      <parentid>229</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>229</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:School</title>
+    <ns>102</ns>
+    <id>42695</id>
+    <revision>
+      <id>66440</id>
+      <timestamp>2021-12-13T10:15:13Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>66440</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Section</title>
+    <ns>102</ns>
+    <id>121</id>
+    <revision>
+      <id>232</id>
+      <parentid>231</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>231</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Sender</title>
+    <ns>102</ns>
+    <id>122</id>
+    <revision>
+      <id>234</id>
+      <parentid>233</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>233</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Series</title>
+    <ns>102</ns>
+    <id>123</id>
+    <revision>
+      <id>236</id>
+      <parentid>235</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>235</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:SeriesAbbreviation</title>
+    <ns>102</ns>
+    <id>12286</id>
+    <revision>
+      <id>24399</id>
+      <parentid>24398</parentid>
+      <timestamp>2021-11-30T11:36:14Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <origin>24399</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:SeriesEditor</title>
+    <ns>102</ns>
+    <id>124</id>
+    <revision>
+      <id>238</id>
+      <parentid>237</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>237</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:SeriesTitle</title>
+    <ns>102</ns>
+    <id>125</id>
+    <revision>
+      <id>240</id>
+      <parentid>239</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>239</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Shelfmark</title>
+    <ns>102</ns>
+    <id>126</id>
+    <revision>
+      <id>242</id>
+      <parentid>241</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>241</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:SiglumIdentifier</title>
+    <ns>102</ns>
+    <id>127</id>
+    <revision>
+      <id>244</id>
+      <parentid>243</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>243</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Source</title>
+    <ns>102</ns>
+    <id>128</id>
+    <revision>
+      <id>246</id>
+      <parentid>245</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>245</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1" sha1="kaseilp6gltbnm1slih62zq0av5kzr0" xml:space="preserve">
+</text>
+      <sha1>kaseilp6gltbnm1slih62zq0av5kzr0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Subtitle</title>
+    <ns>102</ns>
+    <id>129</id>
+    <revision>
+      <id>248</id>
+      <parentid>247</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>247</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Title</title>
+    <ns>102</ns>
+    <id>130</id>
+    <revision>
+      <id>250</id>
+      <parentid>249</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>249</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Translator</title>
+    <ns>102</ns>
+    <id>131</id>
+    <revision>
+      <id>252</id>
+      <parentid>251</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>251</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:VariantName</title>
+    <ns>102</ns>
+    <id>132</id>
+    <revision>
+      <id>254</id>
+      <parentid>253</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>253</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:Volume</title>
+    <ns>102</ns>
+    <id>133</id>
+    <revision>
+      <id>256</id>
+      <parentid>255</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>255</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="omnda1y71d7ey7onay33q0occ5czycs" xml:space="preserve">
+[[Has type::Text]]
+</text>
+      <sha1>omnda1y71d7ey7onay33q0occ5czycs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkAuthorshipAttribution</title>
+    <ns>102</ns>
+    <id>134</id>
+    <revision>
+      <id>258</id>
+      <parentid>257</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>257</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="19" sha1="m4c1vijuq7ivx22h3jnriyvdkdztgbp" xml:space="preserve">
+[[Has type::Text]]</text>
+      <sha1>m4c1vijuq7ivx22h3jnriyvdkdztgbp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkAuthorshipAttributionEvidence</title>
+    <ns>102</ns>
+    <id>135</id>
+    <revision>
+      <id>260</id>
+      <parentid>259</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>259</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="nqjwsk8osz6btebpuxz90hhwnp7u4jn" xml:space="preserve">
+[[Has type::Page]]
+</text>
+      <sha1>nqjwsk8osz6btebpuxz90hhwnp7u4jn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkAuthorshipAttributionNote</title>
+    <ns>102</ns>
+    <id>12294</id>
+    <revision>
+      <id>24433</id>
+      <timestamp>2021-12-01T10:24:46Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>24433</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkCreator</title>
+    <ns>102</ns>
+    <id>136</id>
+    <revision>
+      <id>262</id>
+      <parentid>261</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>261</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="byqsaznmj8muv1x9qm7hky0dlasesr9" xml:space="preserve">[[Has type::Page]]</text>
+      <sha1>byqsaznmj8muv1x9qm7hky0dlasesr9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkShortComment</title>
+    <ns>102</ns>
+    <id>42680</id>
+    <revision>
+      <id>66420</id>
+      <timestamp>2021-12-13T09:04:20Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Die Seite wurde neu angelegt: „[[Has type::Text]]“</comment>
+      <origin>66420</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorkType</title>
+    <ns>102</ns>
+    <id>137</id>
+    <revision>
+      <id>264</id>
+      <parentid>263</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>263</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:WorksURL</title>
+    <ns>102</ns>
+    <id>138</id>
+    <revision>
+      <id>266</id>
+      <parentid>265</parentid>
+      <timestamp>2021-11-16T11:20:02Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>265</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="1phk8nxscoha60mi2zpgygxdfu4y84v" xml:space="preserve">[[Has type::URL]]</text>
+      <sha1>1phk8nxscoha60mi2zpgygxdfu4y84v</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Attribut:ZdbIdentifier</title>
+    <ns>102</ns>
+    <id>139</id>
+    <revision>
+      <id>268</id>
+      <parentid>267</parentid>
+      <timestamp>2021-11-16T11:20:03Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 Version importiert</comment>
+      <origin>267</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18" sha1="2ihgjxmzwp9ljxkggla6zi92bdkc6ts" xml:space="preserve">[[Has type::Text]]</text>
+      <sha1>2ihgjxmzwp9ljxkggla6zi92bdkc6ts</sha1>
+    </revision>
+  </page>
+</mediawiki>
